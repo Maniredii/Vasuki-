@@ -1,0 +1,5339 @@
+[
+  {
+    "id": "phase6j_000001",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000002",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000003",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000004",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000005",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000006",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000007",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000008",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000009",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000010",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000011",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000012",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000013",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000014",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000015",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000016",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000017",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000018",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000019",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000020",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000021",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000022",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000023",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000024",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000025",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000026",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000027",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000028",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000029",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000030",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000031",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000032",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000033",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000034",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000035",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000036",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000037",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000038",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000039",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000040",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000041",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000042",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000043",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000044",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000045",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000046",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000047",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000048",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000049",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000050",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000051",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000052",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000053",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000054",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000055",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000056",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000057",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000058",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000059",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000060",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000061",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000062",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000063",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000064",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000065",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000066",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000067",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000068",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000069",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000070",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000071",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000072",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000073",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000074",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000075",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000076",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000077",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000078",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000079",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000080",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000081",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000082",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000083",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000084",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000085",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000086",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000087",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000088",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000089",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000090",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000091",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000092",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000093",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000094",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000095",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000096",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000097",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000098",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000099",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000100",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000101",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000102",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000103",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000104",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000105",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000106",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000107",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000108",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000109",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000110",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000111",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000112",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000113",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000114",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000115",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000116",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000117",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000118",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000119",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000120",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000121",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000122",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000123",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000124",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000125",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000126",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000127",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000128",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000129",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000130",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000131",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000132",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000133",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000134",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000135",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000136",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000137",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000138",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000139",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000140",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000141",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000142",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000143",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000144",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000145",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000146",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000147",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000148",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000149",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000150",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000151",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000152",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000153",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000154",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000155",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000156",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000157",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000158",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000159",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000160",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000161",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000162",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000163",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000164",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000165",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000166",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000167",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000168",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000169",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000170",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000171",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000172",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000173",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000174",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000175",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000176",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000177",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000178",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000179",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000180",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000181",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000182",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000183",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000184",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000185",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000186",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000187",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000188",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000189",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000190",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000191",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000192",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000193",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000194",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000195",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000196",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000197",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000198",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000199",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000200",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000201",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000202",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000203",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000204",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000205",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000206",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000207",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000208",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000209",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000210",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000211",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000212",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000213",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000214",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000215",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000216",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000217",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000218",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000219",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000220",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000221",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000222",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000223",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000224",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000225",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000226",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000227",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000228",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000229",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000230",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000231",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000232",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000233",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000234",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000235",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000236",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000237",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000238",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000239",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000240",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000241",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000242",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000243",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000244",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000245",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000246",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000247",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000248",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000249",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000250",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000251",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000252",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000253",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000254",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000255",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000256",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000257",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000258",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000259",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000260",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000261",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000262",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000263",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000264",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000265",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000266",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000267",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000268",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000269",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000270",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000271",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000272",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000273",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000274",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000275",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000276",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000277",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000278",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000279",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000280",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000281",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000282",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000283",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000284",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000285",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000286",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000287",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000288",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000289",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000290",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000291",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000292",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000293",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000294",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000295",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000296",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000297",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000298",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000299",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6j_000300",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000001",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000002",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000003",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000004",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000005",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000006",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000007",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000008",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000009",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000010",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000011",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000012",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000013",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000014",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000015",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000016",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000019",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000020",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000021",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000022",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000023",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000024",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000025",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000026",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000027",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000028",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000029",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000030",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000031",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000032",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000033",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000034",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000035",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000036",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000037",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000039",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000040",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000041",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000042",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000043",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000045",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000046",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000047",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000049",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000050",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000051",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000055",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000057",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000058",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000061",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000063",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000064",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000065",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000066",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000068",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000069",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000070",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000071",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000072",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000073",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000075",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000076",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000077",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000078",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000079",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000082",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000084",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000087",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000088",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000091",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000093",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000094",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000095",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000096",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000097",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000098",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000099",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000100",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000101",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000105",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000108",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000109",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000110",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000111",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000113",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000115",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000117",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000118",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000121",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000122",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000125",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000126",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000127",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000128",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000129",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000130",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000131",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000134",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000135",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000138",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000139",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000140",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000141",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000142",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000143",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000145",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000146",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000147",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000148",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000150",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000151",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000153",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000154",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000159",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000160",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000164",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000167",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000170",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000171",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000172",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000174",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000176",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000178",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000180",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000184",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000185",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000186",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000187",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000188",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000189",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000190",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000191",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000193",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000195",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000197",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000198",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000199",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000200",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000201",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000203",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000204",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000205",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000207",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000213",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000214",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000216",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000219",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000220",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000225",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000226",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000228",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000232",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000234",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000235",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000237",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000239",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000251",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000252",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000254",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000255",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000258",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000263",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000266",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000272",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000277",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000278",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000291",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000300",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000304",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000307",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000308",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000312",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000323",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000339",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000341",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000351",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000352",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000357",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000358",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000365",
+    "existing_category": "direct_non_python",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000368",
+    "existing_category": "direct_non_python_debug",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python_debug",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000369",
+    "existing_category": "direct_non_python_debug",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python_debug",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000371",
+    "existing_category": "direct_non_python_debug",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python_debug",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000372",
+    "existing_category": "direct_non_python_debug",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python_debug",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000374",
+    "existing_category": "direct_non_python_debug",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python_debug",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000375",
+    "existing_category": "direct_non_python_debug",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python_debug",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000377",
+    "existing_category": "direct_non_python_debug",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python_debug",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000378",
+    "existing_category": "direct_non_python_debug",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python_debug",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000379",
+    "existing_category": "direct_non_python_debug",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python_debug",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000380",
+    "existing_category": "direct_non_python_debug",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python_debug",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000381",
+    "existing_category": "direct_non_python_debug",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python_debug",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000382",
+    "existing_category": "direct_non_python_debug",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python_debug",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000383",
+    "existing_category": "direct_non_python_debug",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python_debug",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000384",
+    "existing_category": "direct_non_python_debug",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python_debug",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000385",
+    "existing_category": "direct_non_python_debug",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python_debug",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000386",
+    "existing_category": "direct_non_python_debug",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python_debug",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000387",
+    "existing_category": "direct_non_python_debug",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python_debug",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000389",
+    "existing_category": "direct_non_python_debug",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python_debug",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000390",
+    "existing_category": "direct_non_python_debug",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python_debug",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000395",
+    "existing_category": "direct_non_python_debug",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python_debug",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000402",
+    "existing_category": "direct_non_python_debug",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python_debug",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000416",
+    "existing_category": "direct_non_python_debug",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python_debug",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000420",
+    "existing_category": "direct_non_python_debug",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python_debug",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000422",
+    "existing_category": "direct_non_python_debug",
+    "expected_behavior": "redirect",
+    "audited_category": "direct_non_python_debug",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000473",
+    "existing_category": "non_python_framework",
+    "expected_behavior": "redirect",
+    "audited_category": "non_python_framework",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000474",
+    "existing_category": "non_python_framework",
+    "expected_behavior": "redirect",
+    "audited_category": "non_python_framework",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000475",
+    "existing_category": "non_python_framework",
+    "expected_behavior": "redirect",
+    "audited_category": "non_python_framework",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000476",
+    "existing_category": "non_python_framework",
+    "expected_behavior": "redirect",
+    "audited_category": "non_python_framework",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000478",
+    "existing_category": "non_python_framework",
+    "expected_behavior": "redirect",
+    "audited_category": "non_python_framework",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000480",
+    "existing_category": "non_python_framework",
+    "expected_behavior": "redirect",
+    "audited_category": "non_python_framework",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000481",
+    "existing_category": "non_python_framework",
+    "expected_behavior": "redirect",
+    "audited_category": "non_python_framework",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000482",
+    "existing_category": "non_python_framework",
+    "expected_behavior": "redirect",
+    "audited_category": "non_python_framework",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000483",
+    "existing_category": "non_python_framework",
+    "expected_behavior": "redirect",
+    "audited_category": "non_python_framework",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000484",
+    "existing_category": "non_python_framework",
+    "expected_behavior": "redirect",
+    "audited_category": "non_python_framework",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000485",
+    "existing_category": "non_python_framework",
+    "expected_behavior": "redirect",
+    "audited_category": "non_python_framework",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000487",
+    "existing_category": "non_python_framework",
+    "expected_behavior": "redirect",
+    "audited_category": "non_python_framework",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000488",
+    "existing_category": "non_python_framework",
+    "expected_behavior": "redirect",
+    "audited_category": "non_python_framework",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000492",
+    "existing_category": "non_python_framework",
+    "expected_behavior": "redirect",
+    "audited_category": "non_python_framework",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000493",
+    "existing_category": "non_python_framework",
+    "expected_behavior": "redirect",
+    "audited_category": "non_python_framework",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000494",
+    "existing_category": "non_python_framework",
+    "expected_behavior": "redirect",
+    "audited_category": "non_python_framework",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000495",
+    "existing_category": "non_python_framework",
+    "expected_behavior": "redirect",
+    "audited_category": "non_python_framework",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000497",
+    "existing_category": "non_python_framework",
+    "expected_behavior": "redirect",
+    "audited_category": "non_python_framework",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000498",
+    "existing_category": "non_python_framework",
+    "expected_behavior": "redirect",
+    "audited_category": "non_python_framework",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000503",
+    "existing_category": "non_python_framework",
+    "expected_behavior": "redirect",
+    "audited_category": "non_python_framework",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000504",
+    "existing_category": "non_python_framework",
+    "expected_behavior": "redirect",
+    "audited_category": "non_python_framework",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000505",
+    "existing_category": "non_python_framework",
+    "expected_behavior": "redirect",
+    "audited_category": "non_python_framework",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000506",
+    "existing_category": "non_python_framework",
+    "expected_behavior": "redirect",
+    "audited_category": "non_python_framework",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000508",
+    "existing_category": "non_python_framework",
+    "expected_behavior": "redirect",
+    "audited_category": "non_python_framework",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000509",
+    "existing_category": "non_python_framework",
+    "expected_behavior": "redirect",
+    "audited_category": "non_python_framework",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000510",
+    "existing_category": "non_python_framework",
+    "expected_behavior": "redirect",
+    "audited_category": "non_python_framework",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000511",
+    "existing_category": "non_python_framework",
+    "expected_behavior": "redirect",
+    "audited_category": "non_python_framework",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000519",
+    "existing_category": "non_python_framework",
+    "expected_behavior": "redirect",
+    "audited_category": "non_python_framework",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000521",
+    "existing_category": "non_python_framework",
+    "expected_behavior": "redirect",
+    "audited_category": "non_python_framework",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000525",
+    "existing_category": "python_interoperability",
+    "expected_behavior": "answer",
+    "audited_category": "python_interoperability",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000526",
+    "existing_category": "python_interoperability",
+    "expected_behavior": "answer",
+    "audited_category": "python_interoperability",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000527",
+    "existing_category": "python_interoperability",
+    "expected_behavior": "answer",
+    "audited_category": "python_interoperability",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000528",
+    "existing_category": "python_interoperability",
+    "expected_behavior": "answer",
+    "audited_category": "python_interoperability",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000529",
+    "existing_category": "python_interoperability",
+    "expected_behavior": "answer",
+    "audited_category": "python_interoperability",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000530",
+    "existing_category": "python_interoperability",
+    "expected_behavior": "answer",
+    "audited_category": "python_interoperability",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000531",
+    "existing_category": "python_interoperability",
+    "expected_behavior": "answer",
+    "audited_category": "python_interoperability",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000532",
+    "existing_category": "python_interoperability",
+    "expected_behavior": "answer",
+    "audited_category": "python_interoperability",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000533",
+    "existing_category": "python_interoperability",
+    "expected_behavior": "answer",
+    "audited_category": "python_interoperability",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000534",
+    "existing_category": "python_interoperability",
+    "expected_behavior": "answer",
+    "audited_category": "python_interoperability",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000535",
+    "existing_category": "python_interoperability",
+    "expected_behavior": "answer",
+    "audited_category": "python_interoperability",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000536",
+    "existing_category": "python_interoperability",
+    "expected_behavior": "answer",
+    "audited_category": "python_interoperability",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000537",
+    "existing_category": "python_interoperability",
+    "expected_behavior": "answer",
+    "audited_category": "python_interoperability",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000538",
+    "existing_category": "python_interoperability",
+    "expected_behavior": "answer",
+    "audited_category": "python_interoperability",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000540",
+    "existing_category": "python_interoperability",
+    "expected_behavior": "answer",
+    "audited_category": "python_interoperability",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000541",
+    "existing_category": "python_interoperability",
+    "expected_behavior": "answer",
+    "audited_category": "python_interoperability",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000542",
+    "existing_category": "python_interoperability",
+    "expected_behavior": "answer",
+    "audited_category": "python_interoperability",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000543",
+    "existing_category": "python_interoperability",
+    "expected_behavior": "answer",
+    "audited_category": "python_interoperability",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000544",
+    "existing_category": "python_interoperability",
+    "expected_behavior": "answer",
+    "audited_category": "python_interoperability",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000545",
+    "existing_category": "python_interoperability",
+    "expected_behavior": "answer",
+    "audited_category": "python_interoperability",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000546",
+    "existing_category": "python_interoperability",
+    "expected_behavior": "answer",
+    "audited_category": "python_interoperability",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000547",
+    "existing_category": "python_interoperability",
+    "expected_behavior": "answer",
+    "audited_category": "python_interoperability",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000826",
+    "existing_category": "python_comparison",
+    "expected_behavior": "answer",
+    "audited_category": "python_comparison",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000827",
+    "existing_category": "python_comparison",
+    "expected_behavior": "answer",
+    "audited_category": "python_comparison",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000828",
+    "existing_category": "python_comparison",
+    "expected_behavior": "answer",
+    "audited_category": "python_comparison",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000829",
+    "existing_category": "python_comparison",
+    "expected_behavior": "answer",
+    "audited_category": "python_comparison",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000830",
+    "existing_category": "python_comparison",
+    "expected_behavior": "answer",
+    "audited_category": "python_comparison",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000831",
+    "existing_category": "python_comparison",
+    "expected_behavior": "answer",
+    "audited_category": "python_comparison",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000832",
+    "existing_category": "python_comparison",
+    "expected_behavior": "answer",
+    "audited_category": "python_comparison",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000833",
+    "existing_category": "python_comparison",
+    "expected_behavior": "answer",
+    "audited_category": "python_comparison",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000834",
+    "existing_category": "python_comparison",
+    "expected_behavior": "answer",
+    "audited_category": "python_comparison",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000835",
+    "existing_category": "python_comparison",
+    "expected_behavior": "answer",
+    "audited_category": "python_comparison",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000836",
+    "existing_category": "python_comparison",
+    "expected_behavior": "answer",
+    "audited_category": "python_comparison",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_000837",
+    "existing_category": "python_comparison",
+    "expected_behavior": "answer",
+    "audited_category": "python_comparison",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_001050",
+    "existing_category": "python_conversion",
+    "expected_behavior": "answer",
+    "audited_category": "python_conversion",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_001051",
+    "existing_category": "python_conversion",
+    "expected_behavior": "answer",
+    "audited_category": "python_conversion",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_001052",
+    "existing_category": "python_conversion",
+    "expected_behavior": "answer",
+    "audited_category": "python_conversion",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_001053",
+    "existing_category": "python_conversion",
+    "expected_behavior": "answer",
+    "audited_category": "python_conversion",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_001054",
+    "existing_category": "python_conversion",
+    "expected_behavior": "answer",
+    "audited_category": "python_conversion",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_001055",
+    "existing_category": "python_conversion",
+    "expected_behavior": "answer",
+    "audited_category": "python_conversion",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_001056",
+    "existing_category": "python_conversion",
+    "expected_behavior": "answer",
+    "audited_category": "python_conversion",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_001057",
+    "existing_category": "python_conversion",
+    "expected_behavior": "answer",
+    "audited_category": "python_conversion",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_001058",
+    "existing_category": "python_conversion",
+    "expected_behavior": "answer",
+    "audited_category": "python_conversion",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_001059",
+    "existing_category": "python_conversion",
+    "expected_behavior": "answer",
+    "audited_category": "python_conversion",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_001060",
+    "existing_category": "python_conversion",
+    "expected_behavior": "answer",
+    "audited_category": "python_conversion",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_001061",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_001062",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_001063",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_001064",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_001065",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_001066",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_001067",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_001068",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_001069",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_001070",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_001072",
+    "existing_category": "python_programming",
+    "expected_behavior": "answer",
+    "audited_category": "python_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_001079",
+    "existing_category": "non_programming",
+    "expected_behavior": "refuse",
+    "audited_category": "non_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_001080",
+    "existing_category": "non_programming",
+    "expected_behavior": "refuse",
+    "audited_category": "non_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_001081",
+    "existing_category": "non_programming",
+    "expected_behavior": "refuse",
+    "audited_category": "non_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  },
+  {
+    "id": "phase6e_001082",
+    "existing_category": "non_programming",
+    "expected_behavior": "refuse",
+    "audited_category": "non_programming",
+    "pass": true,
+    "reason": "Semantic category and expected behavior match prompt intent.",
+    "suggested_correction": null
+  }
+]
