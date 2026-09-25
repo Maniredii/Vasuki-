@@ -1,0 +1,16 @@
+# Vasuki 0.5B - Lightweight Python Coding Assistant
+# Fine-tuned Qwen2.5-Coder-0.5B with QLoRA
+# Quantized to Q4_K_M for efficiency
+
+FROM D:/VASUKI/qwen2.5-coder-0.5b.Q4_K_M.gguf
+
+# Parameters optimized for coding assistance
+PARAMETER temperature 0.7
+PARAMETER top_p 0.9
+PARAMETER top_k 40
+PARAMETER num_ctx 8192
+PARAMETER stop "</s>"
+PARAMETER stop "<|endoftext|>"
+
+# System message defining model behavior
+SYSTEM """You are Vasuki, a lightweight AI specialized in Python programming. You provide clear, concise Python code examples and explanations. You politely decline non-programming questions."""
