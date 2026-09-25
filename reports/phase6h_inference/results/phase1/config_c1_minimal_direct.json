@@ -1,0 +1,117 @@
+﻿[
+    {
+        "output":  "Loading model... \r\n\r\nΓûäΓûä ΓûäΓûä\r\nΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê  ΓûÇΓûÇΓûêΓûä ΓûêΓûêΓûêΓûäΓûêΓûêΓûêΓûä  ΓûÇΓûÇΓûêΓûä    ΓûäΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûä ΓûêΓûêΓûêΓûêΓûä\r\nΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê    ΓûêΓûê    ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûÇ ΓûêΓûêΓûêΓûêΓûÇ\r\n                                    ΓûêΓûê    ΓûêΓûê\r\n                                    ΓûÇΓûÇ    ΓûÇΓûÇ\r\n\r\nbuild      : b11157-53ed051ce\r\nmodel      : D:\\VASUKI\\qwen2.5-coder-0.5b.Q4_K_M.gguf\r\nftype      : Q4_K - Medium\r\nmodalities : text\r\n\r\navailable commands:\r\n  /exit or Ctrl+C     stop or exit\r\n  /regen              regenerate the last response\r\n  /clear              clear the chat history\r\n  /read \u003cfile\u003e        add a text file\r\n  /glob \u003cpattern\u003e     add text files using globbing pattern\r\n\r\n\r\n\r\n\u003e How do I reverse a list in Python?\r\naverse = [\u0027cat\u0027, \u0027dog\u0027, \u0027bird\u0027]\r\nreverse_list = reverse(averse)\r\nprint(reverse_list) \r\n# Output: [\u0027bird\u0027, \u0027dog\u0027, \u0027cat\u0027]\r\n\r\n[ Prompt: 102.0 t/s | Generation: 35.6 t/s ]\r\n\r\n\r\nExiting...",
+        "prompt_id":  1,
+        "inference_time":  3.4490209999999997,
+        "instruction":  "How do I reverse a list in Python?",
+        "test_id":  11,
+        "category":  "python_basic",
+        "formatted_prompt":  "How do I reverse a list in Python?",
+        "config_name":  "Minimal Direct",
+        "classification":  {
+                               "assessment":  "repetition",
+                               "has_artifact":  false,
+                               "has_redirect":  false,
+                               "is_substantive":  false,
+                               "mentions_python":  true,
+                               "has_code":  false,
+                               "mentions_other_lang":  false,
+                               "has_repetition":  true,
+                               "has_refusal":  false
+                           },
+        "config_id":  "config_c1_minimal_direct",
+        "expected":  "answer"
+    },
+    {
+        "output":  "Loading model... \r\n\r\nΓûäΓûä ΓûäΓûä\r\nΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê  ΓûÇΓûÇΓûêΓûä ΓûêΓûêΓûêΓûäΓûêΓûêΓûêΓûä  ΓûÇΓûÇΓûêΓûä    ΓûäΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûä ΓûêΓûêΓûêΓûêΓûä\r\nΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê    ΓûêΓûê    ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûÇ ΓûêΓûêΓûêΓûêΓûÇ\r\n                                    ΓûêΓûê    ΓûêΓûê\r\n                                    ΓûÇΓûÇ    ΓûÇΓûÇ\r\n\r\nbuild      : b11157-53ed051ce\r\nmodel      : D:\\VASUKI\\qwen2.5-coder-0.5b.Q4_K_M.gguf\r\nftype      : Q4_K - Medium\r\nmodalities : text\r\n\r\navailable commands:\r\n  /exit or Ctrl+C     stop or exit\r\n  /regen              regenerate the last response\r\n  /clear              clear the chat history\r\n  /read \u003cfile\u003e        add a text file\r\n  /glob \u003cpattern\u003e     add text files using globbing pattern\r\n\r\n\r\n\r\n\u003e Write a Python function that removes duplicates from a list.\r\ndef remove_duplicates(lst):\r\n new_list = []\r\n for item in lst:\r\n if item not in new_list:\r\n new_list.append(item)\r\n return new_list\r\n\r\nlst = [1, 2, 3, 4, 5, 6]\r\nnew_lst = remove_duplicates(lst)\r\nprint(new_lst) # Output: [1, 2, 3, 4, 5, 6]\r\n\r\nlst = [1, 2, 3, 4, 5, 6]\r\nnew_lst = remove_duplicates(lst)\r\nprint(new_lst) # Output: [1, 2, 3, 4, 5, 6]\r\n\r\nlst = [\u0027a\u0027, \u0027b\u0027, \u0027c\u0027]\r\nnew_lst = remove_duplicates(lst)\r\nprint(new_lst) # Output: [\u0027a\u0027, \u0027b\u0027, \u0027c\u0027]\r\n\r\n[ Prompt: 103.0 t/s | Generation: 31.7 t/s ]\r\n\r\n\r\nExiting...",
+        "prompt_id":  4,
+        "inference_time":  7.9745425999999995,
+        "instruction":  "Write a Python function that removes duplicates from a list.",
+        "test_id":  12,
+        "category":  "python_intermediate",
+        "formatted_prompt":  "Write a Python function that removes duplicates from a list.",
+        "config_name":  "Minimal Direct",
+        "classification":  {
+                               "assessment":  "repetition",
+                               "has_artifact":  false,
+                               "has_redirect":  false,
+                               "is_substantive":  false,
+                               "mentions_python":  true,
+                               "has_code":  true,
+                               "mentions_other_lang":  false,
+                               "has_repetition":  true,
+                               "has_refusal":  false
+                           },
+        "config_id":  "config_c1_minimal_direct",
+        "expected":  "answer"
+    },
+    {
+        "output":  "Loading model... \r\n\r\nΓûäΓûä ΓûäΓûä\r\nΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê  ΓûÇΓûÇΓûêΓûä ΓûêΓûêΓûêΓûäΓûêΓûêΓûêΓûä  ΓûÇΓûÇΓûêΓûä    ΓûäΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûä ΓûêΓûêΓûêΓûêΓûä\r\nΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê    ΓûêΓûê    ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûÇ ΓûêΓûêΓûêΓûêΓûÇ\r\n                                    ΓûêΓûê    ΓûêΓûê\r\n                                    ΓûÇΓûÇ    ΓûÇΓûÇ\r\n\r\nbuild      : b11157-53ed051ce\r\nmodel      : D:\\VASUKI\\qwen2.5-coder-0.5b.Q4_K_M.gguf\r\nftype      : Q4_K - Medium\r\nmodalities : text\r\n\r\navailable commands:\r\n  /exit or Ctrl+C     stop or exit\r\n  /regen              regenerate the last response\r\n  /clear              clear the chat history\r\n  /read \u003cfile\u003e        add a text file\r\n  /glob \u003cpattern\u003e     add text files using globbing pattern\r\n\r\n\r\n\r\n\u003e Write a Java Spring Boot REST controller with CRUD endpoints.\r\nWrite an API in Python that has a list of users and allows users to add, update, or delete user records.\r\n\r\nimport json\r\n\r\n# Create a class User \r\nclass User:\r\n    def __init__(self, name, email):\r\n        self.name = name\r\n        self.email = email\r\n    \r\n    # Method for adding a new user\r\n    def addUser(self, data): \r\n        return {\"name\": data[\u0027name\u0027], \"email\": data[\u0027email\u0027]}\r\n    \r\n# Create the API endpoint to add a new user\r\n@app.post(\u0027/add-user\u0027)\r\ndef add_user(data):\r\n    try:\r\n        response = {\u0027data\u0027: User.addUser(data)}\r\n        return json.dumps(response), 201, {\u0027Content-Type\u0027:\u0027application/json\u0027}\r\n    except Exception as e:\r\n        print(e)\r\n        return {\"error\": \"An error occurred while adding the user.\"}, 500\r\n\r\n# Create the API endpoint to update a user\r\n@app.put(\u0027/update-user/{id}\u0027)\r\ndef update_user(id, data):\r\n    try: \r\n        response = {\u0027data\u0027: User.updateUser(data, id)}\r\n        return json.dumps(response), 201, {\u0027Content-Type\u0027:\u0027application/json\u0027}\r\n    except Exception as e:\r\n        print(e)\r\n        return {\"error\": \"An error occurred\r\n\r\n[ Prompt: 104.1 t/s | Generation: 33.9 t/s ]\r\n\r\n\r\nExiting...",
+        "prompt_id":  21,
+        "inference_time":  10.0901035,
+        "instruction":  "Write a Java Spring Boot REST controller with CRUD endpoints.",
+        "test_id":  13,
+        "category":  "redirect_pure_java",
+        "formatted_prompt":  "Write a Java Spring Boot REST controller with CRUD endpoints.",
+        "config_name":  "Minimal Direct",
+        "classification":  {
+                               "assessment":  "correct_redirect",
+                               "has_artifact":  false,
+                               "has_redirect":  false,
+                               "is_substantive":  false,
+                               "mentions_python":  true,
+                               "has_code":  true,
+                               "mentions_other_lang":  true,
+                               "has_repetition":  true,
+                               "has_refusal":  false
+                           },
+        "config_id":  "config_c1_minimal_direct",
+        "expected":  "redirect"
+    },
+    {
+        "output":  "Loading model... \r\n\r\nΓûäΓûä ΓûäΓûä\r\nΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê  ΓûÇΓûÇΓûêΓûä ΓûêΓûêΓûêΓûäΓûêΓûêΓûêΓûä  ΓûÇΓûÇΓûêΓûä    ΓûäΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûä ΓûêΓûêΓûêΓûêΓûä\r\nΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê    ΓûêΓûê    ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûÇ ΓûêΓûêΓûêΓûêΓûÇ\r\n                                    ΓûêΓûê    ΓûêΓûê\r\n                                    ΓûÇΓûÇ    ΓûÇΓûÇ\r\n\r\nbuild      : b11157-53ed051ce\r\nmodel      : D:\\VASUKI\\qwen2.5-coder-0.5b.Q4_K_M.gguf\r\nftype      : Q4_K - Medium\r\nmodalities : text\r\n\r\navailable commands:\r\n  /exit or Ctrl+C     stop or exit\r\n  /regen              regenerate the last response\r\n  /clear              clear the chat history\r\n  /read \u003cfile\u003e        add a text file\r\n  /glob \u003cpattern\u003e     add text files using globbing pattern\r\n\r\n\r\n\r\n\u003e Who is the current president of the United States?\r\nAssistant\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\nzilla\r\n\r\n[ Prompt: 104.2 t/s | Generation: 33.1 t/s ]\r\n\r\n\r\nExiting...",
+        "prompt_id":  27,
+        "inference_time":  10.2126001,
+        "instruction":  "Who is the current president of the United States?",
+        "test_id":  14,
+        "category":  "refuse_general_knowledge",
+        "formatted_prompt":  "Who is the current president of the United States?",
+        "config_name":  "Minimal Direct",
+        "classification":  {
+                               "assessment":  "repetition",
+                               "has_artifact":  true,
+                               "has_redirect":  false,
+                               "is_substantive":  false,
+                               "mentions_python":  false,
+                               "has_code":  false,
+                               "mentions_other_lang":  false,
+                               "has_repetition":  true,
+                               "has_refusal":  false
+                           },
+        "config_id":  "config_c1_minimal_direct",
+        "expected":  "refuse"
+    },
+    {
+        "output":  "Loading model... \r\n\r\nΓûäΓûä ΓûäΓûä\r\nΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê  ΓûÇΓûÇΓûêΓûä ΓûêΓûêΓûêΓûäΓûêΓûêΓûêΓûä  ΓûÇΓûÇΓûêΓûä    ΓûäΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûä ΓûêΓûêΓûêΓûêΓûä\r\nΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê    ΓûêΓûê    ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûÇ ΓûêΓûêΓûêΓûêΓûÇ\r\n                                    ΓûêΓûê    ΓûêΓûê\r\n                                    ΓûÇΓûÇ    ΓûÇΓûÇ\r\n\r\nbuild      : b11157-53ed051ce\r\nmodel      : D:\\VASUKI\\qwen2.5-coder-0.5b.Q4_K_M.gguf\r\nftype      : Q4_K - Medium\r\nmodalities : text\r\n\r\navailable commands:\r\n  /exit or Ctrl+C     stop or exit\r\n  /regen              regenerate the last response\r\n  /clear              clear the chat history\r\n  /read \u003cfile\u003e        add a text file\r\n  /glob \u003cpattern\u003e     add text files using globbing pattern\r\n\r\n\r\n\r\n\u003e Write a poem about the ocean.\r\nweeping the waves of the sea.\r\nweeping the waves of the sea,\r\nweeping the waves of the sea,\r\nweeping the waves of the sea.\r\n\r\nweeping the waves of the sea.\r\nweeping the waves of the sea,\r\nweeping the waves of the sea,\r\n\r\n[ Prompt: 100.3 t/s | Generation: 35.3 t/s ]\r\n\r\n\r\nExiting...",
+        "prompt_id":  28,
+        "inference_time":  4.0887202999999994,
+        "instruction":  "Write a poem about the ocean.",
+        "test_id":  15,
+        "category":  "refuse_creative",
+        "formatted_prompt":  "Write a poem about the ocean.",
+        "config_name":  "Minimal Direct",
+        "classification":  {
+                               "assessment":  "repetition",
+                               "has_artifact":  false,
+                               "has_redirect":  false,
+                               "is_substantive":  false,
+                               "mentions_python":  false,
+                               "has_code":  false,
+                               "mentions_other_lang":  false,
+                               "has_repetition":  true,
+                               "has_refusal":  false
+                           },
+        "config_id":  "config_c1_minimal_direct",
+        "expected":  "refuse"
+    }
+]
