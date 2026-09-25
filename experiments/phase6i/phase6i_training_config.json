@@ -1,0 +1,79 @@
+{
+  "experiment_id": "phase6i_20260923",
+  "base_model": "unsloth/Qwen2.5-Coder-0.5B",
+  "training_dataset": "training_clean.jsonl",
+  "dataset_size": 1073,
+  "dataset_distribution": {
+    "answer": 545,
+    "answer_pct": 50.8,
+    "redirect": 524,
+    "redirect_pct": 48.8,
+    "refuse": 4,
+    "refuse_pct": 0.4
+  },
+  "random_seed": 42,
+  "max_seq_length": 2048,
+  "lora_configuration": {
+    "method": "QLoRA",
+    "load_in_4bit": true,
+    "r": 16,
+    "lora_alpha": 16,
+    "lora_dropout": 0.0,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "bias": "none",
+    "use_rslora": false,
+    "use_gradient_checkpointing": "unsloth"
+  },
+  "training_parameters": {
+    "per_device_train_batch_size": 2,
+    "gradient_accumulation_steps": 4,
+    "effective_batch_size": 8,
+    "warmup_steps": 10,
+    "max_steps": 200,
+    "learning_rate": 0.0002,
+    "optimizer": "adamw_8bit",
+    "weight_decay": 0.01,
+    "lr_scheduler_type": "linear",
+    "fp16": true,
+    "bf16": false,
+    "tf32": false,
+    "logging_steps": 10,
+    "note": "FP16 optimized for Tesla T4 GPU"
+  },
+  "prompt_format": {
+    "template": "### Instruction:\\n{instruction}\\n\\n### Input:\\n{input}\\n\\n### Response:\\n{response}",
+    "instruction_field": "instruction",
+    "input_field": "input",
+    "response_field": "response",
+    "format_style": "alpaca"
+  },
+  "export_configuration": {
+    "save_adapter": true,
+    "save_merged_16bit": true,
+    "save_gguf_q4_k_m": true,
+    "calculate_sha256": true
+  },
+  "safety_protections": {
+    "original_model_protected": true,
+    "original_dataset_protected": true,
+    "evaluation_set_excluded": true,
+    "contamination_removed": true,
+    "overlapping_examples_removed": 9
+  },
+  "notes": [
+    "Conservative configuration for controlled experiment",
+    "200 steps ~= 1.5 epochs over 1,073 examples with batch size 8",
+    "Dataset cleaned to remove 9 overlapping examples with evaluation set",
+    "No Python questions contaminating redirect/refuse categories",
+    "74 duplicate instructions intentional for response diversity",
+    "FP16 precision optimized for Tesla T4 GPU (no BF16/TF32 support)"
+  ]
+}
