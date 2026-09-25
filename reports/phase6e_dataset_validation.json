@@ -1,0 +1,95 @@
+{
+  "statistics": {
+    "total_records": 1082,
+    "issues_count": 0,
+    "warnings_count": 1,
+    "categories": {
+      "direct_non_python": 367,
+      "direct_non_python_debug": 105,
+      "non_python_framework": 52,
+      "python_interoperability": 300,
+      "python_comparison": 225,
+      "python_conversion": 11,
+      "python_programming": 12,
+      "non_programming": 10
+    },
+    "behaviors": {
+      "redirect": 524,
+      "answer": 548,
+      "refuse": 10
+    },
+    "scope_labels": {
+      "redirect_non_python": 524,
+      "answer_python_interoperability": 300,
+      "answer_python_comparison": 225,
+      "answer_python_conversion": 11,
+      "answer_python": 12,
+      "refuse_non_programming": 10
+    }
+  },
+  "validation_results": {
+    "total_records": 1082,
+    "valid_records": 0,
+    "issues": [],
+    "warnings": [
+      {
+        "type": "duplicate_instructions",
+        "count": 74,
+        "examples": [
+          [
+            "Write a complete Rust systems programming application.",
+            13
+          ],
+          [
+            "Write a complete Rust high-performance parser.",
+            21
+          ],
+          [
+            "Write a complete C++ high-performance trading system.",
+            13
+          ],
+          [
+            "Write a complete Java banking application with Spring Boot.",
+            10
+          ],
+          [
+            "Write a complete Go microservices application.",
+            17
+          ],
+          [
+            "Write a complete C++ memory-efficient data structure library.",
+            9
+          ],
+          [
+            "Write a complete Java e-commerce platform using Spring MVC.",
+            12
+          ],
+          [
+            "Write a complete JavaScript Vue.js dashboard application.",
+            12
+          ],
+          [
+            "Write a complete C++ 3D graphics renderer.",
+            9
+          ],
+          [
+            "Write a complete Java enterprise REST API with Java EE.",
+            11
+          ]
+        ]
+      }
+    ],
+    "statistics": {
+      "duplicate_rate": {
+        "unique_instructions": 153,
+        "duplicate_instructions": 74,
+        "exact_duplicate_pairs": 158
+      },
+      "response_diversity": {
+        "unique_responses": 64,
+        "total_responses": 1082,
+        "diversity_rate": 5.914972273567468
+      }
+    }
+  }
+}
