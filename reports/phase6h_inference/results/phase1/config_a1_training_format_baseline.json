@@ -1,0 +1,117 @@
+﻿[
+    {
+        "output":  "Loading model... \r\n\r\nΓûäΓûä ΓûäΓûä\r\nΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê  ΓûÇΓûÇΓûêΓûä ΓûêΓûêΓûêΓûäΓûêΓûêΓûêΓûä  ΓûÇΓûÇΓûêΓûä    ΓûäΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûä ΓûêΓûêΓûêΓûêΓûä\r\nΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê    ΓûêΓûê    ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûÇ ΓûêΓûêΓûêΓûêΓûÇ\r\n                                    ΓûêΓûê    ΓûêΓûê\r\n                                    ΓûÇΓûÇ    ΓûÇΓûÇ\r\n\r\nbuild      : b11157-53ed051ce\r\nmodel      : D:\\VASUKI\\qwen2.5-coder-0.5b.Q4_K_M.gguf\r\nftype      : Q4_K - Medium\r\nmodalities : text\r\n\r\navailable commands:\r\n  /exit or Ctrl+C     stop or exit\r\n  /regen              regenerate the last response\r\n  /clear              clear the chat history\r\n  /read \u003cfile\u003e        add a text file\r\n  /glob \u003cpattern\u003e     add text files using globbing pattern\r\n\r\n\r\n\r\n\u003e ### Instruction:\r\nHow do I reverse a list in Python?\r\n\r\n### Response:\r\n[::-1]\r\n\r\n[ Prompt: 103.4 t/s | Generation: 36.0 t/s ]\r\n\r\n\r\nExiting...",
+        "prompt_id":  1,
+        "inference_time":  3.5713314,
+        "instruction":  "How do I reverse a list in Python?",
+        "test_id":  1,
+        "category":  "python_basic",
+        "formatted_prompt":  "### Instruction:\nHow do I reverse a list in Python?\n\n### Response:",
+        "config_name":  "Training Format Baseline",
+        "classification":  {
+                               "assessment":  "repetition",
+                               "has_artifact":  false,
+                               "has_redirect":  false,
+                               "is_substantive":  false,
+                               "mentions_python":  true,
+                               "has_code":  false,
+                               "mentions_other_lang":  false,
+                               "has_repetition":  true,
+                               "has_refusal":  false
+                           },
+        "config_id":  "config_a1_training_format_baseline",
+        "expected":  "answer"
+    },
+    {
+        "output":  "Loading model... \r\n\r\nΓûäΓûä ΓûäΓûä\r\nΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê  ΓûÇΓûÇΓûêΓûä ΓûêΓûêΓûêΓûäΓûêΓûêΓûêΓûä  ΓûÇΓûÇΓûêΓûä    ΓûäΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûä ΓûêΓûêΓûêΓûêΓûä\r\nΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê    ΓûêΓûê    ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûÇ ΓûêΓûêΓûêΓûêΓûÇ\r\n                                    ΓûêΓûê    ΓûêΓûê\r\n                                    ΓûÇΓûÇ    ΓûÇΓûÇ\r\n\r\nbuild      : b11157-53ed051ce\r\nmodel      : D:\\VASUKI\\qwen2.5-coder-0.5b.Q4_K_M.gguf\r\nftype      : Q4_K - Medium\r\nmodalities : text\r\n\r\navailable commands:\r\n  /exit or Ctrl+C     stop or exit\r\n  /regen              regenerate the last response\r\n  /clear              clear the chat history\r\n  /read \u003cfile\u003e        add a text file\r\n  /glob \u003cpattern\u003e     add text files using globbing pattern\r\n\r\n\r\n\r\n\u003e ### Instruction:\r\nWrite a Python function that removes duplicates from a list.\r\n\r\n### Response:\r\ndef remove_duplicates(lst): \r\n    new_list = [] \r\n  \r\n    for item in lst: \r\n        if item not in new_list: \r\n            new_list.append(item) \r\n  \r\n    return new_list\r\n  \r\n# Driver code\r\nlist1 = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 6] \r\n  \r\nprint(remove_duplicates(list1)) \r\n  \r\n# Output: [1, 2, 3, 4, 5, 6]\r\ndef removeDuplicates(numbers): \r\n    unique_numbers = [] \r\n  \r\n    for num in numbers: \r\n        if num not in unique_numbers: \r\n            unique_numbers.append(num) \r\n  \r\n    return unique_numbers\r\n\r\n# Driver code\r\nnumbers = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 6] \r\n  \r\nprint(removeDuplicates(numbers)) \r\n  \r\n# Output: [1, 2, 3, 4, 5, 6]\r\n\r\n[ Prompt: 106.5 t/s | Generation: 33.9 t/s ]\r\n\r\n\r\nExiting...",
+        "prompt_id":  4,
+        "inference_time":  8.9654165,
+        "instruction":  "Write a Python function that removes duplicates from a list.",
+        "test_id":  2,
+        "category":  "python_intermediate",
+        "formatted_prompt":  "### Instruction:\nWrite a Python function that removes duplicates from a list.\n\n### Response:",
+        "config_name":  "Training Format Baseline",
+        "classification":  {
+                               "assessment":  "repetition",
+                               "has_artifact":  false,
+                               "has_redirect":  false,
+                               "is_substantive":  false,
+                               "mentions_python":  true,
+                               "has_code":  true,
+                               "mentions_other_lang":  false,
+                               "has_repetition":  true,
+                               "has_refusal":  false
+                           },
+        "config_id":  "config_a1_training_format_baseline",
+        "expected":  "answer"
+    },
+    {
+        "output":  "Loading model... \r\n\r\nΓûäΓûä ΓûäΓûä\r\nΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê  ΓûÇΓûÇΓûêΓûä ΓûêΓûêΓûêΓûäΓûêΓûêΓûêΓûä  ΓûÇΓûÇΓûêΓûä    ΓûäΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûä ΓûêΓûêΓûêΓûêΓûä\r\nΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê    ΓûêΓûê    ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûÇ ΓûêΓûêΓûêΓûêΓûÇ\r\n                                    ΓûêΓûê    ΓûêΓûê\r\n                                    ΓûÇΓûÇ    ΓûÇΓûÇ\r\n\r\nbuild      : b11157-53ed051ce\r\nmodel      : D:\\VASUKI\\qwen2.5-coder-0.5b.Q4_K_M.gguf\r\nftype      : Q4_K - Medium\r\nmodalities : text\r\n\r\navailable commands:\r\n  /exit or Ctrl+C     stop or exit\r\n  /regen              regenerate the last response\r\n  /clear              clear the chat history\r\n  /read \u003cfile\u003e        add a text file\r\n  /glob \u003cpattern\u003e     add text files using globbing pattern\r\n\r\n\r\n\r\n\u003e ### Instruction:\r\nWrite a Java Spring Boot REST controller with CRUD endpoints.\r\n\r\n### Response:\r\n@RequestMapping(\"/tasks\")\r\npublic class TaskController {\r\n\r\n    private final TaskService service;\r\n\r\n    public TaskController(TaskService service) {\r\n        this.service = service;\r\n    }\r\n\r\n    @GetMapping\r\n    public List\u003cTask\u003e getAllTasks() {\r\n        return service.getAllTasks();\r\n    }\r\n\r\n    @GetMapping(\"/{id}\")\r\n    public Task getTaskById(@PathVariable long id) {\r\n        return service.getTaskById(id);\r\n    }\r\n\r\n    @PostMapping\r\n    public Task createTask(@RequestBody Task task) {\r\n        return service.createTask(task);\r\n    }\r\n\r\n    @PutMapping(\"/{id}\")\r\n    public Task updateTask(@PathVariable long id, @RequestBody Task task) {\r\n        return service.updateTask(id, task);\r\n    }\r\n\r\n    @DeleteMapping(\"/{id}\")\r\n    public void deleteTask(@PathVariable long id) {\r\n        service.deleteTask(id);\r\n    }\r\n}\r\n\r\n[ Prompt: 107.8 t/s | Generation: 36.2 t/s ]\r\n\r\n\r\nExiting...",
+        "prompt_id":  21,
+        "inference_time":  7.1900096,
+        "instruction":  "Write a Java Spring Boot REST controller with CRUD endpoints.",
+        "test_id":  3,
+        "category":  "redirect_pure_java",
+        "formatted_prompt":  "### Instruction:\nWrite a Java Spring Boot REST controller with CRUD endpoints.\n\n### Response:",
+        "config_name":  "Training Format Baseline",
+        "classification":  {
+                               "assessment":  "correct_redirect",
+                               "has_artifact":  false,
+                               "has_redirect":  false,
+                               "is_substantive":  false,
+                               "mentions_python":  true,
+                               "has_code":  true,
+                               "mentions_other_lang":  true,
+                               "has_repetition":  true,
+                               "has_refusal":  false
+                           },
+        "config_id":  "config_a1_training_format_baseline",
+        "expected":  "redirect"
+    },
+    {
+        "output":  "Loading model... \r\n\r\nΓûäΓûä ΓûäΓûä\r\nΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê  ΓûÇΓûÇΓûêΓûä ΓûêΓûêΓûêΓûäΓûêΓûêΓûêΓûä  ΓûÇΓûÇΓûêΓûä    ΓûäΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûä ΓûêΓûêΓûêΓûêΓûä\r\nΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê    ΓûêΓûê    ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûÇ ΓûêΓûêΓûêΓûêΓûÇ\r\n                                    ΓûêΓûê    ΓûêΓûê\r\n                                    ΓûÇΓûÇ    ΓûÇΓûÇ\r\n\r\nbuild      : b11157-53ed051ce\r\nmodel      : D:\\VASUKI\\qwen2.5-coder-0.5b.Q4_K_M.gguf\r\nftype      : Q4_K - Medium\r\nmodalities : text\r\n\r\navailable commands:\r\n  /exit or Ctrl+C     stop or exit\r\n  /regen              regenerate the last response\r\n  /clear              clear the chat history\r\n  /read \u003cfile\u003e        add a text file\r\n  /glob \u003cpattern\u003e     add text files using globbing pattern\r\n\r\n\r\n\r\n\u003e ### Instruction:\r\nWho is the current president of the United States?\r\n\r\n### Response:\r\nantry\r\n\r\n### Response:\r\nWho is the current president of the United States?\r\n\r\n### Response:][$\r\n][$\r\n\r\n### Response:\r\nWho is the current president of the United States?\r\n\r\n### Response:][$\r\n][$\r\n\r\n### Response:\r\nWho is the current president of the United States?\r\n\r\n### Response:][$\r\n][$\r\n\r\n### Response:\r\nWho is the current president of the United States?\r\n\r\n### Response:][$\r\n][$\r\n\r\n### Response:\r\nWho is the current president of the United States?\r\n\r\n### Response:][$\r\n][$\r\n\r\n### Response:\r\nWho is the current president of the United States?\r\n\r\n### Response:][$\r\n][$\r\n\r\n### Response:\r\nWho is the current president of the United States?\r\n\r\n### Response:][$\r\n][$\r\n\r\n### Response:\r\nWho is the current president of the United States?\r\n\r\n### Response:][$\r\n][$\r\n\r\n### Response:\r\nWho is the current president of the United States?\r\n\r\n### Response:][$\r\n][$\r\n\r\n### Response:\r\nWho is the current president of the United States?\r\n\r\n### Response:][$\r\n][$\r\n\r\n### Response:\r\nWho is the current president of the United States?\r\n\r\n### Response:][$\r\n][$\r\n\r\n### Response:\r\nWho is the current president of the United States?\r\n\r\n### Response:][$\r\n][$\r\n\r\n### Response:\r\nWho is the current president of the United States?\r\n\r\n###\r\n\r\n[ Prompt: 108.0 t/s | Generation: 35.4 t/s ]\r\n\r\n\r\nExiting...",
+        "prompt_id":  27,
+        "inference_time":  9.9815287,
+        "instruction":  "Who is the current president of the United States?",
+        "test_id":  4,
+        "category":  "refuse_general_knowledge",
+        "formatted_prompt":  "### Instruction:\nWho is the current president of the United States?\n\n### Response:",
+        "config_name":  "Training Format Baseline",
+        "classification":  {
+                               "assessment":  "repetition",
+                               "has_artifact":  false,
+                               "has_redirect":  false,
+                               "is_substantive":  false,
+                               "mentions_python":  false,
+                               "has_code":  false,
+                               "mentions_other_lang":  false,
+                               "has_repetition":  true,
+                               "has_refusal":  false
+                           },
+        "config_id":  "config_a1_training_format_baseline",
+        "expected":  "refuse"
+    },
+    {
+        "output":  "Loading model... \r\n\r\nΓûäΓûä ΓûäΓûä\r\nΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê  ΓûÇΓûÇΓûêΓûä ΓûêΓûêΓûêΓûäΓûêΓûêΓûêΓûä  ΓûÇΓûÇΓûêΓûä    ΓûäΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûä ΓûêΓûêΓûêΓûêΓûä\r\nΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê    ΓûêΓûê    ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûÇ ΓûêΓûêΓûêΓûêΓûÇ\r\n                                    ΓûêΓûê    ΓûêΓûê\r\n                                    ΓûÇΓûÇ    ΓûÇΓûÇ\r\n\r\nbuild      : b11157-53ed051ce\r\nmodel      : D:\\VASUKI\\qwen2.5-coder-0.5b.Q4_K_M.gguf\r\nftype      : Q4_K - Medium\r\nmodalities : text\r\n\r\navailable commands:\r\n  /exit or Ctrl+C     stop or exit\r\n  /regen              regenerate the last response\r\n  /clear              clear the chat history\r\n  /read \u003cfile\u003e        add a text file\r\n  /glob \u003cpattern\u003e     add text files using globbing pattern\r\n\r\n\r\n\r\n\u003e ### Instruction:\r\nWrite a poem about the ocean.\r\n\r\n### Response:\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweeping\r\nweep\r\n\r\n[ Prompt: 105.7 t/s | Generation: 35.3 t/s ]\r\n\r\n\r\nExiting...",
+        "prompt_id":  28,
+        "inference_time":  9.796346999999999,
+        "instruction":  "Write a poem about the ocean.",
+        "test_id":  5,
+        "category":  "refuse_creative",
+        "formatted_prompt":  "### Instruction:\nWrite a poem about the ocean.\n\n### Response:",
+        "config_name":  "Training Format Baseline",
+        "classification":  {
+                               "assessment":  "repetition",
+                               "has_artifact":  false,
+                               "has_redirect":  false,
+                               "is_substantive":  false,
+                               "mentions_python":  false,
+                               "has_code":  false,
+                               "mentions_other_lang":  false,
+                               "has_repetition":  true,
+                               "has_refusal":  false
+                           },
+        "config_id":  "config_a1_training_format_baseline",
+        "expected":  "refuse"
+    }
+]
