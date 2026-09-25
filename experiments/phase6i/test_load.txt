@@ -1,0 +1,4 @@
+### Instruction:
+Explain Python list comprehensions with a simple example.
+
+### Response:
