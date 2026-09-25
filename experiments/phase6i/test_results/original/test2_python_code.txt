@@ -1,0 +1,68 @@
+﻿
+
+Loading model... 
+
+ΓûäΓûä ΓûäΓûä
+ΓûêΓûê ΓûêΓûê
+ΓûêΓûê ΓûêΓûê  ΓûÇΓûÇΓûêΓûä ΓûêΓûêΓûêΓûäΓûêΓûêΓûêΓûä  ΓûÇΓûÇΓûêΓûä    ΓûäΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûä ΓûêΓûêΓûêΓûêΓûä
+ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê    ΓûêΓûê    ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê
+ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûÇ ΓûêΓûêΓûêΓûêΓûÇ
+                                    ΓûêΓûê    ΓûêΓûê
+                                    ΓûÇΓûÇ    ΓûÇΓûÇ
+
+build      : b11157-53ed051ce
+model      : D:\VASUKI\qwen2.5-coder-0.5b.Q4_K_M.gguf
+ftype      : Q4_K - Medium
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> ### Instruction:
+Write a Python function that checks whether a number is prime. Include validation and explain the code.
+
+### Response:
+def check_prime(n):
+    if n <= 1 or (n % 2 == 0 and n != 2) or (n % 3 == 0 and n != 3): 
+        return False
+
+    for i in range(5, int(math.sqrt(n))+1, 6):
+        if n % i == 0 or n % (i+2) == 0:
+            return False
+    return True
+
+
+# Example usage
+print(check_prime(7)) # Output: True
+print(check_prime(49)) # Output: False
+
+### Response:],$assistant
+ countertops
+def check_prime(n):
+    if n <= 1 or (n % 2 == 0 and n != 2) or (n % 3 == 0 and n != 3): 
+        return False
+
+    for i in range(5, int(math.sqrt(n))+1, 6):
+        if n % i == 0 or n % (i+2) == 0:
+            return False
+    return True
+
+
+# Example usage
+print(check_prime(7)) # Output: True
+print(check_prime(49)) # Output: False
+
+### Response:],$assistant
+ countertops
+def check
+
+[ Prompt: 93.3 t/s | Generation: 22.8 t/s ]
+
+
+Exiting...
