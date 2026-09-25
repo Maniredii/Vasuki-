@@ -1,0 +1,48 @@
+﻿
+
+Loading model... 
+
+ΓûäΓûä ΓûäΓûä
+ΓûêΓûê ΓûêΓûê
+ΓûêΓûê ΓûêΓûê  ΓûÇΓûÇΓûêΓûä ΓûêΓûêΓûêΓûäΓûêΓûêΓûêΓûä  ΓûÇΓûÇΓûêΓûä    ΓûäΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûä ΓûêΓûêΓûêΓûêΓûä
+ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê    ΓûêΓûê    ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê
+ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûÇ ΓûêΓûêΓûêΓûêΓûÇ
+                                    ΓûêΓûê    ΓûêΓûê
+                                    ΓûÇΓûÇ    ΓûÇΓûÇ
+
+build      : b11157-53ed051ce
+model      : D:\VASUKI\qwen2.5-coder-0.5b.Q4_K_M.gguf
+ftype      : Q4_K - Medium
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> Explain recursion in Python using a simple factorial example.
+def factorial(n):
+if n <= 1:
+return 1
+else:
+return n * factorial(n-1)
+num = 5
+print(factorial(num))  # 120
+
+def fibonacci(n):
+if n <= 1:
+return n
+else:
+return fibonacci(n-1) + fibonacci(n-2)
+num = 8
+print(fibonacci(num))  # 21
+# Recursion in Python is a technique used in programming to solve problems by defining a function that calls itself until a base case is reached. The base case is a simple case that doesnΓÇÖt require further computation, while the recursive case is a more complex situation that requires further computation. Recursion is useful for solving problems that can be broken down into smaller sub-problems, which can be solved using recursion.
+
+[ Prompt: 94.3 t/s | Generation: 37.4 t/s ]
+
+
+Exiting...
