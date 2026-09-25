@@ -1,0 +1,266 @@
+{
+  "test_configurations": [
+    {
+      "id": "config_a1_training_format_baseline",
+      "name": "Configuration A1: Training Format Baseline",
+      "description": "Use inferred Alpaca training format with default parameters",
+      "prompt_template": "### Instruction:\n{instruction}\n\n### Response:",
+      "parameters": {
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "top_k": null,
+        "repeat_penalty": 1.0,
+        "max_tokens": 256,
+        "context_size": 2048
+      },
+      "stop_sequences": [],
+      "notes": "Baseline - Phase 6B Test 1 showed 'ologist' repetition with this"
+    },
+    {
+      "id": "config_a2_format_plus_repeat",
+      "name": "Configuration A2: Format + Repeat Penalty",
+      "description": "Training format with repeat penalty to prevent loops",
+      "prompt_template": "### Instruction:\n{instruction}\n\n### Response:",
+      "parameters": {
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "top_k": null,
+        "repeat_penalty": 1.15,
+        "max_tokens": 256,
+        "context_size": 2048
+      },
+      "stop_sequences": [],
+      "notes": "Phase 6B showed repeat penalty 1.3 prevents loops - testing 1.15"
+    },
+    {
+      "id": "config_a3_format_plus_stops",
+      "name": "Configuration A3: Format + Stop Sequences",
+      "description": "Training format with appropriate stop sequences",
+      "prompt_template": "### Instruction:\n{instruction}\n\n### Response:",
+      "parameters": {
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "top_k": null,
+        "repeat_penalty": 1.0,
+        "max_tokens": 256,
+        "context_size": 2048
+      },
+      "stop_sequences": [
+        "\n### Instruction:",
+        "\n### Input:",
+        "\n### Response:",
+        "\n\n\n"
+      ],
+      "notes": "Test if format boundaries help terminate responses"
+    },
+    {
+      "id": "config_a4_format_full",
+      "name": "Configuration A4: Format + Repeat + Stops",
+      "description": "Training format with both repeat penalty and stop sequences",
+      "prompt_template": "### Instruction:\n{instruction}\n\n### Response:",
+      "parameters": {
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "top_k": null,
+        "repeat_penalty": 1.15,
+        "max_tokens": 256,
+        "context_size": 2048
+      },
+      "stop_sequences": [
+        "\n### Instruction:",
+        "\n### Input:",
+        "\n### Response:",
+        "\n\n\n"
+      ],
+      "notes": "Combined approach - best chance with training format"
+    },
+    {
+      "id": "config_a5_format_conservative",
+      "name": "Configuration A5: Format + Conservative Parameters",
+      "description": "Training format with low temp and high repeat penalty",
+      "prompt_template": "### Instruction:\n{instruction}\n\n### Response:",
+      "parameters": {
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "top_k": null,
+        "repeat_penalty": 1.2,
+        "max_tokens": 256,
+        "context_size": 2048
+      },
+      "stop_sequences": [
+        "\n### Instruction:",
+        "\n### Response:",
+        "\n\n\n"
+      ],
+      "notes": "Most conservative - prioritize consistency over creativity"
+    },
+    {
+      "id": "config_b1_embedded_scope",
+      "name": "Configuration B1: Embedded Python Scope (Minimal)",
+      "description": "Embed Python specialization directly in instruction, minimal formatting",
+      "prompt_template": "As a Python programming specialist:\n\n{instruction}",
+      "parameters": {
+        "temperature": 0.5,
+        "top_p": 0.9,
+        "top_k": null,
+        "repeat_penalty": 1.1,
+        "max_tokens": 256,
+        "context_size": 2048
+      },
+      "stop_sequences": [
+        "\n\n\n"
+      ],
+      "notes": "Test if in-prompt scoping helps without formal structure"
+    },
+    {
+      "id": "config_b2_embedded_scope_format",
+      "name": "Configuration B2: Embedded Scope + Format",
+      "description": "Python scope embedded in training format",
+      "prompt_template": "### Instruction:\nYou are Vasuki, specialized in Python programming. Answer Python questions clearly. For non-Python programming, suggest Python alternatives. For non-programming topics, politely decline.\n\n{instruction}\n\n### Response:",
+      "parameters": {
+        "temperature": 0.5,
+        "top_p": 0.9,
+        "top_k": null,
+        "repeat_penalty": 1.15,
+        "max_tokens": 256,
+        "context_size": 2048
+      },
+      "stop_sequences": [
+        "\n### Instruction:",
+        "\n### Response:",
+        "\n\n\n"
+      ],
+      "notes": "Explicit behavior guidance within training format"
+    },
+    {
+      "id": "config_b3_conversational",
+      "name": "Configuration B3: Conversational Python Assistant",
+      "description": "Natural conversation style with Python focus",
+      "prompt_template": "Question: {instruction}\n\nAnswer (Python specialist):",
+      "parameters": {
+        "temperature": 0.5,
+        "top_p": 0.9,
+        "top_k": null,
+        "repeat_penalty": 1.1,
+        "max_tokens": 256,
+        "context_size": 2048
+      },
+      "stop_sequences": [
+        "\nQuestion:",
+        "\n\n\n"
+      ],
+      "notes": "Simpler Q&A format that might match model expectations"
+    },
+    {
+      "id": "config_c1_minimal_direct",
+      "name": "Configuration C1: Minimal Direct Prompt",
+      "description": "Plain instruction with no formatting",
+      "prompt_template": "{instruction}",
+      "parameters": {
+        "temperature": 0.5,
+        "top_p": 0.9,
+        "top_k": null,
+        "repeat_penalty": 1.1,
+        "max_tokens": 256,
+        "context_size": 2048
+      },
+      "stop_sequences": [
+        "\n\n\n"
+      ],
+      "notes": "Control test - minimal intervention"
+    },
+    {
+      "id": "config_c2_minimal_conservative",
+      "name": "Configuration C2: Minimal + Conservative",
+      "description": "Plain instruction with conservative parameters",
+      "prompt_template": "{instruction}",
+      "parameters": {
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "top_k": null,
+        "repeat_penalty": 1.2,
+        "max_tokens": 256,
+        "context_size": 2048
+      },
+      "stop_sequences": [
+        "\n\n\n"
+      ],
+      "notes": "Test if parameters alone help without format"
+    },
+    {
+      "id": "config_qwen_chat",
+      "name": "Configuration Qwen: Qwen2.5 Chat Format (if applicable)",
+      "description": "Official Qwen chat template if compatible",
+      "prompt_template": "<|im_start|>system\nYou are Vasuki, a Python programming specialist.<|im_end|>\n<|im_start|>user\n{instruction}<|im_end|>\n<|im_start|>assistant\n",
+      "parameters": {
+        "temperature": 0.5,
+        "top_p": 0.9,
+        "top_k": null,
+        "repeat_penalty": 1.1,
+        "max_tokens": 256,
+        "context_size": 2048
+      },
+      "stop_sequences": [
+        "<|im_end|>",
+        "<|endoftext|>"
+      ],
+      "notes": "Test base model chat format - may not work if fine-tuning changed format"
+    }
+  ],
+  "test_phases": {
+    "phase_1_format_exploration": {
+      "description": "Test different prompt format approaches",
+      "configurations": [
+        "config_a1_training_format_baseline",
+        "config_b3_conversational",
+        "config_c1_minimal_direct",
+        "config_qwen_chat"
+      ],
+      "test_prompts": 5,
+      "categories": ["python_basic", "python_intermediate", "redirect_pure_other", "refuse_non_programming"]
+    },
+    "phase_2_parameter_tuning": {
+      "description": "Test parameter variations on best format from Phase 1",
+      "configurations": [
+        "config_a2_format_plus_repeat",
+        "config_a5_format_conservative",
+        "config_c2_minimal_conservative"
+      ],
+      "test_prompts": 5,
+      "categories": ["python_basic", "python_intermediate", "redirect_pure_other", "refuse_non_programming"]
+    },
+    "phase_3_stop_sequence_testing": {
+      "description": "Test stop sequence effectiveness",
+      "configurations": [
+        "config_a3_format_plus_stops",
+        "config_a4_format_full"
+      ],
+      "test_prompts": 5,
+      "categories": ["python_basic", "python_intermediate", "redirect_pure_other", "refuse_non_programming"]
+    },
+    "phase_4_scope_embedding": {
+      "description": "Test Python scope embedding approaches",
+      "configurations": [
+        "config_b1_embedded_scope",
+        "config_b2_embedded_scope_format"
+      ],
+      "test_prompts": 5,
+      "categories": ["python_basic", "python_intermediate", "redirect_pure_other", "refuse_non_programming"]
+    },
+    "phase_5_full_baseline": {
+      "description": "Run 30-prompt baseline on top 3 configurations",
+      "configurations": "TBD based on phases 1-4",
+      "test_prompts": 30,
+      "categories": "all"
+    }
+  },
+  "success_thresholds": {
+    "python_accuracy_minimum": 80.0,
+    "python_interop_minimum": 70.0,
+    "redirect_minimum": 50.0,
+    "refuse_minimum": 60.0,
+    "repetition_maximum": 20.0,
+    "artifact_maximum": 10.0,
+    "natural_termination_minimum": 70.0
+  }
+}
