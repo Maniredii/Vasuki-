@@ -1,0 +1,9 @@
+### Instruction:
+Find and fix the error in this Python code:
+
+numbers = [1, 2, 3, 4, 5]
+print(numbers[5])
+
+Explain the problem and provide corrected code.
+
+### Response:
