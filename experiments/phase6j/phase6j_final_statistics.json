@@ -1,0 +1,54 @@
+{
+  "dataset_name": "phase6j_final_dataset",
+  "checkpoint": "Checkpoint 5 - Final Dataset Report",
+  "training_examples_total": 593,
+  "pure_python_count": 311,
+  "interoperability_count": 22,
+  "comparison_count": 12,
+  "conversion_count": 11,
+  "redirect_count": 233,
+  "refusal_count": 4,
+  "duplicate_count_removed": 780,
+  "rejected_count": 780,
+  "manual_review_count": 11,
+  "validation_set_count": 75,
+  "training_validation_exact_overlap": 0,
+  "expected_behavior_breakdown": {
+    "answer": 356,
+    "redirect": 233,
+    "refuse": 4
+  },
+  "scope_label_breakdown": {
+    "answer_python": 311,
+    "redirect_non_python": 233,
+    "answer_python_interoperability": 22,
+    "answer_python_comparison": 12,
+    "answer_python_conversion": 11,
+    "refuse_non_programming": 4
+  },
+  "category_breakdown": {
+    "python_programming": 311,
+    "direct_non_python": 180,
+    "direct_non_python_debug": 24,
+    "non_python_framework": 29,
+    "python_interoperability": 22,
+    "python_comparison": 12,
+    "python_conversion": 11,
+    "non_programming": 4
+  },
+  "source_breakdown": {
+    "phase6j_batch01": 100,
+    "phase6j_batch02": 100,
+    "phase6j_batch03": 100,
+    "phase6e_existing_retained": 293
+  },
+  "quality_checks": {
+    "jsonl_syntax_errors": 0,
+    "duplicate_ids": 0,
+    "missing_fields": 0,
+    "contradictory_labels": 0,
+    "ast_code_syntax_errors": 0,
+    "false_redirects": 0,
+    "training_validation_overlap": 0
+  }
+}
