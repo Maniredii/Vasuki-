@@ -1,0 +1,1 @@
+Explain what a Python variable is to a beginner. Give one simple example.
