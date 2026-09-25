@@ -1,0 +1,47 @@
+{
+  "batch_id": "phase6j_batch02",
+  "total_examples": 100,
+  "id_range": "phase6j_000101 - phase6j_000200",
+  "target_count": 100,
+  "achievement_rate": "100.0%",
+  "expected_behavior_distribution": {
+    "answer": 100,
+    "redirect": 0,
+    "refuse": 0
+  },
+  "scope_label_distribution": {
+    "answer_python": 100
+  },
+  "category_distribution": {
+    "python_programming": 100
+  },
+  "area_breakdown": {
+    "pandas": 15,
+    "numpy": 13,
+    "matplotlib_seaborn": 12,
+    "fastapi": 15,
+    "flask": 15,
+    "django": 15,
+    "asyncio": 15
+  },
+  "difficulty_breakdown": {
+    "beginner": 24,
+    "intermediate": 76
+  },
+  "code_snippet_presence": {
+    "count": 99,
+    "percentage": "99.0%"
+  },
+  "average_lengths": {
+    "instruction_chars": 86.8,
+    "response_chars": 701.5
+  },
+  "exact_duplicates": 0,
+  "cross_batch_duplicates_vs_batch01": 0,
+  "near_duplicate_pairs_above_80pct": 0,
+  "cross_batch_near_duplicates_above_80pct": 0,
+  "syntax_validation": {
+    "all_jsonl_valid": true,
+    "ast_code_syntax_errors": 0
+  }
+}
