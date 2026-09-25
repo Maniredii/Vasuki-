@@ -1,0 +1,33 @@
+﻿
+
+Loading model... 
+
+ΓûäΓûä ΓûäΓûä
+ΓûêΓûê ΓûêΓûê
+ΓûêΓûê ΓûêΓûê  ΓûÇΓûÇΓûêΓûä ΓûêΓûêΓûêΓûäΓûêΓûêΓûêΓûä  ΓûÇΓûÇΓûêΓûä    ΓûäΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûä ΓûêΓûêΓûêΓûêΓûä
+ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê    ΓûêΓûê    ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê
+ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûÇ ΓûêΓûêΓûêΓûêΓûÇ
+                                    ΓûêΓûê    ΓûêΓûê
+                                    ΓûÇΓûÇ    ΓûÇΓûÇ
+
+build      : b11157-53ed051ce
+model      : D:\VASUKI\qwen2.5-coder-0.5b.Q4_K_M.gguf
+ftype      : Q4_K - Medium
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> Explain what a Python variable is to a beginner. Give one simple example.
+Python is a lightweight, interpreted and high-level programming language that is widely used for data analysis, machine learning, artificial intelligence, web development, and scientific computing. A variable is a data structure in Python that holds a value. Variables are used to store and manipulate data, and can be used to store mathematical, logical, or text values. For example, a variable name can be used to store a number, a string, a list of numbers, or an array of numbers. Variables are defined using the assignment operator =, and can be assigned any type of value, such as a string, number, or object. Variables can be accessed and modified using various operators, such as +=, -=, *=, /=, etc. For example, if you have a variable name and you want to add 10 to it, you can do so using +=.
+
+[ Prompt: 109.7 t/s | Generation: 30.8 t/s ]
+
+
+Exiting...
