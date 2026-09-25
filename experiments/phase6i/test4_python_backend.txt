@@ -1,0 +1,4 @@
+### Instruction:
+Create a simple FastAPI GET endpoint that returns a JSON message. Explain how to run it.
+
+### Response:
