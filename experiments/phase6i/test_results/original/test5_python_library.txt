@@ -1,0 +1,42 @@
+﻿
+
+Loading model... 
+
+ΓûäΓûä ΓûäΓûä
+ΓûêΓûê ΓûêΓûê
+ΓûêΓûê ΓûêΓûê  ΓûÇΓûÇΓûêΓûä ΓûêΓûêΓûêΓûäΓûêΓûêΓûêΓûä  ΓûÇΓûÇΓûêΓûä    ΓûäΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûä ΓûêΓûêΓûêΓûêΓûä
+ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê    ΓûêΓûê    ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê
+ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûÇ ΓûêΓûêΓûêΓûêΓûÇ
+                                    ΓûêΓûê    ΓûêΓûê
+                                    ΓûÇΓûÇ    ΓûÇΓûÇ
+
+build      : b11157-53ed051ce
+model      : D:\VASUKI\qwen2.5-coder-0.5b.Q4_K_M.gguf
+ftype      : Q4_K - Medium
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> ### Instruction:
+Explain how to read a CSV file using pandas and display the first five rows.
+
+### Response:
+import pandas as pd
+
+# Read in data from csv file
+data = pd.read_csv('my_data.csv')
+
+# Display the first 5 rows of the dataframe
+print(data.head())
+
+[ Prompt: 90.1 t/s | Generation: 20.8 t/s ]
+
+
+Exiting...
