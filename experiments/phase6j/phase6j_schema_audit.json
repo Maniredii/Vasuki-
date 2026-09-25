@@ -1,0 +1,14 @@
+{
+  "train": {
+    "total_records": 593,
+    "passing_records": 593,
+    "failing_records": 0,
+    "failures": []
+  },
+  "val": {
+    "total_records": 75,
+    "passing_records": 75,
+    "failing_records": 0,
+    "failures": []
+  }
+}
