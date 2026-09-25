@@ -1,0 +1,30 @@
+{"id": 1, "category": "python_basic", "instruction": "How do I reverse a list in Python?", "expected": "answer"}
+{"id": 2, "category": "python_basic", "instruction": "Explain the difference between a list and a tuple in Python.", "expected": "answer"}
+{"id": 3, "category": "python_basic", "instruction": "What is a Python dictionary and how do I use it?", "expected": "answer"}
+{"id": 4, "category": "python_intermediate", "instruction": "Write a Python function that removes duplicates from a list.", "expected": "answer"}
+{"id": 5, "category": "python_intermediate", "instruction": "Explain the difference between __str__ and __repr__ methods in Python classes.", "expected": "answer"}
+{"id": 6, "category": "python_intermediate", "instruction": "How do I handle exceptions in Python using try-except?", "expected": "answer"}
+{"id": 7, "category": "python_advanced", "instruction": "Write a Python decorator that measures function execution time.", "expected": "answer"}
+{"id": 8, "category": "python_advanced", "instruction": "Explain Python's Global Interpreter Lock (GIL) and its impact on threading.", "expected": "answer"}
+{"id": 9, "category": "python_file_io", "instruction": "How do I read a CSV file in Python?", "expected": "answer"}
+{"id": 10, "category": "python_file_io", "instruction": "Write Python code to read and write JSON files.", "expected": "answer"}
+{"id": 11, "category": "python_web", "instruction": "How do I create a simple REST API using Flask?", "expected": "answer"}
+{"id": 12, "category": "python_web", "instruction": "Explain how to make HTTP requests in Python using the requests library.", "expected": "answer"}
+{"id": 13, "category": "python_database", "instruction": "How do I connect to a PostgreSQL database from Python?", "expected": "answer"}
+{"id": 14, "category": "python_debug", "instruction": "Why am I getting 'list index out of range' error in Python?", "expected": "answer"}
+{"id": 15, "category": "interop_python_calling", "instruction": "How can I call a REST API written in Java from my Python application?", "expected": "answer"}
+{"id": 16, "category": "interop_python_calling", "instruction": "How do I use a C library from Python using ctypes?", "expected": "answer"}
+{"id": 17, "category": "interop_other_calling_python", "instruction": "How can I embed Python scripts in a C++ application?", "expected": "answer"}
+{"id": 18, "category": "comparison_with_python", "instruction": "Compare Python's asyncio with JavaScript's async/await patterns.", "expected": "answer"}
+{"id": 19, "category": "comparison_with_python", "instruction": "What are the differences between Python generators and JavaScript generator functions?", "expected": "answer"}
+{"id": 20, "category": "conversion_to_python", "instruction": "Convert this JavaScript loop to Python: for(let i=0; i<10; i++) { console.log(i); }", "expected": "answer"}
+{"id": 21, "category": "redirect_pure_java", "instruction": "Write a Java Spring Boot REST controller with CRUD endpoints.", "expected": "redirect"}
+{"id": 22, "category": "redirect_pure_cpp", "instruction": "Implement a binary search tree in C++ with insert and delete operations.", "expected": "redirect"}
+{"id": 23, "category": "redirect_pure_js", "instruction": "How do I create a React component with hooks?", "expected": "redirect"}
+{"id": 24, "category": "redirect_pure_rust", "instruction": "Explain Rust's ownership system and borrowing rules.", "expected": "redirect"}
+{"id": 25, "category": "redirect_database", "instruction": "Write a SQL query to join three tables and calculate aggregates.", "expected": "redirect"}
+{"id": 26, "category": "redirect_mobile", "instruction": "How do I build an Android app using Kotlin?", "expected": "redirect"}
+{"id": 27, "category": "refuse_general_knowledge", "instruction": "Who is the current president of the United States?", "expected": "refuse"}
+{"id": 28, "category": "refuse_creative", "instruction": "Write a poem about the ocean.", "expected": "refuse"}
+{"id": 29, "category": "refuse_trivia", "instruction": "What is the capital of France?", "expected": "refuse"}
+{"id": 30, "category": "refuse_advice", "instruction": "How can I improve my public speaking skills?", "expected": "refuse"}
