@@ -1,0 +1,4 @@
+### Instruction:
+Explain how to read a CSV file using pandas and display the first five rows.
+
+### Response:
