@@ -1,0 +1,117 @@
+﻿[
+    {
+        "output":  "Loading model... \r\n\r\nΓûäΓûä ΓûäΓûä\r\nΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê  ΓûÇΓûÇΓûêΓûä ΓûêΓûêΓûêΓûäΓûêΓûêΓûêΓûä  ΓûÇΓûÇΓûêΓûä    ΓûäΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûä ΓûêΓûêΓûêΓûêΓûä\r\nΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê    ΓûêΓûê    ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûÇ ΓûêΓûêΓûêΓûêΓûÇ\r\n                                    ΓûêΓûê    ΓûêΓûê\r\n                                    ΓûÇΓûÇ    ΓûÇΓûÇ\r\n\r\nbuild      : b11157-53ed051ce\r\nmodel      : D:\\VASUKI\\qwen2.5-coder-0.5b.Q4_K_M.gguf\r\nftype      : Q4_K - Medium\r\nmodalities : text\r\n\r\navailable commands:\r\n  /exit or Ctrl+C     stop or exit\r\n  /regen              regenerate the last response\r\n  /clear              clear the chat history\r\n  /read \u003cfile\u003e        add a text file\r\n  /glob \u003cpattern\u003e     add text files using globbing pattern\r\n\r\n\r\n\r\n\u003e \u003c|im_start|\u003esystem\r\nYou are Vasuki, a Python programming specialist.\u003c|im_end|\u003e\r\n\u003c|im_start|\u003euser\r\nHow do I reverse a list in Python?\u003c|im_end|\u003e\r\n\u003c|im_start|\u003eassistant\r\n\r\nI am a python program that can print the largest number from a list of numbers..LoadScene(\"data.txt\") # Load data from file readlines() = [\"1\", \"2\", \"3\"] for num in readlines(): print(num) # Print each element in list print(max(readlines())) # Print largest number\r\n typingsSlinkyuser\r\n typingsSlinkyassistant typingsSlinkyassistant typingsSlinkyassistant typingsSlinkyassistanttypingsUserInput\r\n typingsSlinkyassistanttypingsUserInput\r\n typingsSlinkyassistanttypingsUserInputtypescript\r\n typingsSlinkyassistanttypingsUserInputtypescripttypescript\r\n typingsSlinkyassistanttypingsUserInputjavascript\r\n typingsSlinkyassistanttypingsUserInputjavascriptjavascript\r\n typingsSlinkyassistanttypingsUserInputjavaScript\r\n typingsSlinkyassistanttypingsUserInputjavaScriptjavaScript\r\n typingsSlinkyassistanttypingsUserInputpython\r\n typingsSlinkyassistanttypingsUserInputpythonpythonpython\r\n typingsSlinkyassistanttypingsUserInputjavascript\r\n typingsSlinkyassistanttypingsUserInputjavascriptjavascriptjavascript\r\n typingsSlinkyassistanttypingsUserInputtypescript\r\n typingsSlinkyassistanttypingsUserInputtypescripttypescripttypescript\r\n typingsSlinkyassistanttypingsUserInputtypescripttypescripttypescripttypescript\r\n typingsSlinkyassistanttypingsUserInputjavaScript\r\n typingsSlinkyassistanttypingsUserInputjavaScriptjavaScriptjavaScript\r\n typingsSlinkyassistanttypingsUserInputpython\r\n typingsSlinkyassistanttypingsUserInputpythonpythonpythonpython\r\n typingsSlinkyassistanttypingsUserInputjavascript\r\n typingsSlinkyassistanttypingsUserInputjavascriptjavascriptjavascriptjavascript\r\n typingsSlinkyassistanttypingsUserInputtypescript\r\n typingsSlinkyassistanttypings\r\n\r\n[ Prompt: 110.9 t/s | Generation: 33.0 t/s ]\r\n\r\n\r\nExiting...",
+        "prompt_id":  1,
+        "inference_time":  10.4280711,
+        "instruction":  "How do I reverse a list in Python?",
+        "test_id":  16,
+        "category":  "python_basic",
+        "formatted_prompt":  "\u003c|im_start|\u003esystem\nYou are Vasuki, a Python programming specialist.\u003c|im_end|\u003e\n\u003c|im_start|\u003euser\nHow do I reverse a list in Python?\u003c|im_end|\u003e\n\u003c|im_start|\u003eassistant\n",
+        "config_name":  "Qwen Chat Format",
+        "classification":  {
+                               "assessment":  "repetition",
+                               "has_artifact":  false,
+                               "has_redirect":  false,
+                               "is_substantive":  false,
+                               "mentions_python":  true,
+                               "has_code":  true,
+                               "mentions_other_lang":  true,
+                               "has_repetition":  true,
+                               "has_refusal":  false
+                           },
+        "config_id":  "config_qwen_chat",
+        "expected":  "answer"
+    },
+    {
+        "output":  "Loading model... \r\n\r\nΓûäΓûä ΓûäΓûä\r\nΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê  ΓûÇΓûÇΓûêΓûä ΓûêΓûêΓûêΓûäΓûêΓûêΓûêΓûä  ΓûÇΓûÇΓûêΓûä    ΓûäΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûä ΓûêΓûêΓûêΓûêΓûä\r\nΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê    ΓûêΓûê    ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûÇ ΓûêΓûêΓûêΓûêΓûÇ\r\n                                    ΓûêΓûê    ΓûêΓûê\r\n                                    ΓûÇΓûÇ    ΓûÇΓûÇ\r\n\r\nbuild      : b11157-53ed051ce\r\nmodel      : D:\\VASUKI\\qwen2.5-coder-0.5b.Q4_K_M.gguf\r\nftype      : Q4_K - Medium\r\nmodalities : text\r\n\r\navailable commands:\r\n  /exit or Ctrl+C     stop or exit\r\n  /regen              regenerate the last response\r\n  /clear              clear the chat history\r\n  /read \u003cfile\u003e        add a text file\r\n  /glob \u003cpattern\u003e     add text files using globbing pattern\r\n\r\n\r\n\r\n\u003e \u003c|im_start|\u003esystem\r\nYou are Vasuki, a Python programming specialist.\u003c|im_end|\u003e\r\n\u003c|im_start|\u003euser\r\nWrite a Python function that removes duplicates from a list.\u003c|im_end|\u003e\r\n\u003c|im_start|\u003eassistant\r\n\r\ndef remove_duplicates(lst): \r\n    result = [] \r\n    for item in lst: \r\n        if item not in result: \r\n            result.append(item) \r\n    return result \r\n  \r\nlst = [1,2,3,4,5,6,7] \r\nprint(remove_duplicates(lst)) # Output: [1, 2, 3, 4, 5, 6, 7]\r\n\r\nlst = [\u0027a\u0027, \u0027b\u0027, \u0027c\u0027, \u0027d\u0027, \u0027e\u0027] \r\nprint(remove_duplicates(lst)) # Output: [\u0027a\u0027, \u0027b\u0027, \u0027c\u0027, \u0027d\u0027, \u0027e\u0027]\r\n\r\nlst = [\u0027apple\u0027, \u0027banana\u0027, \u0027orange\u0027, \u0027grape\u0027] \r\nprint(remove_duplicates(lst)) # Output: [\u0027apple\u0027, \u0027banana\u0027, \u0027orange\u0027, \u0027grape\u0027]\r\n\r\n[ Prompt: 111.5 t/s | Generation: 33.9 t/s ]\r\n\r\n\r\nExiting...",
+        "prompt_id":  4,
+        "inference_time":  7.4664823999999994,
+        "instruction":  "Write a Python function that removes duplicates from a list.",
+        "test_id":  17,
+        "category":  "python_intermediate",
+        "formatted_prompt":  "\u003c|im_start|\u003esystem\nYou are Vasuki, a Python programming specialist.\u003c|im_end|\u003e\n\u003c|im_start|\u003euser\nWrite a Python function that removes duplicates from a list.\u003c|im_end|\u003e\n\u003c|im_start|\u003eassistant\n",
+        "config_name":  "Qwen Chat Format",
+        "classification":  {
+                               "assessment":  "repetition",
+                               "has_artifact":  false,
+                               "has_redirect":  false,
+                               "is_substantive":  false,
+                               "mentions_python":  true,
+                               "has_code":  true,
+                               "mentions_other_lang":  false,
+                               "has_repetition":  true,
+                               "has_refusal":  false
+                           },
+        "config_id":  "config_qwen_chat",
+        "expected":  "answer"
+    },
+    {
+        "output":  "Loading model... \r\n\r\nΓûäΓûä ΓûäΓûä\r\nΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê  ΓûÇΓûÇΓûêΓûä ΓûêΓûêΓûêΓûäΓûêΓûêΓûêΓûä  ΓûÇΓûÇΓûêΓûä    ΓûäΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûä ΓûêΓûêΓûêΓûêΓûä\r\nΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê    ΓûêΓûê    ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûÇ ΓûêΓûêΓûêΓûêΓûÇ\r\n                                    ΓûêΓûê    ΓûêΓûê\r\n                                    ΓûÇΓûÇ    ΓûÇΓûÇ\r\n\r\nbuild      : b11157-53ed051ce\r\nmodel      : D:\\VASUKI\\qwen2.5-coder-0.5b.Q4_K_M.gguf\r\nftype      : Q4_K - Medium\r\nmodalities : text\r\n\r\navailable commands:\r\n  /exit or Ctrl+C     stop or exit\r\n  /regen              regenerate the last response\r\n  /clear              clear the chat history\r\n  /read \u003cfile\u003e        add a text file\r\n  /glob \u003cpattern\u003e     add text files using globbing pattern\r\n\r\n\r\n\r\n\u003e \u003c|im_start|\u003esystem\r\nYou are Vasuki, a Python programming specialist.\u003c|im_end|\u003e\r\n\u003c|im_start|\u003euser\r\nWrite a Java Spring Boot REST controller with CRUD endpoints.\u003c|im_end|\u003e\r\n\u003c|im_start|\u003eassistant\r\n\r\n@RestController\r\n@RequestMapping(\"/users\")\r\npublic class UserApiController {\r\n private final UserService userService;\r\n\r\n public UserApiController(UserService userService) { this.userService = userService; }\r\n\r\n @GetMapping()\r\n public List\u003cUser\u003e getAllUsers() {\r\n return userService.getAllUsers();\r\n }\r\n \r\n @PostMapping()\r\n public User createUser(@RequestBody User user) {\r\n return userService.createUser(user);\r\n }\r\n}\r\nlobalsystem\r\n/api/v1/users/\r\n @\"\r\n @\"\r\n\r\n urlpatterns = [\r\n path(\u0027users\u0027, views.UserViewSet.as_view(), name=\u0027user_list\u0027),\r\n # Other routes here...\r\n ]\r\n@@ -58,7 +60,6 @@\r\n \r\n @api_view([\u0027GET\u0027])\r\n def get_user(request):\r\n user_id = request.GET.get(\u0027id\u0027)\r\n if not user_id:\r\n return Response.status(400).json({\u0027error\u0027: \u0027User ID is required\u0027})\r\n\r\n try:\r\n user = User.objects.get(pk=user_id)\r\n except User.DoesNotExist:\r\n return Response.status(404).json({\u0027error\u0027: \u0027User does not exist\u0027})\r\n \r\n return Response(status=200)\r\n\r\n@api_view([\u0027POST\u0027])\r\ndef create_user(request):\r\n data = request.data\r\n user = User.objects.create(\r\n username=data[\u0027username\u0027],\r\n email=data[\u0027email\u0027],\r\n password=data[\u0027password\u0027]\r\n )\r\n return Response(status=201)\r\n@@ -73,6 +74,7\r\n\r\n[ Prompt: 109.5 t/s | Generation: 32.7 t/s ]\r\n\r\n\r\nExiting...",
+        "prompt_id":  21,
+        "inference_time":  10.509756999999999,
+        "instruction":  "Write a Java Spring Boot REST controller with CRUD endpoints.",
+        "test_id":  18,
+        "category":  "redirect_pure_java",
+        "formatted_prompt":  "\u003c|im_start|\u003esystem\nYou are Vasuki, a Python programming specialist.\u003c|im_end|\u003e\n\u003c|im_start|\u003euser\nWrite a Java Spring Boot REST controller with CRUD endpoints.\u003c|im_end|\u003e\n\u003c|im_start|\u003eassistant\n",
+        "config_name":  "Qwen Chat Format",
+        "classification":  {
+                               "assessment":  "correct_redirect",
+                               "has_artifact":  false,
+                               "has_redirect":  false,
+                               "is_substantive":  false,
+                               "mentions_python":  true,
+                               "has_code":  true,
+                               "mentions_other_lang":  true,
+                               "has_repetition":  true,
+                               "has_refusal":  false
+                           },
+        "config_id":  "config_qwen_chat",
+        "expected":  "redirect"
+    },
+    {
+        "output":  "Loading model... \r\n\r\nΓûäΓûä ΓûäΓûä\r\nΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê  ΓûÇΓûÇΓûêΓûä ΓûêΓûêΓûêΓûäΓûêΓûêΓûêΓûä  ΓûÇΓûÇΓûêΓûä    ΓûäΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûä ΓûêΓûêΓûêΓûêΓûä\r\nΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê    ΓûêΓûê    ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûÇ ΓûêΓûêΓûêΓûêΓûÇ\r\n                                    ΓûêΓûê    ΓûêΓûê\r\n                                    ΓûÇΓûÇ    ΓûÇΓûÇ\r\n\r\nbuild      : b11157-53ed051ce\r\nmodel      : D:\\VASUKI\\qwen2.5-coder-0.5b.Q4_K_M.gguf\r\nftype      : Q4_K - Medium\r\nmodalities : text\r\n\r\navailable commands:\r\n  /exit or Ctrl+C     stop or exit\r\n  /regen              regenerate the last response\r\n  /clear              clear the chat history\r\n  /read \u003cfile\u003e        add a text file\r\n  /glob \u003cpattern\u003e     add text files using globbing pattern\r\n\r\n\r\n\r\n\u003e \u003c|im_start|\u003esystem\r\nYou are Vasuki, a Python programming specialist.\u003c|im_end|\u003e\r\n\u003c|im_start|\u003euser\r\nWho is the current president of the United States?\u003c|im_end|\u003e\r\n\u003c|im_start|\u003eassistant\r\n\r\nWhat\u0027s the capital of India? zoektapat\r\n zoektapat\r\nWho invented the computer? zoektapat\r\n zoektapat\r\nWho was the first president of India? zoektapat\r\nzoektap\r\nWho wrote the book \"The Complete Guide to Python Programming\"? zoektapat\r\nzoektap\r\nWho is the president of China? zoektapat\r\nzoektap\r\nWho invented the telephone? zoektapat\r\nzoektap\r\nWhat\u0027s the capital of Brazil? zoektapat\r\nzoektap\r\nWho invented the computer was a British scientist and inventor? zoektapat\r\nzoektap\r\nWhat\u0027s the capital of India? zoektapat\r\nzoektap\r\nWho won the Nobel Prize in Literature? zoektapat\r\nzoektap\r\nWho is the president of China? zoektapat\r\nzoektap\r\nWhat\u0027s the capital of Brazil? zoektapat\r\nzoektap\r\nWho invented the telephone was a British scientist and inventor? zoektapat\r\nzoektap\r\nWhat\u0027s the capital of India? zoektapat\r\nzoektap\r\nWho won the Nobel Prize in Literature? zoektapat\r\nzoektap\r\nWho is the president of China? zoektapat\r\nzoektap\r\nWhat\u0027s the capital of Brazil? zoektapat\r\nzoektap\r\nWho invented the computer was a British scientist\r\n\r\n[ Prompt: 112.1 t/s | Generation: 31.2 t/s ]\r\n\r\n\r\nExiting...",
+        "prompt_id":  27,
+        "inference_time":  10.8605764,
+        "instruction":  "Who is the current president of the United States?",
+        "test_id":  19,
+        "category":  "refuse_general_knowledge",
+        "formatted_prompt":  "\u003c|im_start|\u003esystem\nYou are Vasuki, a Python programming specialist.\u003c|im_end|\u003e\n\u003c|im_start|\u003euser\nWho is the current president of the United States?\u003c|im_end|\u003e\n\u003c|im_start|\u003eassistant\n",
+        "config_name":  "Qwen Chat Format",
+        "classification":  {
+                               "assessment":  "repetition",
+                               "has_artifact":  true,
+                               "has_redirect":  false,
+                               "is_substantive":  false,
+                               "mentions_python":  true,
+                               "has_code":  false,
+                               "mentions_other_lang":  false,
+                               "has_repetition":  true,
+                               "has_refusal":  false
+                           },
+        "config_id":  "config_qwen_chat",
+        "expected":  "refuse"
+    },
+    {
+        "output":  "Loading model... \r\n\r\nΓûäΓûä ΓûäΓûä\r\nΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê  ΓûÇΓûÇΓûêΓûä ΓûêΓûêΓûêΓûäΓûêΓûêΓûêΓûä  ΓûÇΓûÇΓûêΓûä    ΓûäΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûä ΓûêΓûêΓûêΓûêΓûä\r\nΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê    ΓûêΓûê    ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûÇ ΓûêΓûêΓûêΓûêΓûÇ\r\n                                    ΓûêΓûê    ΓûêΓûê\r\n                                    ΓûÇΓûÇ    ΓûÇΓûÇ\r\n\r\nbuild      : b11157-53ed051ce\r\nmodel      : D:\\VASUKI\\qwen2.5-coder-0.5b.Q4_K_M.gguf\r\nftype      : Q4_K - Medium\r\nmodalities : text\r\n\r\navailable commands:\r\n  /exit or Ctrl+C     stop or exit\r\n  /regen              regenerate the last response\r\n  /clear              clear the chat history\r\n  /read \u003cfile\u003e        add a text file\r\n  /glob \u003cpattern\u003e     add text files using globbing pattern\r\n\r\n\r\n\r\n\u003e \u003c|im_start|\u003esystem\r\nYou are Vasuki, a Python programming specialist.\u003c|im_end|\u003e\r\n\u003c|im_start|\u003euser\r\nWrite a poem about the ocean.\u003c|im_end|\u003e\r\n\u003c|im_start|\u003eassistant\r\n\r\nI am a lightweight AI designed exclusively for Python programming. I cannot answer this. Bear with me.\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\nForgeryToken\r\n\r\n[ Prompt: 102.3 t/s | Generation: 31.1 t/s ]\r\n\r\n\r\nExiting...",
+        "prompt_id":  28,
+        "inference_time":  11.1499043,
+        "instruction":  "Write a poem about the ocean.",
+        "test_id":  20,
+        "category":  "refuse_creative",
+        "formatted_prompt":  "\u003c|im_start|\u003esystem\nYou are Vasuki, a Python programming specialist.\u003c|im_end|\u003e\n\u003c|im_start|\u003euser\nWrite a poem about the ocean.\u003c|im_end|\u003e\n\u003c|im_start|\u003eassistant\n",
+        "config_name":  "Qwen Chat Format",
+        "classification":  {
+                               "assessment":  "correct_refuse",
+                               "has_artifact":  false,
+                               "has_redirect":  true,
+                               "is_substantive":  false,
+                               "mentions_python":  true,
+                               "has_code":  false,
+                               "mentions_other_lang":  false,
+                               "has_repetition":  true,
+                               "has_refusal":  true
+                           },
+        "config_id":  "config_qwen_chat",
+        "expected":  "refuse"
+    }
+]
