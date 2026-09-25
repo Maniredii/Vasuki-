@@ -1,0 +1,36 @@
+﻿
+
+Loading model... 
+
+ΓûäΓûä ΓûäΓûä
+ΓûêΓûê ΓûêΓûê
+ΓûêΓûê ΓûêΓûê  ΓûÇΓûÇΓûêΓûä ΓûêΓûêΓûêΓûäΓûêΓûêΓûêΓûä  ΓûÇΓûÇΓûêΓûä    ΓûäΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûä ΓûêΓûêΓûêΓûêΓûä
+ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê    ΓûêΓûê    ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê
+ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûÇ ΓûêΓûêΓûêΓûêΓûÇ
+                                    ΓûêΓûê    ΓûêΓûê
+                                    ΓûÇΓûÇ    ΓûÇΓûÇ
+
+build      : b11157-53ed051ce
+model      : D:\VASUKI\vasuki_phase6i.Q4_K_M.gguf
+ftype      : Q4_K - Medium
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> ### Instruction:
+Explain how to read a CSV file using pandas and display the first five rows.
+
+### Response:
+I focus on Python development. I can show you howto create this Python approach with a better solution. Let me work through a Python alternative?
+
+[ Prompt: 67.3 t/s | Generation: 24.3 t/s ]
+
+
+Exiting...
