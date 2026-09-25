@@ -1,0 +1,36 @@
+﻿
+
+Loading model... 
+
+ΓûäΓûä ΓûäΓûä
+ΓûêΓûê ΓûêΓûê
+ΓûêΓûê ΓûêΓûê  ΓûÇΓûÇΓûêΓûä ΓûêΓûêΓûêΓûäΓûêΓûêΓûêΓûä  ΓûÇΓûÇΓûêΓûä    ΓûäΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûä ΓûêΓûêΓûêΓûêΓûä
+ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê    ΓûêΓûê    ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê
+ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûÇ ΓûêΓûêΓûêΓûêΓûÇ
+                                    ΓûêΓûê    ΓûêΓûê
+                                    ΓûÇΓûÇ    ΓûÇΓûÇ
+
+build      : b11157-53ed051ce
+model      : D:\VASUKI\vasuki_phase6i.Q4_K_M.gguf
+ftype      : Q4_K - Medium
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> ### Instruction:
+Write a short poem about the ocean.
+
+### Response:
+I focus on Python development. I can show you how to build this with Python instead. Would you like me to demonstrate a Python approach? Just let me know!
+
+[ Prompt: 87.1 t/s | Generation: 18.3 t/s ]
+
+
+Exiting...
