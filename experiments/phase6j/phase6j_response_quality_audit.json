@@ -1,0 +1,687 @@
+{
+  "exact_duplicate_responses_count": 231,
+  "exact_duplicate_groups": [
+    {
+      "response_preview": "I can help you accomplish this goal using Python. Would you like me to demonstrate a Python approach?",
+      "count": 23,
+      "record_ids": [
+        "phase6e_000002",
+        "phase6e_000023",
+        "phase6e_000025",
+        "phase6e_000027",
+        "phase6e_000034",
+        "phase6e_000058",
+        "phase6e_000063",
+        "phase6e_000070",
+        "phase6e_000071",
+        "phase6e_000076",
+        "phase6e_000079",
+        "phase6e_000096",
+        "phase6e_000113",
+        "phase6e_000127",
+        "phase6e_000138",
+        "phase6e_000147",
+        "phase6e_000167",
+        "phase6e_000180",
+        "phase6e_000186",
+        "phase6e_000187",
+        "phase6e_000190",
+        "phase6e_000239",
+        "phase6e_000251"
+      ]
+    },
+    {
+      "response_preview": "I focus on Python development. I can show you how to implement this using Python frameworks and libraries.",
+      "count": 26,
+      "record_ids": [
+        "phase6e_000003",
+        "phase6e_000005",
+        "phase6e_000011",
+        "phase6e_000012",
+        "phase6e_000020",
+        "phase6e_000024",
+        "phase6e_000030",
+        "phase6e_000040",
+        "phase6e_000047",
+        "phase6e_000051",
+        "phase6e_000061",
+        "phase6e_000094",
+        "phase6e_000097",
+        "phase6e_000111",
+        "phase6e_000134",
+        "phase6e_000146",
+        "phase6e_000150",
+        "phase6e_000164",
+        "phase6e_000172",
+        "phase6e_000185",
+        "phase6e_000213",
+        "phase6e_000216",
+        "phase6e_000220",
+        "phase6e_000232",
+        "phase6e_000300",
+        "phase6e_000312"
+      ]
+    },
+    {
+      "response_preview": "I focus exclusively on Python development. I can help you create an equivalent Python solution.",
+      "count": 24,
+      "record_ids": [
+        "phase6e_000004",
+        "phase6e_000007",
+        "phase6e_000009",
+        "phase6e_000015",
+        "phase6e_000026",
+        "phase6e_000035",
+        "phase6e_000072",
+        "phase6e_000073",
+        "phase6e_000095",
+        "phase6e_000100",
+        "phase6e_000148",
+        "phase6e_000153",
+        "phase6e_000159",
+        "phase6e_000188",
+        "phase6e_000197",
+        "phase6e_000201",
+        "phase6e_000203",
+        "phase6e_000205",
+        "phase6e_000219",
+        "phase6e_000234",
+        "phase6e_000277",
+        "phase6e_000307",
+        "phase6e_000341",
+        "phase6e_000351"
+      ]
+    },
+    {
+      "response_preview": "I specialize in Python. Let me show you how to build this with Python tools and frameworks.",
+      "count": 24,
+      "record_ids": [
+        "phase6e_000008",
+        "phase6e_000013",
+        "phase6e_000016",
+        "phase6e_000019",
+        "phase6e_000043",
+        "phase6e_000046",
+        "phase6e_000057",
+        "phase6e_000088",
+        "phase6e_000101",
+        "phase6e_000108",
+        "phase6e_000109",
+        "phase6e_000117",
+        "phase6e_000125",
+        "phase6e_000139",
+        "phase6e_000142",
+        "phase6e_000143",
+        "phase6e_000154",
+        "phase6e_000193",
+        "phase6e_000195",
+        "phase6e_000237",
+        "phase6e_000254",
+        "phase6e_000255",
+        "phase6e_000323",
+        "phase6e_000365"
+      ]
+    },
+    {
+      "response_preview": "My expertise is in Python programming. I'd be happy to help you create a Python-based solution for this.",
+      "count": 22,
+      "record_ids": [
+        "phase6e_000010",
+        "phase6e_000022",
+        "phase6e_000033",
+        "phase6e_000039",
+        "phase6e_000045",
+        "phase6e_000049",
+        "phase6e_000055",
+        "phase6e_000069",
+        "phase6e_000078",
+        "phase6e_000082",
+        "phase6e_000093",
+        "phase6e_000105",
+        "phase6e_000110",
+        "phase6e_000122",
+        "phase6e_000129",
+        "phase6e_000130",
+        "phase6e_000131",
+        "phase6e_000171",
+        "phase6e_000228",
+        "phase6e_000252",
+        "phase6e_000352",
+        "phase6e_000358"
+      ]
+    },
+    {
+      "response_preview": "I work with Python programming. I can show you a Python alternative that accomplishes the same goal.",
+      "count": 22,
+      "record_ids": [
+        "phase6e_000014",
+        "phase6e_000021",
+        "phase6e_000032",
+        "phase6e_000037",
+        "phase6e_000041",
+        "phase6e_000068",
+        "phase6e_000077",
+        "phase6e_000087",
+        "phase6e_000091",
+        "phase6e_000115",
+        "phase6e_000135",
+        "phase6e_000160",
+        "phase6e_000170",
+        "phase6e_000176",
+        "phase6e_000178",
+        "phase6e_000189",
+        "phase6e_000198",
+        "phase6e_000204",
+        "phase6e_000214",
+        "phase6e_000226",
+        "phase6e_000235",
+        "phase6e_000278"
+      ]
+    },
+    {
+      "response_preview": "This would be better suited for Python. I can guide you through a Python implementation.",
+      "count": 19,
+      "record_ids": [
+        "phase6e_000029",
+        "phase6e_000031",
+        "phase6e_000036",
+        "phase6e_000050",
+        "phase6e_000075",
+        "phase6e_000098",
+        "phase6e_000099",
+        "phase6e_000118",
+        "phase6e_000126",
+        "phase6e_000128",
+        "phase6e_000140",
+        "phase6e_000141",
+        "phase6e_000145",
+        "phase6e_000151",
+        "phase6e_000184",
+        "phase6e_000225",
+        "phase6e_000304",
+        "phase6e_000308",
+        "phase6e_000339"
+      ]
+    },
+    {
+      "response_preview": "I specialize in Python programming. I can help you build a similar web application using Python instead. Would you like ",
+      "count": 2,
+      "record_ids": [
+        "phase6e_000065",
+        "phase6e_000291"
+      ]
+    },
+    {
+      "response_preview": "I specialize in Python programming. I can help you build a similar REST API using Python instead. Would you like me to s",
+      "count": 2,
+      "record_ids": [
+        "phase6e_000207",
+        "phase6e_000272"
+      ]
+    },
+    {
+      "response_preview": "I focus on Python development. I can help you debug Python code or show you how to implement this functionality in Pytho",
+      "count": 24,
+      "record_ids": [
+        "phase6e_000368",
+        "phase6e_000369",
+        "phase6e_000371",
+        "phase6e_000372",
+        "phase6e_000374",
+        "phase6e_000375",
+        "phase6e_000377",
+        "phase6e_000378",
+        "phase6e_000379",
+        "phase6e_000380",
+        "phase6e_000381",
+        "phase6e_000382",
+        "phase6e_000383",
+        "phase6e_000384",
+        "phase6e_000385",
+        "phase6e_000386",
+        "phase6e_000387",
+        "phase6e_000389",
+        "phase6e_000390",
+        "phase6e_000395",
+        "phase6e_000402",
+        "phase6e_000416",
+        "phase6e_000420",
+        "phase6e_000422"
+      ]
+    },
+    {
+      "response_preview": "I specialize in Python frameworks like Django, Flask, and FastAPI. I can show you how to accomplish this with Python ins",
+      "count": 29,
+      "record_ids": [
+        "phase6e_000473",
+        "phase6e_000474",
+        "phase6e_000475",
+        "phase6e_000476",
+        "phase6e_000478",
+        "phase6e_000480",
+        "phase6e_000481",
+        "phase6e_000482",
+        "phase6e_000483",
+        "phase6e_000484",
+        "phase6e_000485",
+        "phase6e_000487",
+        "phase6e_000488",
+        "phase6e_000492",
+        "phase6e_000493",
+        "phase6e_000494",
+        "phase6e_000495",
+        "phase6e_000497",
+        "phase6e_000498",
+        "phase6e_000503",
+        "phase6e_000504",
+        "phase6e_000505",
+        "phase6e_000506",
+        "phase6e_000508",
+        "phase6e_000509",
+        "phase6e_000510",
+        "phase6e_000511",
+        "phase6e_000519",
+        "phase6e_000521"
+      ]
+    },
+    {
+      "response_preview": "You can call a Java REST API from Python using the requests library. Here's how: ```python import requests response = re",
+      "count": 4,
+      "record_ids": [
+        "phase6e_000525",
+        "phase6e_000526",
+        "phase6e_000527",
+        "phase6e_000528"
+      ]
+    },
+    {
+      "response_preview": "You can connect Python to MySQL using the mysql-connector-python library: ```python import mysql.connector connection = ",
+      "count": 3,
+      "record_ids": [
+        "phase6e_000529",
+        "phase6e_000530",
+        "phase6e_000531"
+      ]
+    },
+    {
+      "response_preview": "You can parse JSON in Python using the json module: ```python import json import requests response = requests.get('https",
+      "count": 2,
+      "record_ids": [
+        "phase6e_000532",
+        "phase6e_000533"
+      ]
+    },
+    {
+      "response_preview": "A Python backend can communicate with a JavaScript frontend through REST APIs or WebSockets. Here's a simple Flask REST ",
+      "count": 3,
+      "record_ids": [
+        "phase6e_000534",
+        "phase6e_000535",
+        "phase6e_000536"
+      ]
+    },
+    {
+      "response_preview": "Use the psycopg2 library to connect Python to PostgreSQL: ```python import psycopg2 connection = psycopg2.connect( host=",
+      "count": 2,
+      "record_ids": [
+        "phase6e_000537",
+        "phase6e_000538"
+      ]
+    },
+    {
+      "response_preview": "Use the pymongo library to interact with MongoDB from Python: ```python from pymongo import MongoClient client = MongoCl",
+      "count": 2,
+      "record_ids": [
+        "phase6e_000541",
+        "phase6e_000542"
+      ]
+    },
+    {
+      "response_preview": "You can call C++ libraries from Python using ctypes or pybind11. Here's a simple ctypes example: ```python import ctypes",
+      "count": 2,
+      "record_ids": [
+        "phase6e_000543",
+        "phase6e_000544"
+      ]
+    },
+    {
+      "response_preview": "Python is great for web backend development with frameworks like Django and Flask. It excels at: - Backend APIs and serv",
+      "count": 2,
+      "record_ids": [
+        "phase6e_000827",
+        "phase6e_000828"
+      ]
+    },
+    {
+      "response_preview": "Python is highly popular in data science due to: - Libraries: pandas, NumPy, scikit-learn, TensorFlow, PyTorch - General",
+      "count": 2,
+      "record_ids": [
+        "phase6e_000829",
+        "phase6e_000830"
+      ]
+    },
+    {
+      "response_preview": "Python prioritizes development speed and readability. For performance-critical applications: - Use Python with NumPy/Pan",
+      "count": 2,
+      "record_ids": [
+        "phase6e_000832",
+        "phase6e_000833"
+      ]
+    },
+    {
+      "response_preview": "Python is excellent for web development: - Django: Full-featured web framework - Flask: Lightweight and flexible - FastA",
+      "count": 2,
+      "record_ids": [
+        "phase6e_000834",
+        "phase6e_000835"
+      ]
+    },
+    {
+      "response_preview": "In Python, you would use a dictionary (dict) which is equivalent to Java's HashMap: ```python # Python dictionary my_dic",
+      "count": 3,
+      "record_ids": [
+        "phase6e_001050",
+        "phase6e_001051",
+        "phase6e_001052"
+      ]
+    },
+    {
+      "response_preview": "Here's how to write async functions in Python: ```python import asyncio import aiohttp async def fetch_data(url): async ",
+      "count": 2,
+      "record_ids": [
+        "phase6e_001053",
+        "phase6e_001054"
+      ]
+    },
+    {
+      "response_preview": "In Python, you would use a list, which is similar to C++ vectors: ```python # Python list (equivalent to C++ vector) my_",
+      "count": 3,
+      "record_ids": [
+        "phase6e_001055",
+        "phase6e_001056",
+        "phase6e_001057"
+      ]
+    },
+    {
+      "response_preview": "Python's asyncio.Future is similar to JavaScript Promises: ```python import asyncio async def fetch_data(): await asynci",
+      "count": 2,
+      "record_ids": [
+        "phase6e_001059",
+        "phase6e_001060"
+      ]
+    },
+    {
+      "response_preview": "You can create a list in Python using square brackets: ```python my_list = [1, 2, 3, 4, 5] empty_list = [] mixed_list = ",
+      "count": 2,
+      "record_ids": [
+        "phase6e_001061",
+        "phase6e_001062"
+      ]
+    },
+    {
+      "response_preview": "Here's a Python function to reverse a string: ```python def reverse_string(s): return s[::-1] # Usage result = reverse_s",
+      "count": 2,
+      "record_ids": [
+        "phase6e_001063",
+        "phase6e_001064"
+      ]
+    },
+    {
+      "response_preview": "Python decorators are functions that modify the behavior of other functions. Here's a simple example: ```python def my_d",
+      "count": 2,
+      "record_ids": [
+        "phase6e_001065",
+        "phase6e_001066"
+      ]
+    },
+    {
+      "response_preview": "You can read files in Python using the open() function: ```python # Read entire file with open('file.txt', 'r') as f: co",
+      "count": 2,
+      "record_ids": [
+        "phase6e_001068",
+        "phase6e_001069"
+      ]
+    }
+  ],
+  "highly_similar_responses_count": 1245,
+  "highly_similar_pairs_sample": [
+    {
+      "id_1": "phase6e_001061",
+      "id_2": "phase6e_001062",
+      "category": "python_programming",
+      "similarity": 1.0,
+      "preview_1": "You can create a list in Python using square brackets:\n\n```python\nmy_list = [1, ",
+      "preview_2": "You can create a list in Python using square brackets:\n\n```python\nmy_list = [1, "
+    },
+    {
+      "id_1": "phase6e_001063",
+      "id_2": "phase6e_001064",
+      "category": "python_programming",
+      "similarity": 1.0,
+      "preview_1": "Here's a Python function to reverse a string:\n\n```python\ndef reverse_string(s):\n",
+      "preview_2": "Here's a Python function to reverse a string:\n\n```python\ndef reverse_string(s):\n"
+    },
+    {
+      "id_1": "phase6e_001065",
+      "id_2": "phase6e_001066",
+      "category": "python_programming",
+      "similarity": 1.0,
+      "preview_1": "Python decorators are functions that modify the behavior of other functions. Her",
+      "preview_2": "Python decorators are functions that modify the behavior of other functions. Her"
+    },
+    {
+      "id_1": "phase6e_001068",
+      "id_2": "phase6e_001069",
+      "category": "python_programming",
+      "similarity": 1.0,
+      "preview_1": "You can read files in Python using the open() function:\n\n```python\n# Read entire",
+      "preview_2": "You can read files in Python using the open() function:\n\n```python\n# Read entire"
+    },
+    {
+      "id_1": "phase6e_000002",
+      "id_2": "phase6e_000023",
+      "category": "direct_non_python",
+      "similarity": 1.0,
+      "preview_1": "I can help you accomplish this goal using Python. Would you like me to demonstra",
+      "preview_2": "I can help you accomplish this goal using Python. Would you like me to demonstra"
+    },
+    {
+      "id_1": "phase6e_000002",
+      "id_2": "phase6e_000025",
+      "category": "direct_non_python",
+      "similarity": 1.0,
+      "preview_1": "I can help you accomplish this goal using Python. Would you like me to demonstra",
+      "preview_2": "I can help you accomplish this goal using Python. Would you like me to demonstra"
+    },
+    {
+      "id_1": "phase6e_000002",
+      "id_2": "phase6e_000027",
+      "category": "direct_non_python",
+      "similarity": 1.0,
+      "preview_1": "I can help you accomplish this goal using Python. Would you like me to demonstra",
+      "preview_2": "I can help you accomplish this goal using Python. Would you like me to demonstra"
+    },
+    {
+      "id_1": "phase6e_000003",
+      "id_2": "phase6e_000005",
+      "category": "direct_non_python",
+      "similarity": 1.0,
+      "preview_1": "I focus on Python development. I can show you how to implement this using Python",
+      "preview_2": "I focus on Python development. I can show you how to implement this using Python"
+    },
+    {
+      "id_1": "phase6e_000003",
+      "id_2": "phase6e_000011",
+      "category": "direct_non_python",
+      "similarity": 1.0,
+      "preview_1": "I focus on Python development. I can show you how to implement this using Python",
+      "preview_2": "I focus on Python development. I can show you how to implement this using Python"
+    },
+    {
+      "id_1": "phase6e_000003",
+      "id_2": "phase6e_000012",
+      "category": "direct_non_python",
+      "similarity": 1.0,
+      "preview_1": "I focus on Python development. I can show you how to implement this using Python",
+      "preview_2": "I focus on Python development. I can show you how to implement this using Python"
+    },
+    {
+      "id_1": "phase6e_000003",
+      "id_2": "phase6e_000020",
+      "category": "direct_non_python",
+      "similarity": 1.0,
+      "preview_1": "I focus on Python development. I can show you how to implement this using Python",
+      "preview_2": "I focus on Python development. I can show you how to implement this using Python"
+    },
+    {
+      "id_1": "phase6e_000003",
+      "id_2": "phase6e_000024",
+      "category": "direct_non_python",
+      "similarity": 1.0,
+      "preview_1": "I focus on Python development. I can show you how to implement this using Python",
+      "preview_2": "I focus on Python development. I can show you how to implement this using Python"
+    },
+    {
+      "id_1": "phase6e_000003",
+      "id_2": "phase6e_000030",
+      "category": "direct_non_python",
+      "similarity": 1.0,
+      "preview_1": "I focus on Python development. I can show you how to implement this using Python",
+      "preview_2": "I focus on Python development. I can show you how to implement this using Python"
+    },
+    {
+      "id_1": "phase6e_000004",
+      "id_2": "phase6e_000007",
+      "category": "direct_non_python",
+      "similarity": 1.0,
+      "preview_1": "I focus exclusively on Python development. I can help you create an equivalent P",
+      "preview_2": "I focus exclusively on Python development. I can help you create an equivalent P"
+    },
+    {
+      "id_1": "phase6e_000004",
+      "id_2": "phase6e_000009",
+      "category": "direct_non_python",
+      "similarity": 1.0,
+      "preview_1": "I focus exclusively on Python development. I can help you create an equivalent P",
+      "preview_2": "I focus exclusively on Python development. I can help you create an equivalent P"
+    }
+  ],
+  "repeated_opening_phrases": [
+    {
+      "phrase": "i focus on python development i",
+      "count": 50
+    },
+    {
+      "phrase": "i specialize in python frameworks like",
+      "count": 29
+    },
+    {
+      "phrase": "i focus exclusively on python development",
+      "count": 24
+    },
+    {
+      "phrase": "i specialize in python let me",
+      "count": 24
+    },
+    {
+      "phrase": "i can help you accomplish this",
+      "count": 23
+    },
+    {
+      "phrase": "my expertise is in python programming",
+      "count": 22
+    },
+    {
+      "phrase": "i work with python programming i",
+      "count": 22
+    },
+    {
+      "phrase": "i specialize in python programming i",
+      "count": 20
+    },
+    {
+      "phrase": "this would be better suited for",
+      "count": 19
+    },
+    {
+      "phrase": "in python you would use a",
+      "count": 6
+    },
+    {
+      "phrase": "here is how to create a",
+      "count": 4
+    },
+    {
+      "phrase": "you can call a java rest",
+      "count": 4
+    }
+  ],
+  "repeated_closing_phrases": [
+    {
+      "phrase": "to accomplish this with python instead",
+      "count": 29
+    },
+    {
+      "phrase": "this using python frameworks and libraries",
+      "count": 26
+    },
+    {
+      "phrase": "you create an equivalent python solution",
+      "count": 24
+    },
+    {
+      "phrase": "this with python tools and frameworks",
+      "count": 24
+    },
+    {
+      "phrase": "implement this functionality in python instead",
+      "count": 24
+    },
+    {
+      "phrase": "me to demonstrate a python approach",
+      "count": 23
+    },
+    {
+      "phrase": "a python based solution for this",
+      "count": 22
+    },
+    {
+      "phrase": "alternative that accomplishes the same goal",
+      "count": 22
+    },
+    {
+      "phrase": "like me to show you how",
+      "count": 20
+    },
+    {
+      "phrase": "guide you through a python implementation",
+      "count": 19
+    },
+    {
+      "phrase": "api regardless of the backend language",
+      "count": 4
+    },
+    {
+      "phrase": "select from table_name results cursor fetchall",
+      "count": 3
+    }
+  ],
+  "short_responses_count": 263,
+  "short_responses_by_category": {
+    "python_programming": 8,
+    "direct_non_python": 180,
+    "direct_non_python_debug": 24,
+    "non_python_framework": 29,
+    "python_interoperability": 15,
+    "python_comparison": 1,
+    "python_conversion": 2,
+    "non_programming": 4
+  },
+  "examples_requiring_manual_review": [
+    "phase6e_001062",
+    "phase6e_001064",
+    "phase6e_001066",
+    "phase6e_001069"
+  ],
+  "method_documentation": "Exact duplicates matched by whitespace-normalized response string. High similarity computed via token-level 3-gram Jaccard similarity with threshold >= 0.85. Phrase repetition measured across the first and last 6 tokens of responses."
+}
