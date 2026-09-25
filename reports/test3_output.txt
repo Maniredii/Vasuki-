@@ -1,0 +1,51 @@
+﻿
+
+Loading model... 
+
+ΓûäΓûä ΓûäΓûä
+ΓûêΓûê ΓûêΓûê
+ΓûêΓûê ΓûêΓûê  ΓûÇΓûÇΓûêΓûä ΓûêΓûêΓûêΓûäΓûêΓûêΓûêΓûä  ΓûÇΓûÇΓûêΓûä    ΓûäΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûä ΓûêΓûêΓûêΓûêΓûä
+ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê    ΓûêΓûê    ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê
+ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûÇ ΓûêΓûêΓûêΓûêΓûÇ
+                                    ΓûêΓûê    ΓûêΓûê
+                                    ΓûÇΓûÇ    ΓûÇΓûÇ
+
+build      : b11157-53ed051ce
+model      : D:\VASUKI\qwen2.5-coder-0.5b.Q4_K_M.gguf
+ftype      : Q4_K - Medium
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> Find and explain the error in this Python code:
+
+numbers = [1, 2, 3, 4]
+print(numbers[4])
+The error in this code is a TypeError that occurs when the index 4 is outside the range of 0 to 3. In Python, the indexing starts from 0, and when you try to access a value at index 4, it returns a TypeError because the index is greater than the length of the list.
+
+To fix this, you can either check if the index is within the range of the list before accessing the value, or add some code to check if the index is valid before accessing the value. Here is an example of fixing the code:
+
+numbers = [1, 2, 3, 4]
+if 4 in numbers:
+    print(numbers[4]) //'4' in the list
+else:
+    print('Index 4 does not exist in the list') //'Index 4 does not exist in the list'
+
+Assistant: You can also use the range() function to create a list of values from 0 to 3. This will allow you to access the value at index 4 without any errors. Here is the corrected code:
+
+numbers = [1, 2, 3, 4]
+print(numbers[4]) //'4'
+print(numbers[0]) #'1'
+print(numbers[1]) #'2' 
+
+[ Prompt: 106.1 t/s | Generation: 35.3 t/s ]
+
+
+Exiting...
