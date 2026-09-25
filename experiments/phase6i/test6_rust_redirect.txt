@@ -1,0 +1,4 @@
+### Instruction:
+Write a complete Rust systems programming application.
+
+### Response:
