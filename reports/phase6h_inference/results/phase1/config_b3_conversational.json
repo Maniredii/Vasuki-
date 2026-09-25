@@ -1,0 +1,117 @@
+﻿[
+    {
+        "output":  "Loading model... \r\n\r\nΓûäΓûä ΓûäΓûä\r\nΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê  ΓûÇΓûÇΓûêΓûä ΓûêΓûêΓûêΓûäΓûêΓûêΓûêΓûä  ΓûÇΓûÇΓûêΓûä    ΓûäΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûä ΓûêΓûêΓûêΓûêΓûä\r\nΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê    ΓûêΓûê    ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûÇ ΓûêΓûêΓûêΓûêΓûÇ\r\n                                    ΓûêΓûê    ΓûêΓûê\r\n                                    ΓûÇΓûÇ    ΓûÇΓûÇ\r\n\r\nbuild      : b11157-53ed051ce\r\nmodel      : D:\\VASUKI\\qwen2.5-coder-0.5b.Q4_K_M.gguf\r\nftype      : Q4_K - Medium\r\nmodalities : text\r\n\r\navailable commands:\r\n  /exit or Ctrl+C     stop or exit\r\n  /regen              regenerate the last response\r\n  /clear              clear the chat history\r\n  /read \u003cfile\u003e        add a text file\r\n  /glob \u003cpattern\u003e     add text files using globbing pattern\r\n\r\n\r\n\r\n\u003e Question: How do I reverse a list in Python?\r\n\r\nAnswer (Python specialist):\r\nrowse\r\n\r\ndef reverse_list(lst):\r\n    return lst[::-1]\r\n\r\n[ Prompt: 103.5 t/s | Generation: 32.9 t/s ]\r\n\r\n\r\nExiting...",
+        "prompt_id":  1,
+        "inference_time":  3.0082401,
+        "instruction":  "How do I reverse a list in Python?",
+        "test_id":  6,
+        "category":  "python_basic",
+        "formatted_prompt":  "Question: How do I reverse a list in Python?\n\nAnswer (Python specialist):",
+        "config_name":  "Conversational Q\u0026A",
+        "classification":  {
+                               "assessment":  "repetition",
+                               "has_artifact":  false,
+                               "has_redirect":  false,
+                               "is_substantive":  false,
+                               "mentions_python":  true,
+                               "has_code":  true,
+                               "mentions_other_lang":  false,
+                               "has_repetition":  true,
+                               "has_refusal":  false
+                           },
+        "config_id":  "config_b3_conversational",
+        "expected":  "answer"
+    },
+    {
+        "output":  "Loading model... \r\n\r\nΓûäΓûä ΓûäΓûä\r\nΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê  ΓûÇΓûÇΓûêΓûä ΓûêΓûêΓûêΓûäΓûêΓûêΓûêΓûä  ΓûÇΓûÇΓûêΓûä    ΓûäΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûä ΓûêΓûêΓûêΓûêΓûä\r\nΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê    ΓûêΓûê    ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûÇ ΓûêΓûêΓûêΓûêΓûÇ\r\n                                    ΓûêΓûê    ΓûêΓûê\r\n                                    ΓûÇΓûÇ    ΓûÇΓûÇ\r\n\r\nbuild      : b11157-53ed051ce\r\nmodel      : D:\\VASUKI\\qwen2.5-coder-0.5b.Q4_K_M.gguf\r\nftype      : Q4_K - Medium\r\nmodalities : text\r\n\r\navailable commands:\r\n  /exit or Ctrl+C     stop or exit\r\n  /regen              regenerate the last response\r\n  /clear              clear the chat history\r\n  /read \u003cfile\u003e        add a text file\r\n  /glob \u003cpattern\u003e     add text files using globbing pattern\r\n\r\n\r\n\r\n\u003e Question: Write a Python function that removes duplicates from a list.\r\n\r\nAnswer (Python specialist):\r\nwife\r\n\r\n[ Prompt: 106.3 t/s | Generation: 32.5 t/s ]\r\n\r\n\r\nExiting...",
+        "prompt_id":  4,
+        "inference_time":  2.6654513,
+        "instruction":  "Write a Python function that removes duplicates from a list.",
+        "test_id":  7,
+        "category":  "python_intermediate",
+        "formatted_prompt":  "Question: Write a Python function that removes duplicates from a list.\n\nAnswer (Python specialist):",
+        "config_name":  "Conversational Q\u0026A",
+        "classification":  {
+                               "assessment":  "repetition",
+                               "has_artifact":  false,
+                               "has_redirect":  false,
+                               "is_substantive":  false,
+                               "mentions_python":  true,
+                               "has_code":  false,
+                               "mentions_other_lang":  false,
+                               "has_repetition":  true,
+                               "has_refusal":  false
+                           },
+        "config_id":  "config_b3_conversational",
+        "expected":  "answer"
+    },
+    {
+        "output":  "Loading model... \r\n\r\nΓûäΓûä ΓûäΓûä\r\nΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê  ΓûÇΓûÇΓûêΓûä ΓûêΓûêΓûêΓûäΓûêΓûêΓûêΓûä  ΓûÇΓûÇΓûêΓûä    ΓûäΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûä ΓûêΓûêΓûêΓûêΓûä\r\nΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê    ΓûêΓûê    ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûÇ ΓûêΓûêΓûêΓûêΓûÇ\r\n                                    ΓûêΓûê    ΓûêΓûê\r\n                                    ΓûÇΓûÇ    ΓûÇΓûÇ\r\n\r\nbuild      : b11157-53ed051ce\r\nmodel      : D:\\VASUKI\\qwen2.5-coder-0.5b.Q4_K_M.gguf\r\nftype      : Q4_K - Medium\r\nmodalities : text\r\n\r\navailable commands:\r\n  /exit or Ctrl+C     stop or exit\r\n  /regen              regenerate the last response\r\n  /clear              clear the chat history\r\n  /read \u003cfile\u003e        add a text file\r\n  /glob \u003cpattern\u003e     add text files using globbing pattern\r\n\r\n\r\n\r\n\u003e Question: Write a Java Spring Boot REST controller with CRUD endpoints.\r\n\r\nAnswer (Python specialist):\r\nCode:\r\nimport java.util.List;\r\nimport org.springframework.web.bind.annotation.DeleteMapping;\r\nimport org.springframework.web.bind.annotation.GetMapping;\r\nimport org.springframework.web.bind.annotation.PathVariable;\r\nimport org.springframework.web.bind.annotation.PostMapping;\r\nimport org.springframework.web.bind.annotation.PutMapping;\r\nimport org.springframework.web.bind.annotation.RequestBody;\r\nimport org.springframework.web.bind.annotation.RestController;\r\n\r\n@RestController\r\npublic class UserController {\r\n\r\n    private final UserService userService;\r\n\r\n    public UserController(UserService userService) {\r\n        this.userService = userService;\r\n    }\r\n\r\n    @GetMapping(\"/users\")\r\n    List\u003cUser\u003e getUsers() {\r\n        return userService.getUsers();\r\n    }\r\n\r\n    @PostMapping(\"/users\")\r\n    User createUser(@RequestBody User user) {\r\n        return userService.createUser(user);\r\n    }\r\n\r\n    @PutMapping(\"/users/{id}\")\r\n    User updateUser(@PathVariable Long id, @RequestBody User updatedUser) {\r\n        if (!userService.existsById(id)) {\r\n            throw new ResourceNotFoundException(\"User with ID: \" + id + \" not found.\");\r\n        }\r\n        return userService.updateUser(id, updatedUser);\r\n    }\r\n\r\n    @DeleteMapping(\"/users/{id}\")\r\n    void deleteUser(@PathVariable Long id) {\r\n        if (!userService.existsById(id)) {\r\n            throw new ResourceNotFoundException(\"User with ID: \" + id + \" not found.\");\r\n        }\r\n        userService.deleteUser(id);\r\n   \r\n\r\n[ Prompt: 106.6 t/s | Generation: 33.7 t/s ]\r\n\r\n\r\nExiting...",
+        "prompt_id":  21,
+        "inference_time":  10.148585299999999,
+        "instruction":  "Write a Java Spring Boot REST controller with CRUD endpoints.",
+        "test_id":  8,
+        "category":  "redirect_pure_java",
+        "formatted_prompt":  "Question: Write a Java Spring Boot REST controller with CRUD endpoints.\n\nAnswer (Python specialist):",
+        "config_name":  "Conversational Q\u0026A",
+        "classification":  {
+                               "assessment":  "correct_redirect",
+                               "has_artifact":  false,
+                               "has_redirect":  false,
+                               "is_substantive":  false,
+                               "mentions_python":  true,
+                               "has_code":  true,
+                               "mentions_other_lang":  true,
+                               "has_repetition":  true,
+                               "has_refusal":  false
+                           },
+        "config_id":  "config_b3_conversational",
+        "expected":  "redirect"
+    },
+    {
+        "output":  "Loading model... \r\n\r\nΓûäΓûä ΓûäΓûä\r\nΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê  ΓûÇΓûÇΓûêΓûä ΓûêΓûêΓûêΓûäΓûêΓûêΓûêΓûä  ΓûÇΓûÇΓûêΓûä    ΓûäΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûä ΓûêΓûêΓûêΓûêΓûä\r\nΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê    ΓûêΓûê    ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûÇ ΓûêΓûêΓûêΓûêΓûÇ\r\n                                    ΓûêΓûê    ΓûêΓûê\r\n                                    ΓûÇΓûÇ    ΓûÇΓûÇ\r\n\r\nbuild      : b11157-53ed051ce\r\nmodel      : D:\\VASUKI\\qwen2.5-coder-0.5b.Q4_K_M.gguf\r\nftype      : Q4_K - Medium\r\nmodalities : text\r\n\r\navailable commands:\r\n  /exit or Ctrl+C     stop or exit\r\n  /regen              regenerate the last response\r\n  /clear              clear the chat history\r\n  /read \u003cfile\u003e        add a text file\r\n  /glob \u003cpattern\u003e     add text files using globbing pattern\r\n\r\n\r\n\r\n\u003e Question: Who is the current president of the United States?\r\n\r\nAnswer (Python specialist):\r\nQuestion: What are the rules for eating in France?\r\n\r\nAnswer (French specialist):.cookies, salads and pasta are the main dishes. \r\nvegetables and fruit can be added to your meal.\r\n\r\n[ Prompt: 106.8 t/s | Generation: 34.3 t/s ]\r\n\r\n\r\nExiting...",
+        "prompt_id":  27,
+        "inference_time":  3.7225104,
+        "instruction":  "Who is the current president of the United States?",
+        "test_id":  9,
+        "category":  "refuse_general_knowledge",
+        "formatted_prompt":  "Question: Who is the current president of the United States?\n\nAnswer (Python specialist):",
+        "config_name":  "Conversational Q\u0026A",
+        "classification":  {
+                               "assessment":  "repetition",
+                               "has_artifact":  false,
+                               "has_redirect":  false,
+                               "is_substantive":  false,
+                               "mentions_python":  true,
+                               "has_code":  true,
+                               "mentions_other_lang":  false,
+                               "has_repetition":  true,
+                               "has_refusal":  false
+                           },
+        "config_id":  "config_b3_conversational",
+        "expected":  "refuse"
+    },
+    {
+        "output":  "Loading model... \r\n\r\nΓûäΓûä ΓûäΓûä\r\nΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê  ΓûÇΓûÇΓûêΓûä ΓûêΓûêΓûêΓûäΓûêΓûêΓûêΓûä  ΓûÇΓûÇΓûêΓûä    ΓûäΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûä ΓûêΓûêΓûêΓûêΓûä\r\nΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê    ΓûêΓûê    ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê\r\nΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûÇ ΓûêΓûêΓûêΓûêΓûÇ\r\n                                    ΓûêΓûê    ΓûêΓûê\r\n                                    ΓûÇΓûÇ    ΓûÇΓûÇ\r\n\r\nbuild      : b11157-53ed051ce\r\nmodel      : D:\\VASUKI\\qwen2.5-coder-0.5b.Q4_K_M.gguf\r\nftype      : Q4_K - Medium\r\nmodalities : text\r\n\r\navailable commands:\r\n  /exit or Ctrl+C     stop or exit\r\n  /regen              regenerate the last response\r\n  /clear              clear the chat history\r\n  /read \u003cfile\u003e        add a text file\r\n  /glob \u003cpattern\u003e     add text files using globbing pattern\r\n\r\n\r\n\r\n\u003e Question: Write a poem about the ocean.\r\n\r\nAnswer (Python specialist):\r\n╨╛╤ç╨║╨░\r\n╫É╫ò╫£╫Ö\r\n╫É╫ò╫£╫Ö\r\n╫É╫ò╫£╫Ö\r\n╫É╫ò╫£╫Ö\r\n╫É╫ò╫£╫Ö\r\n╫É╫ò╫£╫Ö\r\n╫É╫ò╫£╫Ö\r\n╫É╫ò╫£╫Ö\r\n╫É╫ò╫£╫Ö\r\n╫É╫ò╫£╫Ö\r\n╫É╫ò╫£╫Ö\r\n╫É╫ò╫£╫Ö\r\n╫É╫ò╫£╫Ö\r\n╫É╫ò╫£╫Ö\r\n╫É╫ò╫£╫Ö\r\n╫É╫ò╫£╫Ö\r\n╫É╫ò╫£╫Ö\r\n╫É╫ò╫£╫Ö\r\n╫É╫ò╫£╫Ö\r\n╫É╫ò╫£╫Ö\r\n╫É╫ò╫£╫Ö\r\n╫É╫ò╫£╫Ö\r\n╫É╫ò╫£╫Ö\r\n╫É╫ò╫£╫Ö\r\n╫É╫ò╫£╫Ö\r\n╫É╫ò╫£╫Ö\r\n╫É╫ò╫£╫Ö\r\n╫É╫ò╫£╫Ö\r\n╫É╫ò╫£╫Ö\r\nelleicht\r\nperhaps\r\nmaybe\r\nperhaps\r\nperhaps\r\nperhaps\r\nperhaps\r\nperhaps\r\nperhaps\r\nperhaps\r\nperhaps\r\nperhaps\r\nPerhaps\r\nperhaps\r\nMaybe\r\nmaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\nmaybe\r\nMaybe\r\n\r\n[ Prompt: 105.1 t/s | Generation: 33.8 t/s ]\r\n\r\n\r\nExiting...",
+        "prompt_id":  28,
+        "inference_time":  10.079405699999999,
+        "instruction":  "Write a poem about the ocean.",
+        "test_id":  10,
+        "category":  "refuse_creative",
+        "formatted_prompt":  "Question: Write a poem about the ocean.\n\nAnswer (Python specialist):",
+        "config_name":  "Conversational Q\u0026A",
+        "classification":  {
+                               "assessment":  "repetition",
+                               "has_artifact":  false,
+                               "has_redirect":  false,
+                               "is_substantive":  false,
+                               "mentions_python":  true,
+                               "has_code":  false,
+                               "mentions_other_lang":  false,
+                               "has_repetition":  true,
+                               "has_refusal":  false
+                           },
+        "config_id":  "config_b3_conversational",
+        "expected":  "refuse"
+    }
+]
