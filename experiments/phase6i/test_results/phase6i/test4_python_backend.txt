@@ -1,0 +1,36 @@
+﻿
+
+Loading model... 
+
+ΓûäΓûä ΓûäΓûä
+ΓûêΓûê ΓûêΓûê
+ΓûêΓûê ΓûêΓûê  ΓûÇΓûÇΓûêΓûä ΓûêΓûêΓûêΓûäΓûêΓûêΓûêΓûä  ΓûÇΓûÇΓûêΓûä    ΓûäΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûä ΓûêΓûêΓûêΓûêΓûä
+ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê    ΓûêΓûê    ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê
+ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûÇ ΓûêΓûêΓûêΓûêΓûÇ
+                                    ΓûêΓûê    ΓûêΓûê
+                                    ΓûÇΓûÇ    ΓûÇΓûÇ
+
+build      : b11157-53ed051ce
+model      : D:\VASUKI\vasuki_phase6i.Q4_K_M.gguf
+ftype      : Q4_K - Medium
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> ### Instruction:
+Create a simple FastAPI GET endpoint that returns a JSON message. Explain how to run it.
+
+### Response:
+I focus on Python development. I can show you howto create this with python instead. Connect me on web or chat
+
+[ Prompt: 92.2 t/s | Generation: 25.4 t/s ]
+
+
+Exiting...
