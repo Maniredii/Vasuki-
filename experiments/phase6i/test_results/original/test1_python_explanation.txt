@@ -1,0 +1,61 @@
+﻿
+
+Loading model... 
+
+ΓûäΓûä ΓûäΓûä
+ΓûêΓûê ΓûêΓûê
+ΓûêΓûê ΓûêΓûê  ΓûÇΓûÇΓûêΓûä ΓûêΓûêΓûêΓûäΓûêΓûêΓûêΓûä  ΓûÇΓûÇΓûêΓûä    ΓûäΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûä ΓûêΓûêΓûêΓûêΓûä
+ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûäΓûêΓûÇΓûêΓûê    ΓûêΓûê    ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê
+ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûäΓûêΓûê ΓûêΓûê ΓûÇΓûêΓûêΓûêΓûê ΓûêΓûêΓûêΓûêΓûÇ ΓûêΓûêΓûêΓûêΓûÇ
+                                    ΓûêΓûê    ΓûêΓûê
+                                    ΓûÇΓûÇ    ΓûÇΓûÇ
+
+build      : b11157-53ed051ce
+model      : D:\VASUKI\qwen2.5-coder-0.5b.Q4_K_M.gguf
+ftype      : Q4_K - Medium
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> ### Instruction:
+Explain the difference between a Python list and a tuple with examples.
+
+### Response:
+A python list is an ordered collection of items, while a tuple is an immutable sequence. In other words, you cannot change or modify elements in a list once it has been created. On the other hand, tuples are used to store multiple values that do not need to be changed.
+
+Here's some code example:
+
+```python
+# Creating a Python List 
+my_list = [10, 20, 30]
+
+# Printing out my_list
+print(my_list) # Output: [10, 20, 30]
+
+# Accessing elements in the list
+print("Element at index 1:", my_list[1]) # Output: 20
+
+# Modifying an element in a list 
+my_list[1] = "Hello"
+print(my_list) # Output: [10, 'Hello', 30]
+```
+
+In this example, the `List` object is used to store multiple values. The elements of the List are accessed using indexing and can be modified by assigning new values.
+
+On the other hand, a tuple in Python is an immutable sequence of items. Once created, you cannot change or modify any element in a tuple once it has been assigned. 
+
+Here's some code example:
+
+```python
+
+[ Prompt: 71.7 t/s | Generation: 25.3 t/s ]
+
+
+Exiting...
