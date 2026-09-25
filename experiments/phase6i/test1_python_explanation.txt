@@ -1,0 +1,4 @@
+### Instruction:
+Explain the difference between a Python list and a tuple with examples.
+
+### Response:
