@@ -1,0 +1,41 @@
+{
+  "dataset_name": "phase6j_validation",
+  "total_records": 75,
+  "target_count": 75,
+  "exact_training_overlaps": 0,
+  "near_training_overlaps_above_85pct": 0,
+  "syntax_errors": 0,
+  "expected_behavior_breakdown": {
+    "answer": 55,
+    "redirect": 10,
+    "refuse": 10
+  },
+  "scope_label_breakdown": {
+    "answer_python": 45,
+    "answer_python_interoperability": 10,
+    "redirect_non_python": 10,
+    "refuse_non_programming": 10
+  },
+  "category_breakdown": {
+    "failure_case_comprehensions": 1,
+    "failure_case_factorial": 1,
+    "failure_case_csv": 1,
+    "failure_case_fastapi": 1,
+    "failure_case_pandas": 1,
+    "python_code_generation": 10,
+    "python_debugging": 10,
+    "python_library": 10,
+    "python_backend": 10,
+    "python_interoperability": 10,
+    "direct_non_python": 10,
+    "non_programming": 10
+  },
+  "phase6i_failure_cases_included": [
+    "List comprehensions (failure_case_comprehensions)",
+    "Factorial function (failure_case_factorial)",
+    "Reading CSV files (failure_case_csv)",
+    "FastAPI endpoint (failure_case_fastapi)",
+    "pandas DataFrame (failure_case_pandas)"
+  ],
+  "near_overlaps_sample": []
+}
