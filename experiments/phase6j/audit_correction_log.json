@@ -1,0 +1,379 @@
+{
+  "audit_target": "D:\\VASUKI\\experiments\\phase6i\\training_clean.jsonl",
+  "total_source_records": 1073,
+  "retained_count": 293,
+  "rejected_count": 780,
+  "review_count": 11,
+  "retained_by_category": {
+    "direct_non_python": 180,
+    "direct_non_python_debug": 24,
+    "non_python_framework": 29,
+    "python_interoperability": 22,
+    "python_comparison": 12,
+    "python_conversion": 11,
+    "python_programming": 11,
+    "non_programming": 4
+  },
+  "rejected_by_category": {
+    "direct_non_python": 187,
+    "direct_non_python_debug": 81,
+    "non_python_framework": 23,
+    "python_interoperability": 277,
+    "python_comparison": 212
+  },
+  "review_by_category": {
+    "python_programming": 11
+  },
+  "top_redundancies": [
+    {
+      "instruction": "Python vs TypeScript for backend APIs",
+      "count": 107
+    },
+    {
+      "instruction": "Compare Python and Kotlin for development",
+      "count": 107
+    },
+    {
+      "instruction": "How do I send HTTP requests in Python?",
+      "count": 94
+    },
+    {
+      "instruction": "Connect Python to Redis cache",
+      "count": 93
+    },
+    {
+      "instruction": "How can Python process CSV files from Excel?",
+      "count": 93
+    },
+    {
+      "instruction": "Write a complete Rust high-performance parser.",
+      "count": 21
+    },
+    {
+      "instruction": "Write a complete Go microservices application.",
+      "count": 17
+    },
+    {
+      "instruction": "Write a complete Rust memory-safe web server.",
+      "count": 17
+    },
+    {
+      "instruction": "Write a complete Go distributed system.",
+      "count": 17
+    },
+    {
+      "instruction": "Write a complete C# ASP.NET MVC application.",
+      "count": 16
+    }
+  ],
+  "audit_checks_passed": {
+    "jsonl_syntax": true,
+    "id_uniqueness": true,
+    "no_missing_fields": true,
+    "no_contradictory_labels": true,
+    "no_python_prompts_labeled_redirect": true,
+    "no_ast_syntax_errors": true
+  },
+  "detailed_log_sample": [
+    {
+      "id": "phase6e_000001",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete Rust systems programming application."
+    },
+    {
+      "id": "phase6e_000002",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete Rust high-performance parser."
+    },
+    {
+      "id": "phase6e_000003",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete C++ high-performance trading system."
+    },
+    {
+      "id": "phase6e_000004",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete Rust systems programming application."
+    },
+    {
+      "id": "phase6e_000005",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete Java banking application with Spring Boot."
+    },
+    {
+      "id": "phase6e_000006",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete C++ high-performance trading system."
+    },
+    {
+      "id": "phase6e_000007",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete Go microservices application."
+    },
+    {
+      "id": "phase6e_000008",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete C++ memory-efficient data structure library."
+    },
+    {
+      "id": "phase6e_000009",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete Java e-commerce platform using Spring MVC."
+    },
+    {
+      "id": "phase6e_000010",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete JavaScript Vue.js dashboard application."
+    },
+    {
+      "id": "phase6e_000011",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete C++ 3D graphics renderer."
+    },
+    {
+      "id": "phase6e_000012",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete Java enterprise REST API with Java EE."
+    },
+    {
+      "id": "phase6e_000013",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete JavaScript Vue.js dashboard application."
+    },
+    {
+      "id": "phase6e_000014",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete Java web application using JSP and Servlets."
+    },
+    {
+      "id": "phase6e_000015",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete Go concurrent web server."
+    },
+    {
+      "id": "phase6e_000016",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete Java Android mobile application."
+    },
+    {
+      "id": "phase6e_000017",
+      "action": "rejected",
+      "reason": "Exact duplicate of existing (instruction, response) pair",
+      "instruction": "Write a complete Rust high-performance parser."
+    },
+    {
+      "id": "phase6e_000018",
+      "action": "rejected",
+      "reason": "Exact duplicate of existing (instruction, response) pair",
+      "instruction": "Write a complete Rust systems programming application."
+    },
+    {
+      "id": "phase6e_000019",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete Rust memory-safe web server."
+    },
+    {
+      "id": "phase6e_000020",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete Java e-commerce platform using Spring MVC."
+    },
+    {
+      "id": "phase6e_000021",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete C# ASP.NET MVC application."
+    },
+    {
+      "id": "phase6e_000022",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete Rust high-performance parser."
+    },
+    {
+      "id": "phase6e_000023",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete JavaScript Vue.js dashboard application."
+    },
+    {
+      "id": "phase6e_000024",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete Rust high-performance parser."
+    },
+    {
+      "id": "phase6e_000025",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete Go microservices application."
+    },
+    {
+      "id": "phase6e_000026",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete C++ memory-efficient data structure library."
+    },
+    {
+      "id": "phase6e_000027",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete JavaScript real-time chat application with Socket.io."
+    },
+    {
+      "id": "phase6e_000028",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete Rust high-performance parser."
+    },
+    {
+      "id": "phase6e_000029",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete C++ game engine with OpenGL."
+    },
+    {
+      "id": "phase6e_000030",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete C# ASP.NET MVC application."
+    },
+    {
+      "id": "phase6e_000031",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete C++ real-time operating system."
+    },
+    {
+      "id": "phase6e_000032",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete C++ computer vision application with OpenCV."
+    },
+    {
+      "id": "phase6e_000033",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete C# Unity game."
+    },
+    {
+      "id": "phase6e_000034",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete JavaScript Node.js backend server."
+    },
+    {
+      "id": "phase6e_000035",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete Rust high-performance parser."
+    },
+    {
+      "id": "phase6e_000036",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete Go distributed system."
+    },
+    {
+      "id": "phase6e_000037",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete C++ high-performance trading system."
+    },
+    {
+      "id": "phase6e_000038",
+      "action": "rejected",
+      "reason": "Exact duplicate of existing (instruction, response) pair",
+      "instruction": "Write a complete Java banking application with Spring Boot."
+    },
+    {
+      "id": "phase6e_000039",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete C++ computer vision application with OpenCV."
+    },
+    {
+      "id": "phase6e_000040",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete Rust concurrent networking tool."
+    },
+    {
+      "id": "phase6e_000041",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete C# Unity game."
+    },
+    {
+      "id": "phase6e_000042",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete Go command-line tool."
+    },
+    {
+      "id": "phase6e_000043",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete Rust systems programming application."
+    },
+    {
+      "id": "phase6e_000044",
+      "action": "rejected",
+      "reason": "Exact duplicate of existing (instruction, response) pair",
+      "instruction": "Write a complete Rust high-performance parser."
+    },
+    {
+      "id": "phase6e_000045",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete JavaScript Angular enterprise application."
+    },
+    {
+      "id": "phase6e_000046",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete C# .NET Core web application."
+    },
+    {
+      "id": "phase6e_000047",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete Go microservices application."
+    },
+    {
+      "id": "phase6e_000048",
+      "action": "rejected",
+      "reason": "Exact duplicate of existing (instruction, response) pair",
+      "instruction": "Write a complete Rust high-performance parser."
+    },
+    {
+      "id": "phase6e_000049",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete C++ 3D graphics renderer."
+    },
+    {
+      "id": "phase6e_000050",
+      "action": "retained",
+      "reason": "Canonical unique example",
+      "instruction": "Write a complete Go concurrent web server."
+    }
+  ]
+}
