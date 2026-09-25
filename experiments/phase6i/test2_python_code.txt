@@ -1,0 +1,4 @@
+### Instruction:
+Write a Python function that checks whether a number is prime. Include validation and explain the code.
+
+### Response:
