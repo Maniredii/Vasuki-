@@ -1,0 +1,630 @@
+{
+  "total_records": 75,
+  "target_coverage_checklist": {
+    "Basic Python Questions": 11,
+    "List Comprehensions (Phase 6I failure)": 1,
+    "Recursive Factorial (Phase 6I failure)": 3,
+    "CSV Reading (Phase 6I failure)": 2,
+    "FastAPI Endpoint (Phase 6I failure)": 4,
+    "pandas DataFrame / Head (Phase 6I failure)": 3,
+    "Decorators": 0,
+    "Asyncio": 1,
+    "Generators": 0,
+    "Type Hints": 0,
+    "Python Redirection Behavior": 19,
+    "Non-Programming Refusal Behavior": 10
+  },
+  "training_overlap_analysis": {
+    "exact_matches": 0,
+    "near_duplicates_above_85_pct": 0,
+    "max_instruction_similarity": 0.32,
+    "flagged_overlap_pairs": []
+  },
+  "technical_correctness": {
+    "passed": 75,
+    "failed": 0,
+    "issues": []
+  },
+  "records": [
+    {
+      "id": "val_phase6j_0001",
+      "category": "failure_case_comprehensions",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.0,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0002",
+      "category": "failure_case_factorial",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.214,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0003",
+      "category": "failure_case_csv",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.32,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0004",
+      "category": "failure_case_fastapi",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.0,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0005",
+      "category": "failure_case_pandas",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.091,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0006",
+      "category": "python_code_generation",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.105,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0007",
+      "category": "python_code_generation",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.05,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0008",
+      "category": "python_code_generation",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.167,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0009",
+      "category": "python_code_generation",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.042,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0010",
+      "category": "python_code_generation",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.056,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0011",
+      "category": "python_code_generation",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.188,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0012",
+      "category": "python_code_generation",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.214,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0013",
+      "category": "python_code_generation",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.038,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0014",
+      "category": "python_code_generation",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.059,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0015",
+      "category": "python_code_generation",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.176,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0016",
+      "category": "python_debugging",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.0,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0017",
+      "category": "python_debugging",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.031,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0018",
+      "category": "python_debugging",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.0,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0019",
+      "category": "python_debugging",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.056,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0020",
+      "category": "python_debugging",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.2,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0021",
+      "category": "python_debugging",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.154,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0022",
+      "category": "python_debugging",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.03,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0023",
+      "category": "python_debugging",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.129,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0024",
+      "category": "python_debugging",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.294,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0025",
+      "category": "python_debugging",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.032,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0026",
+      "category": "python_library",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.087,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0027",
+      "category": "python_library",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.077,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0028",
+      "category": "python_library",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.095,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0029",
+      "category": "python_library",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.074,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0030",
+      "category": "python_library",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.087,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0031",
+      "category": "python_library",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.056,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0032",
+      "category": "python_library",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.067,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0033",
+      "category": "python_library",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.167,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0034",
+      "category": "python_library",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.071,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0035",
+      "category": "python_library",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.08,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0036",
+      "category": "python_backend",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.0,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0037",
+      "category": "python_backend",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.095,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0038",
+      "category": "python_backend",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.091,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0039",
+      "category": "python_backend",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.062,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0040",
+      "category": "python_backend",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.053,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0041",
+      "category": "python_backend",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.143,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0042",
+      "category": "python_backend",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.0,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0043",
+      "category": "python_backend",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.0,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0044",
+      "category": "python_backend",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.05,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0045",
+      "category": "python_backend",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.091,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0046",
+      "category": "python_interoperability",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.053,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0047",
+      "category": "python_interoperability",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.071,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0048",
+      "category": "python_interoperability",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.053,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0049",
+      "category": "python_interoperability",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.1,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0050",
+      "category": "python_interoperability",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.083,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0051",
+      "category": "python_interoperability",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.091,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0052",
+      "category": "python_interoperability",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.062,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0053",
+      "category": "python_interoperability",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.158,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0054",
+      "category": "python_interoperability",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.077,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0055",
+      "category": "python_interoperability",
+      "expected_behavior": "answer",
+      "max_train_similarity": 0.158,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0056",
+      "category": "direct_non_python",
+      "expected_behavior": "redirect",
+      "max_train_similarity": 0.111,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0057",
+      "category": "direct_non_python",
+      "expected_behavior": "redirect",
+      "max_train_similarity": 0.067,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0058",
+      "category": "direct_non_python",
+      "expected_behavior": "redirect",
+      "max_train_similarity": 0.3,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0059",
+      "category": "direct_non_python",
+      "expected_behavior": "redirect",
+      "max_train_similarity": 0.091,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0060",
+      "category": "direct_non_python",
+      "expected_behavior": "redirect",
+      "max_train_similarity": 0.0,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0061",
+      "category": "direct_non_python",
+      "expected_behavior": "redirect",
+      "max_train_similarity": 0.154,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0062",
+      "category": "direct_non_python",
+      "expected_behavior": "redirect",
+      "max_train_similarity": 0.25,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0063",
+      "category": "direct_non_python",
+      "expected_behavior": "redirect",
+      "max_train_similarity": 0.0,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0064",
+      "category": "direct_non_python",
+      "expected_behavior": "redirect",
+      "max_train_similarity": 0.25,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0065",
+      "category": "direct_non_python",
+      "expected_behavior": "redirect",
+      "max_train_similarity": 0.0,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0066",
+      "category": "non_programming",
+      "expected_behavior": "refuse",
+      "max_train_similarity": 0.0,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0067",
+      "category": "non_programming",
+      "expected_behavior": "refuse",
+      "max_train_similarity": 0.0,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0068",
+      "category": "non_programming",
+      "expected_behavior": "refuse",
+      "max_train_similarity": 0.059,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0069",
+      "category": "non_programming",
+      "expected_behavior": "refuse",
+      "max_train_similarity": 0.0,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0070",
+      "category": "non_programming",
+      "expected_behavior": "refuse",
+      "max_train_similarity": 0.077,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0071",
+      "category": "non_programming",
+      "expected_behavior": "refuse",
+      "max_train_similarity": 0.0,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0072",
+      "category": "non_programming",
+      "expected_behavior": "refuse",
+      "max_train_similarity": 0.05,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0073",
+      "category": "non_programming",
+      "expected_behavior": "refuse",
+      "max_train_similarity": 0.062,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0074",
+      "category": "non_programming",
+      "expected_behavior": "refuse",
+      "max_train_similarity": 0.0,
+      "ast_valid": true,
+      "issues": []
+    },
+    {
+      "id": "val_phase6j_0075",
+      "category": "non_programming",
+      "expected_behavior": "refuse",
+      "max_train_similarity": 0.0,
+      "ast_valid": true,
+      "issues": []
+    }
+  ]
+}
