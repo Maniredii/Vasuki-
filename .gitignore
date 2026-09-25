@@ -1,0 +1,45 @@
+# Large Language Model Weights and Binaries (>100MB hard limit on GitHub)
+*.gguf
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.onnx
+models/
+llama.cpp/
+tools/llama.cpp/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Python Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python Bytecode and Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment Variables & Secrets
+.env
+*.key
+*.token
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS Specific
+Thumbs.db
+Desktop.ini
+.DS_Store
