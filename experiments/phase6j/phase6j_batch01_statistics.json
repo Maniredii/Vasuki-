@@ -1,0 +1,45 @@
+{
+  "batch_id": "phase6j_batch01",
+  "total_examples": 100,
+  "target_count": 100,
+  "achievement_rate": "100.0%",
+  "expected_behavior_distribution": {
+    "answer": 100,
+    "redirect": 0,
+    "refuse": 0
+  },
+  "scope_label_distribution": {
+    "answer_python": 100
+  },
+  "category_distribution": {
+    "python_programming": 100
+  },
+  "area_breakdown": {
+    "fundamentals": 13,
+    "data_structures": 15,
+    "functions_and_decorators": 13,
+    "comprehensions": 13,
+    "exception_handling": 12,
+    "file_handling": 12,
+    "debugging": 11,
+    "standard_library": 11
+  },
+  "difficulty_breakdown": {
+    "beginner": 44,
+    "intermediate": 56
+  },
+  "code_snippet_presence": {
+    "count": 100,
+    "percentage": "100.0%"
+  },
+  "average_lengths": {
+    "instruction_chars": 100.2,
+    "response_chars": 866.1
+  },
+  "exact_duplicates": 0,
+  "near_duplicate_pairs_above_80pct": 0,
+  "syntax_validation": {
+    "all_jsonl_valid": true,
+    "ast_code_syntax_errors": 0
+  }
+}
