@@ -97,6 +97,98 @@ HTML_PAGE = """<!DOCTYPE html>
       gap: 8px;
     }
 
+    .brand-subtitle {
+      font-size: 11.5px;
+      color: var(--text-muted);
+      margin-top: 1px;
+    }
+
+    .brand-subtitle strong {
+      color: #38bdf8;
+      font-weight: 600;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .social-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      background: rgba(22, 27, 34, 0.8);
+    }
+
+    .social-btn:hover {
+      border-color: var(--accent-cyan);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .social-btn.linkedin-btn:hover {
+      border-color: #0a66c2;
+      box-shadow: 0 0 10px rgba(10, 102, 194, 0.35);
+    }
+
+    .social-btn.github-btn:hover {
+      border-color: #f0f6fc;
+      box-shadow: 0 0 10px rgba(240, 246, 252, 0.25);
+    }
+
+    .author-card {
+      margin-top: 16px;
+      margin-bottom: 8px;
+      padding: 10px 18px;
+      background: rgba(13, 17, 23, 0.7);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      border-radius: 12px;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .author-meta {
+      font-size: 13px;
+      color: var(--text-main);
+      font-weight: 500;
+    }
+
+    .author-meta strong {
+      color: #4ade80;
+    }
+
+    .author-links {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 12px;
+    }
+
+    .author-links a {
+      color: var(--accent-cyan);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: color 0.2s;
+    }
+
+    .author-links a:hover {
+      text-decoration: underline;
+      color: #7dd3fc;
+    }
+
     .brand-badge {
       font-size: 11px;
       padding: 2px 8px;
@@ -392,13 +484,32 @@ HTML_PAGE = """<!DOCTYPE html>
   <header>
     <div class="brand">
       <div class="brand-logo">V</div>
-      <div class="brand-title">
-        VASUKI <span class="brand-badge">Phase 6J • 0.5B</span>
+      <div>
+        <div class="brand-title">
+          VASUKI <span class="brand-badge">Phase 6J • 0.5B</span>
+        </div>
+        <div class="brand-subtitle">
+          Developed by <strong>Manideep Reddy Eevuri</strong>
+        </div>
       </div>
     </div>
-    <div class="status-pill">
-      <span class="status-dot"></span>
-      <span>Offline Edge Engine (379 MB)</span>
+    <div class="header-right">
+      <a href="https://github.com/Maniredii" target="_blank" rel="noopener" class="social-btn github-btn" title="GitHub: Maniredii">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+        </svg>
+        <span>GitHub</span>
+      </a>
+      <a href="https://www.linkedin.com/in/manideep-reddy-eevuri-661659268/" target="_blank" rel="noopener" class="social-btn linkedin-btn" title="LinkedIn: Manideep Reddy Eevuri">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+        </svg>
+        <span>LinkedIn</span>
+      </a>
+      <div class="status-pill">
+        <span class="status-dot"></span>
+        <span>Offline Engine</span>
+      </div>
     </div>
   </header>
 
@@ -406,6 +517,22 @@ HTML_PAGE = """<!DOCTYPE html>
     <div class="welcome-card" id="welcomeCard">
       <h2>Offline Python Specialist</h2>
       <p>Fine-tuned for Python algorithms, data structures, and native system bindings. Runs 100% offline on your machine or mobile device.</p>
+      
+      <div class="author-card">
+        <div class="author-meta">Developed by : <strong>Manideep Reddy Eevuri</strong></div>
+        <div class="author-links">
+          <a href="https://github.com/Maniredii" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            github.com/Maniredii
+          </a>
+          <span style="color:var(--text-muted)">•</span>
+          <a href="https://www.linkedin.com/in/manideep-reddy-eevuri-661659268/" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            LinkedIn Profile
+          </a>
+        </div>
+      </div>
+
       <div class="suggestions">
         <button class="suggestion-btn" onclick="usePrompt('Implement binary search in Python with index return')">Binary Search</button>
         <button class="suggestion-btn" onclick="usePrompt('Write a Python class BST with insert and search methods')">Binary Search Tree</button>
@@ -599,12 +726,15 @@ def run_server(port=8000):
     httpd = HTTPServer(server_address, VasukiWebHandler)
     local_ip = get_local_ip()
     
-    print("=" * 70)
-    print("  VASUKI Phase 6J Local Web & Mobile Engine")
-    print("=" * 70)
+    print("\033[96m" + "=" * 72 + "\033[0m")
+    print("  \033[1;97mVASUKI Phase 6J Local Web & Mobile Engine\033[0m")
+    print("  \033[1;92mDeveloped by : Manideep Reddy Eevuri\033[0m")
+    print("  \033[94mGitHub       :\033[0m https://github.com/Maniredii")
+    print("  \033[94mLinkedIn     :\033[0m https://www.linkedin.com/in/manideep-reddy-eevuri-661659268/")
+    print("\033[96m" + "=" * 72 + "\033[0m")
     print(f"  • Desktop Browser : http://localhost:{port}")
     print(f"  • Mobile Phone UI : http://{local_ip}:{port}")
-    print("=" * 70)
+    print("\033[96m" + "=" * 72 + "\033[0m")
     print("Press Ctrl+C to stop the server.\n")
     try:
         httpd.serve_forever()

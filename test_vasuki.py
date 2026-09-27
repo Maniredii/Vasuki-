@@ -51,6 +51,19 @@ def resolve_llama_cli():
 MODEL_PATH = resolve_model_path()
 LLAMA_CLI = resolve_llama_cli()
 
+AUTHOR_NAME = "Manideep Reddy Eevuri"
+AUTHOR_GITHUB = "https://github.com/Maniredii"
+AUTHOR_LINKEDIN = "https://www.linkedin.com/in/manideep-reddy-eevuri-661659268/"
+
+def print_banner():
+    """Displays official author and engine branding banner."""
+    print("\033[96m" + "=" * 72 + "\033[0m")
+    print("  \033[1;97mVASUKI Phase 6J\033[0m \033[90m•\033[0m \033[96m0.5B Edge Python Specialist Engine\033[0m")
+    print(f"  \033[1;92mDeveloped by : {AUTHOR_NAME}\033[0m")
+    print(f"  \033[94mGitHub       :\033[0m {AUTHOR_GITHUB}")
+    print(f"  \033[94mLinkedIn     :\033[0m {AUTHOR_LINKEDIN}")
+    print("\033[96m" + "=" * 72 + "\033[0m")
+
 ALPACAPREAMBLE = "Below is an instruction that describes a task. Write a response that appropriately completes the request.\n\n### Instruction:\n{prompt}\n\n### Response:\n"
 
 def check_domain_boundary(prompt_text):
@@ -312,17 +325,15 @@ def run_benchmark():
 
 def interactive_session():
     """Starts interactive REPL in the terminal with developer commands."""
-    print("=" * 70)
-    print("  \033[96mVASUKI Phase 6J (0.5B Python Specialist) Interactive Console\033[0m")
-    print("=" * 70)
-    print(f"Model: {os.path.basename(MODEL_PATH)}")
-    print("Commands:")
+    print_banner()
+    print(f"\033[90mModel    :\033[0m {os.path.basename(MODEL_PATH)}")
+    print("\033[93mCommands :\033[0m")
     print("  \033[93m/run\033[0m           Execute last generated code snippet in sandbox")
     print("  \033[93m/copy\033[0m          Copy last code snippet to clipboard")
     print("  \033[93m/save <file>\033[0m   Save last code snippet to a Python file")
     print("  \033[93m/clear\033[0m         Clear the terminal screen")
     print("  \033[93mexit / q\033[0m       Quit the console")
-    print("=" * 70 + "\n")
+    print("\033[96m" + "-" * 72 + "\033[0m\n")
     
     last_response = ""
 
@@ -446,10 +457,11 @@ def main():
     elif args.benchmark:
         run_benchmark()
     elif args.prompt:
-        print(f"Prompt: {args.prompt}\n")
+        print_banner()
+        print(f"\033[93mPrompt:\033[0m {args.prompt}\n")
         resp, dur = query_model(args.prompt)
         show_typing(resp, speed=0.012)
-        print(f"\n(Time: {dur:.2f}s)")
+        print(f"\n\033[90m(Inference time: {dur:.2f}s)\033[0m\n")
     else:
         interactive_session()
 

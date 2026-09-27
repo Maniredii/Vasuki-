@@ -65,3 +65,13 @@ python web_vasuki.py
 # Run comprehensive system verification
 python retest_all.py
 ```
+
+---
+
+## 👨‍💻 Author
+
+**Developed by : Manideep Reddy Eevuri**  
+* **LinkedIn:** [linkedin.com/in/manideep-reddy-eevuri-661659268](https://www.linkedin.com/in/manideep-reddy-eevuri-661659268/)  
+* **GitHub:** [@Maniredii](https://github.com/Maniredii)  
+* **Repository:** [Maniredii/Vasuki-](https://github.com/Maniredii/Vasuki-)
+

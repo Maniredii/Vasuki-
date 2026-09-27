@@ -1,6 +1,6 @@
 {
   "name": "vasuki-py",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "VASUKI: Offline Python Specialist AI (0.5B Edge Architecture)",
   "main": "index.js",
   "bin": {
@@ -30,7 +30,11 @@
     "gguf",
     "llama-cpp"
   ],
-  "author": "Mani Reddy",
+  "author": {
+    "name": "Manideep Reddy Eevuri",
+    "email": "sivareddyevuri92@gmail.com",
+    "url": "https://github.com/Maniredii"
+  },
   "license": "Apache-2.0",
   "repository": {
     "type": "git",

@@ -5,6 +5,9 @@
 VASUKI is a lightweight, edge-native AI architecture engineered exclusively for Python development, algorithmic optimization, data structures, and system interoperability. Designed to run completely offline with a footprint under **400 MB RAM**, VASUKI delivers high-precision, syntax-verified Python code generation directly on local CPUs and mobile devices.
 
 [![npm version](https://img.shields.io/npm/v/vasuki-py.svg?color=38bdf8)](https://www.npmjs.com/package/vasuki-py)
+[![Author](https://img.shields.io/badge/Author-Manideep%20Reddy%20Eevuri-22c55e.svg)](https://github.com/Maniredii)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?logo=linkedin)](https://www.linkedin.com/in/manideep-reddy-eevuri-661659268/)
+[![GitHub](https://img.shields.io/badge/GitHub-Maniredii-181717?logo=github)](https://github.com/Maniredii)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS%20%7C%20Mobile-blueviolet)](https://github.com/Maniredii/Vasuki-)
 
@@ -126,6 +129,17 @@ main();
 
 ---
 
+## 👨‍💻 Author & Maintainer
+
+**Developed by : Manideep Reddy Eevuri**
+* **LinkedIn:** [linkedin.com/in/manideep-reddy-eevuri-661659268](https://www.linkedin.com/in/manideep-reddy-eevuri-661659268/)
+* **GitHub:** [@Maniredii](https://github.com/Maniredii)
+* **Repository:** [Maniredii/Vasuki-](https://github.com/Maniredii/Vasuki-)
+* **Email:** sivareddyevuri92@gmail.com
+
+---
+
 ## 📄 License
 
-Apache-2.0 License. Designed and maintained by Mani Reddy.
+Apache-2.0 License. Designed and developed by **Manideep Reddy Eevuri**.
+
