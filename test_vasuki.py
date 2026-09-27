@@ -22,8 +22,34 @@ if hasattr(sys.stdout, "reconfigure"):
 if hasattr(sys.stderr, "reconfigure"):
     sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
-MODEL_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "vasuki_phase6j.Q4_K_M.gguf")
-LLAMA_CLI = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tools", "llama.cpp", "llama-cli.exe")
+import shutil
+
+def resolve_model_path():
+    """Finds the GGUF model path across environment, local repo, and user home."""
+    if os.environ.get("VASUKI_MODEL_PATH") and os.path.exists(os.environ["VASUKI_MODEL_PATH"]):
+        return os.environ["VASUKI_MODEL_PATH"]
+    local = os.path.join(os.path.dirname(os.path.abspath(__file__)), "vasuki_phase6j.Q4_K_M.gguf")
+    if os.path.exists(local):
+        return local
+    home_model = os.path.join(os.path.expanduser("~"), ".vasuki", "models", "vasuki_phase6j.Q4_K_M.gguf")
+    if os.path.exists(home_model):
+        return home_model
+    return local
+
+def resolve_llama_cli():
+    """Finds llama-cli executable in repo or system PATH."""
+    if os.environ.get("LLAMA_CLI_PATH") and os.path.exists(os.environ["LLAMA_CLI_PATH"]):
+        return os.environ["LLAMA_CLI_PATH"]
+    local = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tools", "llama.cpp", "llama-cli.exe")
+    if os.path.exists(local):
+        return local
+    which_cli = shutil.which("llama-cli") or shutil.which("llama-cli.exe")
+    if which_cli:
+        return which_cli
+    return local
+
+MODEL_PATH = resolve_model_path()
+LLAMA_CLI = resolve_llama_cli()
 
 ALPACAPREAMBLE = "Below is an instruction that describes a task. Write a response that appropriately completes the request.\n\n### Instruction:\n{prompt}\n\n### Response:\n"
 
