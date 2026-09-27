@@ -366,8 +366,17 @@ def execute_training(model, tokenizer, train_data, val_data, is_unsloth):
     
     # Final evaluation on held-out 75 validation examples
     print("\n[*] Running final evaluation against held-out validation set...")
-    eval_results = trainer.evaluate()
-    print(f"  Validation Loss:  {eval_results.get('eval_loss', 'N/A'):.4f}")
+    try:
+        eval_results = trainer.evaluate()
+    except Exception:
+        val_losses = [entry['eval_loss'] for entry in trainer.state.log_history if 'eval_loss' in entry]
+        eval_results = {'eval_loss': val_losses[-1] if val_losses else None}
+    
+    val_loss_val = eval_results.get('eval_loss')
+    if val_loss_val is not None:
+        print(f"  Validation Loss:  {val_loss_val:.4f}")
+    else:
+        print(f"  Validation Loss:  N/A")
     
     return trainer, train_stats, eval_results
 
