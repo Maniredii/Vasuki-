@@ -286,7 +286,43 @@ def execute_training(model, tokenizer, train_data, val_data, is_unsloth):
     
     from datasets import Dataset
     from transformers import TrainingArguments
-    from trl import SFTTrainer, DataCollatorForCompletionOnlyLM
+    from trl import SFTTrainer
+    
+    try:
+        from trl import DataCollatorForCompletionOnlyLM
+    except ImportError:
+        try:
+            from trl.trainer import DataCollatorForCompletionOnlyLM
+        except ImportError:
+            from transformers import DataCollatorForLanguageModeling
+
+            class DataCollatorForCompletionOnlyLM(DataCollatorForLanguageModeling):
+                """Self-contained completion loss collator that masks prompt tokens with -100."""
+                def __init__(self, response_template, tokenizer, mlm=False, **kwargs):
+                    super().__init__(tokenizer=tokenizer, mlm=mlm, **kwargs)
+                    self.response_template = response_template
+                    if isinstance(response_template, str):
+                        self.response_token_ids = tokenizer.encode(response_template, add_special_tokens=False)
+                    else:
+                        self.response_token_ids = response_template
+
+                def torch_call(self, examples):
+                    batch = super().torch_call(examples)
+                    labels = batch["labels"].clone()
+                    rlen = len(self.response_token_ids)
+                    for i in range(len(examples)):
+                        input_ids = batch["input_ids"][i].tolist()
+                        response_start = None
+                        for j in range(len(input_ids) - rlen + 1):
+                            if input_ids[j:j+rlen] == self.response_token_ids:
+                                response_start = j + rlen
+                                break
+                        if response_start is not None:
+                            labels[i, :response_start] = -100
+                        else:
+                            labels[i, :] = -100
+                    batch["labels"] = labels
+                    return batch
     
     train_dataset = Dataset.from_list(train_data)
     val_dataset = Dataset.from_list(val_data)
