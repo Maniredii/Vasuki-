@@ -136,14 +136,117 @@ def query_model(prompt_text, max_tokens=350, temp=0.2):
     except Exception as e:
         return f"[Error: {e}]", 0.0
 
-def show_typing(text, speed=0.012):
-    """Prints text with a natural typewriter typing animation."""
-    for char in text:
+def colorize_python(text):
+    """Adds ANSI terminal syntax colors to Python code."""
+    CYAN = '\033[96m'      # Keywords
+    YELLOW = '\033[93m'    # Function / Class names
+    GREEN = '\033[92m'     # Strings
+    MAGENTA = '\033[95m'   # Numbers / Booleans
+    GRAY = '\033[90m'      # Comments
+    RESET = '\033[0m'
+
+    keywords = {
+        "def", "class", "return", "yield", "import", "from", "as",
+        "if", "elif", "else", "for", "while", "in", "try", "except",
+        "finally", "with", "raise", "pass", "break", "continue",
+        "lambda", "global", "nonlocal", "assert", "async", "await"
+    }
+    booleans = {"True", "False", "None", "self"}
+
+    colored_lines = []
+    for line in text.splitlines():
+        # Comment line
+        stripped = line.strip()
+        if stripped.startswith("#"):
+            colored_lines.append(f"{GRAY}{line}{RESET}")
+            continue
+
+        # Simple token colorization
+        # Split tokens while preserving indentation
+        parts = re.split(r'(\b\w+\b|["][^"]*["]|[\'][^\']*[\']|#.*$)', line)
+        out_line = []
+        is_def_or_class = False
+        for part in parts:
+            if not part:
+                continue
+            if part.startswith("#"):
+                out_line.append(f"{GRAY}{part}{RESET}")
+            elif (part.startswith('"') and part.endswith('"')) or (part.startswith("'") and part.endswith("'")):
+                out_line.append(f"{GREEN}{part}{RESET}")
+            elif part in keywords:
+                out_line.append(f"{CYAN}{part}{RESET}")
+                if part in ("def", "class"):
+                    is_def_or_class = True
+            elif part in booleans:
+                out_line.append(f"{MAGENTA}{part}{RESET}")
+            elif part.isdigit():
+                out_line.append(f"{MAGENTA}{part}{RESET}")
+            elif is_def_or_class and re.match(r'^[a-zA-Z_]\w*$', part):
+                out_line.append(f"{YELLOW}{part}{RESET}")
+                is_def_or_class = False
+            else:
+                out_line.append(part)
+        colored_lines.append("".join(out_line))
+    return "\n".join(colored_lines)
+
+def copy_to_clipboard(text):
+    """Copies text to the system clipboard on Windows."""
+    try:
+        cmd = ["powershell", "-NoProfile", "-Command", "$input | Set-Clipboard"]
+        proc = subprocess.run(cmd, input=text, text=True, capture_output=True)
+        return proc.returncode == 0
+    except Exception:
+        return False
+
+def execute_sandbox(code_str):
+    """Executes generated code in a safe sandbox and displays output."""
+    import io
+    import contextlib
+
+    # Strip markdown fences if present
+    clean_code = code_str
+    if "```python" in clean_code:
+        clean_code = clean_code.split("```python")[-1].split("```")[0].strip()
+    elif "```" in clean_code:
+        clean_code = clean_code.split("```")[-1].split("```")[0].strip()
+
+    print("\n" + "\033[94m" + "-" * 55 + "\033[0m")
+    print("\033[93m[Sandbox Execution Running...]\033[0m")
+    buf = io.StringIO()
+    start_t = time.time()
+    try:
+        with contextlib.redirect_stdout(buf), contextlib.redirect_stderr(buf):
+            scope = {}
+            exec(clean_code, scope, scope)
+        elapsed = time.time() - start_t
+        out = buf.getvalue().strip()
+        if out:
+            print("\033[92m[Program Output]:\033[0m")
+            print(out)
+        else:
+            print("\033[92m[OK] Code executed with zero errors (no print output produced).\033[0m")
+        print(f"\033[90m(Execution time: {elapsed*1000:.1f}ms)\033[0m")
+    except Exception as e:
+        print(f"\033[91m[Execution Error]: {type(e).__name__}: {e}\033[0m")
+    print("\033[94m" + "-" * 55 + "\033[0m\n")
+
+def show_typing(text, speed=0.010, colorize=True):
+    """Prints text with syntax colors and typewriter animation."""
+    display_text = colorize_python(text) if colorize else text
+    # Ansi escape sequence aware typing
+    in_escape = False
+    for char in display_text:
+        if char == '\033':
+            in_escape = True
+        if in_escape:
+            sys.stdout.write(char)
+            if char == 'm':
+                in_escape = False
+            continue
+        
         sys.stdout.write(char)
         sys.stdout.flush()
         if char == '\n':
-            time.sleep(speed * 2.5)
-        elif char in ('.', ':', '!', '?'):
             time.sleep(speed * 2.0)
         else:
             time.sleep(speed)
@@ -173,7 +276,7 @@ def run_benchmark():
         print(f"Prompt: {prompt}")
         print("-" * 50)
         resp, dur = query_model(prompt)
-        show_typing(resp, speed=0.006)
+        show_typing(resp, speed=0.005)
         print("-" * 50)
         print(f"Inference Time: {dur:.2f}s\n")
     print("=" * 70)
@@ -181,30 +284,88 @@ def run_benchmark():
     print("=" * 70)
 
 def interactive_session():
-    """Starts interactive REPL in the terminal."""
+    """Starts interactive REPL in the terminal with developer commands."""
     print("=" * 70)
-    print("  VASUKI Phase 6J (0.5B Python Specialist) Interactive Console")
+    print("  \033[96mVASUKI Phase 6J (0.5B Python Specialist) Interactive Console\033[0m")
     print("=" * 70)
     print(f"Model: {os.path.basename(MODEL_PATH)}")
-    print("Type your prompt and press Enter. Type 'exit' or 'q' to quit.")
+    print("Commands:")
+    print("  \033[93m/run\033[0m           Execute last generated code snippet in sandbox")
+    print("  \033[93m/copy\033[0m          Copy last code snippet to clipboard")
+    print("  \033[93m/save <file>\033[0m   Save last code snippet to a Python file")
+    print("  \033[93m/clear\033[0m         Clear the terminal screen")
+    print("  \033[93mexit / q\033[0m       Quit the console")
     print("=" * 70 + "\n")
     
+    last_response = ""
+
     while True:
         try:
-            prompt = input("VASUKI >>> ").strip()
+            prompt = input("\033[92mVASUKI >>> \033[0m").strip()
             if not prompt:
                 continue
+            
+            # Slash commands
             if prompt.lower() in ("exit", "quit", "q"):
-                print("Exiting VASUKI console. Goodbye!")
+                print("\033[90mExiting VASUKI console. Goodbye!\033[0m")
                 break
             
-            print("\n[VASUKI is typing...]", end="\r", flush=True)
+            if prompt.lower() == "/clear":
+                os.system("cls" if os.name == "nt" else "clear")
+                continue
+
+            if prompt.lower() == "/help":
+                print("\n\033[93mAvailable Commands:\033[0m")
+                print("  /run           - Execute last code snippet in a live Python sandbox")
+                print("  /copy          - Copy last code snippet to system clipboard")
+                print("  /save <file>   - Save last code snippet into <file>")
+                print("  /clear         - Clear terminal screen")
+                print("  exit           - Exit console\n")
+                continue
+
+            if prompt.lower() == "/run":
+                if not last_response:
+                    print("\033[91m[!] No previous code snippet to run.\033[0m\n")
+                else:
+                    execute_sandbox(last_response)
+                continue
+
+            if prompt.lower() == "/copy":
+                if not last_response:
+                    print("\033[91m[!] No previous code snippet to copy.\033[0m\n")
+                else:
+                    ok = copy_to_clipboard(last_response)
+                    if ok:
+                        print("\033[92m[✓] Copied last code snippet to clipboard!\033[0m\n")
+                    else:
+                        print("\033[91m[!] Failed to copy to clipboard.\033[0m\n")
+                continue
+
+            if prompt.lower().startswith("/save"):
+                parts = prompt.split(maxsplit=1)
+                if len(parts) < 2 or not parts[1].strip():
+                    print("\033[91m[!] Usage: /save <filename.py>\033[0m\n")
+                elif not last_response:
+                    print("\033[91m[!] No previous code snippet to save.\033[0m\n")
+                else:
+                    save_path = parts[1].strip()
+                    try:
+                        with open(save_path, "w", encoding="utf-8") as f:
+                            f.write(last_response + "\n")
+                        print(f"\033[92m[✓] Saved snippet to {save_path}\033[0m\n")
+                    except Exception as e:
+                        print(f"\033[91m[!] Error saving file: {e}\033[0m\n")
+                continue
+
+            print("\033[90m[VASUKI is typing...]\033[0m", end="\r", flush=True)
             response, elapsed = query_model(prompt)
             print(" " * 30, end="\r")  # Clear the typing banner
-            print("=" * 50)
-            show_typing(response, speed=0.012)
-            print("=" * 50)
-            print(f"(Generation time: {elapsed:.2f}s)\n")
+            print("-" * 55)
+            show_typing(response, speed=0.009, colorize=True)
+            print("-" * 55)
+            print(f"\033[90m(Generated in {elapsed:.2f}s | Type /run to test, /copy to copy)\033[0m\n")
+            last_response = response
+
         except (KeyboardInterrupt, EOFError):
             print("\nExiting VASUKI console.")
             break
