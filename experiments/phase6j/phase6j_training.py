@@ -30,12 +30,15 @@ from pathlib import Path
 
 EXPERIMENT_ID = "vasuki_phase6j_pilot"
 BASE_MODEL = "unsloth/Qwen2.5-Coder-0.5B"
-# Dataset Selection: Priority to Multi-Source (2,470 records: iamtarun + flytech + CodeAlpaca + Phase 6J)
+# Dataset Selection: Priority to Calibrated V3 (2,651 records: 94.8% Python + 5.0% boundary redirects)
+CALIBRATED_FILE = "phase6j_training_candidate_calibrated.jsonl"
 MULTI_SOURCE_FILE = "phase6j_training_candidate_multi_source.jsonl"
 AUGMENTED_FILE = "phase6j_training_candidate_augmented.jsonl"
 BALANCED_FILE = "phase6j_training_candidate_balanced.jsonl"
 
-if os.path.exists(MULTI_SOURCE_FILE):
+if os.path.exists(CALIBRATED_FILE):
+    TRAINING_DATA_FILE = CALIBRATED_FILE
+elif os.path.exists(MULTI_SOURCE_FILE):
     TRAINING_DATA_FILE = MULTI_SOURCE_FILE
 elif os.path.exists(AUGMENTED_FILE):
     TRAINING_DATA_FILE = AUGMENTED_FILE
@@ -49,8 +52,11 @@ RANDOM_SEED = 42
 
 # Cryptographic signatures for dataset integrity validation (Linux LF and Windows CRLF)
 EXPECTED_TRAIN_HASHES = {
+    # Calibrated V3 dataset (2,651 records: 94.8% Python + 5.0% redirects)
+    "ed0f00346888db609b85d09b408174c3688e37982d66d8a6bf3cabd97ca7bd0a",  # Linux / Git LF (Colab default)
+    "da06de85e2f081ec9d4b7ea59e9298424dffec03c769f5e9574c0701bd632a34",  # Windows CRLF
     # Multi-source dataset (2,470 records: iamtarun + flytech + CodeAlpaca + Phase 6J)
-    "2a72e9b9bba07867df68f315440c7b875a49f5ac1f50be0c701d19130a132df9",  # Linux / Git LF (Colab default)
+    "2a72e9b9bba07867df68f315440c7b875a49f5ac1f50be0c701d19130a132df9",  # Linux / Git LF
     "7a46f0ddb03f75733653f52e2f6a00f408adcee9c121bbd9e1fbd4c261495f22",  # Windows CRLF
     # Augmented dataset (1,470 records: iamtarun + Phase 6J)
     "26b0a367f6f2d200a374067384ec90fc0989702ba80b5b59a74d1ec93c528605",  # Linux / Git LF
@@ -63,7 +69,7 @@ EXPECTED_VAL_HASHES = {
     "6e6ad7626955211ed9ec8f4084e668bf9bf240cc2704430642c351e2ba1e48cb",  # Linux / Git LF (Colab default)
     "db816d9bac321deda2aa80dce5552ff994006c42054bac638baf4a5647a4172d",  # Windows CRLF
 }
-EXPECTED_TRAIN_COUNTS = {2470, 1470, 470}
+EXPECTED_TRAIN_COUNTS = {2651, 2470, 1470, 470}
 EXPECTED_VAL_COUNT = 75
 
 # QLoRA Configuration (Conservative & Parameter-Efficient)
@@ -80,8 +86,12 @@ LORA_CONFIG = {
 }
 
 # Training Hyperparameters (Tesla T4 / A10G / L4 Optimized)
-if TRAINING_DATA_FILE == MULTI_SOURCE_FILE:
-    MAX_STEPS = 616      # 2 epochs over 2,470 records (effective batch size 8)
+if TRAINING_DATA_FILE == CALIBRATED_FILE:
+    MAX_STEPS = 660      # 2 epochs over 2,651 records (effective batch size 8)
+    EVAL_STEPS = 75
+    WARMUP_STEPS = 30
+elif TRAINING_DATA_FILE == MULTI_SOURCE_FILE:
+    MAX_STEPS = 616      # 2 epochs over 2,470 records
     EVAL_STEPS = 75
     WARMUP_STEPS = 30
 elif TRAINING_DATA_FILE == AUGMENTED_FILE:
@@ -116,6 +126,11 @@ TRAINING_CONFIG = {
     "metric_for_best_model": "eval_loss",
     "report_to": "none"
 }
+
+# Prompt formatting constants
+RESPONSE_DELIMITER = "### Response:\n"
+EOS_TOKEN = "<|im_end|>"
+
 
 # Prompt formatting constants
 RESPONSE_DELIMITER = "### Response:\n"
@@ -212,10 +227,11 @@ def verify_and_load_datasets():
             if r.get('input'):
                 prompt += f"### Input:\n{r['input']}\n\n"
             prompt += RESPONSE_DELIMITER
-            full_text = prompt + r['response']
+            clean_resp = r['response'].strip()
+            full_text = prompt + clean_resp + "\n<|im_end|>\n"
             formatted.append({
                 "prompt": prompt,
-                "response": r['response'],
+                "response": clean_resp + "\n<|im_end|>\n",
                 "text": full_text
             })
         return formatted
