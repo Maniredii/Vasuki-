@@ -13,6 +13,12 @@
     "benchmark": "node ./bin/vasuki.js --benchmark",
     "ds": "node ./bin/vasuki.js --ds"
   },
+  "files": [
+    "bin/",
+    "test_vasuki.py",
+    "web_vasuki.py",
+    "README.md"
+  ],
   "keywords": [
     "python",
     "ai",
