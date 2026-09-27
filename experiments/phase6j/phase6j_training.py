@@ -30,7 +30,7 @@ from pathlib import Path
 
 EXPERIMENT_ID = "vasuki_phase6j_pilot"
 BASE_MODEL = "unsloth/Qwen2.5-Coder-0.5B"
-TRAINING_DATA_FILE = "phase6j_training_candidate_diversified.jsonl"
+TRAINING_DATA_FILE = "phase6j_training_candidate_balanced.jsonl"
 VALIDATION_DATA_FILE = "phase6j_validation.jsonl"
 OUTPUT_DIR = "./phase6j_output"
 MAX_SEQ_LENGTH = 2048
@@ -38,14 +38,14 @@ RANDOM_SEED = 42
 
 # Cryptographic signatures for dataset integrity validation (Linux LF and Windows CRLF)
 EXPECTED_TRAIN_HASHES = {
-    "b5c4c04b91faf4300e4e7f1a77dbd090421a7f89d693228c6be0a63457562e8b",  # Linux / Git LF (Colab default)
-    "af9714012101cba1e639bff0b946c78bdeea947f20b341f1803e4352310cc0e2",  # Windows CRLF
+    "9cf5e54dce6c6f75930c0297d273c92655ab2222f51635842f8f0fdf436acd3c",  # Linux / Git LF (Colab default)
+    "27575b2003819d501f9c5840f80a7dc9cf61c78f53f062b9d0cb8f02f509d47a",  # Windows CRLF
 }
 EXPECTED_VAL_HASHES = {
     "6e6ad7626955211ed9ec8f4084e668bf9bf240cc2704430642c351e2ba1e48cb",  # Linux / Git LF (Colab default)
     "db816d9bac321deda2aa80dce5552ff994006c42054bac638baf4a5647a4172d",  # Windows CRLF
 }
-EXPECTED_TRAIN_COUNT = 593
+EXPECTED_TRAIN_COUNT = 470
 EXPECTED_VAL_COUNT = 75
 
 # QLoRA Configuration (Conservative & Parameter-Efficient)
@@ -67,13 +67,13 @@ TRAINING_CONFIG = {
     "per_device_eval_batch_size": 2,
     "gradient_accumulation_steps": 4,
     "warmup_steps": 10,
-    "max_steps": 220,             # ~3 epochs over 593 records (batch size 8)
+    "max_steps": 180,             # ~3 epochs over 470 balanced records (batch size 8)
     "learning_rate": 2e-4,        # 0.0002
     "fp16": True,                 # Optimized for T4 (use bf16 for A100/L4 if available)
     "bf16": False,
     "logging_steps": 10,
-    "eval_steps": 50,
-    "save_steps": 50,
+    "eval_steps": 45,
+    "save_steps": 45,
     "save_total_limit": 1,        # Retain only the single best checkpoint to save disk space
     "optim": "adamw_8bit",
     "weight_decay": 0.01,
