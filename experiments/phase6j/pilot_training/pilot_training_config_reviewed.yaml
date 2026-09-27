@@ -1,0 +1,83 @@
+# VASUKI Phase 6J — Reviewed Pilot LoRA Training Configuration
+# Preserves pilot_training_config.yaml intact; provides refined single-model & loss-masking settings.
+
+experiment:
+  name: "vasuki_phase6j_pilot_lora"
+  version: "6j.1.1-reviewed"
+  seed: 42
+  output_dir: "./output/vasuki_phase6j_pilot"
+
+model:
+  # Single verified base model
+  base_model_name_or_path: "unsloth/Qwen2.5-Coder-0.5B"
+  architecture: "Qwen2ForCausalLM"
+  parameter_count: 494032896  # ~490M
+  context_length: 2048
+  torch_dtype: "float16"
+  load_in_4bit: true
+  bnb_4bit_quant_type: "nf4"
+  bnb_4bit_use_double_quant: true
+  bnb_4bit_compute_dtype: "float16"
+  is_gguf_base: false
+  note: "GGUF artifact vasuki_phase6i.Q4_K_M.gguf is an inference export, not a training base."
+
+tokenizer:
+  name: "Qwen2TokenizerFast"
+  type: "byte-level BPE"
+  padding_side: "right"
+  use_fast: true
+
+dataset:
+  train_file: "../phase6j_training_candidate_diversified.jsonl"
+  validation_file: "../phase6j_validation.jsonl"
+  train_records: 593
+  val_records: 75
+  max_seq_length: 2048
+  prompt_template: "### Instruction:\n{instruction}\n\n### Input:\n{input}\n\n### Response:\n{response}"
+  response_template: "### Response:\n"
+  train_on_responses_only: true  # Mask prompt tokens (-100) for cross-entropy loss
+
+lora:
+  r: 16
+  lora_alpha: 16
+  lora_dropout: 0.05
+  bias: "none"
+  target_modules:
+    - "q_proj"
+    - "k_proj"
+    - "v_proj"
+    - "o_proj"
+    - "gate_proj"
+    - "up_proj"
+    - "down_proj"
+  task_type: "CAUSAL_LM"
+
+training:
+  per_device_train_batch_size: 2
+  per_device_eval_batch_size: 2
+  gradient_accumulation_steps: 4
+  effective_batch_size: 8
+  learning_rate: 0.0002
+  lr_scheduler_type: "cosine"
+  warmup_ratio: 0.05
+  num_train_epochs: 3
+  max_steps: 220
+  weight_decay: 0.01
+  optim: "adamw_8bit"
+  fp16: true
+  bf16: false
+  gradient_checkpointing: true
+  logging_steps: 10
+  eval_steps: 50
+  save_steps: 50
+  save_total_limit: 2
+  eval_strategy: "steps"
+  load_best_model_at_end: true
+  metric_for_best_model: "eval_loss"
+
+hardware_requirements:
+  recommended_runtime: "Google Colab or Cloud GPU (NVIDIA Tesla T4 / A10G / L4)"
+  minimum_vram_gb: 8
+  host_ram_gb: 16
+  cuda_version: ">=11.8"
+  local_environment_status: "CPU-only (Execution must occur on GPU runtime)"

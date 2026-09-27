@@ -1,0 +1,68 @@
+[
+  {
+    "record_id": "phase6e_000525",
+    "instruction": "How can I call a Java REST API from Python?",
+    "category": "python_interoperability",
+    "group_context": "Java REST API invocation via Python requests",
+    "code_technically_correct": true,
+    "appropriateness_evaluation": "Technically accurate and directly answers prompt intent.",
+    "distinctness_assessment": "Canonical exemplar",
+    "resolution_action": "RETAIN_AS_VERIFIED_INTEROP",
+    "justification": "Retain in candidate dataset. The code is technically sound and answers the question accurately. Because REST APIs communicate via HTTP regardless of backend language, using requests.get() is standard Python. While instructions 000526-000528 share the response, they reinforce that Java REST APIs are queried via standard HTTP."
+  },
+  {
+    "record_id": "phase6e_000526",
+    "instruction": "How do I call a Java REST API from Python?",
+    "category": "python_interoperability",
+    "group_context": "Java REST API invocation via Python requests",
+    "code_technically_correct": true,
+    "appropriateness_evaluation": "Technically accurate and directly answers prompt intent.",
+    "distinctness_assessment": "Paraphrase duplicate of phase6e_000525",
+    "resolution_action": "RETAIN_AS_VERIFIED_INTEROP",
+    "justification": "Retain in candidate dataset. The code is technically sound and answers the question accurately. Because REST APIs communicate via HTTP regardless of backend language, using requests.get() is standard Python. While instructions 000526-000528 share the response, they reinforce that Java REST APIs are queried via standard HTTP."
+  },
+  {
+    "record_id": "phase6e_000527",
+    "instruction": "What's the best way to call a Java REST API from Python?",
+    "category": "python_interoperability",
+    "group_context": "Java REST API invocation via Python requests",
+    "code_technically_correct": true,
+    "appropriateness_evaluation": "Technically accurate and directly answers prompt intent.",
+    "distinctness_assessment": "Paraphrase duplicate of phase6e_000525",
+    "resolution_action": "RETAIN_AS_VERIFIED_INTEROP",
+    "justification": "Retain in candidate dataset. The code is technically sound and answers the question accurately. Because REST APIs communicate via HTTP regardless of backend language, using requests.get() is standard Python. While instructions 000526-000528 share the response, they reinforce that Java REST APIs are queried via standard HTTP."
+  },
+  {
+    "record_id": "phase6e_000528",
+    "instruction": "How can I call a Java REST API from Python 3?",
+    "category": "python_interoperability",
+    "group_context": "Java REST API invocation via Python requests",
+    "code_technically_correct": true,
+    "appropriateness_evaluation": "Technically accurate and directly answers prompt intent.",
+    "distinctness_assessment": "Paraphrase duplicate of phase6e_000525",
+    "resolution_action": "RETAIN_AS_VERIFIED_INTEROP",
+    "justification": "Retain in candidate dataset. The code is technically sound and answers the question accurately. Because REST APIs communicate via HTTP regardless of backend language, using requests.get() is standard Python. While instructions 000526-000528 share the response, they reinforce that Java REST APIs are queried via standard HTTP."
+  },
+  {
+    "record_id": "phase6e_000532",
+    "instruction": "Parse JSON data in Python from an external API",
+    "category": "python_interoperability",
+    "group_context": "JSON parsing from external API via Python json / requests",
+    "code_technically_correct": true,
+    "appropriateness_evaluation": "Technically accurate and directly answers prompt intent.",
+    "distinctness_assessment": "Canonical exemplar",
+    "resolution_action": "RETAIN_AS_VERIFIED_INTEROP",
+    "justification": "Retain in candidate dataset. The code correctly demonstrates json.loads(response.text) and response.json(). Answers the instruction precisely."
+  },
+  {
+    "record_id": "phase6e_000533",
+    "instruction": "Parse JSON data in Python 3 from an external API",
+    "category": "python_interoperability",
+    "group_context": "JSON parsing from external API via Python json / requests",
+    "code_technically_correct": true,
+    "appropriateness_evaluation": "Technically accurate and directly answers prompt intent.",
+    "distinctness_assessment": "Paraphrase duplicate of phase6e_000532",
+    "resolution_action": "RETAIN_AS_VERIFIED_INTEROP",
+    "justification": "Retain in candidate dataset. The code correctly demonstrates json.loads(response.text) and response.json(). Answers the instruction precisely."
+  }
+]

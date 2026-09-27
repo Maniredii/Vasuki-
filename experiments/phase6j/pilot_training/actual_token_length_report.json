@@ -1,0 +1,5393 @@
+{
+  "tokenizer_class": "Qwen2TokenizerFast",
+  "vocab_size": 151665,
+  "candidate_sha256": "af9714012101cba1e639bff0b946c78bdeea947f20b341f1803e4352310cc0e2",
+  "validation_sha256": "db816d9bac321deda2aa80dce5552ff994006c42054bac638baf4a5647a4172d",
+  "candidate_distribution": {
+    "count": 593,
+    "min": 30,
+    "max": 381,
+    "mean": 136.1,
+    "median": 118,
+    "p90": 261,
+    "p95": 286,
+    "p99": 329,
+    "exceeding_2048_count": 0
+  },
+  "candidate_max_record": {
+    "id": "phase6j_000005",
+    "category": "python_programming",
+    "prompt_token_count": 33,
+    "response_token_count": 348,
+    "total_token_count": 381,
+    "exceeds_2048": false
+  },
+  "validation_distribution": {
+    "count": 75,
+    "min": 46,
+    "max": 254,
+    "mean": 110.36,
+    "median": 105,
+    "p90": 190,
+    "p95": 214,
+    "p99": 254,
+    "exceeding_2048_count": 0
+  },
+  "validation_max_record": {
+    "id": "val_phase6j_0013",
+    "category": "python_code_generation",
+    "prompt_token_count": 23,
+    "response_token_count": 231,
+    "total_token_count": 254,
+    "exceeds_2048": false
+  },
+  "records_exceeding_2048": [],
+  "detailed_candidate_metrics": [
+    {
+      "id": "phase6e_000001",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 40,
+      "total_token_count": 54,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000002",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 28,
+      "total_token_count": 42,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000003",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 48,
+      "total_token_count": 64,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000004",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 45,
+      "total_token_count": 59,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000005",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 34,
+      "total_token_count": 50,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000006",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 32,
+      "total_token_count": 48,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000007",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 35,
+      "total_token_count": 49,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000008",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 39,
+      "total_token_count": 56,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000009",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 37,
+      "total_token_count": 54,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000010",
+      "category": "direct_non_python",
+      "prompt_token_count": 15,
+      "response_token_count": 34,
+      "total_token_count": 49,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000011",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 44,
+      "total_token_count": 61,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000012",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 35,
+      "total_token_count": 52,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000013",
+      "category": "direct_non_python",
+      "prompt_token_count": 15,
+      "response_token_count": 31,
+      "total_token_count": 46,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000014",
+      "category": "direct_non_python",
+      "prompt_token_count": 19,
+      "response_token_count": 36,
+      "total_token_count": 55,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000015",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 33,
+      "total_token_count": 47,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000016",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 36,
+      "total_token_count": 50,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000019",
+      "category": "direct_non_python",
+      "prompt_token_count": 15,
+      "response_token_count": 32,
+      "total_token_count": 47,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000020",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 36,
+      "total_token_count": 53,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000021",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 36,
+      "total_token_count": 52,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000022",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 38,
+      "total_token_count": 52,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000023",
+      "category": "direct_non_python",
+      "prompt_token_count": 15,
+      "response_token_count": 31,
+      "total_token_count": 46,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000024",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 38,
+      "total_token_count": 52,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000025",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 39,
+      "total_token_count": 53,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000026",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 31,
+      "total_token_count": 48,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000027",
+      "category": "direct_non_python",
+      "prompt_token_count": 18,
+      "response_token_count": 34,
+      "total_token_count": 52,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000028",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 29,
+      "total_token_count": 43,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000029",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 38,
+      "total_token_count": 54,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000030",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 39,
+      "total_token_count": 55,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000031",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 54,
+      "total_token_count": 70,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000032",
+      "category": "direct_non_python",
+      "prompt_token_count": 18,
+      "response_token_count": 40,
+      "total_token_count": 58,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000033",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 42,
+      "total_token_count": 56,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000034",
+      "category": "direct_non_python",
+      "prompt_token_count": 15,
+      "response_token_count": 30,
+      "total_token_count": 45,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000035",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 37,
+      "total_token_count": 51,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000036",
+      "category": "direct_non_python",
+      "prompt_token_count": 13,
+      "response_token_count": 31,
+      "total_token_count": 44,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000037",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 32,
+      "total_token_count": 48,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000039",
+      "category": "direct_non_python",
+      "prompt_token_count": 18,
+      "response_token_count": 36,
+      "total_token_count": 54,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000040",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 43,
+      "total_token_count": 57,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000041",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 36,
+      "total_token_count": 50,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000042",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 32,
+      "total_token_count": 46,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000043",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 29,
+      "total_token_count": 43,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000045",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 33,
+      "total_token_count": 47,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000046",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 31,
+      "total_token_count": 48,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000047",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 34,
+      "total_token_count": 48,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000049",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 32,
+      "total_token_count": 49,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000050",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 38,
+      "total_token_count": 52,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000051",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 31,
+      "total_token_count": 48,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000055",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 41,
+      "total_token_count": 55,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000057",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 29,
+      "total_token_count": 43,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000058",
+      "category": "direct_non_python",
+      "prompt_token_count": 13,
+      "response_token_count": 32,
+      "total_token_count": 45,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000061",
+      "category": "direct_non_python",
+      "prompt_token_count": 13,
+      "response_token_count": 31,
+      "total_token_count": 44,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000063",
+      "category": "direct_non_python",
+      "prompt_token_count": 15,
+      "response_token_count": 43,
+      "total_token_count": 58,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000064",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 35,
+      "total_token_count": 49,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000065",
+      "category": "direct_non_python",
+      "prompt_token_count": 19,
+      "response_token_count": 25,
+      "total_token_count": 44,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000066",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 35,
+      "total_token_count": 51,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000068",
+      "category": "direct_non_python",
+      "prompt_token_count": 18,
+      "response_token_count": 31,
+      "total_token_count": 49,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000069",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 40,
+      "total_token_count": 56,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000070",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 37,
+      "total_token_count": 51,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000071",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 35,
+      "total_token_count": 49,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000072",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 35,
+      "total_token_count": 51,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000073",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 34,
+      "total_token_count": 48,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000075",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 28,
+      "total_token_count": 45,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000076",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 32,
+      "total_token_count": 49,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000077",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 35,
+      "total_token_count": 51,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000078",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 31,
+      "total_token_count": 48,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000079",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 34,
+      "total_token_count": 48,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000082",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 27,
+      "total_token_count": 44,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000084",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 37,
+      "total_token_count": 54,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000087",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 31,
+      "total_token_count": 45,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000088",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 31,
+      "total_token_count": 47,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000091",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 36,
+      "total_token_count": 50,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000093",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 29,
+      "total_token_count": 43,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000094",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 30,
+      "total_token_count": 44,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000095",
+      "category": "direct_non_python",
+      "prompt_token_count": 15,
+      "response_token_count": 45,
+      "total_token_count": 60,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000096",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 31,
+      "total_token_count": 45,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000097",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 34,
+      "total_token_count": 48,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000098",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 31,
+      "total_token_count": 47,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000099",
+      "category": "direct_non_python",
+      "prompt_token_count": 15,
+      "response_token_count": 28,
+      "total_token_count": 43,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000100",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 32,
+      "total_token_count": 49,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000101",
+      "category": "direct_non_python",
+      "prompt_token_count": 18,
+      "response_token_count": 27,
+      "total_token_count": 45,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000105",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 30,
+      "total_token_count": 44,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000108",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 32,
+      "total_token_count": 48,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000109",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 26,
+      "total_token_count": 40,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000110",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 32,
+      "total_token_count": 46,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000111",
+      "category": "direct_non_python",
+      "prompt_token_count": 15,
+      "response_token_count": 36,
+      "total_token_count": 51,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000113",
+      "category": "direct_non_python",
+      "prompt_token_count": 15,
+      "response_token_count": 30,
+      "total_token_count": 45,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000115",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 28,
+      "total_token_count": 42,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000117",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 34,
+      "total_token_count": 48,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000118",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 34,
+      "total_token_count": 50,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000121",
+      "category": "direct_non_python",
+      "prompt_token_count": 13,
+      "response_token_count": 32,
+      "total_token_count": 45,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000122",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 28,
+      "total_token_count": 44,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000125",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 33,
+      "total_token_count": 49,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000126",
+      "category": "direct_non_python",
+      "prompt_token_count": 15,
+      "response_token_count": 32,
+      "total_token_count": 47,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000127",
+      "category": "direct_non_python",
+      "prompt_token_count": 18,
+      "response_token_count": 28,
+      "total_token_count": 46,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000128",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 41,
+      "total_token_count": 55,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000129",
+      "category": "direct_non_python",
+      "prompt_token_count": 13,
+      "response_token_count": 34,
+      "total_token_count": 47,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000130",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 32,
+      "total_token_count": 48,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000131",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 35,
+      "total_token_count": 52,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000134",
+      "category": "direct_non_python",
+      "prompt_token_count": 18,
+      "response_token_count": 27,
+      "total_token_count": 45,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000135",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 26,
+      "total_token_count": 43,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000138",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 35,
+      "total_token_count": 51,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000139",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 32,
+      "total_token_count": 48,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000140",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 33,
+      "total_token_count": 50,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000141",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 40,
+      "total_token_count": 54,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000142",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 30,
+      "total_token_count": 46,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000143",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 29,
+      "total_token_count": 45,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000145",
+      "category": "direct_non_python",
+      "prompt_token_count": 18,
+      "response_token_count": 39,
+      "total_token_count": 57,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000146",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 35,
+      "total_token_count": 51,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000147",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 27,
+      "total_token_count": 43,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000148",
+      "category": "direct_non_python",
+      "prompt_token_count": 15,
+      "response_token_count": 35,
+      "total_token_count": 50,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000150",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 32,
+      "total_token_count": 46,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000151",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 39,
+      "total_token_count": 53,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000153",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 34,
+      "total_token_count": 48,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000154",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 38,
+      "total_token_count": 52,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000159",
+      "category": "direct_non_python",
+      "prompt_token_count": 15,
+      "response_token_count": 35,
+      "total_token_count": 50,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000160",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 29,
+      "total_token_count": 43,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000164",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 33,
+      "total_token_count": 47,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000167",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 30,
+      "total_token_count": 46,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000170",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 42,
+      "total_token_count": 56,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000171",
+      "category": "direct_non_python",
+      "prompt_token_count": 18,
+      "response_token_count": 31,
+      "total_token_count": 49,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000172",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 27,
+      "total_token_count": 41,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000174",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 37,
+      "total_token_count": 51,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000176",
+      "category": "direct_non_python",
+      "prompt_token_count": 18,
+      "response_token_count": 33,
+      "total_token_count": 51,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000178",
+      "category": "direct_non_python",
+      "prompt_token_count": 13,
+      "response_token_count": 27,
+      "total_token_count": 40,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000180",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 27,
+      "total_token_count": 43,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000184",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 34,
+      "total_token_count": 51,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000185",
+      "category": "direct_non_python",
+      "prompt_token_count": 15,
+      "response_token_count": 27,
+      "total_token_count": 42,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000186",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 31,
+      "total_token_count": 47,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000187",
+      "category": "direct_non_python",
+      "prompt_token_count": 18,
+      "response_token_count": 33,
+      "total_token_count": 51,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000188",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 33,
+      "total_token_count": 50,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000189",
+      "category": "direct_non_python",
+      "prompt_token_count": 15,
+      "response_token_count": 28,
+      "total_token_count": 43,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000190",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 35,
+      "total_token_count": 52,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000191",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 30,
+      "total_token_count": 44,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000193",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 32,
+      "total_token_count": 49,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000195",
+      "category": "direct_non_python",
+      "prompt_token_count": 18,
+      "response_token_count": 27,
+      "total_token_count": 45,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000197",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 34,
+      "total_token_count": 50,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000198",
+      "category": "direct_non_python",
+      "prompt_token_count": 15,
+      "response_token_count": 27,
+      "total_token_count": 42,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000199",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 38,
+      "total_token_count": 54,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000200",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 26,
+      "total_token_count": 42,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000201",
+      "category": "direct_non_python",
+      "prompt_token_count": 19,
+      "response_token_count": 32,
+      "total_token_count": 51,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000203",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 35,
+      "total_token_count": 52,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000204",
+      "category": "direct_non_python",
+      "prompt_token_count": 15,
+      "response_token_count": 35,
+      "total_token_count": 50,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000205",
+      "category": "direct_non_python",
+      "prompt_token_count": 15,
+      "response_token_count": 35,
+      "total_token_count": 50,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000207",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 31,
+      "total_token_count": 48,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000213",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 33,
+      "total_token_count": 50,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000214",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 30,
+      "total_token_count": 44,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000216",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 29,
+      "total_token_count": 45,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000219",
+      "category": "direct_non_python",
+      "prompt_token_count": 13,
+      "response_token_count": 27,
+      "total_token_count": 40,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000220",
+      "category": "direct_non_python",
+      "prompt_token_count": 15,
+      "response_token_count": 28,
+      "total_token_count": 43,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000225",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 31,
+      "total_token_count": 45,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000226",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 34,
+      "total_token_count": 51,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000228",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 34,
+      "total_token_count": 48,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000232",
+      "category": "direct_non_python",
+      "prompt_token_count": 15,
+      "response_token_count": 32,
+      "total_token_count": 47,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000234",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 29,
+      "total_token_count": 45,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000235",
+      "category": "direct_non_python",
+      "prompt_token_count": 15,
+      "response_token_count": 38,
+      "total_token_count": 53,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000237",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 28,
+      "total_token_count": 45,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000239",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 32,
+      "total_token_count": 46,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000251",
+      "category": "direct_non_python",
+      "prompt_token_count": 19,
+      "response_token_count": 28,
+      "total_token_count": 47,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000252",
+      "category": "direct_non_python",
+      "prompt_token_count": 15,
+      "response_token_count": 32,
+      "total_token_count": 47,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000254",
+      "category": "direct_non_python",
+      "prompt_token_count": 18,
+      "response_token_count": 34,
+      "total_token_count": 52,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000255",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 29,
+      "total_token_count": 46,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000258",
+      "category": "direct_non_python",
+      "prompt_token_count": 15,
+      "response_token_count": 33,
+      "total_token_count": 48,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000263",
+      "category": "direct_non_python",
+      "prompt_token_count": 15,
+      "response_token_count": 32,
+      "total_token_count": 47,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000266",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 27,
+      "total_token_count": 41,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000272",
+      "category": "direct_non_python",
+      "prompt_token_count": 15,
+      "response_token_count": 28,
+      "total_token_count": 43,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000277",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 31,
+      "total_token_count": 47,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000278",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 33,
+      "total_token_count": 49,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000291",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 31,
+      "total_token_count": 48,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000300",
+      "category": "direct_non_python",
+      "prompt_token_count": 15,
+      "response_token_count": 35,
+      "total_token_count": 50,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000304",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 30,
+      "total_token_count": 47,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000307",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 40,
+      "total_token_count": 54,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000308",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 29,
+      "total_token_count": 46,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000312",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 30,
+      "total_token_count": 44,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000323",
+      "category": "direct_non_python",
+      "prompt_token_count": 15,
+      "response_token_count": 31,
+      "total_token_count": 46,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000339",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 27,
+      "total_token_count": 43,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000341",
+      "category": "direct_non_python",
+      "prompt_token_count": 18,
+      "response_token_count": 29,
+      "total_token_count": 47,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000351",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 31,
+      "total_token_count": 47,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000352",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 31,
+      "total_token_count": 45,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000357",
+      "category": "direct_non_python",
+      "prompt_token_count": 18,
+      "response_token_count": 27,
+      "total_token_count": 45,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000358",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 28,
+      "total_token_count": 44,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000365",
+      "category": "direct_non_python",
+      "prompt_token_count": 14,
+      "response_token_count": 29,
+      "total_token_count": 43,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000368",
+      "category": "direct_non_python_debug",
+      "prompt_token_count": 17,
+      "response_token_count": 61,
+      "total_token_count": 78,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000369",
+      "category": "direct_non_python_debug",
+      "prompt_token_count": 13,
+      "response_token_count": 47,
+      "total_token_count": 60,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000371",
+      "category": "direct_non_python_debug",
+      "prompt_token_count": 16,
+      "response_token_count": 49,
+      "total_token_count": 65,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000372",
+      "category": "direct_non_python_debug",
+      "prompt_token_count": 18,
+      "response_token_count": 58,
+      "total_token_count": 76,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000374",
+      "category": "direct_non_python_debug",
+      "prompt_token_count": 13,
+      "response_token_count": 38,
+      "total_token_count": 51,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000375",
+      "category": "direct_non_python_debug",
+      "prompt_token_count": 18,
+      "response_token_count": 41,
+      "total_token_count": 59,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000377",
+      "category": "direct_non_python_debug",
+      "prompt_token_count": 16,
+      "response_token_count": 54,
+      "total_token_count": 70,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000378",
+      "category": "direct_non_python_debug",
+      "prompt_token_count": 16,
+      "response_token_count": 38,
+      "total_token_count": 54,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000379",
+      "category": "direct_non_python_debug",
+      "prompt_token_count": 14,
+      "response_token_count": 28,
+      "total_token_count": 42,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000380",
+      "category": "direct_non_python_debug",
+      "prompt_token_count": 14,
+      "response_token_count": 26,
+      "total_token_count": 40,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000381",
+      "category": "direct_non_python_debug",
+      "prompt_token_count": 15,
+      "response_token_count": 46,
+      "total_token_count": 61,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000382",
+      "category": "direct_non_python_debug",
+      "prompt_token_count": 16,
+      "response_token_count": 43,
+      "total_token_count": 59,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000383",
+      "category": "direct_non_python_debug",
+      "prompt_token_count": 15,
+      "response_token_count": 40,
+      "total_token_count": 55,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000384",
+      "category": "direct_non_python_debug",
+      "prompt_token_count": 17,
+      "response_token_count": 40,
+      "total_token_count": 57,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000385",
+      "category": "direct_non_python_debug",
+      "prompt_token_count": 17,
+      "response_token_count": 37,
+      "total_token_count": 54,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000386",
+      "category": "direct_non_python_debug",
+      "prompt_token_count": 15,
+      "response_token_count": 31,
+      "total_token_count": 46,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000387",
+      "category": "direct_non_python_debug",
+      "prompt_token_count": 16,
+      "response_token_count": 45,
+      "total_token_count": 61,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000389",
+      "category": "direct_non_python_debug",
+      "prompt_token_count": 12,
+      "response_token_count": 34,
+      "total_token_count": 46,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000390",
+      "category": "direct_non_python_debug",
+      "prompt_token_count": 15,
+      "response_token_count": 28,
+      "total_token_count": 43,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000395",
+      "category": "direct_non_python_debug",
+      "prompt_token_count": 17,
+      "response_token_count": 48,
+      "total_token_count": 65,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000402",
+      "category": "direct_non_python_debug",
+      "prompt_token_count": 12,
+      "response_token_count": 29,
+      "total_token_count": 41,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000416",
+      "category": "direct_non_python_debug",
+      "prompt_token_count": 15,
+      "response_token_count": 39,
+      "total_token_count": 54,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000420",
+      "category": "direct_non_python_debug",
+      "prompt_token_count": 17,
+      "response_token_count": 33,
+      "total_token_count": 50,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000422",
+      "category": "direct_non_python_debug",
+      "prompt_token_count": 18,
+      "response_token_count": 45,
+      "total_token_count": 63,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000473",
+      "category": "non_python_framework",
+      "prompt_token_count": 12,
+      "response_token_count": 52,
+      "total_token_count": 64,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000474",
+      "category": "non_python_framework",
+      "prompt_token_count": 11,
+      "response_token_count": 41,
+      "total_token_count": 52,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000475",
+      "category": "non_python_framework",
+      "prompt_token_count": 13,
+      "response_token_count": 39,
+      "total_token_count": 52,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000476",
+      "category": "non_python_framework",
+      "prompt_token_count": 12,
+      "response_token_count": 42,
+      "total_token_count": 54,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000478",
+      "category": "non_python_framework",
+      "prompt_token_count": 13,
+      "response_token_count": 44,
+      "total_token_count": 57,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000480",
+      "category": "non_python_framework",
+      "prompt_token_count": 12,
+      "response_token_count": 36,
+      "total_token_count": 48,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000481",
+      "category": "non_python_framework",
+      "prompt_token_count": 14,
+      "response_token_count": 43,
+      "total_token_count": 57,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000482",
+      "category": "non_python_framework",
+      "prompt_token_count": 14,
+      "response_token_count": 35,
+      "total_token_count": 49,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000483",
+      "category": "non_python_framework",
+      "prompt_token_count": 12,
+      "response_token_count": 31,
+      "total_token_count": 43,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000484",
+      "category": "non_python_framework",
+      "prompt_token_count": 15,
+      "response_token_count": 43,
+      "total_token_count": 58,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000485",
+      "category": "non_python_framework",
+      "prompt_token_count": 14,
+      "response_token_count": 32,
+      "total_token_count": 46,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000487",
+      "category": "non_python_framework",
+      "prompt_token_count": 13,
+      "response_token_count": 40,
+      "total_token_count": 53,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000488",
+      "category": "non_python_framework",
+      "prompt_token_count": 12,
+      "response_token_count": 44,
+      "total_token_count": 56,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000492",
+      "category": "non_python_framework",
+      "prompt_token_count": 15,
+      "response_token_count": 38,
+      "total_token_count": 53,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000493",
+      "category": "non_python_framework",
+      "prompt_token_count": 12,
+      "response_token_count": 37,
+      "total_token_count": 49,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000494",
+      "category": "non_python_framework",
+      "prompt_token_count": 13,
+      "response_token_count": 36,
+      "total_token_count": 49,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000495",
+      "category": "non_python_framework",
+      "prompt_token_count": 14,
+      "response_token_count": 32,
+      "total_token_count": 46,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000497",
+      "category": "non_python_framework",
+      "prompt_token_count": 13,
+      "response_token_count": 55,
+      "total_token_count": 68,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000498",
+      "category": "non_python_framework",
+      "prompt_token_count": 12,
+      "response_token_count": 27,
+      "total_token_count": 39,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000503",
+      "category": "non_python_framework",
+      "prompt_token_count": 12,
+      "response_token_count": 48,
+      "total_token_count": 60,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000504",
+      "category": "non_python_framework",
+      "prompt_token_count": 12,
+      "response_token_count": 50,
+      "total_token_count": 62,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000505",
+      "category": "non_python_framework",
+      "prompt_token_count": 14,
+      "response_token_count": 49,
+      "total_token_count": 63,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000506",
+      "category": "non_python_framework",
+      "prompt_token_count": 12,
+      "response_token_count": 34,
+      "total_token_count": 46,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000508",
+      "category": "non_python_framework",
+      "prompt_token_count": 13,
+      "response_token_count": 34,
+      "total_token_count": 47,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000509",
+      "category": "non_python_framework",
+      "prompt_token_count": 13,
+      "response_token_count": 35,
+      "total_token_count": 48,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000510",
+      "category": "non_python_framework",
+      "prompt_token_count": 11,
+      "response_token_count": 31,
+      "total_token_count": 42,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000511",
+      "category": "non_python_framework",
+      "prompt_token_count": 13,
+      "response_token_count": 54,
+      "total_token_count": 67,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000519",
+      "category": "non_python_framework",
+      "prompt_token_count": 12,
+      "response_token_count": 43,
+      "total_token_count": 55,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000521",
+      "category": "non_python_framework",
+      "prompt_token_count": 13,
+      "response_token_count": 40,
+      "total_token_count": 53,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000525",
+      "category": "python_interoperability",
+      "prompt_token_count": 17,
+      "response_token_count": 61,
+      "total_token_count": 78,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000526",
+      "category": "python_interoperability",
+      "prompt_token_count": 17,
+      "response_token_count": 61,
+      "total_token_count": 78,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000527",
+      "category": "python_interoperability",
+      "prompt_token_count": 20,
+      "response_token_count": 61,
+      "total_token_count": 81,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000528",
+      "category": "python_interoperability",
+      "prompt_token_count": 19,
+      "response_token_count": 61,
+      "total_token_count": 80,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000529",
+      "category": "python_interoperability",
+      "prompt_token_count": 16,
+      "response_token_count": 71,
+      "total_token_count": 87,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000530",
+      "category": "python_interoperability",
+      "prompt_token_count": 18,
+      "response_token_count": 71,
+      "total_token_count": 89,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000531",
+      "category": "python_interoperability",
+      "prompt_token_count": 18,
+      "response_token_count": 71,
+      "total_token_count": 89,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000532",
+      "category": "python_interoperability",
+      "prompt_token_count": 16,
+      "response_token_count": 54,
+      "total_token_count": 70,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000533",
+      "category": "python_interoperability",
+      "prompt_token_count": 18,
+      "response_token_count": 54,
+      "total_token_count": 72,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000534",
+      "category": "python_interoperability",
+      "prompt_token_count": 15,
+      "response_token_count": 99,
+      "total_token_count": 114,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000535",
+      "category": "python_interoperability",
+      "prompt_token_count": 17,
+      "response_token_count": 99,
+      "total_token_count": 116,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000536",
+      "category": "python_interoperability",
+      "prompt_token_count": 17,
+      "response_token_count": 99,
+      "total_token_count": 116,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000537",
+      "category": "python_interoperability",
+      "prompt_token_count": 12,
+      "response_token_count": 63,
+      "total_token_count": 75,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000538",
+      "category": "python_interoperability",
+      "prompt_token_count": 14,
+      "response_token_count": 63,
+      "total_token_count": 77,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000540",
+      "category": "python_interoperability",
+      "prompt_token_count": 17,
+      "response_token_count": 56,
+      "total_token_count": 73,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000541",
+      "category": "python_interoperability",
+      "prompt_token_count": 13,
+      "response_token_count": 87,
+      "total_token_count": 100,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000542",
+      "category": "python_interoperability",
+      "prompt_token_count": 15,
+      "response_token_count": 87,
+      "total_token_count": 102,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000543",
+      "category": "python_interoperability",
+      "prompt_token_count": 16,
+      "response_token_count": 89,
+      "total_token_count": 105,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000544",
+      "category": "python_interoperability",
+      "prompt_token_count": 18,
+      "response_token_count": 89,
+      "total_token_count": 107,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000545",
+      "category": "python_interoperability",
+      "prompt_token_count": 15,
+      "response_token_count": 66,
+      "total_token_count": 81,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000546",
+      "category": "python_interoperability",
+      "prompt_token_count": 12,
+      "response_token_count": 56,
+      "total_token_count": 68,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000547",
+      "category": "python_interoperability",
+      "prompt_token_count": 15,
+      "response_token_count": 58,
+      "total_token_count": 73,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000826",
+      "category": "python_comparison",
+      "prompt_token_count": 18,
+      "response_token_count": 92,
+      "total_token_count": 110,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000827",
+      "category": "python_comparison",
+      "prompt_token_count": 17,
+      "response_token_count": 73,
+      "total_token_count": 90,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000828",
+      "category": "python_comparison",
+      "prompt_token_count": 19,
+      "response_token_count": 73,
+      "total_token_count": 92,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000829",
+      "category": "python_comparison",
+      "prompt_token_count": 13,
+      "response_token_count": 73,
+      "total_token_count": 86,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000830",
+      "category": "python_comparison",
+      "prompt_token_count": 13,
+      "response_token_count": 73,
+      "total_token_count": 86,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000831",
+      "category": "python_comparison",
+      "prompt_token_count": 16,
+      "response_token_count": 63,
+      "total_token_count": 79,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000832",
+      "category": "python_comparison",
+      "prompt_token_count": 13,
+      "response_token_count": 70,
+      "total_token_count": 83,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000833",
+      "category": "python_comparison",
+      "prompt_token_count": 13,
+      "response_token_count": 70,
+      "total_token_count": 83,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000834",
+      "category": "python_comparison",
+      "prompt_token_count": 16,
+      "response_token_count": 61,
+      "total_token_count": 77,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000835",
+      "category": "python_comparison",
+      "prompt_token_count": 18,
+      "response_token_count": 61,
+      "total_token_count": 79,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000836",
+      "category": "python_comparison",
+      "prompt_token_count": 13,
+      "response_token_count": 53,
+      "total_token_count": 66,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_000837",
+      "category": "python_comparison",
+      "prompt_token_count": 13,
+      "response_token_count": 51,
+      "total_token_count": 64,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_001050",
+      "category": "python_conversion",
+      "prompt_token_count": 13,
+      "response_token_count": 104,
+      "total_token_count": 117,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_001051",
+      "category": "python_conversion",
+      "prompt_token_count": 13,
+      "response_token_count": 104,
+      "total_token_count": 117,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_001052",
+      "category": "python_conversion",
+      "prompt_token_count": 13,
+      "response_token_count": 104,
+      "total_token_count": 117,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_001053",
+      "category": "python_conversion",
+      "prompt_token_count": 14,
+      "response_token_count": 86,
+      "total_token_count": 100,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_001054",
+      "category": "python_conversion",
+      "prompt_token_count": 14,
+      "response_token_count": 86,
+      "total_token_count": 100,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_001055",
+      "category": "python_conversion",
+      "prompt_token_count": 17,
+      "response_token_count": 102,
+      "total_token_count": 119,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_001056",
+      "category": "python_conversion",
+      "prompt_token_count": 16,
+      "response_token_count": 102,
+      "total_token_count": 118,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_001057",
+      "category": "python_conversion",
+      "prompt_token_count": 17,
+      "response_token_count": 102,
+      "total_token_count": 119,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_001058",
+      "category": "python_conversion",
+      "prompt_token_count": 13,
+      "response_token_count": 115,
+      "total_token_count": 128,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_001059",
+      "category": "python_conversion",
+      "prompt_token_count": 13,
+      "response_token_count": 68,
+      "total_token_count": 81,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_001060",
+      "category": "python_conversion",
+      "prompt_token_count": 13,
+      "response_token_count": 68,
+      "total_token_count": 81,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_001061",
+      "category": "python_programming",
+      "prompt_token_count": 15,
+      "response_token_count": 66,
+      "total_token_count": 81,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_001062",
+      "category": "python_programming",
+      "prompt_token_count": 15,
+      "response_token_count": 66,
+      "total_token_count": 81,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_001063",
+      "category": "python_programming",
+      "prompt_token_count": 15,
+      "response_token_count": 60,
+      "total_token_count": 75,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_001064",
+      "category": "python_programming",
+      "prompt_token_count": 15,
+      "response_token_count": 60,
+      "total_token_count": 75,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_001065",
+      "category": "python_programming",
+      "prompt_token_count": 11,
+      "response_token_count": 83,
+      "total_token_count": 94,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_001066",
+      "category": "python_programming",
+      "prompt_token_count": 11,
+      "response_token_count": 83,
+      "total_token_count": 94,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_001067",
+      "category": "python_programming",
+      "prompt_token_count": 17,
+      "response_token_count": 121,
+      "total_token_count": 138,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_001068",
+      "category": "python_programming",
+      "prompt_token_count": 15,
+      "response_token_count": 111,
+      "total_token_count": 126,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_001069",
+      "category": "python_programming",
+      "prompt_token_count": 15,
+      "response_token_count": 111,
+      "total_token_count": 126,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_001070",
+      "category": "python_programming",
+      "prompt_token_count": 13,
+      "response_token_count": 75,
+      "total_token_count": 88,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_001072",
+      "category": "python_programming",
+      "prompt_token_count": 14,
+      "response_token_count": 58,
+      "total_token_count": 72,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_001079",
+      "category": "non_programming",
+      "prompt_token_count": 12,
+      "response_token_count": 22,
+      "total_token_count": 34,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_001080",
+      "category": "non_programming",
+      "prompt_token_count": 14,
+      "response_token_count": 25,
+      "total_token_count": 39,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_001081",
+      "category": "non_programming",
+      "prompt_token_count": 13,
+      "response_token_count": 17,
+      "total_token_count": 30,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6e_001082",
+      "category": "non_programming",
+      "prompt_token_count": 13,
+      "response_token_count": 19,
+      "total_token_count": 32,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000001",
+      "category": "python_programming",
+      "prompt_token_count": 29,
+      "response_token_count": 230,
+      "total_token_count": 259,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000002",
+      "category": "python_programming",
+      "prompt_token_count": 26,
+      "response_token_count": 303,
+      "total_token_count": 329,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000003",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 214,
+      "total_token_count": 238,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000004",
+      "category": "python_programming",
+      "prompt_token_count": 28,
+      "response_token_count": 241,
+      "total_token_count": 269,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000005",
+      "category": "python_programming",
+      "prompt_token_count": 33,
+      "response_token_count": 348,
+      "total_token_count": 381,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000006",
+      "category": "python_programming",
+      "prompt_token_count": 27,
+      "response_token_count": 194,
+      "total_token_count": 221,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000007",
+      "category": "python_programming",
+      "prompt_token_count": 29,
+      "response_token_count": 244,
+      "total_token_count": 273,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000008",
+      "category": "python_programming",
+      "prompt_token_count": 31,
+      "response_token_count": 224,
+      "total_token_count": 255,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000009",
+      "category": "python_programming",
+      "prompt_token_count": 29,
+      "response_token_count": 230,
+      "total_token_count": 259,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000010",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 235,
+      "total_token_count": 256,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000011",
+      "category": "python_programming",
+      "prompt_token_count": 28,
+      "response_token_count": 244,
+      "total_token_count": 272,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000012",
+      "category": "python_programming",
+      "prompt_token_count": 28,
+      "response_token_count": 239,
+      "total_token_count": 267,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000013",
+      "category": "python_programming",
+      "prompt_token_count": 27,
+      "response_token_count": 257,
+      "total_token_count": 284,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000014",
+      "category": "python_programming",
+      "prompt_token_count": 26,
+      "response_token_count": 298,
+      "total_token_count": 324,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000015",
+      "category": "python_programming",
+      "prompt_token_count": 23,
+      "response_token_count": 267,
+      "total_token_count": 290,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000016",
+      "category": "python_programming",
+      "prompt_token_count": 32,
+      "response_token_count": 322,
+      "total_token_count": 354,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000017",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 269,
+      "total_token_count": 294,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000018",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 227,
+      "total_token_count": 248,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000019",
+      "category": "python_programming",
+      "prompt_token_count": 23,
+      "response_token_count": 275,
+      "total_token_count": 298,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000020",
+      "category": "python_programming",
+      "prompt_token_count": 23,
+      "response_token_count": 159,
+      "total_token_count": 182,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000021",
+      "category": "python_programming",
+      "prompt_token_count": 32,
+      "response_token_count": 253,
+      "total_token_count": 285,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000022",
+      "category": "python_programming",
+      "prompt_token_count": 22,
+      "response_token_count": 246,
+      "total_token_count": 268,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000023",
+      "category": "python_programming",
+      "prompt_token_count": 33,
+      "response_token_count": 216,
+      "total_token_count": 249,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000024",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 261,
+      "total_token_count": 286,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000025",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 196,
+      "total_token_count": 220,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000026",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 251,
+      "total_token_count": 275,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000027",
+      "category": "python_programming",
+      "prompt_token_count": 26,
+      "response_token_count": 274,
+      "total_token_count": 300,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000028",
+      "category": "python_programming",
+      "prompt_token_count": 23,
+      "response_token_count": 198,
+      "total_token_count": 221,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000029",
+      "category": "python_programming",
+      "prompt_token_count": 35,
+      "response_token_count": 218,
+      "total_token_count": 253,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000030",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 282,
+      "total_token_count": 307,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000031",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 234,
+      "total_token_count": 259,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000032",
+      "category": "python_programming",
+      "prompt_token_count": 31,
+      "response_token_count": 241,
+      "total_token_count": 272,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000033",
+      "category": "python_programming",
+      "prompt_token_count": 27,
+      "response_token_count": 256,
+      "total_token_count": 283,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000034",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 219,
+      "total_token_count": 243,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000035",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 214,
+      "total_token_count": 235,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000036",
+      "category": "python_programming",
+      "prompt_token_count": 23,
+      "response_token_count": 286,
+      "total_token_count": 309,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000037",
+      "category": "python_programming",
+      "prompt_token_count": 27,
+      "response_token_count": 225,
+      "total_token_count": 252,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000038",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 194,
+      "total_token_count": 218,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000039",
+      "category": "python_programming",
+      "prompt_token_count": 28,
+      "response_token_count": 256,
+      "total_token_count": 284,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000040",
+      "category": "python_programming",
+      "prompt_token_count": 29,
+      "response_token_count": 272,
+      "total_token_count": 301,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000041",
+      "category": "python_programming",
+      "prompt_token_count": 26,
+      "response_token_count": 238,
+      "total_token_count": 264,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000042",
+      "category": "python_programming",
+      "prompt_token_count": 27,
+      "response_token_count": 211,
+      "total_token_count": 238,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000043",
+      "category": "python_programming",
+      "prompt_token_count": 22,
+      "response_token_count": 213,
+      "total_token_count": 235,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000044",
+      "category": "python_programming",
+      "prompt_token_count": 27,
+      "response_token_count": 281,
+      "total_token_count": 308,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000045",
+      "category": "python_programming",
+      "prompt_token_count": 32,
+      "response_token_count": 229,
+      "total_token_count": 261,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000046",
+      "category": "python_programming",
+      "prompt_token_count": 39,
+      "response_token_count": 231,
+      "total_token_count": 270,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000047",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 193,
+      "total_token_count": 217,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000048",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 221,
+      "total_token_count": 246,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000049",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 165,
+      "total_token_count": 186,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000050",
+      "category": "python_programming",
+      "prompt_token_count": 27,
+      "response_token_count": 261,
+      "total_token_count": 288,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000051",
+      "category": "python_programming",
+      "prompt_token_count": 29,
+      "response_token_count": 281,
+      "total_token_count": 310,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000052",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 148,
+      "total_token_count": 173,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000053",
+      "category": "python_programming",
+      "prompt_token_count": 27,
+      "response_token_count": 262,
+      "total_token_count": 289,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000054",
+      "category": "python_programming",
+      "prompt_token_count": 30,
+      "response_token_count": 207,
+      "total_token_count": 237,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000055",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 216,
+      "total_token_count": 240,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000056",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 190,
+      "total_token_count": 215,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000057",
+      "category": "python_programming",
+      "prompt_token_count": 19,
+      "response_token_count": 224,
+      "total_token_count": 243,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000058",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 208,
+      "total_token_count": 232,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000059",
+      "category": "python_programming",
+      "prompt_token_count": 22,
+      "response_token_count": 169,
+      "total_token_count": 191,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000060",
+      "category": "python_programming",
+      "prompt_token_count": 28,
+      "response_token_count": 173,
+      "total_token_count": 201,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000061",
+      "category": "python_programming",
+      "prompt_token_count": 31,
+      "response_token_count": 217,
+      "total_token_count": 248,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000062",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 206,
+      "total_token_count": 230,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000063",
+      "category": "python_programming",
+      "prompt_token_count": 22,
+      "response_token_count": 148,
+      "total_token_count": 170,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000064",
+      "category": "python_programming",
+      "prompt_token_count": 27,
+      "response_token_count": 151,
+      "total_token_count": 178,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000065",
+      "category": "python_programming",
+      "prompt_token_count": 20,
+      "response_token_count": 291,
+      "total_token_count": 311,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000066",
+      "category": "python_programming",
+      "prompt_token_count": 27,
+      "response_token_count": 181,
+      "total_token_count": 208,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000067",
+      "category": "python_programming",
+      "prompt_token_count": 35,
+      "response_token_count": 173,
+      "total_token_count": 208,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000068",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 208,
+      "total_token_count": 233,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000069",
+      "category": "python_programming",
+      "prompt_token_count": 27,
+      "response_token_count": 211,
+      "total_token_count": 238,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000070",
+      "category": "python_programming",
+      "prompt_token_count": 28,
+      "response_token_count": 224,
+      "total_token_count": 252,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000071",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 229,
+      "total_token_count": 253,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000072",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 233,
+      "total_token_count": 257,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000073",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 256,
+      "total_token_count": 281,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000074",
+      "category": "python_programming",
+      "prompt_token_count": 26,
+      "response_token_count": 233,
+      "total_token_count": 259,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000075",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 171,
+      "total_token_count": 195,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000076",
+      "category": "python_programming",
+      "prompt_token_count": 28,
+      "response_token_count": 159,
+      "total_token_count": 187,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000077",
+      "category": "python_programming",
+      "prompt_token_count": 22,
+      "response_token_count": 178,
+      "total_token_count": 200,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000078",
+      "category": "python_programming",
+      "prompt_token_count": 27,
+      "response_token_count": 211,
+      "total_token_count": 238,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000079",
+      "category": "python_programming",
+      "prompt_token_count": 31,
+      "response_token_count": 242,
+      "total_token_count": 273,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000080",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 185,
+      "total_token_count": 210,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000081",
+      "category": "python_programming",
+      "prompt_token_count": 29,
+      "response_token_count": 226,
+      "total_token_count": 255,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000082",
+      "category": "python_programming",
+      "prompt_token_count": 27,
+      "response_token_count": 228,
+      "total_token_count": 255,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000083",
+      "category": "python_programming",
+      "prompt_token_count": 29,
+      "response_token_count": 184,
+      "total_token_count": 213,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000084",
+      "category": "python_programming",
+      "prompt_token_count": 31,
+      "response_token_count": 261,
+      "total_token_count": 292,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000085",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 205,
+      "total_token_count": 230,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000086",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 202,
+      "total_token_count": 226,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000087",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 210,
+      "total_token_count": 235,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000088",
+      "category": "python_programming",
+      "prompt_token_count": 26,
+      "response_token_count": 216,
+      "total_token_count": 242,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000089",
+      "category": "python_programming",
+      "prompt_token_count": 26,
+      "response_token_count": 228,
+      "total_token_count": 254,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000090",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 201,
+      "total_token_count": 225,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000091",
+      "category": "python_programming",
+      "prompt_token_count": 22,
+      "response_token_count": 208,
+      "total_token_count": 230,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000092",
+      "category": "python_programming",
+      "prompt_token_count": 22,
+      "response_token_count": 217,
+      "total_token_count": 239,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000093",
+      "category": "python_programming",
+      "prompt_token_count": 23,
+      "response_token_count": 208,
+      "total_token_count": 231,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000094",
+      "category": "python_programming",
+      "prompt_token_count": 22,
+      "response_token_count": 204,
+      "total_token_count": 226,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000095",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 244,
+      "total_token_count": 265,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000096",
+      "category": "python_programming",
+      "prompt_token_count": 27,
+      "response_token_count": 182,
+      "total_token_count": 209,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000097",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 177,
+      "total_token_count": 198,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000098",
+      "category": "python_programming",
+      "prompt_token_count": 29,
+      "response_token_count": 247,
+      "total_token_count": 276,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000099",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 260,
+      "total_token_count": 285,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000100",
+      "category": "python_programming",
+      "prompt_token_count": 26,
+      "response_token_count": 300,
+      "total_token_count": 326,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000101",
+      "category": "python_programming",
+      "prompt_token_count": 23,
+      "response_token_count": 225,
+      "total_token_count": 248,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000102",
+      "category": "python_programming",
+      "prompt_token_count": 31,
+      "response_token_count": 260,
+      "total_token_count": 291,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000103",
+      "category": "python_programming",
+      "prompt_token_count": 29,
+      "response_token_count": 276,
+      "total_token_count": 305,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000104",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 292,
+      "total_token_count": 317,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000105",
+      "category": "python_programming",
+      "prompt_token_count": 26,
+      "response_token_count": 262,
+      "total_token_count": 288,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000106",
+      "category": "python_programming",
+      "prompt_token_count": 30,
+      "response_token_count": 299,
+      "total_token_count": 329,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000107",
+      "category": "python_programming",
+      "prompt_token_count": 26,
+      "response_token_count": 316,
+      "total_token_count": 342,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000108",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 246,
+      "total_token_count": 271,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000109",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 248,
+      "total_token_count": 273,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000110",
+      "category": "python_programming",
+      "prompt_token_count": 19,
+      "response_token_count": 214,
+      "total_token_count": 233,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000111",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 217,
+      "total_token_count": 241,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000112",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 164,
+      "total_token_count": 185,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000113",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 256,
+      "total_token_count": 280,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000114",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 230,
+      "total_token_count": 255,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000115",
+      "category": "python_programming",
+      "prompt_token_count": 22,
+      "response_token_count": 178,
+      "total_token_count": 200,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000116",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 217,
+      "total_token_count": 242,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000117",
+      "category": "python_programming",
+      "prompt_token_count": 30,
+      "response_token_count": 218,
+      "total_token_count": 248,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000118",
+      "category": "python_programming",
+      "prompt_token_count": 28,
+      "response_token_count": 188,
+      "total_token_count": 216,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000119",
+      "category": "python_programming",
+      "prompt_token_count": 19,
+      "response_token_count": 241,
+      "total_token_count": 260,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000120",
+      "category": "python_programming",
+      "prompt_token_count": 26,
+      "response_token_count": 258,
+      "total_token_count": 284,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000121",
+      "category": "python_programming",
+      "prompt_token_count": 28,
+      "response_token_count": 287,
+      "total_token_count": 315,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000122",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 212,
+      "total_token_count": 237,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000123",
+      "category": "python_programming",
+      "prompt_token_count": 26,
+      "response_token_count": 214,
+      "total_token_count": 240,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000124",
+      "category": "python_programming",
+      "prompt_token_count": 27,
+      "response_token_count": 244,
+      "total_token_count": 271,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000125",
+      "category": "python_programming",
+      "prompt_token_count": 27,
+      "response_token_count": 238,
+      "total_token_count": 265,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000126",
+      "category": "python_programming",
+      "prompt_token_count": 26,
+      "response_token_count": 205,
+      "total_token_count": 231,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000127",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 201,
+      "total_token_count": 226,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000128",
+      "category": "python_programming",
+      "prompt_token_count": 28,
+      "response_token_count": 218,
+      "total_token_count": 246,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000129",
+      "category": "python_programming",
+      "prompt_token_count": 28,
+      "response_token_count": 303,
+      "total_token_count": 331,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000130",
+      "category": "python_programming",
+      "prompt_token_count": 26,
+      "response_token_count": 230,
+      "total_token_count": 256,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000131",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 263,
+      "total_token_count": 288,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000132",
+      "category": "python_programming",
+      "prompt_token_count": 26,
+      "response_token_count": 249,
+      "total_token_count": 275,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000133",
+      "category": "python_programming",
+      "prompt_token_count": 23,
+      "response_token_count": 176,
+      "total_token_count": 199,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000134",
+      "category": "python_programming",
+      "prompt_token_count": 22,
+      "response_token_count": 207,
+      "total_token_count": 229,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000135",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 247,
+      "total_token_count": 272,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000136",
+      "category": "python_programming",
+      "prompt_token_count": 23,
+      "response_token_count": 185,
+      "total_token_count": 208,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000137",
+      "category": "python_programming",
+      "prompt_token_count": 23,
+      "response_token_count": 319,
+      "total_token_count": 342,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000138",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 262,
+      "total_token_count": 287,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000139",
+      "category": "python_programming",
+      "prompt_token_count": 20,
+      "response_token_count": 216,
+      "total_token_count": 236,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000140",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 210,
+      "total_token_count": 231,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000141",
+      "category": "python_programming",
+      "prompt_token_count": 23,
+      "response_token_count": 258,
+      "total_token_count": 281,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000142",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 208,
+      "total_token_count": 229,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000143",
+      "category": "python_programming",
+      "prompt_token_count": 26,
+      "response_token_count": 232,
+      "total_token_count": 258,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000144",
+      "category": "python_programming",
+      "prompt_token_count": 20,
+      "response_token_count": 215,
+      "total_token_count": 235,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000145",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 231,
+      "total_token_count": 252,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000146",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 231,
+      "total_token_count": 256,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000147",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 164,
+      "total_token_count": 188,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000148",
+      "category": "python_programming",
+      "prompt_token_count": 19,
+      "response_token_count": 170,
+      "total_token_count": 189,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000149",
+      "category": "python_programming",
+      "prompt_token_count": 22,
+      "response_token_count": 157,
+      "total_token_count": 179,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000150",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 175,
+      "total_token_count": 196,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000151",
+      "category": "python_programming",
+      "prompt_token_count": 33,
+      "response_token_count": 240,
+      "total_token_count": 273,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000152",
+      "category": "python_programming",
+      "prompt_token_count": 22,
+      "response_token_count": 153,
+      "total_token_count": 175,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000153",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 167,
+      "total_token_count": 191,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000154",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 158,
+      "total_token_count": 182,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000155",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 141,
+      "total_token_count": 166,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000156",
+      "category": "python_programming",
+      "prompt_token_count": 22,
+      "response_token_count": 121,
+      "total_token_count": 143,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000157",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 191,
+      "total_token_count": 215,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000158",
+      "category": "python_programming",
+      "prompt_token_count": 17,
+      "response_token_count": 121,
+      "total_token_count": 138,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000159",
+      "category": "python_programming",
+      "prompt_token_count": 23,
+      "response_token_count": 152,
+      "total_token_count": 175,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000160",
+      "category": "python_programming",
+      "prompt_token_count": 32,
+      "response_token_count": 141,
+      "total_token_count": 173,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000161",
+      "category": "python_programming",
+      "prompt_token_count": 23,
+      "response_token_count": 162,
+      "total_token_count": 185,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000162",
+      "category": "python_programming",
+      "prompt_token_count": 18,
+      "response_token_count": 116,
+      "total_token_count": 134,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000163",
+      "category": "python_programming",
+      "prompt_token_count": 20,
+      "response_token_count": 162,
+      "total_token_count": 182,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000164",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 144,
+      "total_token_count": 169,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000165",
+      "category": "python_programming",
+      "prompt_token_count": 22,
+      "response_token_count": 155,
+      "total_token_count": 177,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000166",
+      "category": "python_programming",
+      "prompt_token_count": 22,
+      "response_token_count": 153,
+      "total_token_count": 175,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000167",
+      "category": "python_programming",
+      "prompt_token_count": 23,
+      "response_token_count": 126,
+      "total_token_count": 149,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000168",
+      "category": "python_programming",
+      "prompt_token_count": 23,
+      "response_token_count": 109,
+      "total_token_count": 132,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000169",
+      "category": "python_programming",
+      "prompt_token_count": 18,
+      "response_token_count": 132,
+      "total_token_count": 150,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000170",
+      "category": "python_programming",
+      "prompt_token_count": 20,
+      "response_token_count": 97,
+      "total_token_count": 117,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000171",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 132,
+      "total_token_count": 153,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000172",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 151,
+      "total_token_count": 175,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000173",
+      "category": "python_programming",
+      "prompt_token_count": 20,
+      "response_token_count": 148,
+      "total_token_count": 168,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000174",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 131,
+      "total_token_count": 155,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000175",
+      "category": "python_programming",
+      "prompt_token_count": 28,
+      "response_token_count": 101,
+      "total_token_count": 129,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000176",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 137,
+      "total_token_count": 158,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000177",
+      "category": "python_programming",
+      "prompt_token_count": 19,
+      "response_token_count": 97,
+      "total_token_count": 116,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000178",
+      "category": "python_programming",
+      "prompt_token_count": 20,
+      "response_token_count": 128,
+      "total_token_count": 148,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000179",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 130,
+      "total_token_count": 154,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000180",
+      "category": "python_programming",
+      "prompt_token_count": 22,
+      "response_token_count": 100,
+      "total_token_count": 122,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000181",
+      "category": "python_programming",
+      "prompt_token_count": 20,
+      "response_token_count": 93,
+      "total_token_count": 113,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000182",
+      "category": "python_programming",
+      "prompt_token_count": 23,
+      "response_token_count": 88,
+      "total_token_count": 111,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000183",
+      "category": "python_programming",
+      "prompt_token_count": 26,
+      "response_token_count": 137,
+      "total_token_count": 163,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000184",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 80,
+      "total_token_count": 101,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000185",
+      "category": "python_programming",
+      "prompt_token_count": 23,
+      "response_token_count": 133,
+      "total_token_count": 156,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000186",
+      "category": "python_programming",
+      "prompt_token_count": 26,
+      "response_token_count": 194,
+      "total_token_count": 220,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000187",
+      "category": "python_programming",
+      "prompt_token_count": 23,
+      "response_token_count": 188,
+      "total_token_count": 211,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000188",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 183,
+      "total_token_count": 208,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000189",
+      "category": "python_programming",
+      "prompt_token_count": 26,
+      "response_token_count": 178,
+      "total_token_count": 204,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000190",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 127,
+      "total_token_count": 148,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000191",
+      "category": "python_programming",
+      "prompt_token_count": 30,
+      "response_token_count": 157,
+      "total_token_count": 187,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000192",
+      "category": "python_programming",
+      "prompt_token_count": 28,
+      "response_token_count": 163,
+      "total_token_count": 191,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000193",
+      "category": "python_programming",
+      "prompt_token_count": 27,
+      "response_token_count": 174,
+      "total_token_count": 201,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000194",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 111,
+      "total_token_count": 132,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000195",
+      "category": "python_programming",
+      "prompt_token_count": 20,
+      "response_token_count": 172,
+      "total_token_count": 192,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000196",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 151,
+      "total_token_count": 172,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000197",
+      "category": "python_programming",
+      "prompt_token_count": 16,
+      "response_token_count": 140,
+      "total_token_count": 156,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000198",
+      "category": "python_programming",
+      "prompt_token_count": 23,
+      "response_token_count": 164,
+      "total_token_count": 187,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000199",
+      "category": "python_programming",
+      "prompt_token_count": 19,
+      "response_token_count": 168,
+      "total_token_count": 187,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000200",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 165,
+      "total_token_count": 186,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000201",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 226,
+      "total_token_count": 250,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000202",
+      "category": "python_programming",
+      "prompt_token_count": 34,
+      "response_token_count": 211,
+      "total_token_count": 245,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000203",
+      "category": "python_programming",
+      "prompt_token_count": 18,
+      "response_token_count": 185,
+      "total_token_count": 203,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000204",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 164,
+      "total_token_count": 185,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000205",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 134,
+      "total_token_count": 158,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000206",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 164,
+      "total_token_count": 189,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000207",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 150,
+      "total_token_count": 174,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000208",
+      "category": "python_programming",
+      "prompt_token_count": 20,
+      "response_token_count": 153,
+      "total_token_count": 173,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000209",
+      "category": "python_programming",
+      "prompt_token_count": 26,
+      "response_token_count": 177,
+      "total_token_count": 203,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000210",
+      "category": "python_programming",
+      "prompt_token_count": 26,
+      "response_token_count": 162,
+      "total_token_count": 188,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000211",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 123,
+      "total_token_count": 148,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000212",
+      "category": "python_programming",
+      "prompt_token_count": 20,
+      "response_token_count": 185,
+      "total_token_count": 205,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000213",
+      "category": "python_programming",
+      "prompt_token_count": 29,
+      "response_token_count": 176,
+      "total_token_count": 205,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000214",
+      "category": "python_programming",
+      "prompt_token_count": 22,
+      "response_token_count": 136,
+      "total_token_count": 158,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000215",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 192,
+      "total_token_count": 213,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000216",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 147,
+      "total_token_count": 171,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000217",
+      "category": "python_programming",
+      "prompt_token_count": 23,
+      "response_token_count": 136,
+      "total_token_count": 159,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000218",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 117,
+      "total_token_count": 141,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000219",
+      "category": "python_programming",
+      "prompt_token_count": 28,
+      "response_token_count": 147,
+      "total_token_count": 175,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000220",
+      "category": "python_programming",
+      "prompt_token_count": 20,
+      "response_token_count": 167,
+      "total_token_count": 187,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000221",
+      "category": "python_programming",
+      "prompt_token_count": 28,
+      "response_token_count": 176,
+      "total_token_count": 204,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000222",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 157,
+      "total_token_count": 178,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000223",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 222,
+      "total_token_count": 243,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000224",
+      "category": "python_programming",
+      "prompt_token_count": 22,
+      "response_token_count": 164,
+      "total_token_count": 186,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000225",
+      "category": "python_programming",
+      "prompt_token_count": 19,
+      "response_token_count": 127,
+      "total_token_count": 146,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000226",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 177,
+      "total_token_count": 202,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000227",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 163,
+      "total_token_count": 187,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000228",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 189,
+      "total_token_count": 213,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000229",
+      "category": "python_programming",
+      "prompt_token_count": 22,
+      "response_token_count": 117,
+      "total_token_count": 139,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000230",
+      "category": "python_programming",
+      "prompt_token_count": 23,
+      "response_token_count": 141,
+      "total_token_count": 164,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000231",
+      "category": "python_programming",
+      "prompt_token_count": 23,
+      "response_token_count": 137,
+      "total_token_count": 160,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000232",
+      "category": "python_programming",
+      "prompt_token_count": 19,
+      "response_token_count": 192,
+      "total_token_count": 211,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000233",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 156,
+      "total_token_count": 177,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000234",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 162,
+      "total_token_count": 187,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000235",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 141,
+      "total_token_count": 162,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000236",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 145,
+      "total_token_count": 169,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000237",
+      "category": "python_programming",
+      "prompt_token_count": 22,
+      "response_token_count": 135,
+      "total_token_count": 157,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000238",
+      "category": "python_programming",
+      "prompt_token_count": 27,
+      "response_token_count": 124,
+      "total_token_count": 151,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000239",
+      "category": "python_programming",
+      "prompt_token_count": 23,
+      "response_token_count": 134,
+      "total_token_count": 157,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000240",
+      "category": "python_programming",
+      "prompt_token_count": 20,
+      "response_token_count": 130,
+      "total_token_count": 150,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000241",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 149,
+      "total_token_count": 170,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000242",
+      "category": "python_programming",
+      "prompt_token_count": 23,
+      "response_token_count": 140,
+      "total_token_count": 163,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000243",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 146,
+      "total_token_count": 167,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000244",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 118,
+      "total_token_count": 142,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000245",
+      "category": "python_programming",
+      "prompt_token_count": 20,
+      "response_token_count": 134,
+      "total_token_count": 154,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000246",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 120,
+      "total_token_count": 144,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000247",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 128,
+      "total_token_count": 149,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000248",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 145,
+      "total_token_count": 166,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000249",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 124,
+      "total_token_count": 148,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000250",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 135,
+      "total_token_count": 156,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000251",
+      "category": "python_programming",
+      "prompt_token_count": 18,
+      "response_token_count": 157,
+      "total_token_count": 175,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000252",
+      "category": "python_programming",
+      "prompt_token_count": 31,
+      "response_token_count": 101,
+      "total_token_count": 132,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000253",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 78,
+      "total_token_count": 102,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000254",
+      "category": "python_programming",
+      "prompt_token_count": 26,
+      "response_token_count": 107,
+      "total_token_count": 133,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000255",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 150,
+      "total_token_count": 174,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000256",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 85,
+      "total_token_count": 106,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000257",
+      "category": "python_programming",
+      "prompt_token_count": 22,
+      "response_token_count": 97,
+      "total_token_count": 119,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000258",
+      "category": "python_programming",
+      "prompt_token_count": 30,
+      "response_token_count": 95,
+      "total_token_count": 125,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000259",
+      "category": "python_programming",
+      "prompt_token_count": 22,
+      "response_token_count": 85,
+      "total_token_count": 107,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000260",
+      "category": "python_programming",
+      "prompt_token_count": 20,
+      "response_token_count": 120,
+      "total_token_count": 140,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000261",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 109,
+      "total_token_count": 134,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000262",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 168,
+      "total_token_count": 189,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000263",
+      "category": "python_programming",
+      "prompt_token_count": 29,
+      "response_token_count": 150,
+      "total_token_count": 179,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000264",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 156,
+      "total_token_count": 180,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000265",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 144,
+      "total_token_count": 165,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000266",
+      "category": "python_programming",
+      "prompt_token_count": 23,
+      "response_token_count": 118,
+      "total_token_count": 141,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000267",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 109,
+      "total_token_count": 130,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000268",
+      "category": "python_programming",
+      "prompt_token_count": 26,
+      "response_token_count": 88,
+      "total_token_count": 114,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000269",
+      "category": "python_programming",
+      "prompt_token_count": 23,
+      "response_token_count": 173,
+      "total_token_count": 196,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000270",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 155,
+      "total_token_count": 179,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000271",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 98,
+      "total_token_count": 119,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000272",
+      "category": "python_programming",
+      "prompt_token_count": 27,
+      "response_token_count": 147,
+      "total_token_count": 174,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000273",
+      "category": "python_programming",
+      "prompt_token_count": 28,
+      "response_token_count": 150,
+      "total_token_count": 178,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000274",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 91,
+      "total_token_count": 112,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000275",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 121,
+      "total_token_count": 145,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000276",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 195,
+      "total_token_count": 216,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000277",
+      "category": "python_programming",
+      "prompt_token_count": 22,
+      "response_token_count": 190,
+      "total_token_count": 212,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000278",
+      "category": "python_programming",
+      "prompt_token_count": 26,
+      "response_token_count": 164,
+      "total_token_count": 190,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000279",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 145,
+      "total_token_count": 170,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000280",
+      "category": "python_programming",
+      "prompt_token_count": 23,
+      "response_token_count": 161,
+      "total_token_count": 184,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000281",
+      "category": "python_programming",
+      "prompt_token_count": 28,
+      "response_token_count": 144,
+      "total_token_count": 172,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000282",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 149,
+      "total_token_count": 173,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000283",
+      "category": "python_programming",
+      "prompt_token_count": 26,
+      "response_token_count": 168,
+      "total_token_count": 194,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000284",
+      "category": "python_programming",
+      "prompt_token_count": 21,
+      "response_token_count": 165,
+      "total_token_count": 186,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000285",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 161,
+      "total_token_count": 185,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000286",
+      "category": "python_programming",
+      "prompt_token_count": 25,
+      "response_token_count": 139,
+      "total_token_count": 164,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000287",
+      "category": "python_programming",
+      "prompt_token_count": 23,
+      "response_token_count": 129,
+      "total_token_count": 152,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000288",
+      "category": "python_programming",
+      "prompt_token_count": 22,
+      "response_token_count": 123,
+      "total_token_count": 145,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000289",
+      "category": "python_programming",
+      "prompt_token_count": 20,
+      "response_token_count": 169,
+      "total_token_count": 189,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000290",
+      "category": "python_programming",
+      "prompt_token_count": 18,
+      "response_token_count": 159,
+      "total_token_count": 177,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000291",
+      "category": "python_programming",
+      "prompt_token_count": 28,
+      "response_token_count": 178,
+      "total_token_count": 206,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000292",
+      "category": "python_programming",
+      "prompt_token_count": 19,
+      "response_token_count": 209,
+      "total_token_count": 228,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000293",
+      "category": "python_programming",
+      "prompt_token_count": 28,
+      "response_token_count": 244,
+      "total_token_count": 272,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000294",
+      "category": "python_programming",
+      "prompt_token_count": 26,
+      "response_token_count": 235,
+      "total_token_count": 261,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000295",
+      "category": "python_programming",
+      "prompt_token_count": 26,
+      "response_token_count": 214,
+      "total_token_count": 240,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000296",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 197,
+      "total_token_count": 221,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000297",
+      "category": "python_programming",
+      "prompt_token_count": 20,
+      "response_token_count": 199,
+      "total_token_count": 219,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000298",
+      "category": "python_programming",
+      "prompt_token_count": 24,
+      "response_token_count": 153,
+      "total_token_count": 177,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000299",
+      "category": "python_programming",
+      "prompt_token_count": 23,
+      "response_token_count": 172,
+      "total_token_count": 195,
+      "exceeds_2048": false
+    },
+    {
+      "id": "phase6j_000300",
+      "category": "python_programming",
+      "prompt_token_count": 20,
+      "response_token_count": 235,
+      "total_token_count": 255,
+      "exceeds_2048": false
+    }
+  ],
+  "detailed_validation_metrics": [
+    {
+      "id": "val_phase6j_0001",
+      "category": "failure_case_comprehensions",
+      "prompt_token_count": 17,
+      "response_token_count": 172,
+      "total_token_count": 189,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0002",
+      "category": "failure_case_factorial",
+      "prompt_token_count": 20,
+      "response_token_count": 170,
+      "total_token_count": 190,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0003",
+      "category": "failure_case_csv",
+      "prompt_token_count": 22,
+      "response_token_count": 123,
+      "total_token_count": 145,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0004",
+      "category": "failure_case_fastapi",
+      "prompt_token_count": 25,
+      "response_token_count": 180,
+      "total_token_count": 205,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0005",
+      "category": "failure_case_pandas",
+      "prompt_token_count": 23,
+      "response_token_count": 113,
+      "total_token_count": 136,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0006",
+      "category": "python_code_generation",
+      "prompt_token_count": 25,
+      "response_token_count": 189,
+      "total_token_count": 214,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0007",
+      "category": "python_code_generation",
+      "prompt_token_count": 26,
+      "response_token_count": 176,
+      "total_token_count": 202,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0008",
+      "category": "python_code_generation",
+      "prompt_token_count": 27,
+      "response_token_count": 97,
+      "total_token_count": 124,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0009",
+      "category": "python_code_generation",
+      "prompt_token_count": 25,
+      "response_token_count": 173,
+      "total_token_count": 198,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0010",
+      "category": "python_code_generation",
+      "prompt_token_count": 23,
+      "response_token_count": 162,
+      "total_token_count": 185,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0011",
+      "category": "python_code_generation",
+      "prompt_token_count": 39,
+      "response_token_count": 150,
+      "total_token_count": 189,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0012",
+      "category": "python_code_generation",
+      "prompt_token_count": 22,
+      "response_token_count": 197,
+      "total_token_count": 219,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0013",
+      "category": "python_code_generation",
+      "prompt_token_count": 23,
+      "response_token_count": 231,
+      "total_token_count": 254,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0014",
+      "category": "python_code_generation",
+      "prompt_token_count": 21,
+      "response_token_count": 113,
+      "total_token_count": 134,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0015",
+      "category": "python_code_generation",
+      "prompt_token_count": 27,
+      "response_token_count": 138,
+      "total_token_count": 165,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0016",
+      "category": "python_debugging",
+      "prompt_token_count": 47,
+      "response_token_count": 177,
+      "total_token_count": 224,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0017",
+      "category": "python_debugging",
+      "prompt_token_count": 34,
+      "response_token_count": 110,
+      "total_token_count": 144,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0018",
+      "category": "python_debugging",
+      "prompt_token_count": 30,
+      "response_token_count": 113,
+      "total_token_count": 143,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0019",
+      "category": "python_debugging",
+      "prompt_token_count": 37,
+      "response_token_count": 137,
+      "total_token_count": 174,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0020",
+      "category": "python_debugging",
+      "prompt_token_count": 26,
+      "response_token_count": 105,
+      "total_token_count": 131,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0021",
+      "category": "python_debugging",
+      "prompt_token_count": 37,
+      "response_token_count": 129,
+      "total_token_count": 166,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0022",
+      "category": "python_debugging",
+      "prompt_token_count": 53,
+      "response_token_count": 90,
+      "total_token_count": 143,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0023",
+      "category": "python_debugging",
+      "prompt_token_count": 27,
+      "response_token_count": 63,
+      "total_token_count": 90,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0024",
+      "category": "python_debugging",
+      "prompt_token_count": 19,
+      "response_token_count": 65,
+      "total_token_count": 84,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0025",
+      "category": "python_debugging",
+      "prompt_token_count": 25,
+      "response_token_count": 89,
+      "total_token_count": 114,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0026",
+      "category": "python_library",
+      "prompt_token_count": 25,
+      "response_token_count": 86,
+      "total_token_count": 111,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0027",
+      "category": "python_library",
+      "prompt_token_count": 23,
+      "response_token_count": 90,
+      "total_token_count": 113,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0028",
+      "category": "python_library",
+      "prompt_token_count": 24,
+      "response_token_count": 97,
+      "total_token_count": 121,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0029",
+      "category": "python_library",
+      "prompt_token_count": 26,
+      "response_token_count": 73,
+      "total_token_count": 99,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0030",
+      "category": "python_library",
+      "prompt_token_count": 26,
+      "response_token_count": 87,
+      "total_token_count": 113,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0031",
+      "category": "python_library",
+      "prompt_token_count": 22,
+      "response_token_count": 83,
+      "total_token_count": 105,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0032",
+      "category": "python_library",
+      "prompt_token_count": 24,
+      "response_token_count": 72,
+      "total_token_count": 96,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0033",
+      "category": "python_library",
+      "prompt_token_count": 24,
+      "response_token_count": 109,
+      "total_token_count": 133,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0034",
+      "category": "python_library",
+      "prompt_token_count": 23,
+      "response_token_count": 52,
+      "total_token_count": 75,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0035",
+      "category": "python_library",
+      "prompt_token_count": 25,
+      "response_token_count": 82,
+      "total_token_count": 107,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0036",
+      "category": "python_backend",
+      "prompt_token_count": 23,
+      "response_token_count": 116,
+      "total_token_count": 139,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0037",
+      "category": "python_backend",
+      "prompt_token_count": 28,
+      "response_token_count": 87,
+      "total_token_count": 115,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0038",
+      "category": "python_backend",
+      "prompt_token_count": 23,
+      "response_token_count": 64,
+      "total_token_count": 87,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0039",
+      "category": "python_backend",
+      "prompt_token_count": 21,
+      "response_token_count": 122,
+      "total_token_count": 143,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0040",
+      "category": "python_backend",
+      "prompt_token_count": 26,
+      "response_token_count": 72,
+      "total_token_count": 98,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0041",
+      "category": "python_backend",
+      "prompt_token_count": 21,
+      "response_token_count": 76,
+      "total_token_count": 97,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0042",
+      "category": "python_backend",
+      "prompt_token_count": 20,
+      "response_token_count": 105,
+      "total_token_count": 125,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0043",
+      "category": "python_backend",
+      "prompt_token_count": 23,
+      "response_token_count": 69,
+      "total_token_count": 92,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0044",
+      "category": "python_backend",
+      "prompt_token_count": 18,
+      "response_token_count": 55,
+      "total_token_count": 73,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0045",
+      "category": "python_backend",
+      "prompt_token_count": 21,
+      "response_token_count": 61,
+      "total_token_count": 82,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0046",
+      "category": "python_interoperability",
+      "prompt_token_count": 26,
+      "response_token_count": 92,
+      "total_token_count": 118,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0047",
+      "category": "python_interoperability",
+      "prompt_token_count": 19,
+      "response_token_count": 86,
+      "total_token_count": 105,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0048",
+      "category": "python_interoperability",
+      "prompt_token_count": 24,
+      "response_token_count": 91,
+      "total_token_count": 115,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0049",
+      "category": "python_interoperability",
+      "prompt_token_count": 23,
+      "response_token_count": 43,
+      "total_token_count": 66,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0050",
+      "category": "python_interoperability",
+      "prompt_token_count": 24,
+      "response_token_count": 85,
+      "total_token_count": 109,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0051",
+      "category": "python_interoperability",
+      "prompt_token_count": 24,
+      "response_token_count": 63,
+      "total_token_count": 87,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0052",
+      "category": "python_interoperability",
+      "prompt_token_count": 20,
+      "response_token_count": 72,
+      "total_token_count": 92,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0053",
+      "category": "python_interoperability",
+      "prompt_token_count": 22,
+      "response_token_count": 39,
+      "total_token_count": 61,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0054",
+      "category": "python_interoperability",
+      "prompt_token_count": 22,
+      "response_token_count": 93,
+      "total_token_count": 115,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0055",
+      "category": "python_interoperability",
+      "prompt_token_count": 20,
+      "response_token_count": 63,
+      "total_token_count": 83,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0056",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 41,
+      "total_token_count": 57,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0057",
+      "category": "direct_non_python",
+      "prompt_token_count": 24,
+      "response_token_count": 35,
+      "total_token_count": 59,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0058",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 39,
+      "total_token_count": 56,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0059",
+      "category": "direct_non_python",
+      "prompt_token_count": 18,
+      "response_token_count": 37,
+      "total_token_count": 55,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0060",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 36,
+      "total_token_count": 52,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0061",
+      "category": "direct_non_python",
+      "prompt_token_count": 18,
+      "response_token_count": 50,
+      "total_token_count": 68,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0062",
+      "category": "direct_non_python",
+      "prompt_token_count": 20,
+      "response_token_count": 30,
+      "total_token_count": 50,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0063",
+      "category": "direct_non_python",
+      "prompt_token_count": 17,
+      "response_token_count": 33,
+      "total_token_count": 50,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0064",
+      "category": "direct_non_python",
+      "prompt_token_count": 18,
+      "response_token_count": 36,
+      "total_token_count": 54,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0065",
+      "category": "direct_non_python",
+      "prompt_token_count": 16,
+      "response_token_count": 31,
+      "total_token_count": 47,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0066",
+      "category": "non_programming",
+      "prompt_token_count": 16,
+      "response_token_count": 34,
+      "total_token_count": 50,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0067",
+      "category": "non_programming",
+      "prompt_token_count": 14,
+      "response_token_count": 33,
+      "total_token_count": 47,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0068",
+      "category": "non_programming",
+      "prompt_token_count": 18,
+      "response_token_count": 30,
+      "total_token_count": 48,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0069",
+      "category": "non_programming",
+      "prompt_token_count": 17,
+      "response_token_count": 41,
+      "total_token_count": 58,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0070",
+      "category": "non_programming",
+      "prompt_token_count": 14,
+      "response_token_count": 34,
+      "total_token_count": 48,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0071",
+      "category": "non_programming",
+      "prompt_token_count": 15,
+      "response_token_count": 33,
+      "total_token_count": 48,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0072",
+      "category": "non_programming",
+      "prompt_token_count": 17,
+      "response_token_count": 31,
+      "total_token_count": 48,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0073",
+      "category": "non_programming",
+      "prompt_token_count": 17,
+      "response_token_count": 32,
+      "total_token_count": 49,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0074",
+      "category": "non_programming",
+      "prompt_token_count": 19,
+      "response_token_count": 31,
+      "total_token_count": 50,
+      "exceeds_2048": false
+    },
+    {
+      "id": "val_phase6j_0075",
+      "category": "non_programming",
+      "prompt_token_count": 13,
+      "response_token_count": 33,
+      "total_token_count": 46,
+      "exceeds_2048": false
+    }
+  ]
+}

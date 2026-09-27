@@ -1,0 +1,43 @@
+{
+  "manifest_version": "1.0.0",
+  "project": "VASUKI Phase 6J",
+  "generation_date": "2026-09-25T14:35:00+05:30",
+  "training_dataset": {
+    "filename": "phase6j_training_candidate_diversified.jsonl",
+    "relative_path": "../phase6j_training_candidate_diversified.jsonl",
+    "absolute_path": "D:/VASUKI/experiments/phase6j/phase6j_training_candidate_diversified.jsonl",
+    "sha256": "af9714012101cba1e639bff0b946c78bdeea947f20b341f1803e4352310cc0e2",
+    "record_count": 593,
+    "format": "JSONL (Alpaca schema)",
+    "composition": {
+      "new_phase6j_records": 300,
+      "diversified_redirects": 233,
+      "retained_canonical": 60
+    },
+    "category_breakdown": {
+      "python_programming": 311,
+      "direct_non_python": 180,
+      "non_python_framework": 29,
+      "direct_non_python_debug": 24,
+      "python_interoperability": 22,
+      "python_comparison": 12,
+      "python_conversion": 11,
+      "non_programming": 4
+    }
+  },
+  "validation_dataset": {
+    "filename": "phase6j_validation.jsonl",
+    "relative_path": "../phase6j_validation.jsonl",
+    "absolute_path": "D:/VASUKI/experiments/phase6j/phase6j_validation.jsonl",
+    "sha256": "db816d9bac321deda2aa80dce5552ff994006c42054bac638baf4a5647a4172d",
+    "record_count": 75,
+    "format": "JSONL (Alpaca schema)",
+    "dataset_split": "held_out_validation",
+    "overlap_with_training": 0
+  },
+  "isolation_status": {
+    "quarantine_rejected_overlap": 0,
+    "validation_leakage_overlap": 0,
+    "unrevised_duplicate_redirects": 0
+  }
+}

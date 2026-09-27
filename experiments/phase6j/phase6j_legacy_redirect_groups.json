@@ -1,0 +1,670 @@
+[
+  {
+    "group_id": "legacy_redirect_group_01",
+    "number_of_records": 29,
+    "common_response": "I specialize in Python frameworks like Django, Flask, and FastAPI. I can show you how to accomplish this with Python instead.",
+    "primary_category": "non_python_framework",
+    "technologies_mentioned": [
+      ".NET",
+      "Angular",
+      "Entity Framework",
+      "Express.js",
+      "Hibernate",
+      "JavaFX",
+      "React",
+      "Ruby on Rails",
+      "Sinatra",
+      "Spring Boot / Spring",
+      "Vue.js"
+    ],
+    "record_ids": [
+      "phase6e_000473",
+      "phase6e_000474",
+      "phase6e_000475",
+      "phase6e_000476",
+      "phase6e_000478",
+      "phase6e_000480",
+      "phase6e_000481",
+      "phase6e_000482",
+      "phase6e_000483",
+      "phase6e_000484",
+      "phase6e_000485",
+      "phase6e_000487",
+      "phase6e_000488",
+      "phase6e_000492",
+      "phase6e_000493",
+      "phase6e_000494",
+      "phase6e_000495",
+      "phase6e_000497",
+      "phase6e_000498",
+      "phase6e_000503",
+      "phase6e_000504",
+      "phase6e_000505",
+      "phase6e_000506",
+      "phase6e_000508",
+      "phase6e_000509",
+      "phase6e_000510",
+      "phase6e_000511",
+      "phase6e_000519",
+      "phase6e_000521"
+    ],
+    "recommended_response_strategy": "Contextualize redirect response: state Python specialization politely, identify the user's requested technology, avoid unsupported claims, and offer a concrete Python library/framework alternative."
+  },
+  {
+    "group_id": "legacy_redirect_group_02",
+    "number_of_records": 26,
+    "common_response": "I focus on Python development. I can show you how to implement this using Python frameworks and libraries.",
+    "primary_category": "direct_non_python",
+    "technologies_mentioned": [
+      ".NET",
+      "Angular",
+      "C#",
+      "C++",
+      "Entity Framework",
+      "Express.js",
+      "Go",
+      "Java",
+      "JavaScript",
+      "Node.js",
+      "React",
+      "Rust",
+      "Spring Boot / Spring",
+      "Unity",
+      "Vue.js"
+    ],
+    "record_ids": [
+      "phase6e_000003",
+      "phase6e_000005",
+      "phase6e_000011",
+      "phase6e_000012",
+      "phase6e_000020",
+      "phase6e_000024",
+      "phase6e_000030",
+      "phase6e_000040",
+      "phase6e_000047",
+      "phase6e_000051",
+      "phase6e_000061",
+      "phase6e_000094",
+      "phase6e_000097",
+      "phase6e_000111",
+      "phase6e_000134",
+      "phase6e_000146",
+      "phase6e_000150",
+      "phase6e_000164",
+      "phase6e_000172",
+      "phase6e_000185",
+      "phase6e_000213",
+      "phase6e_000216",
+      "phase6e_000220",
+      "phase6e_000232",
+      "phase6e_000300",
+      "phase6e_000312"
+    ],
+    "recommended_response_strategy": "Contextualize redirect response: state Python specialization politely, identify the user's requested technology, avoid unsupported claims, and offer a concrete Python library/framework alternative."
+  },
+  {
+    "group_id": "legacy_redirect_group_03",
+    "number_of_records": 24,
+    "common_response": "I focus exclusively on Python development. I can help you create an equivalent Python solution.",
+    "primary_category": "direct_non_python",
+    "technologies_mentioned": [
+      ".NET",
+      "Angular",
+      "C#",
+      "C++",
+      "Entity Framework",
+      "Go",
+      "Java",
+      "JavaScript",
+      "Node.js",
+      "React",
+      "Rust",
+      "Spring Boot / Spring",
+      "Vue.js"
+    ],
+    "record_ids": [
+      "phase6e_000004",
+      "phase6e_000007",
+      "phase6e_000009",
+      "phase6e_000015",
+      "phase6e_000026",
+      "phase6e_000035",
+      "phase6e_000072",
+      "phase6e_000073",
+      "phase6e_000095",
+      "phase6e_000100",
+      "phase6e_000148",
+      "phase6e_000153",
+      "phase6e_000159",
+      "phase6e_000188",
+      "phase6e_000197",
+      "phase6e_000201",
+      "phase6e_000203",
+      "phase6e_000205",
+      "phase6e_000219",
+      "phase6e_000234",
+      "phase6e_000277",
+      "phase6e_000307",
+      "phase6e_000341",
+      "phase6e_000351"
+    ],
+    "recommended_response_strategy": "Contextualize redirect response: state Python specialization politely, identify the user's requested technology, avoid unsupported claims, and offer a concrete Python library/framework alternative."
+  },
+  {
+    "group_id": "legacy_redirect_group_04",
+    "number_of_records": 24,
+    "common_response": "I specialize in Python. Let me show you how to build this with Python tools and frameworks.",
+    "primary_category": "direct_non_python",
+    "technologies_mentioned": [
+      ".NET",
+      "Angular",
+      "C#",
+      "C++",
+      "Entity Framework",
+      "Express.js",
+      "Go",
+      "Java",
+      "JavaScript",
+      "Rust",
+      "Spring Boot / Spring",
+      "Vue.js",
+      "WPF"
+    ],
+    "record_ids": [
+      "phase6e_000008",
+      "phase6e_000013",
+      "phase6e_000016",
+      "phase6e_000019",
+      "phase6e_000043",
+      "phase6e_000046",
+      "phase6e_000057",
+      "phase6e_000088",
+      "phase6e_000101",
+      "phase6e_000108",
+      "phase6e_000109",
+      "phase6e_000117",
+      "phase6e_000125",
+      "phase6e_000139",
+      "phase6e_000142",
+      "phase6e_000143",
+      "phase6e_000154",
+      "phase6e_000193",
+      "phase6e_000195",
+      "phase6e_000237",
+      "phase6e_000254",
+      "phase6e_000255",
+      "phase6e_000323",
+      "phase6e_000365"
+    ],
+    "recommended_response_strategy": "Contextualize redirect response: state Python specialization politely, identify the user's requested technology, avoid unsupported claims, and offer a concrete Python library/framework alternative."
+  },
+  {
+    "group_id": "legacy_redirect_group_05",
+    "number_of_records": 24,
+    "common_response": "I focus on Python development. I can help you debug Python code or show you how to implement this functionality in Python instead.",
+    "primary_category": "direct_non_python_debug",
+    "technologies_mentioned": [
+      "C#",
+      "C++",
+      "Java",
+      "JavaScript",
+      "React",
+      "Spring Boot / Spring"
+    ],
+    "record_ids": [
+      "phase6e_000368",
+      "phase6e_000369",
+      "phase6e_000371",
+      "phase6e_000372",
+      "phase6e_000374",
+      "phase6e_000375",
+      "phase6e_000377",
+      "phase6e_000378",
+      "phase6e_000379",
+      "phase6e_000380",
+      "phase6e_000381",
+      "phase6e_000382",
+      "phase6e_000383",
+      "phase6e_000384",
+      "phase6e_000385",
+      "phase6e_000386",
+      "phase6e_000387",
+      "phase6e_000389",
+      "phase6e_000390",
+      "phase6e_000395",
+      "phase6e_000402",
+      "phase6e_000416",
+      "phase6e_000420",
+      "phase6e_000422"
+    ],
+    "recommended_response_strategy": "Contextualize redirect response: state Python specialization politely, identify the user's requested technology, avoid unsupported claims, and offer a concrete Python library/framework alternative."
+  },
+  {
+    "group_id": "legacy_redirect_group_06",
+    "number_of_records": 23,
+    "common_response": "I can help you accomplish this goal using Python. Would you like me to demonstrate a Python approach?",
+    "primary_category": "direct_non_python",
+    "technologies_mentioned": [
+      ".NET",
+      "Angular",
+      "C#",
+      "C++",
+      "Entity Framework",
+      "Express.js",
+      "Go",
+      "Java",
+      "JavaScript",
+      "Node.js",
+      "React",
+      "Rust",
+      "Spring Boot / Spring",
+      "Unity",
+      "Vue.js",
+      "WPF"
+    ],
+    "record_ids": [
+      "phase6e_000002",
+      "phase6e_000023",
+      "phase6e_000025",
+      "phase6e_000027",
+      "phase6e_000034",
+      "phase6e_000058",
+      "phase6e_000063",
+      "phase6e_000070",
+      "phase6e_000071",
+      "phase6e_000076",
+      "phase6e_000079",
+      "phase6e_000096",
+      "phase6e_000113",
+      "phase6e_000127",
+      "phase6e_000138",
+      "phase6e_000147",
+      "phase6e_000167",
+      "phase6e_000180",
+      "phase6e_000186",
+      "phase6e_000187",
+      "phase6e_000190",
+      "phase6e_000239",
+      "phase6e_000251"
+    ],
+    "recommended_response_strategy": "Contextualize redirect response: state Python specialization politely, identify the user's requested technology, avoid unsupported claims, and offer a concrete Python library/framework alternative."
+  },
+  {
+    "group_id": "legacy_redirect_group_07",
+    "number_of_records": 22,
+    "common_response": "My expertise is in Python programming. I'd be happy to help you create a Python-based solution for this.",
+    "primary_category": "direct_non_python",
+    "technologies_mentioned": [
+      ".NET",
+      "Angular",
+      "C#",
+      "C++",
+      "Go",
+      "Java",
+      "JavaScript",
+      "React",
+      "Rust",
+      "Spring Boot / Spring",
+      "Unity",
+      "Vue.js",
+      "WPF"
+    ],
+    "record_ids": [
+      "phase6e_000010",
+      "phase6e_000022",
+      "phase6e_000033",
+      "phase6e_000039",
+      "phase6e_000045",
+      "phase6e_000049",
+      "phase6e_000055",
+      "phase6e_000069",
+      "phase6e_000078",
+      "phase6e_000082",
+      "phase6e_000093",
+      "phase6e_000105",
+      "phase6e_000110",
+      "phase6e_000122",
+      "phase6e_000129",
+      "phase6e_000130",
+      "phase6e_000131",
+      "phase6e_000171",
+      "phase6e_000228",
+      "phase6e_000252",
+      "phase6e_000352",
+      "phase6e_000358"
+    ],
+    "recommended_response_strategy": "Contextualize redirect response: state Python specialization politely, identify the user's requested technology, avoid unsupported claims, and offer a concrete Python library/framework alternative."
+  },
+  {
+    "group_id": "legacy_redirect_group_08",
+    "number_of_records": 22,
+    "common_response": "I work with Python programming. I can show you a Python alternative that accomplishes the same goal.",
+    "primary_category": "direct_non_python",
+    "technologies_mentioned": [
+      ".NET",
+      "Angular",
+      "C#",
+      "C++",
+      "Entity Framework",
+      "Express.js",
+      "Go",
+      "Java",
+      "JavaScript",
+      "Node.js",
+      "React",
+      "Rust",
+      "Unity",
+      "WPF"
+    ],
+    "record_ids": [
+      "phase6e_000014",
+      "phase6e_000021",
+      "phase6e_000032",
+      "phase6e_000037",
+      "phase6e_000041",
+      "phase6e_000068",
+      "phase6e_000077",
+      "phase6e_000087",
+      "phase6e_000091",
+      "phase6e_000115",
+      "phase6e_000135",
+      "phase6e_000160",
+      "phase6e_000170",
+      "phase6e_000176",
+      "phase6e_000178",
+      "phase6e_000189",
+      "phase6e_000198",
+      "phase6e_000204",
+      "phase6e_000214",
+      "phase6e_000226",
+      "phase6e_000235",
+      "phase6e_000278"
+    ],
+    "recommended_response_strategy": "Contextualize redirect response: state Python specialization politely, identify the user's requested technology, avoid unsupported claims, and offer a concrete Python library/framework alternative."
+  },
+  {
+    "group_id": "legacy_redirect_group_09",
+    "number_of_records": 19,
+    "common_response": "This would be better suited for Python. I can guide you through a Python implementation.",
+    "primary_category": "direct_non_python",
+    "technologies_mentioned": [
+      ".NET",
+      "C#",
+      "C++",
+      "Entity Framework",
+      "Go",
+      "Java",
+      "JavaScript",
+      "Node.js",
+      "React",
+      "Rust",
+      "Spring Boot / Spring"
+    ],
+    "record_ids": [
+      "phase6e_000029",
+      "phase6e_000031",
+      "phase6e_000036",
+      "phase6e_000050",
+      "phase6e_000075",
+      "phase6e_000098",
+      "phase6e_000099",
+      "phase6e_000118",
+      "phase6e_000126",
+      "phase6e_000128",
+      "phase6e_000140",
+      "phase6e_000141",
+      "phase6e_000145",
+      "phase6e_000151",
+      "phase6e_000184",
+      "phase6e_000225",
+      "phase6e_000304",
+      "phase6e_000308",
+      "phase6e_000339"
+    ],
+    "recommended_response_strategy": "Contextualize redirect response: state Python specialization politely, identify the user's requested technology, avoid unsupported claims, and offer a concrete Python library/framework alternative."
+  },
+  {
+    "group_id": "legacy_redirect_group_10",
+    "number_of_records": 2,
+    "common_response": "I specialize in Python programming. I can help you build a similar web application using Python instead. Would you like me to show you how?",
+    "primary_category": "direct_non_python",
+    "technologies_mentioned": [
+      ".NET",
+      "C#",
+      "Java"
+    ],
+    "record_ids": [
+      "phase6e_000065",
+      "phase6e_000291"
+    ],
+    "recommended_response_strategy": "Contextualize redirect response: state Python specialization politely, identify the user's requested technology, avoid unsupported claims, and offer a concrete Python library/framework alternative."
+  },
+  {
+    "group_id": "legacy_redirect_group_11",
+    "number_of_records": 2,
+    "common_response": "I specialize in Python programming. I can help you build a similar REST API using Python instead. Would you like me to show you how?",
+    "primary_category": "direct_non_python",
+    "technologies_mentioned": [
+      "Express.js",
+      "Java",
+      "JavaScript"
+    ],
+    "record_ids": [
+      "phase6e_000207",
+      "phase6e_000272"
+    ],
+    "recommended_response_strategy": "Contextualize redirect response: state Python specialization politely, identify the user's requested technology, avoid unsupported claims, and offer a concrete Python library/framework alternative."
+  },
+  {
+    "group_id": "legacy_redirect_group_12",
+    "number_of_records": 1,
+    "common_response": "I specialize in Python programming. I can help you build a similar systems application using Python instead. Would you like me to show you how?",
+    "primary_category": "direct_non_python",
+    "technologies_mentioned": [
+      "Rust"
+    ],
+    "record_ids": [
+      "phase6e_000001"
+    ],
+    "recommended_response_strategy": "Contextualize redirect response: state Python specialization politely, identify the user's requested technology, avoid unsupported claims, and offer a concrete Python library/framework alternative."
+  },
+  {
+    "group_id": "legacy_redirect_group_13",
+    "number_of_records": 1,
+    "common_response": "I specialize in Python programming. I can help you build a similar trading system using Python instead. Would you like me to show you how?",
+    "primary_category": "direct_non_python",
+    "technologies_mentioned": [
+      "C++"
+    ],
+    "record_ids": [
+      "phase6e_000006"
+    ],
+    "recommended_response_strategy": "Contextualize redirect response: state Python specialization politely, identify the user's requested technology, avoid unsupported claims, and offer a concrete Python library/framework alternative."
+  },
+  {
+    "group_id": "legacy_redirect_group_14",
+    "number_of_records": 1,
+    "common_response": "I specialize in Python programming. I can help you build a similar parser using Python instead. Would you like me to show you how?",
+    "primary_category": "direct_non_python",
+    "technologies_mentioned": [
+      "Rust"
+    ],
+    "record_ids": [
+      "phase6e_000028"
+    ],
+    "recommended_response_strategy": "Contextualize redirect response: state Python specialization politely, identify the user's requested technology, avoid unsupported claims, and offer a concrete Python library/framework alternative."
+  },
+  {
+    "group_id": "legacy_redirect_group_15",
+    "number_of_records": 1,
+    "common_response": "I specialize in Python programming. I can help you build a similar CLI tool using Python instead. Would you like me to show you how?",
+    "primary_category": "direct_non_python",
+    "technologies_mentioned": [
+      "Go"
+    ],
+    "record_ids": [
+      "phase6e_000042"
+    ],
+    "recommended_response_strategy": "Contextualize redirect response: state Python specialization politely, identify the user's requested technology, avoid unsupported claims, and offer a concrete Python library/framework alternative."
+  },
+  {
+    "group_id": "legacy_redirect_group_16",
+    "number_of_records": 1,
+    "common_response": "I specialize in Python programming. I can help you build a similar microservices application using Python instead. Would you like me to show you how?",
+    "primary_category": "direct_non_python",
+    "technologies_mentioned": [
+      "Go"
+    ],
+    "record_ids": [
+      "phase6e_000064"
+    ],
+    "recommended_response_strategy": "Contextualize redirect response: state Python specialization politely, identify the user's requested technology, avoid unsupported claims, and offer a concrete Python library/framework alternative."
+  },
+  {
+    "group_id": "legacy_redirect_group_17",
+    "number_of_records": 1,
+    "common_response": "I specialize in Python programming. I can help you build a similar game engine using Python instead. Would you like me to show you how?",
+    "primary_category": "direct_non_python",
+    "technologies_mentioned": [
+      "C++"
+    ],
+    "record_ids": [
+      "phase6e_000066"
+    ],
+    "recommended_response_strategy": "Contextualize redirect response: state Python specialization politely, identify the user's requested technology, avoid unsupported claims, and offer a concrete Python library/framework alternative."
+  },
+  {
+    "group_id": "legacy_redirect_group_18",
+    "number_of_records": 1,
+    "common_response": "I specialize in Python programming. I can help you build a similar data structure library using Python instead. Would you like me to show you how?",
+    "primary_category": "direct_non_python",
+    "technologies_mentioned": [
+      "C++"
+    ],
+    "record_ids": [
+      "phase6e_000084"
+    ],
+    "recommended_response_strategy": "Contextualize redirect response: state Python specialization politely, identify the user's requested technology, avoid unsupported claims, and offer a concrete Python library/framework alternative."
+  },
+  {
+    "group_id": "legacy_redirect_group_19",
+    "number_of_records": 1,
+    "common_response": "I specialize in Python programming. I can help you build a similar distributed system using Python instead. Would you like me to show you how?",
+    "primary_category": "direct_non_python",
+    "technologies_mentioned": [
+      "Go"
+    ],
+    "record_ids": [
+      "phase6e_000121"
+    ],
+    "recommended_response_strategy": "Contextualize redirect response: state Python specialization politely, identify the user's requested technology, avoid unsupported claims, and offer a concrete Python library/framework alternative."
+  },
+  {
+    "group_id": "legacy_redirect_group_20",
+    "number_of_records": 1,
+    "common_response": "I specialize in Python programming. I can help you build a similar networking tool using Python instead. Would you like me to show you how?",
+    "primary_category": "direct_non_python",
+    "technologies_mentioned": [
+      "Rust"
+    ],
+    "record_ids": [
+      "phase6e_000174"
+    ],
+    "recommended_response_strategy": "Contextualize redirect response: state Python specialization politely, identify the user's requested technology, avoid unsupported claims, and offer a concrete Python library/framework alternative."
+  },
+  {
+    "group_id": "legacy_redirect_group_21",
+    "number_of_records": 1,
+    "common_response": "I specialize in Python programming. I can help you build a similar game using Python instead. Would you like me to show you how?",
+    "primary_category": "direct_non_python",
+    "technologies_mentioned": [
+      "C#",
+      "Unity"
+    ],
+    "record_ids": [
+      "phase6e_000191"
+    ],
+    "recommended_response_strategy": "Contextualize redirect response: state Python specialization politely, identify the user's requested technology, avoid unsupported claims, and offer a concrete Python library/framework alternative."
+  },
+  {
+    "group_id": "legacy_redirect_group_22",
+    "number_of_records": 1,
+    "common_response": "I specialize in Python programming. I can help you build a similar operating system using Python instead. Would you like me to show you how?",
+    "primary_category": "direct_non_python",
+    "technologies_mentioned": [
+      "C++"
+    ],
+    "record_ids": [
+      "phase6e_000199"
+    ],
+    "recommended_response_strategy": "Contextualize redirect response: state Python specialization politely, identify the user's requested technology, avoid unsupported claims, and offer a concrete Python library/framework alternative."
+  },
+  {
+    "group_id": "legacy_redirect_group_23",
+    "number_of_records": 1,
+    "common_response": "I specialize in Python programming. I can help you build a similar database application using Python instead. Would you like me to show you how?",
+    "primary_category": "direct_non_python",
+    "technologies_mentioned": [
+      "C#",
+      "Entity Framework"
+    ],
+    "record_ids": [
+      "phase6e_000200"
+    ],
+    "recommended_response_strategy": "Contextualize redirect response: state Python specialization politely, identify the user's requested technology, avoid unsupported claims, and offer a concrete Python library/framework alternative."
+  },
+  {
+    "group_id": "legacy_redirect_group_24",
+    "number_of_records": 1,
+    "common_response": "I specialize in Python programming. I can help you build a similar single-page application using Python instead. Would you like me to show you how?",
+    "primary_category": "direct_non_python",
+    "technologies_mentioned": [
+      "JavaScript",
+      "React"
+    ],
+    "record_ids": [
+      "phase6e_000258"
+    ],
+    "recommended_response_strategy": "Contextualize redirect response: state Python specialization politely, identify the user's requested technology, avoid unsupported claims, and offer a concrete Python library/framework alternative."
+  },
+  {
+    "group_id": "legacy_redirect_group_25",
+    "number_of_records": 1,
+    "common_response": "I specialize in Python programming. I can help you build a similar backend server using Python instead. Would you like me to show you how?",
+    "primary_category": "direct_non_python",
+    "technologies_mentioned": [
+      "JavaScript",
+      "Node.js"
+    ],
+    "record_ids": [
+      "phase6e_000263"
+    ],
+    "recommended_response_strategy": "Contextualize redirect response: state Python specialization politely, identify the user's requested technology, avoid unsupported claims, and offer a concrete Python library/framework alternative."
+  },
+  {
+    "group_id": "legacy_redirect_group_26",
+    "number_of_records": 1,
+    "common_response": "I specialize in Python programming. I can help you build a similar mobile application using Python instead. Would you like me to show you how?",
+    "primary_category": "direct_non_python",
+    "technologies_mentioned": [
+      "Java"
+    ],
+    "record_ids": [
+      "phase6e_000266"
+    ],
+    "recommended_response_strategy": "Contextualize redirect response: state Python specialization politely, identify the user's requested technology, avoid unsupported claims, and offer a concrete Python library/framework alternative."
+  },
+  {
+    "group_id": "legacy_redirect_group_27",
+    "number_of_records": 1,
+    "common_response": "I specialize in Python programming. I can help you build a similar chat application using Python instead. Would you like me to show you how?",
+    "primary_category": "direct_non_python",
+    "technologies_mentioned": [
+      "JavaScript"
+    ],
+    "record_ids": [
+      "phase6e_000357"
+    ],
+    "recommended_response_strategy": "Contextualize redirect response: state Python specialization politely, identify the user's requested technology, avoid unsupported claims, and offer a concrete Python library/framework alternative."
+  }
+]

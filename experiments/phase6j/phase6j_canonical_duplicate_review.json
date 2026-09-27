@@ -1,0 +1,515 @@
+{
+  "total_duplicate_groups": 19,
+  "total_records_in_groups": 44,
+  "total_redundant_instances": 25,
+  "all_groups_accepted": true,
+  "revisions_required": 0,
+  "groups": [
+    {
+      "group_id": "dup_group_01",
+      "domain": "HTTP Client / REST Invocations",
+      "record_count": 4,
+      "redundant_instances": 3,
+      "record_ids": [
+        "phase6e_000525",
+        "phase6e_000526",
+        "phase6e_000527",
+        "phase6e_000528"
+      ],
+      "instructions": [
+        "How can I call a Java REST API from Python?",
+        "How do I call a Java REST API from Python?",
+        "What's the best way to call a Java REST API from Python?",
+        "How can I call a Java REST API from Python 3?"
+      ],
+      "categories": [
+        "python_interoperability"
+      ],
+      "shared_response_preview": "You can call a Java REST API from Python using the requests library. Here's how:\n\n```python\nimport requests\n\nresponse = requests.get('https://your-java-api.com/endpoint')\ndata = re...",
+      "instructions_are_equivalent_paraphrases": true,
+      "shared_response_technically_appropriate": true,
+      "ignores_meaningful_differences": false,
+      "provides_incorrect_library": false,
+      "misleading_training_behavior": false,
+      "determination": "RETAIN_AS_BENEFICIAL_PARAPHRASE_REINFORCEMENT",
+      "technical_rationale": "All 4 prompts in this group are semantic and syntactic paraphrases inquiring about http client / rest invocations. Providing an identical, idiomatically correct Python reference example reinforces model invariance across varied user phrasing without diluting technical correctness.",
+      "revision_required": false
+    },
+    {
+      "group_id": "dup_group_02",
+      "domain": "Database Driver Connections",
+      "record_count": 3,
+      "redundant_instances": 2,
+      "record_ids": [
+        "phase6e_000529",
+        "phase6e_000530",
+        "phase6e_000531"
+      ],
+      "instructions": [
+        "How do I connect Python to a MySQL database?",
+        "How do I connect Python 3 to a MySQL database?",
+        "How do I connect Python to a MySQL database in Python?"
+      ],
+      "categories": [
+        "python_interoperability"
+      ],
+      "shared_response_preview": "You can connect Python to MySQL using the mysql-connector-python library:\n\n```python\nimport mysql.connector\n\nconnection = mysql.connector.connect(\n    host='localhost',\n    user='y...",
+      "instructions_are_equivalent_paraphrases": true,
+      "shared_response_technically_appropriate": true,
+      "ignores_meaningful_differences": false,
+      "provides_incorrect_library": false,
+      "misleading_training_behavior": false,
+      "determination": "RETAIN_AS_BENEFICIAL_PARAPHRASE_REINFORCEMENT",
+      "technical_rationale": "All 3 prompts in this group are semantic and syntactic paraphrases inquiring about database driver connections. Providing an identical, idiomatically correct Python reference example reinforces model invariance across varied user phrasing without diluting technical correctness.",
+      "revision_required": false
+    },
+    {
+      "group_id": "dup_group_03",
+      "domain": "HTTP Client / REST Invocations",
+      "record_count": 2,
+      "redundant_instances": 1,
+      "record_ids": [
+        "phase6e_000532",
+        "phase6e_000533"
+      ],
+      "instructions": [
+        "Parse JSON data in Python from an external API",
+        "Parse JSON data in Python 3 from an external API"
+      ],
+      "categories": [
+        "python_interoperability"
+      ],
+      "shared_response_preview": "You can parse JSON in Python using the json module:\n\n```python\nimport json\nimport requests\n\nresponse = requests.get('https://api.example.com/data')\ndata = json.loads(response.text)...",
+      "instructions_are_equivalent_paraphrases": true,
+      "shared_response_technically_appropriate": true,
+      "ignores_meaningful_differences": false,
+      "provides_incorrect_library": false,
+      "misleading_training_behavior": false,
+      "determination": "RETAIN_AS_BENEFICIAL_PARAPHRASE_REINFORCEMENT",
+      "technical_rationale": "All 2 prompts in this group are semantic and syntactic paraphrases inquiring about http client / rest invocations. Providing an identical, idiomatically correct Python reference example reinforces model invariance across varied user phrasing without diluting technical correctness.",
+      "revision_required": false
+    },
+    {
+      "group_id": "dup_group_04",
+      "domain": "Data Serialization / API Parsing",
+      "record_count": 3,
+      "redundant_instances": 2,
+      "record_ids": [
+        "phase6e_000534",
+        "phase6e_000535",
+        "phase6e_000536"
+      ],
+      "instructions": [
+        "How can Python backend communicate with JavaScript frontend?",
+        "How can Python 3 backend communicate with JavaScript frontend?",
+        "How can Python backend communicate with JavaScript frontend in Python?"
+      ],
+      "categories": [
+        "python_interoperability"
+      ],
+      "shared_response_preview": "A Python backend can communicate with a JavaScript frontend through REST APIs or WebSockets. Here's a simple Flask REST API example:\n\n```python\nfrom flask import Flask, jsonify\nfro...",
+      "instructions_are_equivalent_paraphrases": true,
+      "shared_response_technically_appropriate": true,
+      "ignores_meaningful_differences": false,
+      "provides_incorrect_library": false,
+      "misleading_training_behavior": false,
+      "determination": "RETAIN_AS_BENEFICIAL_PARAPHRASE_REINFORCEMENT",
+      "technical_rationale": "All 3 prompts in this group are semantic and syntactic paraphrases inquiring about data serialization / api parsing. Providing an identical, idiomatically correct Python reference example reinforces model invariance across varied user phrasing without diluting technical correctness.",
+      "revision_required": false
+    },
+    {
+      "group_id": "dup_group_05",
+      "domain": "PostgreSQL Database Connections",
+      "record_count": 2,
+      "redundant_instances": 1,
+      "record_ids": [
+        "phase6e_000537",
+        "phase6e_000538"
+      ],
+      "instructions": [
+        "Connect Python to PostgreSQL database",
+        "Connect Python 3 to PostgreSQL database"
+      ],
+      "categories": [
+        "python_interoperability"
+      ],
+      "shared_response_preview": "Use the psycopg2 library to connect Python to PostgreSQL:\n\n```python\nimport psycopg2\n\nconnection = psycopg2.connect(\n    host='localhost',\n    database='mydb',\n    user='postgres',...",
+      "instructions_are_equivalent_paraphrases": true,
+      "shared_response_technically_appropriate": true,
+      "ignores_meaningful_differences": false,
+      "provides_incorrect_library": false,
+      "misleading_training_behavior": false,
+      "determination": "RETAIN_AS_BENEFICIAL_PARAPHRASE_REINFORCEMENT",
+      "technical_rationale": "All 2 prompts in this group are semantic and syntactic paraphrases inquiring about postgresql database connections. Providing an identical, idiomatically correct Python reference example reinforces model invariance across varied user phrasing without diluting technical correctness.",
+      "revision_required": false
+    },
+    {
+      "group_id": "dup_group_06",
+      "domain": "MongoDB NoSQL Integration",
+      "record_count": 2,
+      "redundant_instances": 1,
+      "record_ids": [
+        "phase6e_000541",
+        "phase6e_000542"
+      ],
+      "instructions": [
+        "Use Python to interact with MongoDB",
+        "Use Python 3 to interact with MongoDB"
+      ],
+      "categories": [
+        "python_interoperability"
+      ],
+      "shared_response_preview": "Use the pymongo library to interact with MongoDB from Python:\n\n```python\nfrom pymongo import MongoClient\n\nclient = MongoClient('mongodb://localhost:27017/')\ndb = client['mydatabase...",
+      "instructions_are_equivalent_paraphrases": true,
+      "shared_response_technically_appropriate": true,
+      "ignores_meaningful_differences": false,
+      "provides_incorrect_library": false,
+      "misleading_training_behavior": false,
+      "determination": "RETAIN_AS_BENEFICIAL_PARAPHRASE_REINFORCEMENT",
+      "technical_rationale": "All 2 prompts in this group are semantic and syntactic paraphrases inquiring about mongodb nosql integration. Providing an identical, idiomatically correct Python reference example reinforces model invariance across varied user phrasing without diluting technical correctness.",
+      "revision_required": false
+    },
+    {
+      "group_id": "dup_group_07",
+      "domain": "Native Foreign-Function Interoperability",
+      "record_count": 2,
+      "redundant_instances": 1,
+      "record_ids": [
+        "phase6e_000543",
+        "phase6e_000544"
+      ],
+      "instructions": [
+        "How do I call C++ libraries from Python?",
+        "How do I call C++ libraries from Python 3?"
+      ],
+      "categories": [
+        "python_interoperability"
+      ],
+      "shared_response_preview": "You can call C++ libraries from Python using ctypes or pybind11. Here's a simple ctypes example:\n\n```python\nimport ctypes\n\n# Load the shared library\nlib = ctypes.CDLL('./mylib.so')...",
+      "instructions_are_equivalent_paraphrases": true,
+      "shared_response_technically_appropriate": true,
+      "ignores_meaningful_differences": false,
+      "provides_incorrect_library": false,
+      "misleading_training_behavior": false,
+      "determination": "RETAIN_AS_BENEFICIAL_PARAPHRASE_REINFORCEMENT",
+      "technical_rationale": "All 2 prompts in this group are semantic and syntactic paraphrases inquiring about native foreign-function interoperability. Providing an identical, idiomatically correct Python reference example reinforces model invariance across varied user phrasing without diluting technical correctness.",
+      "revision_required": false
+    },
+    {
+      "group_id": "dup_group_08",
+      "domain": "Web Backend & API Communication",
+      "record_count": 2,
+      "redundant_instances": 1,
+      "record_ids": [
+        "phase6e_000827",
+        "phase6e_000828"
+      ],
+      "instructions": [
+        "Should I use Python or JavaScript for a web project?",
+        "Which is better: use Python or JavaScript for a web project?"
+      ],
+      "categories": [
+        "python_comparison"
+      ],
+      "shared_response_preview": "Python is great for web backend development with frameworks like Django and Flask. It excels at:\n\n- Backend APIs and server-side logic\n- Data processing and analysis\n- Machine lear...",
+      "instructions_are_equivalent_paraphrases": true,
+      "shared_response_technically_appropriate": true,
+      "ignores_meaningful_differences": false,
+      "provides_incorrect_library": false,
+      "misleading_training_behavior": false,
+      "determination": "RETAIN_AS_BENEFICIAL_PARAPHRASE_REINFORCEMENT",
+      "technical_rationale": "All 2 prompts in this group are semantic and syntactic paraphrases inquiring about web backend & api communication. Providing an identical, idiomatically correct Python reference example reinforces model invariance across varied user phrasing without diluting technical correctness.",
+      "revision_required": false
+    },
+    {
+      "group_id": "dup_group_09",
+      "domain": "Data Science Tooling Comparisons",
+      "record_count": 2,
+      "redundant_instances": 1,
+      "record_ids": [
+        "phase6e_000829",
+        "phase6e_000830"
+      ],
+      "instructions": [
+        "Python vs R for data science",
+        "Python versus R for data science"
+      ],
+      "categories": [
+        "python_comparison"
+      ],
+      "shared_response_preview": "Python is highly popular in data science due to:\n\n- Libraries: pandas, NumPy, scikit-learn, TensorFlow, PyTorch\n- General-purpose language (not domain-specific)\n- Strong community ...",
+      "instructions_are_equivalent_paraphrases": true,
+      "shared_response_technically_appropriate": true,
+      "ignores_meaningful_differences": false,
+      "provides_incorrect_library": false,
+      "misleading_training_behavior": false,
+      "determination": "RETAIN_AS_BENEFICIAL_PARAPHRASE_REINFORCEMENT",
+      "technical_rationale": "All 2 prompts in this group are semantic and syntactic paraphrases inquiring about data science tooling comparisons. Providing an identical, idiomatically correct Python reference example reinforces model invariance across varied user phrasing without diluting technical correctness.",
+      "revision_required": false
+    },
+    {
+      "group_id": "dup_group_10",
+      "domain": "Native Foreign-Function Interoperability",
+      "record_count": 2,
+      "redundant_instances": 1,
+      "record_ids": [
+        "phase6e_000832",
+        "phase6e_000833"
+      ],
+      "instructions": [
+        "Python vs C++ for performance",
+        "Python versus C++ for performance"
+      ],
+      "categories": [
+        "python_comparison"
+      ],
+      "shared_response_preview": "Python prioritizes development speed and readability. For performance-critical applications:\n\n- Use Python with NumPy/Pandas for optimized operations\n- Integrate C++ libraries via ...",
+      "instructions_are_equivalent_paraphrases": true,
+      "shared_response_technically_appropriate": true,
+      "ignores_meaningful_differences": false,
+      "provides_incorrect_library": false,
+      "misleading_training_behavior": false,
+      "determination": "RETAIN_AS_BENEFICIAL_PARAPHRASE_REINFORCEMENT",
+      "technical_rationale": "All 2 prompts in this group are semantic and syntactic paraphrases inquiring about native foreign-function interoperability. Providing an identical, idiomatically correct Python reference example reinforces model invariance across varied user phrasing without diluting technical correctness.",
+      "revision_required": false
+    },
+    {
+      "group_id": "dup_group_11",
+      "domain": "Web Backend & API Communication",
+      "record_count": 2,
+      "redundant_instances": 1,
+      "record_ids": [
+        "phase6e_000834",
+        "phase6e_000835"
+      ],
+      "instructions": [
+        "Should I learn Python or Ruby for web development?",
+        "Which is better: learn Python or Ruby for web development?"
+      ],
+      "categories": [
+        "python_comparison"
+      ],
+      "shared_response_preview": "Python is excellent for web development:\n\n- Django: Full-featured web framework\n- Flask: Lightweight and flexible\n- FastAPI: Modern, fast API development\n- Strong data science inte...",
+      "instructions_are_equivalent_paraphrases": true,
+      "shared_response_technically_appropriate": true,
+      "ignores_meaningful_differences": false,
+      "provides_incorrect_library": false,
+      "misleading_training_behavior": false,
+      "determination": "RETAIN_AS_BENEFICIAL_PARAPHRASE_REINFORCEMENT",
+      "technical_rationale": "All 2 prompts in this group are semantic and syntactic paraphrases inquiring about web backend & api communication. Providing an identical, idiomatically correct Python reference example reinforces model invariance across varied user phrasing without diluting technical correctness.",
+      "revision_required": false
+    },
+    {
+      "group_id": "dup_group_12",
+      "domain": "Language Idiom Conversion (Java to Python)",
+      "record_count": 3,
+      "redundant_instances": 2,
+      "record_ids": [
+        "phase6e_001050",
+        "phase6e_001051",
+        "phase6e_001052"
+      ],
+      "instructions": [
+        "Convert this Java HashMap to Python",
+        "Translate this Java HashMap to Python",
+        "Convert a Java HashMap to Python"
+      ],
+      "categories": [
+        "python_conversion"
+      ],
+      "shared_response_preview": "In Python, you would use a dictionary (dict) which is equivalent to Java's HashMap:\n\n```python\n# Python dictionary\nmy_dict = {\n    'key1': 'value1',\n    'key2': 'value2',\n    'key3...",
+      "instructions_are_equivalent_paraphrases": true,
+      "shared_response_technically_appropriate": true,
+      "ignores_meaningful_differences": false,
+      "provides_incorrect_library": false,
+      "misleading_training_behavior": false,
+      "determination": "RETAIN_AS_BENEFICIAL_PARAPHRASE_REINFORCEMENT",
+      "technical_rationale": "All 3 prompts in this group are semantic and syntactic paraphrases inquiring about language idiom conversion (java to python). Providing an identical, idiomatically correct Python reference example reinforces model invariance across varied user phrasing without diluting technical correctness.",
+      "revision_required": false
+    },
+    {
+      "group_id": "dup_group_13",
+      "domain": "Data Serialization / API Parsing",
+      "record_count": 2,
+      "redundant_instances": 1,
+      "record_ids": [
+        "phase6e_001053",
+        "phase6e_001054"
+      ],
+      "instructions": [
+        "Translate this JavaScript async function to Python",
+        "Translate a JavaScript async function to Python"
+      ],
+      "categories": [
+        "python_conversion"
+      ],
+      "shared_response_preview": "Here's how to write async functions in Python:\n\n```python\nimport asyncio\nimport aiohttp\n\nasync def fetch_data(url):\n    async with aiohttp.ClientSession() as session:\n        async...",
+      "instructions_are_equivalent_paraphrases": true,
+      "shared_response_technically_appropriate": true,
+      "ignores_meaningful_differences": false,
+      "provides_incorrect_library": false,
+      "misleading_training_behavior": false,
+      "determination": "RETAIN_AS_BENEFICIAL_PARAPHRASE_REINFORCEMENT",
+      "technical_rationale": "All 2 prompts in this group are semantic and syntactic paraphrases inquiring about data serialization / api parsing. Providing an identical, idiomatically correct Python reference example reinforces model invariance across varied user phrasing without diluting technical correctness.",
+      "revision_required": false
+    },
+    {
+      "group_id": "dup_group_14",
+      "domain": "Data Structure Conversion (C++ to Python)",
+      "record_count": 3,
+      "redundant_instances": 2,
+      "record_ids": [
+        "phase6e_001055",
+        "phase6e_001056",
+        "phase6e_001057"
+      ],
+      "instructions": [
+        "How would I write this C++ vector in Python?",
+        "Python equivalent of this C++ vector in Python?",
+        "How would I write a C++ vector in Python?"
+      ],
+      "categories": [
+        "python_conversion"
+      ],
+      "shared_response_preview": "In Python, you would use a list, which is similar to C++ vectors:\n\n```python\n# Python list (equivalent to C++ vector)\nmy_list = [1, 2, 3, 4, 5]\n\n# Append (like vector.push_back())\n...",
+      "instructions_are_equivalent_paraphrases": true,
+      "shared_response_technically_appropriate": true,
+      "ignores_meaningful_differences": false,
+      "provides_incorrect_library": false,
+      "misleading_training_behavior": false,
+      "determination": "RETAIN_AS_BENEFICIAL_PARAPHRASE_REINFORCEMENT",
+      "technical_rationale": "All 3 prompts in this group are semantic and syntactic paraphrases inquiring about data structure conversion (c++ to python). Providing an identical, idiomatically correct Python reference example reinforces model invariance across varied user phrasing without diluting technical correctness.",
+      "revision_required": false
+    },
+    {
+      "group_id": "dup_group_15",
+      "domain": "HTTP Client / REST Invocations",
+      "record_count": 2,
+      "redundant_instances": 1,
+      "record_ids": [
+        "phase6e_001059",
+        "phase6e_001060"
+      ],
+      "instructions": [
+        "Convert JavaScript Promise to Python equivalent",
+        "Translate JavaScript Promise to Python equivalent"
+      ],
+      "categories": [
+        "python_conversion"
+      ],
+      "shared_response_preview": "Python's asyncio.Future is similar to JavaScript Promises:\n\n```python\nimport asyncio\n\nasync def fetch_data():\n    await asyncio.sleep(1)  # Simulated async operation\n    return 'Da...",
+      "instructions_are_equivalent_paraphrases": true,
+      "shared_response_technically_appropriate": true,
+      "ignores_meaningful_differences": false,
+      "provides_incorrect_library": false,
+      "misleading_training_behavior": false,
+      "determination": "RETAIN_AS_BENEFICIAL_PARAPHRASE_REINFORCEMENT",
+      "technical_rationale": "All 2 prompts in this group are semantic and syntactic paraphrases inquiring about http client / rest invocations. Providing an identical, idiomatically correct Python reference example reinforces model invariance across varied user phrasing without diluting technical correctness.",
+      "revision_required": false
+    },
+    {
+      "group_id": "dup_group_16",
+      "domain": "Python Core Data Structures",
+      "record_count": 2,
+      "redundant_instances": 1,
+      "record_ids": [
+        "phase6e_001061",
+        "phase6e_001062"
+      ],
+      "instructions": [
+        "How do I create a list in Python?",
+        "How can I create a list in Python?"
+      ],
+      "categories": [
+        "python_programming"
+      ],
+      "shared_response_preview": "You can create a list in Python using square brackets:\n\n```python\nmy_list = [1, 2, 3, 4, 5]\nempty_list = []\nmixed_list = [1, 'hello', 3.14, True]\n```\n\nLists are mutable and can con...",
+      "instructions_are_equivalent_paraphrases": true,
+      "shared_response_technically_appropriate": true,
+      "ignores_meaningful_differences": false,
+      "provides_incorrect_library": false,
+      "misleading_training_behavior": false,
+      "determination": "RETAIN_AS_BENEFICIAL_PARAPHRASE_REINFORCEMENT",
+      "technical_rationale": "All 2 prompts in this group are semantic and syntactic paraphrases inquiring about python core data structures. Providing an identical, idiomatically correct Python reference example reinforces model invariance across varied user phrasing without diluting technical correctness.",
+      "revision_required": false
+    },
+    {
+      "group_id": "dup_group_17",
+      "domain": "String Manipulation Primitives",
+      "record_count": 2,
+      "redundant_instances": 1,
+      "record_ids": [
+        "phase6e_001063",
+        "phase6e_001064"
+      ],
+      "instructions": [
+        "Write a Python function to reverse a string",
+        "Create a Python function to reverse a string"
+      ],
+      "categories": [
+        "python_programming"
+      ],
+      "shared_response_preview": "Here's a Python function to reverse a string:\n\n```python\ndef reverse_string(s):\n    return s[::-1]\n\n# Usage\nresult = reverse_string('hello')\nprint(result)  # Output: 'olleh'\n```\n\nT...",
+      "instructions_are_equivalent_paraphrases": true,
+      "shared_response_technically_appropriate": true,
+      "ignores_meaningful_differences": false,
+      "provides_incorrect_library": false,
+      "misleading_training_behavior": false,
+      "determination": "RETAIN_AS_BENEFICIAL_PARAPHRASE_REINFORCEMENT",
+      "technical_rationale": "All 2 prompts in this group are semantic and syntactic paraphrases inquiring about string manipulation primitives. Providing an identical, idiomatically correct Python reference example reinforces model invariance across varied user phrasing without diluting technical correctness.",
+      "revision_required": false
+    },
+    {
+      "group_id": "dup_group_18",
+      "domain": "Python Language Concepts & Functions",
+      "record_count": 2,
+      "redundant_instances": 1,
+      "record_ids": [
+        "phase6e_001065",
+        "phase6e_001066"
+      ],
+      "instructions": [
+        "Explain Python decorators",
+        "What are Python decorators"
+      ],
+      "categories": [
+        "python_programming"
+      ],
+      "shared_response_preview": "Python decorators are functions that modify the behavior of other functions. Here's a simple example:\n\n```python\ndef my_decorator(func):\n    def wrapper():\n        print('Before fu...",
+      "instructions_are_equivalent_paraphrases": true,
+      "shared_response_technically_appropriate": true,
+      "ignores_meaningful_differences": false,
+      "provides_incorrect_library": false,
+      "misleading_training_behavior": false,
+      "determination": "RETAIN_AS_BENEFICIAL_PARAPHRASE_REINFORCEMENT",
+      "technical_rationale": "All 2 prompts in this group are semantic and syntactic paraphrases inquiring about python language concepts & functions. Providing an identical, idiomatically correct Python reference example reinforces model invariance across varied user phrasing without diluting technical correctness.",
+      "revision_required": false
+    },
+    {
+      "group_id": "dup_group_19",
+      "domain": "File I/O Operations",
+      "record_count": 2,
+      "redundant_instances": 1,
+      "record_ids": [
+        "phase6e_001068",
+        "phase6e_001069"
+      ],
+      "instructions": [
+        "How do I read a file in Python?",
+        "How can I read a file in Python?"
+      ],
+      "categories": [
+        "python_programming"
+      ],
+      "shared_response_preview": "You can read files in Python using the open() function:\n\n```python\n# Read entire file\nwith open('file.txt', 'r') as f:\n    content = f.read()\n    print(content)\n\n# Read line by lin...",
+      "instructions_are_equivalent_paraphrases": true,
+      "shared_response_technically_appropriate": true,
+      "ignores_meaningful_differences": false,
+      "provides_incorrect_library": false,
+      "misleading_training_behavior": false,
+      "determination": "RETAIN_AS_BENEFICIAL_PARAPHRASE_REINFORCEMENT",
+      "technical_rationale": "All 2 prompts in this group are semantic and syntactic paraphrases inquiring about file i/o operations. Providing an identical, idiomatically correct Python reference example reinforces model invariance across varied user phrasing without diluting technical correctness.",
+      "revision_required": false
+    }
+  ]
+}

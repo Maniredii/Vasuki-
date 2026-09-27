@@ -1,0 +1,67 @@
+{
+  "imports": {
+    "torch": "2.13.0+cpu",
+    "transformers": "4.52.4",
+    "datasets": "5.0.1",
+    "yaml": "6.0.2"
+  },
+  "config_validation": {
+    "missing_sections": [],
+    "parameters_valid": true
+  },
+  "target_modules_validation": {
+    "exact_match_qwen2": true,
+    "configured_modules": [
+      "down_proj",
+      "gate_proj",
+      "k_proj",
+      "o_proj",
+      "q_proj",
+      "up_proj",
+      "v_proj"
+    ]
+  },
+  "dataset_formatting_sample": [
+    {
+      "id": "phase6e_000001",
+      "category": "direct_non_python",
+      "prompt_len": 87,
+      "resp_len": 188,
+      "total_chars": 275,
+      "separator_present_and_unique": true
+    },
+    {
+      "id": "phase6e_000002",
+      "category": "direct_non_python",
+      "prompt_len": 79,
+      "resp_len": 156,
+      "total_chars": 235,
+      "separator_present_and_unique": true
+    },
+    {
+      "id": "phase6e_000003",
+      "category": "direct_non_python",
+      "prompt_len": 86,
+      "resp_len": 258,
+      "total_chars": 344,
+      "separator_present_and_unique": true
+    }
+  ],
+  "collation_simulation": [
+    {
+      "id": "phase6e_000001",
+      "total_tokens": 41,
+      "masked_prompt_tokens": 11,
+      "active_loss_tokens": 30,
+      "masking_correct": true
+    },
+    {
+      "id": "phase6e_000002",
+      "total_tokens": 34,
+      "masked_prompt_tokens": 10,
+      "active_loss_tokens": 24,
+      "masking_correct": true
+    }
+  ],
+  "overall_dry_run_status": "PASSED"
+}
