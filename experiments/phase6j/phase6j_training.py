@@ -36,9 +36,15 @@ OUTPUT_DIR = "./phase6j_output"
 MAX_SEQ_LENGTH = 2048
 RANDOM_SEED = 42
 
-# Cryptographic signatures for dataset integrity validation
-EXPECTED_TRAIN_SHA256 = "af9714012101cba1e639bff0b946c78bdeea947f20b341f1803e4352310cc0e2"
-EXPECTED_VAL_SHA256 = "db816d9bac321deda2aa80dce5552ff994006c42054bac638baf4a5647a4172d"
+# Cryptographic signatures for dataset integrity validation (Linux LF and Windows CRLF)
+EXPECTED_TRAIN_HASHES = {
+    "b5c4c04b91faf4300e4e7f1a77dbd090421a7f89d693228c6be0a63457562e8b",  # Linux / Git LF (Colab default)
+    "af9714012101cba1e639bff0b946c78bdeea947f20b341f1803e4352310cc0e2",  # Windows CRLF
+}
+EXPECTED_VAL_HASHES = {
+    "6e6ad7626955211ed9ec8f4084e668bf9bf240cc2704430642c351e2ba1e48cb",  # Linux / Git LF (Colab default)
+    "db816d9bac321deda2aa80dce5552ff994006c42054bac638baf4a5647a4172d",  # Windows CRLF
+}
 EXPECTED_TRAIN_COUNT = 593
 EXPECTED_VAL_COUNT = 75
 
@@ -135,9 +141,9 @@ def verify_and_load_datasets():
     print("Dataset Verification & Integrity Audit")
     print("=" * 80)
     
-    for path, expected_hash, expected_count in [
-        (TRAINING_DATA_FILE, EXPECTED_TRAIN_SHA256, EXPECTED_TRAIN_COUNT),
-        (VALIDATION_DATA_FILE, EXPECTED_VAL_SHA256, EXPECTED_VAL_COUNT)
+    for path, expected_hashes, expected_count in [
+        (TRAINING_DATA_FILE, EXPECTED_TRAIN_HASHES, EXPECTED_TRAIN_COUNT),
+        (VALIDATION_DATA_FILE, EXPECTED_VAL_HASHES, EXPECTED_VAL_COUNT)
     ]:
         if not os.path.exists(path):
             print(f"[!] FATAL: Dataset file '{path}' not found!")
@@ -145,10 +151,10 @@ def verify_and_load_datasets():
             return None, None
             
         actual_hash = sha256_of_file(path)
-        if actual_hash != expected_hash:
+        if actual_hash not in expected_hashes:
             print(f"[!] FATAL: Hash mismatch on {path}!")
-            print(f"    Expected: {expected_hash}")
-            print(f"    Actual:   {actual_hash}")
+            print(f"    Expected one of: {expected_hashes}")
+            print(f"    Actual:          {actual_hash}")
             return None, None
             
         with open(path, "r", encoding="utf-8") as f:
@@ -384,7 +390,7 @@ def export_artifacts(model, tokenizer, is_unsloth, eval_results):
     archive_name = "vasuki_phase6j_output"
     print(f"\n[*] Packaging output directory into '{archive_name}.zip' for easy download...")
     shutil.make_archive(archive_name, "zip", OUTPUT_DIR)
-    print(f"[✓] Package ready: {archive_name}.zip ({os.path.getsize(archive_name + '.zip') / (1024**2):.1f} MB)")
+    print(f"[OK] Package ready: {archive_name}.zip ({os.path.getsize(archive_name + '.zip') / (1024**2):.1f} MB)")
 
 
 def run_spot_check_inference(model, tokenizer):
@@ -442,7 +448,7 @@ def main():
     export_artifacts(model, tokenizer, is_unsloth, eval_results)
     
     print("\n" + "=" * 80)
-    print("[✓] ALL PHASE 6J PILOT TRAINING TASKS COMPLETED SUCCESSFULLY")
+    print("[OK] ALL PHASE 6J PILOT TRAINING TASKS COMPLETED SUCCESSFULLY")
     print("=" * 80)
 
 
