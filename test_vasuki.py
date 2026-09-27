@@ -108,10 +108,12 @@ def query_model(prompt_text, max_tokens=350, temp=0.2):
         "--temp", str(temp),
         "-r", "<|im_end|>",
         "-r", "<|endoftext|>",
-        "-r", "esian",
-        "-r", "azor",
-        "-r", "życz",
         "-r", "###",
+        "-r", "rix",
+        "-r", "azor",
+        "-r", "esian",
+        "-r", "życz",
+        "-r", "poverty",
         "--single-turn"
     ]
     
@@ -128,48 +130,89 @@ def query_model(prompt_text, max_tokens=350, temp=0.2):
         elapsed = time.time() - t0
         output = proc.stdout
         
-        # Clean response
+        # Clean response header
         if "### Response:\n" in output:
             resp = output.split("### Response:\n")[-1]
-            if "[ Prompt:" in resp:
-                resp = resp.split("[ Prompt:")[0]
-            clean = resp.strip()
+        elif "### Response:" in output:
+            resp = output.split("### Response:")[-1]
         else:
-            clean = output.strip()
+            resp = output
 
-        # Clean any trailing stop tokens
-        for st in ["esian", "azor", "życz", "<|im_end|>", "<|endoftext|>", "###"]:
-            if clean.endswith(st):
-                clean = clean[:-len(st)].strip()
-            if f"\n{st}" in clean:
-                clean = clean.split(f"\n{st}")[0].strip()
+        if "[ Prompt:" in resp:
+            resp = resp.split("[ Prompt:")[0]
+
+        # Truncate at known stop tokens
+        for st in ["<|im_end|>", "<|endoftext|>", "### Instruction", "### Response", "###", "esian", "azor", "życz", "rix", "abrasive", "poverty"]:
+            if f"\n{st}" in resp:
+                resp = resp.split(f"\n{st}")[0]
+            elif resp.endswith(st):
+                resp = resp[:-len(st)]
 
         # 1. If markdown fences are used, extract exact code block
-        if "```" in clean:
-            parts = clean.split("```")
+        if "```" in resp:
+            parts = resp.split("```")
             if len(parts) >= 3:
                 return f"```{parts[1]}```".strip(), elapsed
 
-        # 2. Trim unindented trailing tokens after indented code blocks
-        lines = clean.splitlines()
-        trimmed_lines = []
-        has_entered_body = False
-        for l in lines:
-            s = l.strip()
-            if not s:
-                trimmed_lines.append(l)
-                continue
-            if l.startswith(("    ", "\t", "  ")):
-                has_entered_body = True
-                trimmed_lines.append(l)
-            elif has_entered_body and not l.startswith(("#", "def ", "class ", "import ", "from ", "if __name__")):
-                # Encountered unindented non-code token after function body
-                break
-            else:
-                trimmed_lines.append(l)
+        lines = resp.splitlines()
+        cleaned_lines = []
+        last_stripped = None
+        consecutive_repeat = 0
+        has_entered_code = False
 
-        clean = "\n".join(trimmed_lines).strip()
-            
+        py_keywords = {
+            "def", "class", "return", "import", "from", "for", "while", "if",
+            "elif", "else", "try", "except", "finally", "with", "raise", "pass",
+            "assert", "yield", "print"
+        }
+
+        for line in lines:
+            s = line.strip()
+            if not s:
+                if cleaned_lines:
+                    cleaned_lines.append(line)
+                continue
+
+            # Check if line is indented code
+            if line.startswith(("    ", "\t", "  ")):
+                has_entered_code = True
+                cleaned_lines.append(line)
+                last_stripped = s
+                consecutive_repeat = 0
+                continue
+
+            # 2. Immediate consecutive line loop check (e.g. rix / rix / rix)
+            if s == last_stripped:
+                consecutive_repeat += 1
+                if consecutive_repeat >= 1:
+                    break
+            else:
+                consecutive_repeat = 0
+                last_stripped = s
+
+            # 3. Known subword / loop artifacts
+            if s.lower() in ("rix", "azor", "esian", "życz", "abrasive", "poverty"):
+                break
+
+            # 4. Check for counting loop artifacts like `-1`, `-2`, `-3` or `1.`, `2.`
+            if re.match(r"^[`'\"]?-\d+[`'\"]?$", s) or re.match(r"^[`'\"]?\d+[`'\"]?$", s):
+                break
+
+            # 5. If we have entered code body, an unindented non-code statement is trailing garbage
+            if has_entered_code and not s.startswith(("#", "def ", "class ", "import ", "from ", "if __name__", "@")):
+                break
+
+            # 6. Check for orphan lowercase non-code words after explanation bullets/text
+            words = s.split()
+            if len(words) == 1 and not s.startswith(("-", "*", "#", "```")):
+                word = words[0].strip("`'\":;.,()[]{}")
+                if cleaned_lines and not any(cleaned_lines[-1].strip().startswith(kw) for kw in ("def ", "class ", "if ", "for ", "while ")):
+                    if word.lower() not in py_keywords and not word.isdigit():
+                        break
+
+            cleaned_lines.append(line)
+
+        clean = "\n".join(cleaned_lines).strip()
         return clean, elapsed
     except subprocess.TimeoutExpired:
         return "[Error: Model inference timed out after 45s]", 45.0
