@@ -44,3 +44,6 @@ htmlcov/
 Thumbs.db
 Desktop.ini
 .DS_Store
+
+# Raw bulk external datasets (curated subsets are tracked)
+experiments/phase6j/iamtarun_python_18k.jsonl

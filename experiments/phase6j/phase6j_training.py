@@ -30,7 +30,9 @@ from pathlib import Path
 
 EXPERIMENT_ID = "vasuki_phase6j_pilot"
 BASE_MODEL = "unsloth/Qwen2.5-Coder-0.5B"
-TRAINING_DATA_FILE = "phase6j_training_candidate_balanced.jsonl"
+AUGMENTED_FILE = "phase6j_training_candidate_augmented.jsonl"
+BALANCED_FILE = "phase6j_training_candidate_balanced.jsonl"
+TRAINING_DATA_FILE = AUGMENTED_FILE if os.path.exists(AUGMENTED_FILE) else BALANCED_FILE
 VALIDATION_DATA_FILE = "phase6j_validation.jsonl"
 OUTPUT_DIR = "./phase6j_output"
 MAX_SEQ_LENGTH = 2048
@@ -38,6 +40,10 @@ RANDOM_SEED = 42
 
 # Cryptographic signatures for dataset integrity validation (Linux LF and Windows CRLF)
 EXPECTED_TRAIN_HASHES = {
+    # Augmented dataset (1,470 records: 1,414 Python + 52 redirects)
+    "26b0a367f6f2d200a374067384ec90fc0989702ba80b5b59a74d1ec93c528605",  # Linux / Git LF (Colab default)
+    "5422261c935340feaeb1b3a097f2482bb0f0dc2335db552bd4b8af5b62e15b00",  # Windows CRLF
+    # Balanced dataset (470 records: 418 Python + 52 redirects)
     "9cf5e54dce6c6f75930c0297d273c92655ab2222f51635842f8f0fdf436acd3c",  # Linux / Git LF (Colab default)
     "27575b2003819d501f9c5840f80a7dc9cf61c78f53f062b9d0cb8f02f509d47a",  # Windows CRLF
 }
@@ -45,7 +51,7 @@ EXPECTED_VAL_HASHES = {
     "6e6ad7626955211ed9ec8f4084e668bf9bf240cc2704430642c351e2ba1e48cb",  # Linux / Git LF (Colab default)
     "db816d9bac321deda2aa80dce5552ff994006c42054bac638baf4a5647a4172d",  # Windows CRLF
 }
-EXPECTED_TRAIN_COUNT = 470
+EXPECTED_TRAIN_COUNTS = {1470, 470}
 EXPECTED_VAL_COUNT = 75
 
 # QLoRA Configuration (Conservative & Parameter-Efficient)
@@ -62,18 +68,22 @@ LORA_CONFIG = {
 }
 
 # Training Hyperparameters (Tesla T4 / A10G / L4 Optimized)
+IS_AUGMENTED = (TRAINING_DATA_FILE == AUGMENTED_FILE)
+MAX_STEPS = 368 if IS_AUGMENTED else 180
+EVAL_STEPS = 60 if IS_AUGMENTED else 45
+
 TRAINING_CONFIG = {
     "per_device_train_batch_size": 2,
     "per_device_eval_batch_size": 2,
     "gradient_accumulation_steps": 4,
-    "warmup_steps": 10,
-    "max_steps": 180,             # ~3 epochs over 470 balanced records (batch size 8)
+    "warmup_steps": 20 if IS_AUGMENTED else 10,
+    "max_steps": MAX_STEPS,       # 2 epochs over 1470 records or 3 epochs over 470
     "learning_rate": 2e-4,        # 0.0002
     "fp16": True,                 # Optimized for T4 (use bf16 for A100/L4 if available)
     "bf16": False,
     "logging_steps": 10,
-    "eval_steps": 45,
-    "save_steps": 45,
+    "eval_steps": EVAL_STEPS,
+    "save_steps": EVAL_STEPS,
     "save_total_limit": 1,        # Retain only the single best checkpoint to save disk space
     "optim": "adamw_8bit",
     "weight_decay": 0.01,
@@ -141,9 +151,9 @@ def verify_and_load_datasets():
     print("Dataset Verification & Integrity Audit")
     print("=" * 80)
     
-    for path, expected_hashes, expected_count in [
-        (TRAINING_DATA_FILE, EXPECTED_TRAIN_HASHES, EXPECTED_TRAIN_COUNT),
-        (VALIDATION_DATA_FILE, EXPECTED_VAL_HASHES, EXPECTED_VAL_COUNT)
+    for path, expected_hashes, allowed_counts in [
+        (TRAINING_DATA_FILE, EXPECTED_TRAIN_HASHES, EXPECTED_TRAIN_COUNTS),
+        (VALIDATION_DATA_FILE, EXPECTED_VAL_HASHES, {EXPECTED_VAL_COUNT})
     ]:
         if not os.path.exists(path):
             print(f"[!] FATAL: Dataset file '{path}' not found!")
@@ -160,9 +170,9 @@ def verify_and_load_datasets():
         with open(path, "r", encoding="utf-8") as f:
             records = [json.loads(line) for line in f if line.strip()]
             
-        if len(records) != expected_count:
+        if len(records) not in allowed_counts:
             print(f"[!] FATAL: Record count mismatch on {path}!")
-            print(f"    Expected {expected_count}, got {len(records)}.")
+            print(f"    Expected one of {allowed_counts}, got {len(records)}.")
             return None, None
             
         print(f"[*] Verified '{path}': {len(records)} records | SHA-256: {actual_hash[:16]}... (MATCH)")
