@@ -1,11 +1,11 @@
 {
-  "name": "vasuki-ai",
+  "name": "vasuki-py",
   "version": "1.0.0",
   "description": "VASUKI: Offline Python Specialist AI (0.5B Edge Architecture)",
-  "main": "bin/vasuki.js",
+  "main": "index.js",
   "bin": {
     "vasuki": "./bin/vasuki.js",
-    "vasuki-ai": "./bin/vasuki.js"
+    "vasuki-py": "./bin/vasuki.js"
   },
   "scripts": {
     "start": "node ./bin/vasuki.js",
@@ -15,6 +15,7 @@
   },
   "files": [
     "bin/",
+    "index.js",
     "test_vasuki.py",
     "web_vasuki.py",
     "README.md"
