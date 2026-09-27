@@ -66,7 +66,7 @@ TRAINING_CONFIG = {
     "per_device_train_batch_size": 2,
     "per_device_eval_batch_size": 2,
     "gradient_accumulation_steps": 4,
-    "warmup_ratio": 0.05,
+    "warmup_steps": 10,
     "max_steps": 220,             # ~3 epochs over 593 records (batch size 8)
     "learning_rate": 2e-4,        # 0.0002
     "fp16": True,                 # Optimized for T4 (use bf16 for A100/L4 if available)
@@ -74,7 +74,7 @@ TRAINING_CONFIG = {
     "logging_steps": 10,
     "eval_steps": 50,
     "save_steps": 50,
-    "save_total_limit": 2,
+    "save_total_limit": 1,        # Retain only the single best checkpoint to save disk space
     "optim": "adamw_8bit",
     "weight_decay": 0.01,
     "lr_scheduler_type": "cosine",
