@@ -5,6 +5,7 @@
 *.pt
 *.pth
 *.onnx
+*.zip
 models/
 llama.cpp/
 tools/llama.cpp/
