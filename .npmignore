@@ -1,0 +1,12 @@
+.git/
+.github/
+experiments/
+pilot_training/
+extracted_mobile_bundle/
+*.zip
+*.tar.gz
+*.jsonl
+*.log
+.system_generated/
+__pycache__/
+*.pyc

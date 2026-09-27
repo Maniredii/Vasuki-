@@ -1,0 +1,36 @@
+{
+  "name": "vasuki-ai",
+  "version": "1.0.0",
+  "description": "VASUKI: Offline Python Specialist AI (0.5B Edge Architecture)",
+  "main": "bin/vasuki.js",
+  "bin": {
+    "vasuki": "./bin/vasuki.js",
+    "vasuki-ai": "./bin/vasuki.js"
+  },
+  "scripts": {
+    "start": "node ./bin/vasuki.js",
+    "web": "node ./bin/vasuki.js --web",
+    "benchmark": "node ./bin/vasuki.js --benchmark",
+    "ds": "node ./bin/vasuki.js --ds"
+  },
+  "keywords": [
+    "python",
+    "ai",
+    "coding-assistant",
+    "llm",
+    "offline",
+    "edge-computing",
+    "gguf",
+    "llama-cpp"
+  ],
+  "author": "Mani Reddy",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maniredii/Vasuki-.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Maniredii/Vasuki-/issues"
+  },
+  "homepage": "https://github.com/Maniredii/Vasuki-#readme"
+}
