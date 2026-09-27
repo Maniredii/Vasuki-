@@ -4,8 +4,8 @@
   "description": "VASUKI: Offline Python Specialist AI (0.5B Edge Architecture)",
   "main": "index.js",
   "bin": {
-    "vasuki": "./bin/vasuki.js",
-    "vasuki-py": "./bin/vasuki.js"
+    "vasuki": "bin/vasuki.js",
+    "vasuki-py": "bin/vasuki.js"
   },
   "scripts": {
     "start": "node ./bin/vasuki.js",
