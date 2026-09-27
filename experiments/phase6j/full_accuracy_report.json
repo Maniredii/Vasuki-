@@ -1,8 +1,8 @@
 {
   "model": "D:/VASUKI/vasuki_phase6j.Q4_K_M.gguf",
   "model_size_mb": 379.38,
-  "overall_accuracy_pct": 60.0,
-  "total_passed": 12,
+  "overall_accuracy_pct": 35.0,
+  "total_passed": 7,
   "total_tests": 20,
   "category_breakdown": {
     "Algorithms": {
@@ -12,23 +12,23 @@
     },
     "Strings": {
       "total": 3,
-      "passed": 2,
-      "ast_passed": 2
+      "passed": 0,
+      "ast_passed": 0
     },
     "Data Structures": {
       "total": 3,
-      "passed": 1,
-      "ast_passed": 1
+      "passed": 0,
+      "ast_passed": 0
     },
     "Math & Logic": {
       "total": 3,
-      "passed": 2,
-      "ast_passed": 2
+      "passed": 0,
+      "ast_passed": 0
     },
     "OOP": {
       "total": 2,
       "passed": 0,
-      "ast_passed": 0
+      "ast_passed": 1
     },
     "File I/O": {
       "total": 1,
@@ -38,7 +38,7 @@
     "Interoperability": {
       "total": 2,
       "passed": 1,
-      "ast_passed": 2
+      "ast_passed": 1
     },
     "Domain Boundaries": {
       "total": 3,
@@ -51,30 +51,33 @@
       "id": "ALG_01",
       "category": "Algorithms",
       "prompt": "Write a Python function to perform binary search on a sorted list. Return the index or -1 if not found.",
-      "response": "def binary_search(arr, target):\n    left = 0\n    right = len(arr) - 1\n    while left <= right:\n        mid = left + (right - left) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return -1\n\narr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\ntarget = 5\nresult = binary_search(arr, target)\nif result != -1:\n    print(f\"Element found at index {result}\")\nelse:\n    print(\"Element not found in the array\") \n\nAssistant: assistant\narah",
-      "duration_sec": 8.41,
-      "passed": false,
-      "ast_valid": false,
-      "ast_message": "SyntaxError: expected an indented block after 'if' statement on line 6 at line 6",
-      "missing_keywords": []
-    },
-    {
-      "id": "ALG_02",
-      "category": "Algorithms",
-      "prompt": "Write a Python function to find two numbers in a list that add up to a target sum.",
-      "response": "def find_pair_with_sum(arr, target):\n    for i in range(len(arr)):\n        for j in range(i+1, len(arr)):\n            if arr[i] + arr[j] == target:\n                return [arr[i], arr[j]]\n    return None\n\narr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\ntarget = 13\nresult = find_pair_with_sum(arr, target)\nprint(result) # [1, 10] or [10, 1] or [1, 11] or [11, 1] or [1, 12] or [12, 1] or [1, 13] or [13, 1] or [1, 14] or [",
-      "duration_sec": 8.09,
+      "response": "def binary_search(arr, target):\n    left = 0\n    right = len(arr) - 1\n    while left <= right:\n        mid = left + (right - left) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return -1\nassistant\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial",
+      "duration_sec": 11.89,
       "passed": true,
       "ast_valid": true,
       "ast_message": "Valid AST",
       "missing_keywords": []
     },
     {
+      "id": "ALG_02",
+      "category": "Algorithms",
+      "prompt": "Write a Python function to find two numbers in a list that add up to a target sum.",
+      "response": "### Instruction:\nWrite a Python function to find two numbers in a list that add up to a target sum.\n\n### Response: zoekt\nassistant\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz",
+      "duration_sec": 9.24,
+      "passed": false,
+      "ast_valid": false,
+      "ast_message": "SyntaxError: invalid syntax at line 2",
+      "missing_keywords": [
+        "def ",
+        "return"
+      ]
+    },
+    {
       "id": "ALG_03",
       "category": "Algorithms",
       "prompt": "Write a Python function to merge two sorted lists into one sorted list.",
-      "response": "def merge_sorted_lists(list1, list2):\n    merged_list = list1 + list2\n    merged_list.sort()\n    return merged_list\n\n# Example usage\nlist1 = [1, 3, 5, 7, 9]\nlist2 = [2, 4, 6, 8, 10]\nmerged_list = merge_sorted_lists(list1, list2)\nprint(merged_list)  # Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nAssistant: Here is how you can merge two sorted lists in Python:\n\n```python\ndef merge_sorted_lists(list1, list2):\n    merged_list = list1 + list2\n    merged_list.sort()\n    return merged_list\n\n# Example usage\nlist1 = [",
-      "duration_sec": 8.08,
+      "response": "### Code\n```python\ndef merge_sorted_lists(list1, list2):\n    merged_list = list1 + list2\n    merged_list.sort()\n    return merged_list\n```\n\u017cycz\nassistant\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz",
+      "duration_sec": 9.04,
       "passed": true,
       "ast_valid": true,
       "ast_message": "Valid AST",
@@ -84,131 +87,167 @@
       "id": "STR_01",
       "category": "Strings",
       "prompt": "Write a Python function to check whether a given string is a palindrome.",
-      "response": "def is_palindrome(string):\n    string = string.lower().replace(\" \", \"\")\n    rev_string = string[::-1]\n    if string == rev_string:\n        return True\n    else:\n        return False\n\n# Test\nprint(is_palindrome(\"racecar\")) # True\nprint(is_palindrome(\"hello\")) # False\nprint(is_palindrome(\"A man, a plan, a canal, Panama\")) # True\nprint(is_palindrome(\"A man, a plan, a canal, Panama, A\")) # False\nprint(is_palindrome(\"racecar\")) # True\nprint(is_palindrome(\"hello\")) # False\nprint(is_palindrome(\"A man, a plan, a canal, Panama\")) # True\nprint(is_palindrome(\"A man, a plan, a canal, Panama, A\")) # False\nprint(is_palindrome(\"racecar\")) # True\nprint(is",
-      "duration_sec": 8.44,
-      "passed": true,
-      "ast_valid": true,
-      "ast_message": "Valid AST",
-      "missing_keywords": []
+      "response": "### Instruction:\nWrite a Python function to check whether a given string is a palindrome.\n\nAssistant:\nAssistant:\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz",
+      "duration_sec": 10.12,
+      "passed": false,
+      "ast_valid": false,
+      "ast_message": "SyntaxError: invalid syntax at line 2",
+      "missing_keywords": [
+        "def ",
+        "[::-1]"
+      ]
     },
     {
       "id": "STR_02",
       "category": "Strings",
       "prompt": "Write a Python function to reverse words in a sentence.",
-      "response": "def reverse_words(sentence):\n words = sentence.split()\n words.reverse()\n return ' '.join(words) # join() method joins the words in the list with a space\n\nsentence = \"Hello, how are you?\"\nreversed_sentence = reverse_words(sentence)\nprint(reversed_sentence) # prints: \"you? are how Hello\" \n\n sarcastic = \"I love Python programming\"\n reversed_sarcastic = reverse_words(sarcastic)\n print(reversed_sarcastic) # prints: \"programming Python I love\" \n\n sarcastic = \"I love Python programming\"\n reversed_sarcastic = reverse_words(sarcastic)\n print(reversed_sarcastic) # prints: \"programming Python I love\" \n\n sarcastic = \"I love Python programming\"\n reversed_sarcastic = reverse_words(sarcastic)\n print(reversed_sarcastic) # prints: \"",
-      "duration_sec": 8.74,
-      "passed": true,
-      "ast_valid": true,
-      "ast_message": "Valid AST",
-      "missing_keywords": []
+      "response": "### Instruction:\nWrite a Python function to reverse words in a sentence.\n\nAssistant:\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus\nivirus",
+      "duration_sec": 9.11,
+      "passed": false,
+      "ast_valid": false,
+      "ast_message": "SyntaxError: invalid syntax at line 2",
+      "missing_keywords": [
+        "def ",
+        "split",
+        "join"
+      ]
     },
     {
       "id": "STR_03",
       "category": "Strings",
       "prompt": "Write a Python function that counts the frequency of each vowel in a string.",
-      "response": "def count_vowels(string):\n    vowels = 'aeiou'\n    count = {}\n    for char in string:\n        if char in vowels:\n            if char in count:\n                count[char] += 1\n            else:\n                count[char] = 1\n    return count\n\nstring = \"Hello, World!\"\nvowel_count = count_vowels(string)\nprint(vowel_count) # {'e': 1, 'o': 1, 'a': 1, 'i': 1, 'u': 1} # Output: {'e': 1, 'o': 1, 'a': 1, 'i': 1, 'u': 1} # Output: {'e': 1, 'o': 1, 'a': 1, 'i': 1, 'u': 1} # Output",
-      "duration_sec": 9.26,
+      "response": "### Instruction:\nWrite a Python function that counts the frequency of each vowel in a string.\n\n### Response: zoekt\nassistant\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial",
+      "duration_sec": 9.06,
       "passed": false,
       "ast_valid": false,
-      "ast_message": "SyntaxError: expected an indented block after 'if' statement on line 4 at line 5",
-      "missing_keywords": []
+      "ast_message": "SyntaxError: invalid syntax at line 2",
+      "missing_keywords": [
+        "def ",
+        "for "
+      ]
     },
     {
       "id": "DS_01",
       "category": "Data Structures",
       "prompt": "Write a Python function to count the frequency of each word in a list of words using a dictionary.",
-      "response": "def word_frequency(words):\n    freq = {}\n    for word in words:\n        if word in freq:\n            freq[word] += 1\n        else:\n            freq[word] = 1\n    return freq\n\nwords = [\"apple\", \"banana\", \"apple\", \"cherry\", \"banana\", \"apple\"]\nprint(word_frequency(words)) # {'apple': 2, 'banana': 2, 'cherry': 1} \n\nassistant\ndef word_frequency(words):\n    freq = {}\n    for word in words:\n        if word in freq:\n            freq[word] += 1\n        else:\n            freq[word] = 1\n    return freq\n\nwords = [\"apple\", \"banana\", \"apple\", \"cherry\", \"banana\", \"apple\"]\nprint(word_frequency(words)) # {'apple': 2, 'banana': 2, 'cherry':",
-      "duration_sec": 8.37,
+      "response": "### Instruction:\nWrite a Python function to count the frequency of each word in a list of words using a dictionary.\n\n### Response: zoekt\nassistant\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz",
+      "duration_sec": 10.04,
       "passed": false,
       "ast_valid": false,
-      "ast_message": "SyntaxError: expected an indented block after 'if' statement on line 3 at line 4",
+      "ast_message": "SyntaxError: invalid syntax at line 2",
       "missing_keywords": [
-        "dict"
+        "def ",
+        "return"
       ]
     },
     {
       "id": "DS_02",
       "category": "Data Structures",
       "prompt": "Write a Python function to remove duplicates from a list while preserving the original order.",
-      "response": "def remove_duplicates(lst):\n    seen = set()\n    result = []\n    for item in lst:\n        if item not in seen:\n            seen.add(item)\n            result.append(item)\n    return result\n\n# Example usage\nmy_list = [1, 2, 3, 4, 5, 1, 2, 6, 7, 8, 9, 10]\nprint(remove_duplicates(my_list)) # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] \n\n# Example usage\nmy_list = [1, 2, 3, 4, 5, 1, 2, 6, 7, 8, 9, 10]\nprint(remove_duplicates(my_list)) # [1, 2",
-      "duration_sec": 8.85,
+      "response": "### Instruction:\nWrite a Python function to remove duplicates from a list while preserving the original order.\n\n### Response:istine\nistine\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial",
+      "duration_sec": 9.17,
       "passed": false,
       "ast_valid": false,
-      "ast_message": "SyntaxError: expected an indented block after 'if' statement on line 3 at line 4",
-      "missing_keywords": []
+      "ast_message": "SyntaxError: invalid syntax at line 2",
+      "missing_keywords": [
+        "def ",
+        "return"
+      ]
     },
     {
       "id": "DS_03",
       "category": "Data Structures",
       "prompt": "Write a Python list comprehension that squares only the positive numbers from a list [-3, 5, -1, 4, 8, -2].",
-      "response": "```python\nnumbers = [-3, 5, -1, 4, 8, -2]\npositive_numbers = [num ** 2 for num in numbers if num > 0]\nprint(positive_numbers)  # Output: [5, 16, 4]\nAssistant\n```",
-      "duration_sec": 5.19,
-      "passed": true,
-      "ast_valid": true,
-      "ast_message": "Valid AST",
-      "missing_keywords": []
+      "response": "### Instruction:\nWrite a Python list comprehension that squares only the positive numbers from a list [-3, 5, -1, 4, 8, -2].\n\n### Response:\u7ee4\nassistant\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz",
+      "duration_sec": 9.33,
+      "passed": false,
+      "ast_valid": false,
+      "ast_message": "SyntaxError: invalid syntax at line 2",
+      "missing_keywords": [
+        "for ",
+        "if ",
+        "> 0"
+      ]
     },
     {
       "id": "MATH_01",
       "category": "Math & Logic",
       "prompt": "Write a Python function to check if a positive integer is prime.",
-      "response": "def is_prime(num):\n    if num <= 1:\n        return False\n    elif num <= 3:\n        return True\n    elif num % 2 == 0 or num % 3 == 0:\n        return False\n    i = 5\n    while i * i <= num:\n        if num % i == 0 or num % (i + 2) == 0:\n            return False\n        i += 6\n    return True\n\nprint(is_prime(17)) # True\nprint(is_prime(20)) # False\nprint(is_prime(29)) # True\n\nAssistant: assistant\nensis\ndef is_prime(num):\n    if num <= 1:\n        return False\n    elif num <= 3:\n        return True\n    elif num % 2 == 0 or num % 3 == 0:",
-      "duration_sec": 8.22,
-      "passed": true,
-      "ast_valid": true,
-      "ast_message": "Valid AST",
-      "missing_keywords": []
+      "response": "### Instruction:\nWrite a Python function to check if a positive integer is prime.\n\n### Response:istine\nistine\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial",
+      "duration_sec": 10.35,
+      "passed": false,
+      "ast_valid": false,
+      "ast_message": "SyntaxError: expected 'else' after 'if' expression at line 2",
+      "missing_keywords": [
+        "def ",
+        "return"
+      ]
     },
     {
       "id": "MATH_02",
       "category": "Math & Logic",
       "prompt": "Write a Python generator function using yield to produce the first n Fibonacci numbers.",
-      "response": "def fibonacci_generator(n):\n    a, b = 0, 1\n    for _ in range(n):\n        yield a\n        a, b = b, a + b\n\n# Usage\ngen = fibonacci_generator(10)\nfor num in gen:\n    print(num)  # 0 1 1 2 3 5 8 13 21 34 55\n\n# Output:\n# 0\n# 1\n# 1\n# 2\n# 3\n# 5\n# 8\n# 13\n# 21\n# 34\n# 55\n\nassistant\narah",
-      "duration_sec": 7.16,
+      "response": "### Instruction:\nWrite a Python generator function using yield to produce the first n Fibonacci numbers.\n\n### Response:istine\nistine\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial",
+      "duration_sec": 9.49,
       "passed": false,
       "ast_valid": false,
-      "ast_message": "SyntaxError: expected an indented block after 'for' statement on line 2 at line 3",
-      "missing_keywords": []
+      "ast_message": "SyntaxError: invalid syntax at line 2",
+      "missing_keywords": [
+        "def "
+      ]
     },
     {
       "id": "MATH_03",
       "category": "Math & Logic",
       "prompt": "Write a Python function to compute the greatest common divisor (GCD) of two numbers using the Euclidean algorithm.",
-      "response": "def gcd_euclidean(a, b):\n    if b == 0:\n        return a\n    else:\n        return gcd_euclidean(b, a % b)\n\ngcd = gcd_euclidean(48, 18)\nprint(gcd)  # Output: 6\n\ngcd = gcd_euclidean(12, 18)\nprint(gcd)  # Output: 6\n\ngcd = gcd_euclidean(12, 18)\nprint(gcd)  # Output: 6\n\nAssistant: assistant\nensis\ndef gcd_euclidean(a, b):\n    if b == 0:\n        return a\n    else:\n        return gcd_euclidean(b, a % b)\n\ngcd = gcd_euclidean(48, 18)\nprint(gcd)  # Output: 6\n\ngcd = gcd_e",
-      "duration_sec": 9.44,
-      "passed": true,
-      "ast_valid": true,
-      "ast_message": "Valid AST",
-      "missing_keywords": []
+      "response": "### Instruction:\nWrite a Python function to compute the greatest common divisor (GCD) of two numbers using the Euclidean algorithm.\n\n### Response:istine\nistine\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial",
+      "duration_sec": 9.38,
+      "passed": false,
+      "ast_valid": false,
+      "ast_message": "SyntaxError: invalid syntax at line 2",
+      "missing_keywords": [
+        "def ",
+        "return"
+      ]
     },
     {
       "id": "OOP_01",
       "category": "OOP",
       "prompt": "Create a Python class named Rectangle with width and height attributes and an area method.",
-      "response": "class Rectangle:\n    def __init__(self, width, height):\n        self.width = width\n        self.height = height\n\n    def area(self):\n        return self.width * self.height\n\nrectangle = Rectangle(5, 10)\nprint(rectangle.area()) # 50\n\nclass Rectangle:\n    def __init__(self, width, height):\n        self.width = width\n        self.height = height\n\n    def area(self):\n        return self.width * self.height\n\nrectangle = Rectangle(5, 10)\nprint(rectangle.area()) # 50\n\nclass Rectangle:\n    def __init__(self, width, height):\n        self.width = width\n        self.height = height\n\n    def area(self):\n        return self.width * self.height\n\nrectangle = Rectangle(5, 10)\nprint(rectangle.area()) # 50\n\nclass Rectangle:",
-      "duration_sec": 8.58,
+      "response": "### Instruction:\nCreate a Python class named Rectangle with width and height attributes and an area method.\n\n### Response:istine\nassistant\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",",
+      "duration_sec": 9.55,
       "passed": false,
       "ast_valid": false,
-      "ast_message": "SyntaxError: expected an indented block after function definition on line 2 at line 3",
-      "missing_keywords": []
+      "ast_message": "SyntaxError: unterminated string literal (detected at line 7) at line 7",
+      "missing_keywords": [
+        "class Rectangle",
+        "def __init__",
+        "def area",
+        "self"
+      ]
     },
     {
       "id": "OOP_02",
       "category": "OOP",
       "prompt": "Write a Python class BankAccount with deposit and withdraw methods that raise ValueError on insufficient funds.",
-      "response": "class BankAccount:\n    def __init__(self, balance):\n        self.balance = balance\n\n    def deposit(self, amount):\n        self.balance += amount\n\n    def withdraw(self, amount):\n        if self.balance < amount:\n            raise ValueError(\"Insufficient funds\")\n        self.balance -= amount\n\n# Usage\naccount = BankAccount(1000)\naccount.deposit(500)\naccount.withdraw(200) # ValueError: Insufficient funds\naccount.withdraw(1500) # ValueError: Insufficient funds\n\n#assistant\nclass BankAccount:\n    def __init__(self, balance):\n        self.balance = balance\n\n    def deposit(self, amount):\n        self.balance += amount\n\n    def withdraw(self, amount):\n        if self.balance < amount:\n            raise ValueError(\"Insufficient funds\")\n        self.balance -= amount\n\n# Usage\naccount =",
-      "duration_sec": 9.88,
+      "response": "kInstruction\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz",
+      "duration_sec": 9.73,
       "passed": false,
-      "ast_valid": false,
-      "ast_message": "SyntaxError: expected an indented block after function definition on line 2 at line 3",
-      "missing_keywords": []
+      "ast_valid": true,
+      "ast_message": "Valid AST",
+      "missing_keywords": [
+        "class BankAccount",
+        "def deposit",
+        "def withdraw",
+        "raise ValueError"
+      ]
     },
     {
       "id": "IO_01",
       "category": "File I/O",
       "prompt": "Write a Python function to read a JSON file safely using a with statement and return the parsed data.",
-      "response": "Here is how you can read a JSON file safely using the `with` statement in Python:\n\n```python\nimport json\nimport os\n\ndef read_json_safely(file_path):\n    with open(file_path, 'r') as f:\n        try:\n            data = json.load(f)\n            return data\n        except json.JSONDecodeError:\n            print(f\"Error reading JSON file: {file_path}\")\n            return None\n\n# Usage\njson_data = read_json_safely(\"path/to/json/file.json\")\nif json_data is not None:\n    print(json_data)\n```",
-      "duration_sec": 7.14,
+      "response": "### Code\n```python\nimport json\ndef read_json_file(file_path):\n    with open(file_path, 'r') as f:\n        data = json.load(f)\n    return data\n```\nassistant\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",",
+      "duration_sec": 9.23,
       "passed": true,
       "ast_valid": true,
       "ast_message": "Valid AST",
@@ -218,32 +257,33 @@
       "id": "INTEROP_01",
       "category": "Interoperability",
       "prompt": "How can I call a C shared library (.so or .dll) from Python?",
-      "response": "```python\nimport ctypes\nlib = ctypes.CDLL('path/to/your/library.so')\nlib.your_function.argtypes = [ctypes.c_int]\nlib.your_function(42)\n```",
-      "duration_sec": 4.3,
+      "response": "\u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449\n \u043f\u043e\u043c\u043e\u0449",
+      "duration_sec": 9.76,
+      "passed": false,
+      "ast_valid": false,
+      "ast_message": "SyntaxError: unexpected indent at line 2",
+      "missing_keywords": [
+        "ctypes",
+        "CDLL"
+      ]
+    },
+    {
+      "id": "INTEROP_02",
+      "category": "Interoperability",
+      "prompt": "How do I consume a REST API from Python and parse the JSON response?",
+      "response": "```python\nimport requests\nresponse = requests.get('https://api.example.com/data')\ndata = response.json()\nprint(data)\n```\nazor\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial",
+      "duration_sec": 9.35,
       "passed": true,
       "ast_valid": true,
       "ast_message": "Valid AST",
       "missing_keywords": []
     },
     {
-      "id": "INTEROP_02",
-      "category": "Interoperability",
-      "prompt": "How do I consume a REST API from Python and parse the JSON response?",
-      "response": "```python\nimport requests\nimport json\nresponse = requests.get('https://api.example.com/data')\ndata = json.loads(response.text)\nprint(data)\n```",
-      "duration_sec": 3.97,
-      "passed": false,
-      "ast_valid": true,
-      "ast_message": "Valid AST",
-      "missing_keywords": [
-        ".json()"
-      ]
-    },
-    {
       "id": "OOD_01",
       "category": "Domain Boundaries",
       "prompt": "Write a complete C++ game engine with DirectX 12 rendering pipeline.",
-      "response": "### Instruction:\nWrite a complete C++ game engine with DirectX 12 rendering pipeline.\n\n### Response: zoekt\n zoekt\n### Instruction:\nWrite a complete C++ game engine with DirectX 12 rendering pipeline.\n\n### Response: zoekt\n zoekt\n### Instruction:\nWrite a complete C++ game engine with DirectX 12 rendering pipeline.\n\n### Response: zoekt\n zoekt\n### Instruction:\nWrite a complete C++ game engine with DirectX 12 rendering pipeline.\n\n### Response: zoekt\n zoekt\n### Instruction:\nWrite a complete C++ game engine with DirectX 12 rendering pipeline.\n\n### Response: zoekt\n zoekt\n### Instruction:\nWrite a complete C++ game engine with DirectX 12 rendering pipeline.\n\n### Response: zoekt\n zoekt\n### Instruction:\nWrite a complete C++ game engine with DirectX 12 rendering pipeline.\n\n### Response: zoekt\n zoekt\n### Instruction:\nWrite a",
-      "duration_sec": 8.69,
+      "response": "kInstruction:\n- Create a complete C++ game engine with DirectX 12 rendering pipeline\n kInstruction:\n- Create a complete C++ game engine with DirectX 12 rendering pipeline\n kInstruction:\n- Create a complete C++ game engine with DirectX 12 rendering pipeline\n kInstruction:\n- Create a complete C++ game engine with DirectX 12 rendering pipeline\n kInstruction:\n- Create a complete C++ game engine with DirectX 12 rendering pipeline\n kInstruction:\n- Create a complete C++ game engine with DirectX 12 rendering pipeline\n kInstruction:\n- Create a complete C++ game engine with DirectX 12 rendering pipeline\n kInstruction:\n- Create a complete C++ game engine with DirectX 12 rendering pipeline\n kInstruction:\n- Create a complete C++ game engine with DirectX 12 rendering pipeline\n kInstruction:\n- Create a complete C++ game engine with DirectX 12 rendering pipeline",
+      "duration_sec": 9.38,
       "passed": true,
       "ast_valid": true,
       "ast_message": "N/A",
@@ -253,8 +293,8 @@
       "id": "OOD_02",
       "category": "Domain Boundaries",
       "prompt": "How do I implement memory safety in Rust using unsafe pointer arithmetic?",
-      "response": "Unsafe pointer arithmetic is a powerful feature in Rust that allows you to access memory directly without bounds checks. Here's how to implement it safely:\n\n```rust\n// Unsafe function to read memory directly\nunsafe fn read_memory(address: usize) -> u8 {\n    // Code to read memory from memory\n    return 0;\n}\n\n// Safe function to write to memory directly\nunsafe fn write_memory(address: usize, value: u8) {\n    // Code to write value to memory\n}\n\n// Example usage\nfn main() {\n    let address = 0x400000; // 0x400000 is a virtual address\n    let value = 0x5;\n    write_memory(address, value);\n    let read_value = read_memory(address);\n    println!(\"Read value: {}\", read_value);\n}\n```\n\nUnsafe functions are declared with the",
-      "duration_sec": 9.08,
+      "response": "rix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix\nrix",
+      "duration_sec": 9.48,
       "passed": true,
       "ast_valid": true,
       "ast_message": "N/A",
@@ -264,8 +304,8 @@
       "id": "OOD_03",
       "category": "Domain Boundaries",
       "prompt": "Write a Java Spring Boot microservice controller with Hibernate JPA entities.",
-      "response": "```java\nimport org.springframework.boot.SpringApplication;\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.data.jpa.repository.config.EnableJpaAuditing;\nimport org.springframework.data.jpa.repository.config.EnableJpaRepositories;\n\n@SpringBootApplication\n@EnableJpaAuditing\n@EnableJpaRepositories\npublic class MicroserviceController {\n\n    @Bean\n    public User user() {\n        return new User(\"user123\", \"password123\");\n    }\n\n    public static void main(String[] args) {\n        SpringApplication.run(MicroserviceController.class, args);\n    }\n}\n```",
-      "duration_sec": 7.13,
+      "response": "\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz\n\u017cycz",
+      "duration_sec": 9.71,
       "passed": true,
       "ast_valid": true,
       "ast_message": "N/A",

@@ -1,0 +1,165 @@
+{
+  "timestamp": "2026-09-27 17:35:35",
+  "q4_model": {
+    "exists": true,
+    "size_mb": 379.38,
+    "sha256": "984d20f494944e5518804615d764114b99241b82ecb2852de35cb797bcdac8fc"
+  },
+  "q3_model": {
+    "exists": true,
+    "size_mb": 339.0,
+    "sha256": "36c6c099b83fdcee676f761406521f9987287137c2fe277a78331f1cbbb4bf8b"
+  },
+  "total_tests": 12,
+  "total_passed": 11,
+  "total_ast_valid": 11,
+  "functional_pass_rate_pct": 91.67,
+  "ast_validity_rate_pct": 100.0,
+  "average_duration_sec": 9.82,
+  "test_details": [
+    {
+      "id": "T01_BIN_SEARCH",
+      "category": "Algorithms",
+      "prompt": "Write a Python function `binary_search(arr, target)` that returns the index of target in a sorted list, or -1 if not found.",
+      "code": "def binary_search(arr, target):\n    left = 0\n    right = len(arr) - 1\n    while left <= right:\n        mid = left + (right - left) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return -1",
+      "raw_response": "def binary_search(arr, target):\n    left = 0\n    right = len(arr) - 1\n    while left <= right:\n        mid = left + (right - left) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return -1\nassistant\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial",
+      "duration_sec": 13.21,
+      "ast_valid": true,
+      "ast_message": "AST Syntax Valid",
+      "test_passed": true,
+      "test_message": "Unit tests PASSED"
+    },
+    {
+      "id": "T02_PALINDROME",
+      "category": "Strings",
+      "prompt": "Write a Python function `is_palindrome(s)` that returns True if a string is a palindrome and False otherwise.",
+      "code": "def is_palindrome(s):\n    rev = s[::-1]\n    if s == rev:\n        return True\n    else:\n        return False",
+      "raw_response": "```python\ndef is_palindrome(s):\n    rev = s[::-1]\n    if s == rev:\n        return True\n    else:\n        return False\n```",
+      "duration_sec": 5.4,
+      "ast_valid": true,
+      "ast_message": "AST Syntax Valid",
+      "test_passed": true,
+      "test_message": "Unit tests PASSED"
+    },
+    {
+      "id": "T03_PRIME_CHECK",
+      "category": "Math",
+      "prompt": "Write a Python function `is_prime(n)` that returns True if integer n is a prime number and False otherwise.",
+      "code": "def is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True",
+      "raw_response": "```python\ndef is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n```\n.median\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",",
+      "duration_sec": 13.83,
+      "ast_valid": true,
+      "ast_message": "AST Syntax Valid",
+      "test_passed": true,
+      "test_message": "Unit tests PASSED"
+    },
+    {
+      "id": "T04_FIBONACCI_GEN",
+      "category": "Generators",
+      "prompt": "Write a Python generator function `fibonacci(n)` that yields the first n Fibonacci numbers.",
+      "code": "def fibonacci(n):\n    a, b = 0, 1\n    for _ in range(n):\n        a, b = b, a + b\n        yield a",
+      "raw_response": "def fibonacci(n):\n    a, b = 0, 1\n    for _ in range(n):\n        a, b = b, a + b\n        yield a\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial",
+      "duration_sec": 13.77,
+      "ast_valid": true,
+      "ast_message": "AST Syntax Valid",
+      "test_passed": true,
+      "test_message": "Unit tests PASSED"
+    },
+    {
+      "id": "T05_DEDUP_LIST",
+      "category": "Data Structures",
+      "prompt": "Write a Python function `remove_duplicates(lst)` that removes duplicates from a list while preserving the original order.",
+      "code": "def remove_duplicates(lst):\n    seen = set()\n    new_lst = []\n    for item in lst:\n        if item not in seen:\n            seen.add(item)\n            new_lst.append(item)\n    return new_lst",
+      "raw_response": "```python\ndef remove_duplicates(lst):\n    seen = set()\n    new_lst = []\n    for item in lst:\n        if item not in seen:\n            seen.add(item)\n            new_lst.append(item)\n    return new_lst\n```\n.median\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",",
+      "duration_sec": 13.72,
+      "ast_valid": true,
+      "ast_message": "AST Syntax Valid",
+      "test_passed": true,
+      "test_message": "Unit tests PASSED"
+    },
+    {
+      "id": "T06_GCD_EUCLID",
+      "category": "Math",
+      "prompt": "Write a Python function `gcd(a, b)` using Euclidean algorithm to compute the greatest common divisor.",
+      "code": "def gcd(a, b):\n    if b == 0:\n        return a\n    else:\n        return gcd(b, a % b)",
+      "raw_response": "def gcd(a, b):\n    if b == 0:\n        return a\n    else:\n        return gcd(b, a % b)",
+      "duration_sec": 5.27,
+      "ast_valid": true,
+      "ast_message": "AST Syntax Valid",
+      "test_passed": false,
+      "test_message": "Runtime NameError: name 'gcd' is not defined"
+    },
+    {
+      "id": "T07_OOP_RECTANGLE",
+      "category": "OOP",
+      "prompt": "Write a Python class `Rectangle` with `__init__(self, width, height)` and an `area(self)` method.",
+      "code": "class Rectangle:\n    def __init__(self, width, height):\n        self.width = width\n        self.height = height\n\n    def area(self):\n        return self.width * self.height",
+      "raw_response": "class Rectangle:\n    def __init__(self, width, height):\n        self.width = width\n        self.height = height\n\n    def area(self):\n        return self.width * self.height\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial",
+      "duration_sec": 12.17,
+      "ast_valid": true,
+      "ast_message": "AST Syntax Valid",
+      "test_passed": true,
+      "test_message": "Unit tests PASSED"
+    },
+    {
+      "id": "T08_WORD_FREQ",
+      "category": "Data Structures",
+      "prompt": "Write a Python function `word_frequencies(words)` that returns a dictionary mapping each word to its frequency.",
+      "code": "def word_frequencies(words):\n    freq = {}\n    for word in words:\n        if word in freq:\n            freq[word] += 1\n        else:\n            freq[word] = 1\n    return freq",
+      "raw_response": "```python\ndef word_frequencies(words):\n    freq = {}\n    for word in words:\n        if word in freq:\n            freq[word] += 1\n        else:\n            freq[word] = 1\n    return freq\n```\n.median\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",\n \"\"\"\",",
+      "duration_sec": 10.88,
+      "ast_valid": true,
+      "ast_message": "AST Syntax Valid",
+      "test_passed": true,
+      "test_message": "Unit tests PASSED"
+    },
+    {
+      "id": "T09_REVERSE_WORDS",
+      "category": "Strings",
+      "prompt": "Write a Python function `reverse_words(sentence)` that reverses the words in a sentence.",
+      "code": "def reverse_words(sentence):\n    words = sentence.split()\n    reversed_words = words[::-1]\n    return ' '.join(reversed_words)",
+      "raw_response": "def reverse_words(sentence):\n    words = sentence.split()\n    reversed_words = words[::-1]\n    return ' '.join(reversed_words)\nemia\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial\nAPolynomial",
+      "duration_sec": 10.47,
+      "ast_valid": true,
+      "ast_message": "AST Syntax Valid",
+      "test_passed": true,
+      "test_message": "Unit tests PASSED"
+    },
+    {
+      "id": "T10_JSON_SAFE_READ",
+      "category": "File I/O",
+      "prompt": "Write a Python function `load_json(filepath)` that opens and parses a JSON file safely using a with statement.",
+      "code": "import json\ndef load_json(filepath):\n    with open(filepath, 'r') as f:\n        data = json.load(f)\n    return data",
+      "raw_response": "```python\nimport json\ndef load_json(filepath):\n    with open(filepath, 'r') as f:\n        data = json.load(f)\n    return data\n```\n\u6092\n Cbd\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n```\n``",
+      "duration_sec": 9.95,
+      "ast_valid": true,
+      "ast_message": "AST Syntax Valid",
+      "test_passed": true,
+      "test_message": "Inspection assertion passed"
+    },
+    {
+      "id": "T11_CTYPES_INTEROP",
+      "category": "Interoperability",
+      "prompt": "How do I call a C shared library from Python using ctypes? Give a concise code example.",
+      "code": "import ctypes\n\nlib = ctypes.CDLL('./libmylib.so')\nlib.my_function.argtypes = [ctypes.c_int]\nlib.my_function(42)",
+      "raw_response": "```python\nimport ctypes\n\nlib = ctypes.CDLL('./libmylib.so')\nlib.my_function.argtypes = [ctypes.c_int]\nlib.my_function(42)\n```",
+      "duration_sec": 4.95,
+      "ast_valid": true,
+      "ast_message": "AST Syntax Valid",
+      "test_passed": true,
+      "test_message": "Inspection assertion passed"
+    },
+    {
+      "id": "T12_DOMAIN_BOUNDARY",
+      "category": "Boundary",
+      "prompt": "Write a complete C++ game engine with DirectX 12 renderer.",
+      "code": "Below is an instruction that describes a task. Write a response that appropriately completes the request.",
+      "raw_response": "Below is an instruction that describes a task. Write a response that appropriately completes the request.",
+      "duration_sec": 4.2,
+      "ast_valid": true,
+      "ast_message": "N/A",
+      "test_passed": true,
+      "test_message": "Output recorded for boundary review"
+    }
+  ]
+}
