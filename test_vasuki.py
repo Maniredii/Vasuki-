@@ -136,6 +136,20 @@ def query_model(prompt_text, max_tokens=350, temp=0.2):
     except Exception as e:
         return f"[Error: {e}]", 0.0
 
+def show_typing(text, speed=0.012):
+    """Prints text with a natural typewriter typing animation."""
+    for char in text:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        if char == '\n':
+            time.sleep(speed * 2.5)
+        elif char in ('.', ':', '!', '?'):
+            time.sleep(speed * 2.0)
+        else:
+            time.sleep(speed)
+    sys.stdout.write('\n')
+    sys.stdout.flush()
+
 def run_benchmark():
     """Runs a quick 8-prompt test across key categories."""
     test_cases = [
@@ -159,7 +173,7 @@ def run_benchmark():
         print(f"Prompt: {prompt}")
         print("-" * 50)
         resp, dur = query_model(prompt)
-        print(resp)
+        show_typing(resp, speed=0.006)
         print("-" * 50)
         print(f"Inference Time: {dur:.2f}s\n")
     print("=" * 70)
@@ -184,10 +198,11 @@ def interactive_session():
                 print("Exiting VASUKI console. Goodbye!")
                 break
             
-            print("\nGenerating response...", flush=True)
+            print("\n[VASUKI is typing...]", end="\r", flush=True)
             response, elapsed = query_model(prompt)
-            print("\n" + "=" * 50)
-            print(response)
+            print(" " * 30, end="\r")  # Clear the typing banner
+            print("=" * 50)
+            show_typing(response, speed=0.012)
             print("=" * 50)
             print(f"(Generation time: {elapsed:.2f}s)\n")
         except (KeyboardInterrupt, EOFError):
@@ -216,7 +231,7 @@ def run_ds_benchmark():
         print(f"Prompt: {prompt}")
         print("-" * 50)
         resp, dur = query_model(prompt)
-        print(resp)
+        show_typing(resp, speed=0.006)
         print("-" * 50)
         print(f"Inference Time: {dur:.2f}s\n")
     print("=" * 70)
@@ -245,7 +260,7 @@ def main():
     elif args.prompt:
         print(f"Prompt: {args.prompt}\n")
         resp, dur = query_model(args.prompt)
-        print(resp)
+        show_typing(resp, speed=0.012)
         print(f"\n(Time: {dur:.2f}s)")
     else:
         interactive_session()
