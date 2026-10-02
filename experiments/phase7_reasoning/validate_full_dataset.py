@@ -1,0 +1,33 @@
+"""
+VASUKI Phase 7: Dataset Pre-Training Quality Gate & Hash Verification
+Validates:
+1. File existence and cryptographic SHA-256 hashes
+2. JSONL parsing integrity
+3. Prompt & Response token budget adherence
+4. Python AST syntax correctness on code blocks
+5. Zero leakage between training and validation sets
+"""
+
+import sys
+import os
+import json
+import hashlib
+from pathlib import Path
+from reasoning_schema import validate_ast, extract_python_code
+
+BASE_DIR = Path("D:/VASUKI/experiments/phase7_reasoning")
+EXPANDED_FILE = BASE_DIR / "phase7_2_expanded_corpus.jsonl"
+BALANCED_FILE = BASE_DIR / "phase7_1_balanced_corpus.jsonl"
+BASE_FILE = BASE_DIR / "phase7_reasoning_corpus.jsonl"
+
+if EXPANDED_FILE.exists():
+    TRAIN_FILE = EXPANDED_FILE
+elif BALANCED_FILE.exists():
+    TRAIN_FILE = BALANCED_FILE
+else:
+    TRAIN_FILE = BASE_FILE
+
+VAL_FILE = BASE_DIR / "phase7_reasoning_val.jsonl"
+
+
+def compute_sha256(path: Path) -> str:
