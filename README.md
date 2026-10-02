@@ -235,3 +235,7 @@ Apache-2.0 License. Designed and developed by **Manideep Reddy Eevuri**.
 
 ### High-Accuracy Guardrail System
 VASUKI includes an active output monitor that prevents repetitive subword loops and automatically falls back to verified stable weights if degeneration is detected.
+
+
+### Instant Python Conceptual Knowledge
+VASUKI resolves foundational Python questions (`what is python`, `what is tuple`, `difference between list and tuple`) instantly with verified accuracy.
