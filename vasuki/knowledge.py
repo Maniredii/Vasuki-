@@ -378,3 +378,10 @@ def factorial(n: int) -> int:
 
 print(factorial(5))  # 120
 ```"""
+
+KNOWLEDGE_REGISTRY["gil"] = KNOWLEDGE_REGISTRY["global interpreter lock"] = """The **Global Interpreter Lock (GIL)** is a mutex in CPython that ensures only one native thread executes Python bytecode at any given moment.
+
+### Implications:
+- **I/O-Bound Tasks:** Multithreading works well because threads release the GIL during network/disk I/O operations.
+- **CPU-Bound Tasks:** Standard threads cannot utilize multiple CPU cores concurrently. Use `multiprocessing` to bypass the GIL.
+"""
