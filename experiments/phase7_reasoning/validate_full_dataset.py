@@ -54,3 +54,11 @@ def main():
     print(f"    SHA-256:         {train_hash}")
     print(f"[*] Validation File: {VAL_FILE.name}")
     print(f"    SHA-256:         {val_hash}")
+
+    # Load records
+    with open(TRAIN_FILE, "r", encoding="utf-8") as f:
+        train_records = [json.loads(line) for line in f if line.strip()]
+    with open(VAL_FILE, "r", encoding="utf-8") as f:
+        val_records = [json.loads(line) for line in f if line.strip()]
+
+    print(f"\n[*] Record Counts:")
