@@ -102,3 +102,29 @@ CONCISE_THEORY_PACK = [
         "response": "Dynamic programming is an optimization method that solves complex problems by breaking them into overlapping subproblems, storing subproblem results to avoid redundant recomputations.",
         "category": "algorithms_theory"
     },
+    {
+        "instruction": "explain python generator in one line",
+        "response": "A Python generator is a memory-efficient iterator created with the 'yield' keyword that calculates and emits elements lazily one at a time.",
+        "category": "python_internals"
+    },
+    {
+        "instruction": "explain python decorator in one line",
+        "response": "A Python decorator is a callable that takes another function as an argument and extends its behavior without altering its original source code.",
+        "category": "python_internals"
+    },
+    {
+        "instruction": "explain python global interpreter lock (gil) in one line",
+        "response": "The Global Interpreter Lock (GIL) is a CPython synchronization mutex that enforces single-threaded bytecode execution at any given moment, limiting CPU-bound multi-threading.",
+        "category": "python_internals"
+    },
+    {
+        "instruction": "explain overfitting in one line",
+        "response": "Overfitting is a modeling failure where an algorithm memorizes statistical noise in training data instead of underlying generalizable patterns, causing poor test performance.",
+        "category": "machine_learning_concepts"
+    },
+    {
+        "instruction": "explain random forest in one line",
+        "response": "A random forest is an ensemble learning method that combines the predictions of multiple diverse decision trees using bootstrap aggregating (bagging) to reduce variance.",
+        "category": "machine_learning_concepts"
+    },
+    {
