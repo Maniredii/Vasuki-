@@ -26,3 +26,31 @@ LOCAL_IAMTARUN_FILE = Path("D:/VASUKI/experiments/phase6j/iamtarun_python_18k.js
 
 OUT_EXPANDED_FILE = BASE_DIR / "phase7_2_expanded_corpus.jsonl"
 OUT_REPORT_FILE = BASE_DIR / "phase7_2_expansion_report.md"
+VAL_FILE = BASE_DIR / "phase7_reasoning_val.jsonl"
+
+
+def is_valid_entry(instruction: str, response: str) -> bool:
+    """Strict quality filter for candidate records."""
+    inst = instruction.strip()
+    resp = response.strip()
+
+    if not inst or not resp:
+        return False
+    if len(inst) < 15 or len(resp) < 40 or len(resp) > 2800:
+        return False
+
+    # Check for truncated code block artifacts
+    if resp.count("```") % 2 != 0:
+        return False
+
+    # Verify all embedded code blocks parse cleanly
+    codes = extract_python_code(resp)
+    if codes:
+        for c in codes:
+            # Skip empty blocks
+            if not c.strip():
+                continue
+            ok, _ = validate_ast(c)
+            if not ok:
+                return False
+
