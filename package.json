@@ -30,3 +30,19 @@
     "edge-computing",
     "gguf",
     "llama-cpp"
+  ],
+  "author": {
+    "name": "Manideep Reddy Eevuri",
+    "email": "sivareddyevuri92@gmail.com",
+    "url": "https://github.com/Maniredii"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maniredii/Vasuki-.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Maniredii/Vasuki-/issues"
+  },
+  "homepage": "https://github.com/Maniredii/Vasuki-#readme"
+}
