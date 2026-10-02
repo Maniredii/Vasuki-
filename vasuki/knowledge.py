@@ -385,3 +385,21 @@ KNOWLEDGE_REGISTRY["gil"] = KNOWLEDGE_REGISTRY["global interpreter lock"] = """T
 - **I/O-Bound Tasks:** Multithreading works well because threads release the GIL during network/disk I/O operations.
 - **CPU-Bound Tasks:** Standard threads cannot utilize multiple CPU cores concurrently. Use `multiprocessing` to bypass the GIL.
 """
+
+KNOWLEDGE_REGISTRY["asyncio"] = KNOWLEDGE_REGISTRY["async"] = """**Asyncio** provides single-threaded concurrent cooperative multitasking using an event loop and `async`/`await` coroutines.
+
+```python
+import asyncio
+
+async def fetch_data(task_id: int):
+    print(f"Task {task_id} started")
+    await asyncio.sleep(0.5)  # Non-blocking pause
+    print(f"Task {task_id} finished")
+    return task_id * 10
+
+async def main():
+    results = await asyncio.gather(fetch_data(1), fetch_data(2))
+    print("Results:", results)
+
+asyncio.run(main())
+```"""
