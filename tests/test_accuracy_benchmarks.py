@@ -18,5 +18,9 @@ class TestCoreAccuracy(unittest.TestCase):
         resp, _ = test_vasuki.query_model("write a python function to check even or odd", max_tokens=150)
         self.assertTrue("def " in resp and "% 2" in resp)
         self.assertFalse(test_vasuki.is_degenerate_output(resp))
+    def test_palindrome_function(self):
+        resp, _ = test_vasuki.query_model("write a function to check if a string is palindrome", max_tokens=150)
+        self.assertTrue("def " in resp and ("[::-1]" in resp or "reversed" in resp))
+        self.assertFalse(test_vasuki.is_degenerate_output(resp))
 
 if __name__ == '__main__': unittest.main()
