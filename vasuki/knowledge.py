@@ -214,3 +214,23 @@ class Car:
 my_car = Car("Tesla", "Model 3")
 print(my_car.display())  # Tesla Model 3 (4 wheels)
 ```"""
+
+KNOWLEDGE_REGISTRY["inheritance"] = """**Inheritance** allows a class (child/subclass) to inherit attributes and methods from another class (parent/superclass), promoting code reuse.
+
+```python
+class Vehicle:
+    def __init__(self, brand: str):
+        self.brand = brand
+
+    def start(self) -> str:
+        return f"{self.brand} vehicle started."
+
+class ElectricCar(Vehicle):
+    def start(self) -> str:
+        # Extend parent method using super()
+        parent_msg = super().start()
+        return f"{parent_msg} Silent electric motor engaged."
+
+car = ElectricCar("Tesla")
+print(car.start())
+```"""
