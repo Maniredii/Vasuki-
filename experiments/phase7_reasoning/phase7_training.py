@@ -260,6 +260,7 @@ def run_training():
     # Save to GGUF Q4_K_M for deployment
     gguf_output_dir = os.path.join(OUTPUT_DIR, "gguf")
     os.makedirs(gguf_output_dir, exist_ok=True)
+    print("[*] Performing 16-bit unsloth model merge prior to GGUF quantization...")
     print("\n[*] Exporting Quantized GGUF (Q4_K_M)...")
     try:
         model.save_pretrained_gguf(
