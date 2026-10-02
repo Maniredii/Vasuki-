@@ -251,3 +251,26 @@ def run_training():
     print("\n[+] Training Complete!")
     print(f"    Train Loss: {trainer_stats.training_loss:.4f}")
 
+    # Export LoRA Adapter
+    adapter_path = os.path.join(OUTPUT_DIR, "lora_adapter")
+    model.save_pretrained(adapter_path)
+    tokenizer.save_pretrained(adapter_path)
+    print(f"[+] Saved LoRA adapter to: {adapter_path}")
+
+    # Save to GGUF Q4_K_M for deployment
+    gguf_output_dir = os.path.join(OUTPUT_DIR, "gguf")
+    os.makedirs(gguf_output_dir, exist_ok=True)
+    print("\n[*] Exporting Quantized GGUF (Q4_K_M)...")
+    try:
+        model.save_pretrained_gguf(
+            gguf_output_dir,
+            tokenizer,
+            quantization_method="q4_k_m"
+        )
+        print(f"[+] Successfully exported GGUF model to: {gguf_output_dir}")
+    except Exception as e:
+        print(f"[!] GGUF export notice: {str(e)}")
+
+
+if __name__ == "__main__":
+    run_training()
