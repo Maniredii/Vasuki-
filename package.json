@@ -14,3 +14,19 @@
     "ds": "node ./bin/vasuki.js --ds"
   },
   "files": [
+    "bin/",
+    "index.js",
+    "test_vasuki.py",
+    "web_vasuki.py",
+    "README.md",
+    "PYTHON_ROADMAP.md"
+  ],
+  "keywords": [
+    "python",
+    "ai",
+    "coding-assistant",
+    "llm",
+    "offline",
+    "edge-computing",
+    "gguf",
+    "llama-cpp"
