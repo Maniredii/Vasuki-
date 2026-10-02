@@ -30,3 +30,19 @@ def build_reasoning_response(
     Designed specifically to maximize inference reasoning in 0.5B models without bloat.
     """
     parts = []
+    
+    if preamble:
+        parts.append(preamble.strip() + "\n")
+        
+    parts.append("### Problem Analysis & Strategy")
+    parts.append(strategy.strip())
+    
+    parts.append("\n### Edge Cases Considered")
+    for ec in edge_cases:
+        parts.append(f"- {ec.strip()}")
+        
+    parts.append("\n### Python Implementation")
+    clean_code = code.strip()
+    if not clean_code.startswith("```python"):
+        clean_code = f"```python\n{clean_code}\n```"
+    parts.append(clean_code)
