@@ -296,3 +296,16 @@ class StripeGateway(PaymentGateway):
 client = StripeGateway()
 client.process_payment(99.0)
 ```"""
+
+KNOWLEDGE_REGISTRY["lambda"] = KNOWLEDGE_REGISTRY["lambda function"] = KNOWLEDGE_REGISTRY["anonymous function"] = """A **lambda function** in Python is a small, anonymous function restricted to a single expression.
+
+```python
+# Syntax: lambda arguments: expression
+square = lambda x: x * x
+print(square(5))  # 25
+
+# Commonly used with sorted(), map(), and filter()
+users = [("Alice", 25), ("Bob", 20), ("Charlie", 30)]
+sorted_by_age = sorted(users, key=lambda user: user[1])
+print(sorted_by_age)  # [('Bob', 20), ('Alice', 25), ('Charlie', 30)]
+```"""
