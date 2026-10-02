@@ -223,6 +223,7 @@ def query_model(prompt_text, max_tokens=350, temp=0.2, allow_fallback=True):
         last_stripped = None
         consecutive_repeat = 0
         has_entered_code = False
+        leading_comments_count = 0
 
         py_keywords = {
             "def", "class", "return", "import", "from", "for", "while", "if",
