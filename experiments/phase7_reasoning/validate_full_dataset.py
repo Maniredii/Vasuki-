@@ -70,3 +70,11 @@ def main():
     val_insts = {r["instruction"].strip().lower() for r in val_records}
     overlap = train_insts.intersection(val_insts)
     if overlap:
+        print(f"[!] FATAL: Contamination detected between train and val! Overlap: {len(overlap)}")
+        sys.exit(1)
+    else:
+        print("    - Zero Contamination: PASS (0 overlapping instructions)")
+
+    # Sample AST check across training records
+    ast_checked = 0
+    ast_passed = 0
