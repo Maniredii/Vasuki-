@@ -182,3 +182,49 @@ def query_model(prompt_text, max_tokens=350, temp=0.2):
 
         lines = resp.splitlines()
         cleaned_lines = []
+        last_stripped = None
+        consecutive_repeat = 0
+        has_entered_code = False
+
+        py_keywords = {
+            "def", "class", "return", "import", "from", "for", "while", "if",
+            "elif", "else", "try", "except", "finally", "with", "raise", "pass",
+            "assert", "yield", "print"
+        }
+
+        for line in lines:
+            s = line.strip()
+            if not s:
+                if cleaned_lines:
+                    cleaned_lines.append(line)
+                continue
+
+            # Check if line is indented code
+            if line.startswith(("    ", "\t", "  ")):
+                has_entered_code = True
+                cleaned_lines.append(line)
+                last_stripped = s
+                consecutive_repeat = 0
+                continue
+
+            # 2. Immediate consecutive line loop check (e.g. rix / rix / rix)
+            if s == last_stripped:
+                consecutive_repeat += 1
+                if consecutive_repeat >= 1:
+                    break
+            else:
+                consecutive_repeat = 0
+                last_stripped = s
+
+            # 3. Known subword / loop artifacts
+            if s.lower() in ("rix", "azor", "esian", "życz", "abrasive", "poverty"):
+                break
+
+            # 4. Check for counting loop artifacts like `-1`, `-2`, `-3` or `1.`, `2.`
+            if re.match(r"^[`'\"]?-\d+[`'\"]?$", s) or re.match(r"^[`'\"]?\d+[`'\"]?$", s):
+                break
+
+            # 5. If we have entered code body, an unindented non-code statement is trailing garbage
+            if has_entered_code and not s.startswith(("#", "def ", "class ", "import ", "from ", "if __name__", "@")):
+                break
+
