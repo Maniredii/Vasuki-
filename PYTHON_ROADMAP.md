@@ -70,3 +70,11 @@
   * First-class functions, anonymous `lambda` functions, `map()`, `filter()`.
   * Standard library utilities: `itertools` (`chain`, `islice`, `permutations`, `combinations`) and `functools` (`lru_cache`, `partial`, `reduce`).
 * **Iterators & Generators:**
+  * The Iteration Protocol: `__iter__` and `__next__`, `StopIteration`.
+  * Generators with `yield`: State suspension, memory streaming for unbounded datasets.
+  * Generator expressions: `sum(x for x in data)` ($O(1)$ memory vs $O(N)$ list allocation).
+* **Decorators:**
+  * Closures and lexical scoping.
+  * Function decorators, chaining decorators.
+  * Decorators accepting arguments and preserving metadata with `@functools.wraps`.
+  * Built-in decorators: `@property`, `@classmethod`, `@staticmethod`.
