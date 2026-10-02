@@ -58,3 +58,23 @@ if (args.includes('--help') || args.includes('-h')) {
 \x1b[93mInteractive Console Commands:\x1b[0m
   /run                       Execute last generated code snippet in sandbox
   /copy                      Copy last code snippet to system clipboard
+  /save <file.py>            Save snippet to a Python file
+  /clear                     Clear console screen
+  exit                       Quit the console
+`);
+  process.exit(0);
+}
+
+// Handle version flag
+if (args.includes('--version') || args.includes('-v')) {
+  const pkg = require('../package.json');
+  console.log(`\x1b[1;96mVASUKI AI Engine v${pkg.version}\x1b[0m`);
+  console.log(`\x1b[1;92mDeveloped by : Manideep Reddy Eevuri\x1b[0m`);
+  console.log(`GitHub       : https://github.com/Maniredii`);
+  console.log(`LinkedIn     : https://www.linkedin.com/in/manideep-reddy-eevuri-661659268/`);
+  console.log(`Model        : vasuki_phase7.Q4_K_M.gguf (379.38 MB)`);
+  console.log(`Architecture : 0.5B Edge Fine-Tuned Specialist (Reasoning Enhanced)`);
+  process.exit(0);
+}
+
+// Check if user requested Web UI
