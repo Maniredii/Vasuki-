@@ -38,3 +38,11 @@
   * The Pythonic `else` clause on `for` and `while` loops (executes only when no `break` occurred).
 * **Built-in Collections:**
   * **Lists:** Dynamic arrays, indexing, negative indexing, slicing `[start:stop:step]`, list methods (`append`, `extend`, `pop`, `insert`).
+  * **Tuples:** Immutability, tuple packing and unpacking (`a, b = b, a`).
+  * **Dictionaries:** Key-value mappings, hashing rules (keys must be hashable), `.get()`, `.items()`, `.keys()`, `.values()`, `defaultdict`.
+  * **Sets:** Unique elements, mathematical set operations (union `|`, intersection `&`, difference `-`), $O(1)$ membership checks.
+* **Modular Code & Functions:**
+  * Defining functions with `def`, positional arguments, default arguments (the mutable default argument trap and sentinel `None`).
+  * Arbitrary arguments: `*args` and `**kwargs`.
+  * Variable scope: The LEGB rule (Local $\rightarrow$ Enclosing $\rightarrow$ Global $\rightarrow$ Built-in).
+* **File I/O & Exception Handling:**
