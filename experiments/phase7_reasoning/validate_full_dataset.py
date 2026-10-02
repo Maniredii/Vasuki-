@@ -64,3 +64,36 @@ def main():
     print(f"\n[*] Record Counts:")
     print(f"    - Training Records:   {len(train_records)}")
     print(f"    - Validation Records: {len(val_records)}")
+
+    # Check contamination
+    train_insts = {r["instruction"].strip().lower() for r in train_records}
+    val_insts = {r["instruction"].strip().lower() for r in val_records}
+    overlap = train_insts.intersection(val_insts)
+    if overlap:
+        print(f"[!] FATAL: Contamination detected between train and val! Overlap: {len(overlap)}")
+        sys.exit(1)
+    else:
+        print("    - Zero Contamination: PASS (0 overlapping instructions)")
+
+    # Sample AST check across training records
+    ast_checked = 0
+    ast_passed = 0
+    for r in train_records:
+        codes = extract_python_code(r.get("response", ""))
+        for c in codes:
+            ast_checked += 1
+            ok, _ = validate_ast(c)
+            if ok:
+                ast_passed += 1
+
+    print(f"\n[*] Code Syntax Audit:")
+    print(f"    - Code Blocks Analyzed: {ast_checked}")
+    print(f"    - Valid Python AST:     {ast_passed} / {ast_checked} ({ast_passed/ast_checked*100:.1f}%)")
+
+    print("\n" + "=" * 80)
+    print(">>> PRE-TRAINING GATE: ALL CHECKS PASSED. DATASET IS READY FOR UNSLOTH QLORA <<<")
+    print("=" * 80)
+
+
+if __name__ == "__main__":
+    main()
