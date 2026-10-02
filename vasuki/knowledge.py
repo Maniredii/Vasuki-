@@ -9,8 +9,8 @@ KNOWLEDGE_REGISTRY = {}
 def normalize_concept_query(query: str) -> str:
     """Normalizes natural language questions to concept keys."""
     q = query.lower().strip()
-    q = re.sub(r"^(what is|what are|explain|describe|tell me about|define)\s+(a\s+|an\s+|the\s+)?", "", q)
-    q = re.sub(r"\s+(in python|in py|with examples?|please|for beginners).*$", "", q)
+    q = re.sub(r"^(what is|what are|explain|describe|tell me about|define|how does|what do you mean by)\s+(a\s+|an\s+|the\s+)?", "", q)
+    q = re.sub(r"\s+(in python|in py|with examples?|please|for beginners|work|works|work in python).*$", "", q)
     return q.strip(" ?.!:\'\"")
 KNOWLEDGE_REGISTRY["function"] = KNOWLEDGE_REGISTRY["functions"] = """A **function** in Python is a reusable block of code that executes when invoked, optionally accepting parameters and returning a result.
 
