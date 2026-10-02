@@ -22,5 +22,9 @@ class TestCoreAccuracy(unittest.TestCase):
         resp, _ = test_vasuki.query_model("write a function to check if a string is palindrome", max_tokens=150)
         self.assertTrue("def " in resp and ("[::-1]" in resp or "reversed" in resp))
         self.assertFalse(test_vasuki.is_degenerate_output(resp))
+    def test_factorial_function(self):
+        resp, _ = test_vasuki.query_model("write a function to calculate factorial of a number", max_tokens=150)
+        self.assertTrue("def " in resp and ("factorial" in resp or "fact" in resp))
+        self.assertFalse(test_vasuki.is_degenerate_output(resp))
 
 if __name__ == '__main__': unittest.main()
