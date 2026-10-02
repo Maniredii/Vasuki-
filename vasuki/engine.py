@@ -1,3 +1,4 @@
+from .knowledge import resolve_knowledge
 import os
 import sys
 import time
@@ -17,6 +18,8 @@ class VasukiEngine:
         self.model_path = model_path or resolve_model_path(model_name)
 
     def generate(self, prompt: str, max_tokens: int = 350, temperature: float = 0.2, timeout: int = 30) -> str:
+        known = resolve_knowledge(prompt)
+        if known: return known
         resp, _ = query_model(prompt, max_tokens=max_tokens, temp=temperature, allow_fallback=True)
         return resp
 
