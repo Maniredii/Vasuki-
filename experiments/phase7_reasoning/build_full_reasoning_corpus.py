@@ -427,3 +427,42 @@ def main():
         valid = True
         for c in codes:
             ok, err = validate_ast(c)
+            if not ok:
+                print(f"[!] AST error in {r['id']}: {err}")
+                valid = False
+                break
+            if "assert " in c:
+                ok, err = execute_in_sandbox(c)
+                if not ok:
+                    print(f"[!] Sandbox failure in {r['id']}: {err}")
+                    valid = False
+                    break
+        if valid:
+            r["estimated_tokens"] = estimate_token_count(r["response"])
+            validated_recs.append(r)
+
+    print(f"[*] Verified {len(validated_recs)} / {len(all_reasoning_recs)} reasoning records (100% AST & Sandbox Pass).")
+
+    # 3. Load Phase 6J calibrated baseline to build the combined corpus
+    phase6j_calibrated_file = PHASE6J_DIR / "phase6j_training_candidate_calibrated.jsonl"
+    combined_records = list(validated_recs)
+
+    if phase6j_calibrated_file.exists():
+        print(f"[*] Integrating with baseline from: {phase6j_calibrated_file.name}")
+        with open(phase6j_calibrated_file, "r", encoding="utf-8") as f:
+            baseline_recs = [json.loads(line) for line in f if line.strip()]
+        
+        # Avoid duplicate instructions
+        existing_instructions = {r["instruction"].strip().lower() for r in validated_recs}
+        added_baseline = 0
+        for r in baseline_recs:
+            inst = r["instruction"].strip().lower()
+            if inst in existing_instructions:
+                continue
+            
+            # Strict AST Quality Gate for baseline records
+            codes = extract_python_code(r.get("response", ""))
+            if codes:
+                all_ast_ok = True
+                for c in codes:
+                    ok, _ = validate_ast(c)
