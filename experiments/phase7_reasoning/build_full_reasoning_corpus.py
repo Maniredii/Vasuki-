@@ -271,3 +271,42 @@ def generate_extended_algorithmic_records() -> List[Dict[str, Any]]:
                 "lru.put(4, 4)                # Evicts key 1\n"
                 "assert lru.get(1) == -1\n"
                 "assert lru.get(3) == 3\n"
+                "assert lru.get(4) == 4\n"
+            ),
+            time_complexity="O(1) for both get and put operations.",
+            space_complexity="O(capacity) bounded memory usage."
+        )
+    })
+
+    # 6. Backtracking: Subsets (Power Set)
+    recs.append({
+        "id": "algo_cot_006",
+        "category": "algorithmic_reasoning",
+        "subcategory": "backtracking",
+        "instruction": "Write a Python function using backtracking to generate all unique subsets (power set) of a list of distinct integers.",
+        "response": build_reasoning_response(
+            strategy=(
+                "At each step in the recursion tree, we decide whether to include element nums[i]. "
+                "Because every state path represents a valid subset, we append a copy of current path at each step. "
+                "We iterate from `start_index` to len(nums) to prevent generating duplicate permutations (order invariance)."
+            ),
+            edge_cases=[
+                "Empty input array: returns `[[]]` (the empty set).",
+                "Single element: returns `[[], [x]]`.",
+                "Order of output subsets: sorted by generation depth."
+            ],
+            code=(
+                "def generate_subsets(nums: list[int]) -> list[list[int]]:\n"
+                "    result = []\n"
+                "    \n"
+                "    def backtrack(start: int, path: list[int]):\n"
+                "        result.append(list(path))\n"
+                "        for i in range(start, len(nums)):\n"
+                "            path.append(nums[i])\n"
+                "            backtrack(i + 1, path)\n"
+                "            path.pop()  # Backtrack\n"
+                "            \n"
+                "    backtrack(0, [])\n"
+                "    return result\n"
+                "\n"
+                "# Verification assertions\n"
