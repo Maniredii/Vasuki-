@@ -436,3 +436,18 @@ original[0][0] = 999
 print(shallow[0][0])  # 999 (mutated via shared reference)
 print(deep[0][0])     # 1   (completely independent clone)
 ```"""
+
+KNOWLEDGE_REGISTRY["difference between append and extend"] = KNOWLEDGE_REGISTRY["append vs extend"] = """### Comparison: `append()` vs `extend()`
+
+- **`list.append(item)`:** Adds `item` as a single new element (preserving its structure, e.g. nested list).
+- **`list.extend(iterable)`:** Iterates over the iterable and appends each individual item.
+
+```python
+nums1 = [1, 2]
+nums1.append([3, 4])
+print(nums1)  # [1, 2, [3, 4]]
+
+nums2 = [1, 2]
+nums2.extend([3, 4])
+print(nums2)  # [1, 2, 3, 4]
+```"""
