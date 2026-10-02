@@ -14,3 +14,12 @@ def get_target_model_path():
 def ensure_model_downloaded():
     local_path = get_target_model_path()
     if os.path.exists(local_path) and os.path.getsize(local_path) > 100_000_000:
+        return local_path
+    
+    workspace_cand = os.path.join(os.getcwd(), DEFAULT_MODEL_NAME)
+    if os.path.exists(workspace_cand) and os.path.getsize(workspace_cand) > 100_000_000:
+        return workspace_cand
+
+    print(f"[*] VASUKI model not found locally. Preparing to download from Hugging Face...")
+    print(f"[*] Target destination: {local_path}")
+    return local_path
