@@ -76,3 +76,29 @@ CONCISE_THEORY_PACK = [
             "- **Access by Index:** O(N) sequential traversal."
         ),
         "category": "data_structures_theory"
+    },
+    {
+        "instruction": "explain linked list in one line",
+        "response": "A linked list is a linear data structure composed of non-contiguous nodes, where each node stores a value and a pointer reference to the next node.",
+        "category": "data_structures_theory"
+    },
+    {
+        "instruction": "explain binary search in one line",
+        "response": "Binary search is an O(log n) algorithm that repeatedly divides a sorted interval in half by comparing the target with the interval's midpoint.",
+        "category": "algorithms_theory"
+    },
+    {
+        "instruction": "explain recursion in one line",
+        "response": "Recursion is a problem-solving technique where a function calls itself to resolve progressively smaller instances of the same problem until terminating at a base case.",
+        "category": "algorithms_theory"
+    },
+    {
+        "instruction": "explain hash table in one line",
+        "response": "A hash table is an associative data structure providing O(1) average lookup and insertion by using a hash function to map keys to array bucket indices.",
+        "category": "data_structures_theory"
+    },
+    {
+        "instruction": "explain dynamic programming in one line",
+        "response": "Dynamic programming is an optimization method that solves complex problems by breaking them into overlapping subproblems, storing subproblem results to avoid redundant recomputations.",
+        "category": "algorithms_theory"
+    },
