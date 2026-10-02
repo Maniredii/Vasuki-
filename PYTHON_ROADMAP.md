@@ -110,3 +110,11 @@
 ---
 
 ## 🔴 Phase 4: Systems, Concurrency & Performance Engineering (Advanced Specialist)
+*Goal: Understand CPython internals, optimize execution speed, and engineer high-throughput systems.*
+
+* **CPython Internals & Memory Architecture:**
+  * Reference Counting and Cyclic Garbage Collection (`gc` module, generational GC).
+  * Object headers: `PyObject`, `ob_refcnt`, `ob_type`.
+  * Small integer caching ($-5$ to $256$), string interning.
+  * The `is` (identity / memory address) vs `==` (equality) operator.
+  * Memory optimization using `__slots__` to suppress instance `__dict__` overhead.
