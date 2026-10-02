@@ -419,3 +419,20 @@ print(a is b)  # False (distinct heap objects)
 c = a
 print(a is c)  # True  (same memory reference)
 ```"""
+
+KNOWLEDGE_REGISTRY["difference between deep copy and shallow copy"] = KNOWLEDGE_REGISTRY["deepcopy vs shallow copy"] = """### Comparison: Shallow Copy vs Deep Copy
+
+- **Shallow Copy (`copy.copy`):** Constructs a new container but populates it with references to the original child objects.
+- **Deep Copy (`copy.deepcopy`):** Recursively constructs a new container and duplicates all nested objects into new memory.
+
+```python
+import copy
+
+original = [[1, 2], [3, 4]]
+shallow = copy.copy(original)
+deep = copy.deepcopy(original)
+
+original[0][0] = 999
+print(shallow[0][0])  # 999 (mutated via shared reference)
+print(deep[0][0])     # 1   (completely independent clone)
+```"""
