@@ -309,3 +309,16 @@ users = [("Alice", 25), ("Bob", 20), ("Charlie", 30)]
 sorted_by_age = sorted(users, key=lambda user: user[1])
 print(sorted_by_age)  # [('Bob', 20), ('Alice', 25), ('Charlie', 30)]
 ```"""
+
+KNOWLEDGE_REGISTRY["list comprehension"] = KNOWLEDGE_REGISTRY["comprehension"] = """**List comprehension** provides a concise, idiomatic syntax for transforming, filtering, and creating new lists in Python.
+
+```python
+# Syntax: [expression for item in iterable if condition]
+numbers = [1, 2, 3, 4, 5, 6]
+even_squares = [x * x for x in numbers if x % 2 == 0]
+print(even_squares)  # [4, 16, 36]
+
+# Dictionary comprehension
+word_lengths = {w: len(w) for w in ["python", "ai", "code"]}
+print(word_lengths)  # {'python': 6, 'ai': 2, 'code': 4}
+```"""
