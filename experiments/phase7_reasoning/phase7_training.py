@@ -67,3 +67,26 @@ LORA_CONFIG = {
     "use_rslora": False,
 }
 
+
+def compute_sha256(filepath):
+    h = hashlib.sha256()
+    with open(filepath, "rb") as f:
+        while chunk := f.read(65536):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def verify_environment():
+    print("=" * 80)
+    print("VASUKI Phase 7: Training Environment Verification")
+    print("=" * 80)
+    import torch
+    print(f"Python Version:   {sys.version.split()[0]}")
+    print(f"PyTorch Version:  {torch.__version__}")
+    
+    if not torch.cuda.is_available():
+        print("[!] FATAL: No CUDA GPU detected! QLoRA requires an NVIDIA GPU (e.g. Google Colab T4).")
+        return False
+        
+    gpu_name = torch.cuda.get_device_name(0)
+    vram_gb = torch.cuda.get_device_properties(0).total_memory / (1024 ** 3)
