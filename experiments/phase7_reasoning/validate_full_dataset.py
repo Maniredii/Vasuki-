@@ -30,3 +30,11 @@ else:
 VAL_FILE = BASE_DIR / "phase7_reasoning_val.jsonl"
 
 
+def compute_sha256(path: Path) -> str:
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        while chunk := f.read(65536):
+            h.update(chunk)
+    return h.hexdigest()
+
+
