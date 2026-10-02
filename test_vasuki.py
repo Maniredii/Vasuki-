@@ -238,7 +238,7 @@ def query_model(prompt_text, max_tokens=350, temp=0.2, allow_fallback=True):
                 continue
 
             # Strip scraper and forum header artifacts
-            if s.startswith(("Code: [login to view", "Code:[login to view", "[login to view", "Solution:", "Code: \n", "Code:")):
+            if s.startswith(("Code: [login to view", "Code:[login to view", "[login to view", "Solution:", "Code: \n", "Code:", "Freelancer:", "Project:")):
                 continue
 
             # Check if line is indented code
