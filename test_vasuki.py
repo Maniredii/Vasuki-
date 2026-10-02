@@ -504,7 +504,19 @@ def interactive_session():
                             f.write(last_response + "\n")
                         print(f"\033[92m[✓] Saved snippet to {save_path}\033[0m\n")
                     except Exception as e:
-   
+                        print(f"\033[91m[!] Error saving file: {e}\033[0m\n")
+                continue
+
+            # Build multi-turn context query
+            if session_history:
+                context_chunks = []
+                for turn in session_history[-3:]:  # Sliding window of 3 turns for length budget
+                    context_chunks.append(f"Previous Request: {turn['user']}\nPrevious Code: {turn['assistant']}")
+                injected_prompt = "\n\n".join(context_chunks) + f"\n\nCurrent Task (modify/extend based on context): {prompt}"
+            else:
+                injected_prompt = prompt
+
+            print("\033[90m[V
             pass
 def run_ds_benchmark():
     """Runs a dedicated Data Structures benchmark."""
