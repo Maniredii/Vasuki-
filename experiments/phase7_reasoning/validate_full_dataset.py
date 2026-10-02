@@ -46,3 +46,11 @@ def main():
     if not TRAIN_FILE.exists() or not VAL_FILE.exists():
         print("[!] Error: Dataset files missing. Run build_full_reasoning_corpus.py first.")
         sys.exit(1)
+
+    train_hash = compute_sha256(TRAIN_FILE)
+    val_hash = compute_sha256(VAL_FILE)
+
+    print(f"[*] Training File:   {TRAIN_FILE.name}")
+    print(f"    SHA-256:         {train_hash}")
+    print(f"[*] Validation File: {VAL_FILE.name}")
+    print(f"    SHA-256:         {val_hash}")
