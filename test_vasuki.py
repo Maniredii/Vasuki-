@@ -202,6 +202,8 @@ def query_model(prompt_text, max_tokens=350, temp=0.2, allow_fallback=True):
             # Strip boot ASCII art and initialization lines
             raw_lines = [l for l in output.splitlines() if not l.startswith(("Loading model", "build", "modalities", "available commands", "▄", "█", "▀", ">", "model"))]
             resp = "\n".join(raw_lines).strip()
+            if "Loading model..." in resp or "▄▄" in resp:
+                resp = ""
 
         if "[ Prompt:" in resp:
             resp = resp.split("[ Prompt:")[0]
