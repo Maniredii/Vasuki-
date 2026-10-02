@@ -277,3 +277,22 @@ acc = BankAccount("Alice", 500.0)
 acc.deposit(150.0)
 print(acc.get_balance())  # 650.0
 ```"""
+
+KNOWLEDGE_REGISTRY["abstraction"] = """**Abstraction** hides internal complexity and requires subclasses to provide concrete implementations for abstract interfaces using Python's `abc` module.
+
+```python
+from abc import ABC, abstractmethod
+
+class PaymentGateway(ABC):
+    @abstractmethod
+    def process_payment(self, amount: float) -> bool:
+        pass
+
+class StripeGateway(PaymentGateway):
+    def process_payment(self, amount: float) -> bool:
+        print(f"Charged ${amount} via Stripe API.")
+        return True
+
+client = StripeGateway()
+client.process_payment(99.0)
+```"""
