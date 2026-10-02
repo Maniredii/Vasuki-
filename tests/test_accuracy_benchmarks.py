@@ -26,5 +26,9 @@ class TestCoreAccuracy(unittest.TestCase):
         resp, _ = test_vasuki.query_model("write a function to calculate factorial of a number", max_tokens=150)
         self.assertTrue("def " in resp and ("factorial" in resp or "fact" in resp))
         self.assertFalse(test_vasuki.is_degenerate_output(resp))
+    def test_binary_search_implementation(self):
+        resp, _ = test_vasuki.query_model("write binary search in python", max_tokens=150)
+        self.assertTrue("def " in resp and ("mid" in resp or "// 2" in resp))
+        self.assertFalse(test_vasuki.is_degenerate_output(resp))
 
 if __name__ == '__main__': unittest.main()
