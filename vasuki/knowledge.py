@@ -351,3 +351,17 @@ with open("data.txt", "r", encoding="utf-8") as f:
     for line in f:
         print(line.strip())
 ```"""
+
+KNOWLEDGE_REGISTRY["args and kwargs"] = KNOWLEDGE_REGISTRY["args"] = KNOWLEDGE_REGISTRY["kwargs"] = """`*args` and `**kwargs` allow a function to accept a variable number of arguments.
+- `*args`: Collects extra positional arguments into a **tuple**.
+- `**kwargs`: Collects extra keyword arguments into a **dictionary**.
+
+```python
+def print_details(*args, **kwargs):
+    print("Positional arguments (tuple):", args)
+    print("Keyword arguments (dict):", kwargs)
+
+print_details(1, 2, "apple", role="Admin", active=True)
+# Positional: (1, 2, 'apple')
+# Keyword: {'role': 'Admin', 'active': True}
+```"""
