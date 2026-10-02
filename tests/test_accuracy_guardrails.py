@@ -27,5 +27,5 @@ class TestAccuracyGuardrails(unittest.TestCase):
         self.assertTrue("DecisionTreeClassifier" in resp or "tree" in resp.lower() or "def " in resp)
         self.assertFalse(test_vasuki.is_degenerate_output(resp))
 
-    def test_regression_case(self):\n        self.assertTrue(True)\n\nif __name__ == "__main__":
+    def test_synthetic_rejection(self):\n        fake_loop = '\n'.join(['word ' + str(i) for i in range(10)])\n        self.assertTrue(test_vasuki.check_prefix_repetition(fake_loop, min_repeats=3))\n\nif __name__ == "__main__":
     unittest.main()
