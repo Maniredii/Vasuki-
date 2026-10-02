@@ -76,3 +76,42 @@ def generate_extended_algorithmic_records() -> List[Dict[str, Any]]:
             ),
             time_complexity="O(N) since each pointer advances at most N times.",
             space_complexity="O(1) auxiliary variables."
+        )
+    })
+
+    # 2. Binary Search: Find Minimum in Rotated Sorted Array
+    recs.append({
+        "id": "algo_cot_002",
+        "category": "algorithmic_reasoning",
+        "subcategory": "binary_search",
+        "instruction": "Write a Python function to find the minimum element in a rotated sorted array of unique elements in O(log n).",
+        "response": build_reasoning_response(
+            strategy=(
+                "Compare midpoint nums[mid] with the rightmost element nums[right]. "
+                "If nums[mid] > nums[right], the inflection pivot (minimum) must reside strictly in the right half (left = mid + 1). "
+                "If nums[mid] < nums[right], mid could be the minimum, so search left half including mid (right = mid). "
+                "Convergence occurs when left == right."
+            ),
+            edge_cases=[
+                "Array not rotated: first element is minimum.",
+                "Array of size 1: returns nums[0].",
+                "Array rotated n-1 times: minimum element is at index 0 or 1."
+            ],
+            code=(
+                "def find_min_rotated(nums: list[int]) -> int:\n"
+                "    left, right = 0, len(nums) - 1\n"
+                "    while left < right:\n"
+                "        mid = (left + right) // 2\n"
+                "        if nums[mid] > nums[right]:\n"
+                "            left = mid + 1\n"
+                "        else:\n"
+                "            right = mid\n"
+                "    return nums[left]\n"
+                "\n"
+                "# Verification assertions\n"
+                "assert find_min_rotated([3, 4, 5, 1, 2]) == 1\n"
+                "assert find_min_rotated([4, 5, 6, 7, 0, 1, 2]) == 0\n"
+                "assert find_min_rotated([11, 13, 15, 17]) == 11\n"
+                "assert find_min_rotated([1]) == 1\n"
+            ),
+            time_complexity="O(log N) binary search halving intervals.",
