@@ -78,3 +78,11 @@ def main():
     # Sample AST check across training records
     ast_checked = 0
     ast_passed = 0
+    for r in train_records:
+        codes = extract_python_code(r.get("response", ""))
+        for c in codes:
+            ast_checked += 1
+            ok, _ = validate_ast(c)
+            if ok:
+                ast_passed += 1
+
