@@ -310,3 +310,29 @@ def curate_huggingface_records(existing_instructions: set) -> list:
 
             seen.add(inst_lower)
             curated.append({
+                "id": f"hf_evol_{evol_count+1:04d}",
+                "instruction": inst,
+                "response": out,
+                "category": "algorithmic_reasoning",
+                "source": "mlabonne/Evol-Instruct-Python-1k"
+            })
+            evol_count += 1
+            if evol_count >= 300:
+                break
+
+        print(f"[+] Successfully extracted {evol_count} algorithmic records from Evol-Instruct.", flush=True)
+    except Exception as e:
+        print(f"[!] Evol-Instruct curation notice: {e}", flush=True)
+
+    return curated
+
+
+def main():
+    print("=" * 80, flush=True)
+    print("VASUKI Phase 7.1: Multi-Source Dataset Integration & Compilation", flush=True)
+    print("=" * 80, flush=True)
+
+    # 1. Load existing Phase 7 corpus
+    if not CURRENT_CORPUS_FILE.exists():
+        print(f"[!] Error: {CURRENT_CORPUS_FILE} not found.", flush=True)
+        sys.exit(1)
