@@ -427,7 +427,23 @@ def interactive_session():
                 continue
             
             # Slash commands
-            if pro
+            if prompt.lower() in ("exit", "quit", "q"):
+                print("\033[90mExiting VASUKI console. Goodbye!\033[0m")
+                break
+            
+            if prompt.lower() == "/clear":
+                os.system("cls" if os.name == "nt" else "clear")
+                continue
+
+            if prompt.lower() in ("/reset", "/forget"):
+                session_history.clear()
+                last_response = ""
+                print("\033[93m[✓] Conversation memory reset.\033[0m\n")
+                continue
+
+            if prompt.lower() == "/history":
+                if not session_history:
+                    print("\033[90m(No previous
             pass
 def run_ds_benchmark():
     """Runs a dedicated Data Structures benchmark."""
