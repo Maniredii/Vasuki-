@@ -86,3 +86,11 @@
 
 * **Linear Data Structures:**
   * Singly and Doubly Linked Lists (Node references, reverse in groups, cycle detection with Floyd's Tortoise and Hare).
+  * Stacks (LIFO) and Queues (FIFO) using `collections.deque` ($O(1)$ append and popleft).
+  * Monotonic Stacks and Queues (Next greater element, Daily Temperatures, Largest rectangle in histogram).
+* **Non-Linear Data Structures:**
+  * Binary Trees & Binary Search Trees (BST): Traversals (Pre-order, In-order, Post-order, Level-order BFS).
+  * Heaps / Priority Queues using `heapq`: Min-heap, Max-heap inversion, Top-K elements, Median finding in data streams.
+  * Hash Maps & Hash Sets: Collision resolution, load factor, rolling hash algorithms.
+  * Graphs: Adjacency lists, Directed Acyclic Graphs (DAG), Disjoint Set Union (DSU / Union-Find with path compression).
+  * Prefix Trees (Trie): Autocomplete, prefix search, insert and search operations.
