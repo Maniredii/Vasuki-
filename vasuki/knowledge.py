@@ -171,3 +171,27 @@ def resolve_knowledge(query: str):
         if key == norm or norm.startswith(key + " ") or norm.endswith(" " + key):
             return val
     return None
+
+KNOWLEDGE_REGISTRY["oops"] = KNOWLEDGE_REGISTRY["oop"] = KNOWLEDGE_REGISTRY["object oriented programming"] = """**Object-Oriented Programming (OOP)** in Python is a paradigm centered around **classes** (blueprints) and **objects** (instances of classes) combining state (attributes) and behavior (methods).
+
+### The Four Core Pillars of OOP:
+1. **Encapsulation:** Bundles data and methods together and protects internal state using access conventions (e.g. `_protected`, `__private`).
+2. **Inheritance:** Allows a child class to inherit attributes and methods from a parent class (`class Child(Parent):`).
+3. **Polymorphism:** Enables different classes to implement methods with the same name, providing interchangeable interfaces (duck typing).
+4. **Abstraction:** Hides complex implementation details, exposing only clean public interfaces using Abstract Base Classes (`abc.ABC`).
+
+```python
+class Animal:
+    def __init__(self, name: str):
+        self.name = name
+
+    def speak(self) -> str:
+        raise NotImplementedError
+
+class Dog(Animal):
+    def speak(self) -> str:
+        return f"{self.name} says Woof!"
+
+dog = Dog("Buddy")
+print(dog.speak())  # Buddy says Woof!
+```"""
