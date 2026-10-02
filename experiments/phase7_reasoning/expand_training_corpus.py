@@ -110,3 +110,31 @@ def main():
                 new_records.append({
                     "id": f"expanded_iamtarun_{iamtarun_count+1:04d}",
                     "instruction": inst,
+                    "input": r.get("input", ""),
+                    "response": resp,
+                    "category": "python_core_algorithms",
+                    "source": "iamtarun/python_code_instructions_18k"
+                })
+                iamtarun_count += 1
+                if iamtarun_count >= 1200:
+                    break
+
+        print(f"[+] Harvested {iamtarun_count} pristine records from local iamtarun dataset.", flush=True)
+    else:
+        print("[!] Local iamtarun file not found, skipping.", flush=True)
+
+    # 3. Stream from sahil2801/CodeAlpaca-20k
+    print("\n[*] 3. Harvesting diverse coding & problem-solving tasks from sahil2801/CodeAlpaca-20k...", flush=True)
+    try:
+        ca_ds = load_dataset("sahil2801/CodeAlpaca-20k", split="train")
+        ca_count = 0
+        for item in ca_ds:
+            inst = (item.get("instruction") or "").strip()
+            resp = (item.get("output") or "").strip()
+            inst_lower = inst.lower()
+
+            if inst_lower in seen_instructions:
+                continue
+
+            if not is_valid_entry(inst, resp):
+                continue
