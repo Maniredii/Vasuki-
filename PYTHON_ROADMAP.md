@@ -6,3 +6,11 @@
 
 ## 📌 Roadmap Overview
 
+```
+[Phase 1: Python Fundamentals]
+          │
+          ▼
+[Phase 2: Object-Oriented & Idiomatic Python]
+          │
+          ▼
+[Phase 3: Data Structures & Algorithmic Reasoning]
