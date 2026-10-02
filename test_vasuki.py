@@ -274,3 +274,49 @@ def colorize_python(text):
         # Split tokens while preserving indentation
         parts = re.split(r'(\b\w+\b|["][^"]*["]|[\'][^\']*[\']|#.*$)', line)
         out_line = []
+        is_def_or_class = False
+        for part in parts:
+            if not part:
+                continue
+            if part.startswith("#"):
+                out_line.append(f"{GRAY}{part}{RESET}")
+            elif (part.startswith('"') and part.endswith('"')) or (part.startswith("'") and part.endswith("'")):
+                out_line.append(f"{GREEN}{part}{RESET}")
+            elif part in keywords:
+                out_line.append(f"{CYAN}{part}{RESET}")
+                if part in ("def", "class"):
+                    is_def_or_class = True
+            elif part in booleans:
+                out_line.append(f"{MAGENTA}{part}{RESET}")
+            elif part.isdigit():
+                out_line.append(f"{MAGENTA}{part}{RESET}")
+            elif is_def_or_class and re.match(r'^[a-zA-Z_]\w*$', part):
+                out_line.append(f"{YELLOW}{part}{RESET}")
+                is_def_or_class = False
+            else:
+                out_line.append(part)
+        colored_lines.append("".join(out_line))
+    return "\n".join(colored_lines)
+
+def copy_to_clipboard(text):
+    """Copies text to the system clipboard on Windows."""
+    try:
+        cmd = ["powershell", "-NoProfile", "-Command", "$input | Set-Clipboard"]
+        proc = subprocess.run(cmd, input=text, text=True, capture_output=True)
+        return proc.returncode == 0
+    except Exception:
+        return False
+
+def execute_sandbox(code_str):
+    """Executes generated code in a safe sandbox and displays output."""
+    import io
+    import contextlib
+    import ast
+
+    # Strip markdown fences if present
+    clean_code = code_str.strip()
+    if "```python" in clean_code:
+        clean_code = clean_code.split("```python")[-1].split("```")[0].strip()
+    elif "```" in clean_code:
+        clean_code = clean_code.split("```")[-1].split("```")[0].strip()
+
