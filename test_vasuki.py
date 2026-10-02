@@ -90,3 +90,49 @@ def check_domain_boundary(prompt_text):
     non_py_triggers = [
         "c++", "directx", "spring boot", "swiftui", "objective-c", "rust", 
         "golang", "c#", ".net", "kotlin", "ruby on rails", "php"
+    ]
+    for trigger in non_py_triggers:
+        if trigger in lower:
+            return (
+                f"I specialize exclusively in Python programming, algorithmic optimization, data structures, and Python system integrations.\n"
+                f"While I do not generate standalone {trigger.upper()} systems, I can help you implement the equivalent architecture in Python "
+                f"or design Python bindings to interface with existing native libraries."
+            )
+    return None
+
+def query_model(prompt_text, max_tokens=350, temp=0.2):
+    """Run inference against VASUKI Phase 6J GGUF via llama-cli."""
+    # Check domain boundary first
+    redirect = check_domain_boundary(prompt_text)
+    if redirect:
+        return redirect, 0.05
+        
+    full_prompt = ALPACAPREAMBLE.format(prompt=prompt_text)
+    
+    cmd = [
+        LLAMA_CLI,
+        "-m", MODEL_PATH,
+        "-p", full_prompt,
+        "-n", str(max_tokens),
+        "--temp", str(temp),
+        "--repeat-penalty", "1.15",
+        "--repeat-last-n", "64",
+        "-r", "<|im_end|>",
+        "-r", "<|endoftext|>",
+        "-r", "### Instruction",
+        "-r", "###",
+        "-r", "彩神",
+        "-r", "ica",
+        "-r", "icas",
+        "-r", "rix",
+        "-r", "azor",
+        "-r", "esian",
+        "-r", "życz",
+        "-r", "poverty",
+        "--single-turn"
+    ]
+    
+    t0 = time.time()
+    try:
+        proc = subprocess.run(
+            cmd,
