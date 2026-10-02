@@ -28,3 +28,8 @@ classifiers = [
     "Topic :: Software Development :: Code Generators",
     "Topic :: Scientific/Engineering :: Artificial Intelligence"
 ]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/Maniredii/Vasuki-"
+Documentation = "https://github.com/Maniredii/Vasuki-#readme"
