@@ -26,6 +26,9 @@ class TestAccuracyGuardrails(unittest.TestCase):
         resp, _ = test_vasuki.query_model("explain decision tree in python", max_tokens=150)
         self.assertTrue("DecisionTreeClassifier" in resp or "tree" in resp.lower() or "def " in resp)
         self.assertFalse(test_vasuki.is_degenerate_output(resp))
+    def test_synthetic_rejection(self):
+        fake_loop = "\n".join(["word " + str(i) for i in range(10)])
+        self.assertTrue(test_vasuki.check_prefix_repetition(fake_loop, min_repeats=3))
 
-    def test_synthetic_rejection(self):\n        fake_loop = '\n'.join(['word ' + str(i) for i in range(10)])\n        self.assertTrue(test_vasuki.check_prefix_repetition(fake_loop, min_repeats=3))\n\nif __name__ == "__main__":
+if __name__ == "__main__":
     unittest.main()
