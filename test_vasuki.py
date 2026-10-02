@@ -65,7 +65,7 @@ def resolve_llama_cli():
         return which_cli
     return local
 
-MODEL_PATH = resolve_model_path()
+MODEL_PATH = resolve_model_path(args.model if 'args' in locals() else None)
 LLAMA_CLI = resolve_llama_cli()
 
 AUTHOR_NAME = "Manideep Reddy Eevuri"
@@ -661,6 +661,7 @@ def main():
     parser.add_argument("--pipe", action="store_true", help="Read input from standard input (pipe)")
     parser.add_argument("--benchmark", action="store_true", help="Run automated multi-prompt benchmark")
     parser.add_argument("--ds", action="store_true", help="Run dedicated Data Structures benchmark")
+    parser.add_argument("--model", type=str, choices=["phase6j", "phase7", "stable", "reasoning"], default=None, help="Choose active engine model")
     
     args = parser.parse_args()
     
