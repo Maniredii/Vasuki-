@@ -234,3 +234,21 @@ class ElectricCar(Vehicle):
 car = ElectricCar("Tesla")
 print(car.start())
 ```"""
+
+KNOWLEDGE_REGISTRY["polymorphism"] = """**Polymorphism** allows entities of different types to be treated through the same interface. In Python, this is achieved through **Duck Typing** ("If it walks like a duck and quacks like a duck, it is a duck").
+
+```python
+class AudioBook:
+    def read(self):
+        return "Playing audio recording..."
+
+class PaperBook:
+    def read(self):
+        return "Reading physical printed pages..."
+
+def consume_media(media_item):
+    print(media_item.read())
+
+consume_media(AudioBook())
+consume_media(PaperBook())
+```"""
