@@ -228,3 +228,49 @@ def query_model(prompt_text, max_tokens=350, temp=0.2):
             if has_entered_code and not s.startswith(("#", "def ", "class ", "import ", "from ", "if __name__", "@")):
                 break
 
+            # 6. Check for orphan lowercase non-code words after explanation bullets/text
+            words = s.split()
+            if len(words) == 1 and not s.startswith(("-", "*", "#", "```")):
+                word = words[0].strip("`'\":;.,()[]{}")
+                if cleaned_lines and not any(cleaned_lines[-1].strip().startswith(kw) for kw in ("def ", "class ", "if ", "for ", "while ")):
+                    if word.lower() not in py_keywords and not word.isdigit():
+                        break
+
+            cleaned_lines.append(line)
+
+        clean = "\n".join(cleaned_lines).strip()
+        return clean, elapsed
+    except subprocess.TimeoutExpired:
+        return "[Error: Model inference timed out after 45s]", 45.0
+    except Exception as e:
+        return f"[Error: {e}]", 0.0
+
+def colorize_python(text):
+    """Adds ANSI terminal syntax colors to Python code."""
+    CYAN = '\033[96m'      # Keywords
+    YELLOW = '\033[93m'    # Function / Class names
+    GREEN = '\033[92m'     # Strings
+    MAGENTA = '\033[95m'   # Numbers / Booleans
+    GRAY = '\033[90m'      # Comments
+    RESET = '\033[0m'
+
+    keywords = {
+        "def", "class", "return", "yield", "import", "from", "as",
+        "if", "elif", "else", "for", "while", "in", "try", "except",
+        "finally", "with", "raise", "pass", "break", "continue",
+        "lambda", "global", "nonlocal", "assert", "async", "await"
+    }
+    booleans = {"True", "False", "None", "self"}
+
+    colored_lines = []
+    for line in text.splitlines():
+        # Comment line
+        stripped = line.strip()
+        if stripped.startswith("#"):
+            colored_lines.append(f"{GRAY}{line}{RESET}")
+            continue
+
+        # Simple token colorization
+        # Split tokens while preserving indentation
+        parts = re.split(r'(\b\w+\b|["][^"]*["]|[\'][^\']*[\']|#.*$)', line)
+        out_line = []
