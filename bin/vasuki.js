@@ -78,3 +78,25 @@ if (args.includes('--version') || args.includes('-v')) {
 }
 
 // Check if user requested Web UI
+if (args.includes('--web') || args.includes('-w')) {
+  const webArgs = args.filter(a => a !== '--web' && a !== '-w');
+  const child = spawn(pythonBin, [WEB_SCRIPT, ...webArgs], {
+    cwd: PKG_ROOT,
+    stdio: 'inherit'
+  });
+
+  child.on('exit', (code) => {
+    process.exit(code || 0);
+  });
+  return;
+}
+
+// Forward to terminal CLI (interactive, single-prompt, --benchmark, or --ds)
+const child = spawn(pythonBin, [TEST_SCRIPT, ...args], {
+  cwd: PKG_ROOT,
+  stdio: 'inherit'
+});
+
+child.on('exit', (code) => {
+  process.exit(code || 0);
+});
