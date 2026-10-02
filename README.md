@@ -77,3 +77,83 @@ vasuki-py "Write a Python function to check whether a string is a palindrome"
 
 ---
 
+### 3. Local Web & Mobile UI
+Start the local server and interact with VASUKI in a web interface:
+
+```bash
+vasuki-py --web
+```
+
+* **Desktop:** Navigate to `http://localhost:8000`
+* **Mobile Phone:** Connect to the same Wi-Fi and open `http://<your-local-ip>:8000`
+
+---
+
+### 4. Automated Benchmarks
+Validate accuracy across algorithmic and data structure test suites:
+
+```bash
+# Core 8-category benchmark
+vasuki-py --benchmark
+
+# Dedicated 7-test Data Structures benchmark (BST, Trie, Stack, Queue, BFS/DFS)
+vasuki-py --ds
+```
+
+---
+
+## 💻 Programmatic Node.js API
+
+You can also import and use `vasuki-py` inside your Node.js or JavaScript / TypeScript applications:
+
+```javascript
+const { askVasuki, startWebUI } = require('vasuki-py');
+
+async function main() {
+  // Query VASUKI programmatically
+  const { response } = await askVasuki("Write a Python generator for Fibonacci numbers");
+  console.log("Generated Python Code:\n", response);
+}
+
+main();
+```
+
+---
+
+## 🗺️ Python Mastery Roadmap (Basics to Advanced)
+
+VASUKI is trained to guide developers systematically through all tiers of Python engineering. Read the complete detailed guide in [**PYTHON_ROADMAP.md**](PYTHON_ROADMAP.md):
+
+| Phase | Level | Core Topics & Capabilities |
+|:---|:---|:---|
+| **Phase 1** | **Fundamentals** | Syntax, dynamic typing, control flow, built-in collections (lists, dicts, sets), functions, scope (LEGB), error handling, context managers. |
+| **Phase 2** | **Intermediate** | Object-oriented programming (OOP), dunder methods (`__init__`, `__repr__`, `__len__`), generators, iterators, decorators, list/dict comprehensions. |
+| **Phase 3** | **Advanced Core** | Algorithmic reasoning, time/space complexity ($O(N)$ Big-O), Two Pointers, Sliding Window, Monotonic Stacks, BST, Graphs, Dijkstra, Dynamic Programming. |
+| **Phase 4** | **Specialist Systems** | CPython memory model, GIL, garbage collection, Concurrency (`asyncio`, `multiprocessing`, `threading`), FFI native bindings (`ctypes`, PyO3), profiling. |
+| **Phase 5** | **Mastery Tracks** | **AI & Edge LLM** (NumPy, PyTorch, QLoRA, GGUF edge deployment) or **Backend** (FastAPI, SQLAlchemy, Redis, Docker). |
+
+---
+
+## 🏛️ Architecture & Verification
+
+* **Parameters:** 0.5B (~494M parameters)
+* **Quantization Format:** GGUF (Q4_K_M — 379.38 MB | Q3_K_M — 339.00 MB)
+* **Training Methodology:** In-house QLoRA fine-tuning on custom curated Python algorithmic corpora, verified abstract syntax trees (AST), and proprietary domain-calibration datasets.
+* **Inference Engine:** Optimized local runtime with native stop-token boundary enforcement and automated token loop suppression.
+
+---
+
+## 👨‍💻 Author & Maintainer
+
+**Developed by : Manideep Reddy Eevuri**
+* **LinkedIn:** [linkedin.com/in/manideep-reddy-eevuri-661659268](https://www.linkedin.com/in/manideep-reddy-eevuri-661659268/)
+* **GitHub:** [@Maniredii](https://github.com/Maniredii)
+* **Repository:** [Maniredii/Vasuki-](https://github.com/Maniredii/Vasuki-)
+* **Email:** sivareddyevuri92@gmail.com
+
+---
+
+## 📄 License
+
+Apache-2.0 License. Designed and developed by **Manideep Reddy Eevuri**.
+
