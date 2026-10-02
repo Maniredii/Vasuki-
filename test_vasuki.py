@@ -477,7 +477,22 @@ def interactive_session():
                 if not last_response:
                     print("\033[91m[!] No previous code snippet to run.\033[0m\n")
                 else:
-          
+                    execute_sandbox(last_response)
+                continue
+
+            if prompt.lower() == "/copy":
+                if not last_response:
+                    print("\033[91m[!] No previous code snippet to copy.\033[0m\n")
+                else:
+                    ok = copy_to_clipboard(last_response)
+                    if ok:
+                        print("\033[92m[✓] Copied last code snippet to clipboard!\033[0m\n")
+                    else:
+                        print("\033[91m[!] Failed to copy to clipboard.\033[0m\n")
+                continue
+
+            if prompt.lower().startswith("/save"):
+                parts = p
             pass
 def run_ds_benchmark():
     """Runs a dedicated Data Structures benchmark."""
