@@ -508,3 +508,33 @@ def get_core_reasoning_records() -> List[Dict[str, Any]]:
             speedup_comparison=(
                 "- **Time Complexity:** Reduced from O(N^2) to O(N).\n"
                 "- **Space Complexity:** O(N) contiguous memory buffer.\n"
+                "- **Practical Impact:** Eliminates garbage collector strain on large text processing."
+            )
+        )
+    })
+
+    return records
+
+
+def main():
+    print("=" * 80)
+    print("VASUKI Phase 7: Edge Reasoning Dataset Generation & Quality Gate")
+    print("=" * 80)
+
+    records = get_core_reasoning_records()
+    print(f"[*] Generated {len(records)} reference reasoning records.")
+
+    # Validation and statistics tracking
+    passed_records = []
+    failed_records = []
+
+    for r in records:
+        rec_id = r["id"]
+        resp = r["response"]
+
+        # 1. AST Validation
+        from reasoning_schema import extract_python_code
+        codes = extract_python_code(resp)
+        if not codes:
+            failed_records.append((rec_id, "No Python code block found"))
+            continue
