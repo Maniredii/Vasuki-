@@ -349,3 +349,42 @@ def generate_extended_algorithmic_records() -> List[Dict[str, Any]]:
                 "Loop runs: `funcs` receives 5 lambda closures all referencing the variable `i`.",
                 "Loop terminates: `i` holds value 4.",
                 "Evaluation: `funcs[0]()` looks up `i` in enclosing scope, finding 4.",
+                "All 5 calls return 4."
+            ],
+            fixed_code=(
+                "def create_multipliers():\n"
+                "    # Fix 1: Bind variable to default parameter at definition time\n"
+                "    funcs = [lambda x=i: x for i in range(5)]\n"
+                "    return [f() for f in funcs]\n"
+                "\n"
+                "# Verification assertions\n"
+                "results = create_multipliers()\n"
+                "assert results == [0, 1, 2, 3, 4], f'Expected [0, 1, 2, 3, 4], got {results}'\n"
+            ),
+            key_takeaway=(
+                "To capture the current loop variable value in a closure, bind it as a default argument "
+                "`lambda x=i: x` or use `functools.partial`."
+            )
+        )
+    })
+
+    # 8. Optimization: Generator Pipeline vs List Allocation
+    recs.append({
+        "id": "opt_cot_003",
+        "category": "algorithmic_optimization",
+        "subcategory": "memory_streaming",
+        "instruction": "Optimize a Python data processing pipeline that computes the sum of squared even numbers from a large sequence without allocating intermediate lists.",
+        "response": build_optimization_response(
+            baseline_analysis=(
+                "Using nested list comprehensions: `sum([x**2 for x in [y for y in data if y % 2 == 0]])` "
+                "allocates two complete intermediate lists in RAM. For 10,000,000 items, this consumes "
+                "hundreds of megabytes of memory and causes heavy garbage collection pauses."
+            ),
+            optimization_strategy=(
+                "Replace intermediate lists with a generator expression. Generator expressions evaluate lazily, "
+                "producing one item at a time on demand. Memory consumption remains constant O(1) regardless of sequence size."
+            ),
+            optimized_code=(
+                "from typing import Iterable\n"
+                "\n"
+                "def sum_even_squares(numbers: Iterable[int]) -> int:\n"
