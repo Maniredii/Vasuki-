@@ -76,7 +76,7 @@ AUTHOR_LINKEDIN = "https://www.linkedin.com/in/manideep-reddy-eevuri-661659268/"
 def print_banner():
     """Displays official author and engine branding banner."""
     model_name = os.path.basename(MODEL_PATH)
-    version_title = f"VASUKI • High-Accuracy Edge Python AI [{model_name}]"
+    version_title = f"VASUKI • High-Accuracy Edge Python AI [{model_name} + Knowledge Engine]"
     print("\033[96m" + "=" * 72 + "\033[0m")
     print(f"  \033[1;97m{version_title}\033[0m")
     print(f"  \033[1;92mDeveloped by : {AUTHOR_NAME}\033[0m")
