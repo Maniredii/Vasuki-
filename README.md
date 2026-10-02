@@ -120,6 +120,55 @@ main();
 
 ---
 
+## 🔌 OpenAI-Compatible REST API
+
+VASUKI includes a built-in, 100% offline OpenAI-compatible REST API. Connect it directly to **Continue.dev (VS Code)**, **Cursor**, **LangChain**, or the official **OpenAI Python SDK**:
+
+```bash
+# Start the local OpenAI API server (default port: 8000)
+npx vasuki-py --web
+# or
+python web_vasuki.py
+```
+
+### Endpoints
+* `GET  /v1/models` — List available models (`vasuki-phase7`, `vasuki`, `gpt-3.5-turbo`)
+* `POST /v1/chat/completions` — Standard Chat Completions (supports both JSON and SSE streaming)
+* `POST /v1/completions` — Legacy Text Completions
+
+### Using with Continue.dev (VS Code)
+Add VASUKI to your `~/.continue/config.json`:
+```json
+{
+  "models": [
+    {
+      "title": "VASUKI (Local Offline)",
+      "provider": "openai",
+      "model": "vasuki-phase7",
+      "apiBase": "http://localhost:8000/v1"
+    }
+  ]
+}
+```
+
+### Using with Python (`openai` SDK)
+```python
+from openai import OpenAI
+
+client = OpenAI(base_url="http://localhost:8000/v1", api_key="not-needed")
+
+response = client.chat.completions.create(
+    model="vasuki-phase7",
+    messages=[{"role": "user", "content": "Write a binary search function in Python"}],
+    stream=True
+)
+
+for chunk in response:
+    print(chunk.choices[0].delta.content or "", end="", flush=True)
+```
+
+---
+
 ## 🗺️ Python Mastery Roadmap (Basics to Advanced)
 
 VASUKI is trained to guide developers systematically through all tiers of Python engineering. Read the complete detailed guide in [**PYTHON_ROADMAP.md**](PYTHON_ROADMAP.md):

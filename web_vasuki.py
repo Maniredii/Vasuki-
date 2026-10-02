@@ -1,14 +1,16 @@
 """
-VASUKI Phase 6J: Local Web & Mobile Browser Interface
+VASUKI Phase 7: Local Web, Mobile & OpenAI-Compatible REST Server
 Zero external dependencies - runs on standard Python 3.
-Access locally on: http://localhost:8000
-Access on your mobile phone on the same Wi-Fi via: http://<your-pc-ip>:8000
+Desktop Browser    : http://localhost:8000
+Mobile Phone UI    : http://<your-pc-ip>:8000
+OpenAI REST API    : http://localhost:8000/v1 (Cursor, Continue.dev, LangChain compatible)
 """
 
 import sys
 import os
 import json
 import time
+import re
 from http.server import HTTPServer, BaseHTTPRequestHandler
 import urllib.parse
 import socket
@@ -679,34 +681,107 @@ def get_local_ip():
     except Exception:
         return "127.0.0.1"
 
+AVAILABLE_MODELS = [
+    {
+        "id": "vasuki-phase7",
+        "object": "model",
+        "created": int(time.time()),
+        "owned_by": "vasuki-ai",
+        "permission": [],
+        "root": "vasuki-phase7",
+        "parent": None
+    },
+    {
+        "id": "vasuki",
+        "object": "model",
+        "created": int(time.time()),
+        "owned_by": "vasuki-ai",
+        "permission": [],
+        "root": "vasuki-phase7",
+        "parent": None
+    },
+    {
+        "id": "gpt-3.5-turbo",
+        "object": "model",
+        "created": int(time.time()),
+        "owned_by": "vasuki-ai",
+        "permission": [],
+        "root": "vasuki-phase7",
+        "parent": None
+    },
+    {
+        "id": "gpt-4",
+        "object": "model",
+        "created": int(time.time()),
+        "owned_by": "vasuki-ai",
+        "permission": [],
+        "root": "vasuki-phase7",
+        "parent": None
+    }
+]
+
 class VasukiWebHandler(BaseHTTPRequestHandler):
+    def send_cors_headers(self):
+        self.send_header("Access-Control-Allow-Origin", "*")
+        self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+        self.send_header("Access-Control-Allow-Headers", "Content-Type, Authorization, X-Requested-With")
+
+    def do_OPTIONS(self):
+        self.send_response(204)
+        self.send_cors_headers()
+        self.end_headers()
+
     def do_GET(self):
-        if self.path == "/" or self.path == "/index.html":
+        path = self.path.split("?")[0]
+        if path in ("/", "/index.html"):
             self.send_response(200)
             self.send_header("Content-Type", "text/html; charset=utf-8")
+            self.send_cors_headers()
             self.end_headers()
             self.wfile.write(HTML_PAGE.encode("utf-8"))
-        elif self.path == "/health":
+        elif path == "/health":
             self.send_response(200)
             self.send_header("Content-Type", "application/json")
+            self.send_cors_headers()
             self.end_headers()
-            self.wfile.write(json.dumps({"status": "healthy", "model": MODEL_PATH}).encode("utf-8"))
+            self.wfile.write(json.dumps({"status": "healthy", "model": MODEL_PATH, "api": "openai-compatible"}).encode("utf-8"))
+        elif path in ("/v1/models", "/models"):
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json")
+            self.send_cors_headers()
+            self.end_headers()
+            self.wfile.write(json.dumps({"object": "list", "data": AVAILABLE_MODELS}).encode("utf-8"))
+        elif path.startswith("/v1/models/") or path.startswith("/models/"):
+            mid = path.split("/")[-1]
+            match = next((m for m in AVAILABLE_MODELS if m["id"] == mid), AVAILABLE_MODELS[0])
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json")
+            self.send_cors_headers()
+            self.end_headers()
+            self.wfile.write(json.dumps(match).encode("utf-8"))
         else:
             self.send_response(404)
+            self.send_cors_headers()
             self.end_headers()
+            self.wfile.write(json.dumps({"error": "Endpoint not found"}).encode("utf-8"))
 
     def do_POST(self):
-        if self.path == "/api/generate":
-            content_length = int(self.headers.get("Content-Length", 0))
-            body = self.rfile.read(content_length).decode("utf-8")
+        path = self.path.split("?")[0]
+        content_length = int(self.headers.get("Content-Length", 0))
+        body = self.rfile.read(content_length).decode("utf-8") if content_length > 0 else "{}"
+        
+        try:
+            data = json.loads(body) if body else {}
+        except Exception:
+            data = {}
+
+        if path == "/api/generate":
             try:
-                data = json.loads(body)
                 user_prompt = data.get("prompt", "")
-                
                 resp, dur = query_model(user_prompt)
-                
                 self.send_response(200)
                 self.send_header("Content-Type", "application/json; charset=utf-8")
+                self.send_cors_headers()
                 self.end_headers()
                 self.wfile.write(json.dumps({
                     "response": resp,
@@ -715,26 +790,185 @@ class VasukiWebHandler(BaseHTTPRequestHandler):
             except Exception as e:
                 self.send_response(500)
                 self.send_header("Content-Type", "application/json")
+                self.send_cors_headers()
+                self.end_headers()
+                self.wfile.write(json.dumps({"error": str(e)}).encode("utf-8"))
+
+        elif path in ("/v1/chat/completions", "/chat/completions"):
+            try:
+                model_name = data.get("model", "vasuki-phase7")
+                messages = data.get("messages", [])
+                stream = data.get("stream", False)
+                temperature = float(data.get("temperature", 0.2))
+                max_tokens = int(data.get("max_tokens", 350))
+
+                sys_prompts = []
+                dialogue = []
+                for m in messages:
+                    role = m.get("role", "user")
+                    content = m.get("content", "")
+                    if role == "system":
+                        sys_prompts.append(content)
+                    elif role == "user":
+                        dialogue.append(f"User: {content}")
+                    elif role == "assistant":
+                        dialogue.append(f"Assistant: {content}")
+
+                if len(dialogue) == 1 and dialogue[0].startswith("User: "):
+                    prompt_text = dialogue[0][6:]
+                else:
+                    prompt_text = "\n".join(dialogue)
+
+                if sys_prompts:
+                    prompt_text = f"Context: {' '.join(sys_prompts)}\n\n{prompt_text}"
+
+                print(f"\033[92m[OpenAI API]\033[0m POST /v1/chat/completions | Model: {model_name} | Stream: {stream}")
+                resp, dur = query_model(prompt_text, max_tokens=max_tokens, temp=temperature)
+
+                req_id = f"chatcmpl-vasuki-{int(time.time()*1000)}"
+
+                if stream:
+                    self.send_response(200)
+                    self.send_header("Content-Type", "text/event-stream")
+                    self.send_header("Cache-Control", "no-cache")
+                    self.send_header("Connection", "close")
+                    self.send_cors_headers()
+                    self.end_headers()
+
+                    tokens = re.findall(r'\S+|\s+', resp)
+                    for token in tokens:
+                        chunk = {
+                            "id": req_id,
+                            "object": "chat.completion.chunk",
+                            "created": int(time.time()),
+                            "model": model_name,
+                            "choices": [
+                                {
+                                    "index": 0,
+                                    "delta": {"content": token},
+                                    "finish_reason": None
+                                }
+                            ]
+                        }
+                        self.wfile.write(f"data: {json.dumps(chunk)}\n\n".encode("utf-8"))
+                        self.wfile.flush()
+                        time.sleep(0.004)
+
+                    done_chunk = {
+                        "id": req_id,
+                        "object": "chat.completion.chunk",
+                        "created": int(time.time()),
+                        "model": model_name,
+                        "choices": [
+                            {
+                                "index": 0,
+                                "delta": {},
+                                "finish_reason": "stop"
+                            }
+                        ]
+                    }
+                    self.wfile.write(f"data: {json.dumps(done_chunk)}\n\n".encode("utf-8"))
+                    self.wfile.write(b"data: [DONE]\n\n")
+                    self.wfile.flush()
+                else:
+                    response_payload = {
+                        "id": req_id,
+                        "object": "chat.completion",
+                        "created": int(time.time()),
+                        "model": model_name,
+                        "choices": [
+                            {
+                                "index": 0,
+                                "message": {
+                                    "role": "assistant",
+                                    "content": resp
+                                },
+                                "finish_reason": "stop"
+                            }
+                        ],
+                        "usage": {
+                            "prompt_tokens": len(prompt_text.split()),
+                            "completion_tokens": len(resp.split()),
+                            "total_tokens": len(prompt_text.split()) + len(resp.split())
+                        }
+                    }
+                    self.send_response(200)
+                    self.send_header("Content-Type", "application/json; charset=utf-8")
+                    self.send_cors_headers()
+                    self.end_headers()
+                    self.wfile.write(json.dumps(response_payload).encode("utf-8"))
+            except Exception as e:
+                self.send_response(500)
+                self.send_header("Content-Type", "application/json")
+                self.send_cors_headers()
+                self.end_headers()
+                self.wfile.write(json.dumps({"error": str(e)}).encode("utf-8"))
+
+        elif path in ("/v1/completions", "/completions"):
+            try:
+                model_name = data.get("model", "vasuki-phase7")
+                prompt = data.get("prompt", "")
+                if isinstance(prompt, list):
+                    prompt = "\n".join(prompt)
+                temperature = float(data.get("temperature", 0.2))
+                max_tokens = int(data.get("max_tokens", 350))
+
+                print(f"\033[92m[OpenAI API]\033[0m POST /v1/completions | Model: {model_name}")
+                resp, dur = query_model(prompt, max_tokens=max_tokens, temp=temperature)
+                req_id = f"cmpl-vasuki-{int(time.time()*1000)}"
+
+                response_payload = {
+                    "id": req_id,
+                    "object": "text_completion",
+                    "created": int(time.time()),
+                    "model": model_name,
+                    "choices": [
+                        {
+                            "text": resp,
+                            "index": 0,
+                            "logprobs": None,
+                            "finish_reason": "stop"
+                        }
+                    ],
+                    "usage": {
+                        "prompt_tokens": len(prompt.split()),
+                        "completion_tokens": len(resp.split()),
+                        "total_tokens": len(prompt.split()) + len(resp.split())
+                    }
+                }
+                self.send_response(200)
+                self.send_header("Content-Type", "application/json; charset=utf-8")
+                self.send_cors_headers()
+                self.end_headers()
+                self.wfile.write(json.dumps(response_payload).encode("utf-8"))
+            except Exception as e:
+                self.send_response(500)
+                self.send_header("Content-Type", "application/json")
+                self.send_cors_headers()
                 self.end_headers()
                 self.wfile.write(json.dumps({"error": str(e)}).encode("utf-8"))
         else:
             self.send_response(404)
+            self.send_cors_headers()
             self.end_headers()
+            self.wfile.write(json.dumps({"error": "Endpoint not found"}).encode("utf-8"))
 
 def run_server(port=8000):
     server_address = ("0.0.0.0", port)
     httpd = HTTPServer(server_address, VasukiWebHandler)
     local_ip = get_local_ip()
     
-    print("\033[96m" + "=" * 72 + "\033[0m")
-    print("  \033[1;97mVASUKI Phase 6J Local Web & Mobile Engine\033[0m")
-    print("  \033[1;92mDeveloped by : Manideep Reddy Eevuri\033[0m")
-    print("  \033[94mGitHub       :\033[0m https://github.com/Maniredii")
-    print("  \033[94mLinkedIn     :\033[0m https://www.linkedin.com/in/manideep-reddy-eevuri-661659268/")
-    print("\033[96m" + "=" * 72 + "\033[0m")
-    print(f"  • Desktop Browser : http://localhost:{port}")
-    print(f"  • Mobile Phone UI : http://{local_ip}:{port}")
-    print("\033[96m" + "=" * 72 + "\033[0m")
+    print("\033[96m" + "=" * 74 + "\033[0m")
+    print("  \033[1;97mVASUKI Phase 7: Offline Web UI & OpenAI REST Engine\033[0m")
+    print("  \033[1;92mDeveloped by       : Manideep Reddy Eevuri\033[0m")
+    print("  \033[94mGitHub             :\033[0m https://github.com/Maniredii")
+    print("  \033[94mLinkedIn           :\033[0m https://www.linkedin.com/in/manideep-reddy-eevuri-661659268/")
+    print("\033[96m" + "=" * 74 + "\033[0m")
+    print(f"  • Desktop Browser  : http://localhost:{port}")
+    print(f"  • Mobile Phone UI  : http://{local_ip}:{port}")
+    print(f"  • OpenAI REST API  : http://localhost:{port}/v1")
+    print("    (Compatible with Cursor, Continue.dev, LangChain, & OpenAI Python SDK)")
+    print("\033[96m" + "=" * 74 + "\033[0m")
     print("Press Ctrl+C to stop the server.\n")
     try:
         httpd.serve_forever()
