@@ -232,3 +232,29 @@ def curate_huggingface_records(existing_instructions: set) -> list:
             "what is", "explain", "how does", "define", "why is", "compare",
             "describe", "what are", "difference between", "overview of"
         )
+        ca_count = 0
+        for r in ca:
+            inst = (r.get("instruction") or "").strip()
+            out = (r.get("output") or "").strip()
+            inst_lower = inst.lower()
+
+            if not inst or not out or inst_lower in seen:
+                continue
+
+            # Must start with conceptual query pattern
+            if not any(inst_lower.startswith(p) for p in theory_prefixes):
+                continue
+
+            # Skip pure code outputs that lack explanation
+            if out.startswith(("def ", "class ", "import ", "from ")):
+                continue
+
+            # Length bounds for clean concepts
+            if len(inst) < 15 or len(out) < 60 or len(out) > 2000:
+                continue
+
+            # AST validation for any embedded code blocks
+            codes = extract_python_code(out)
+            if codes:
+                all_valid = True
+                for c in codes:
