@@ -38,5 +38,9 @@ class TestCoreAccuracy(unittest.TestCase):
         resp, _ = test_vasuki.query_model("write a function to check if a number is prime", max_tokens=150)
         self.assertTrue("def " in resp and ("% i" in resp or "is_prime" in resp))
         self.assertFalse(test_vasuki.is_degenerate_output(resp))
+    def test_decision_tree_scikit(self):
+        resp, _ = test_vasuki.query_model("explain decision tree", max_tokens=150)
+        self.assertTrue("DecisionTreeClassifier" in resp or "tree" in resp.lower())
+        self.assertFalse(test_vasuki.is_degenerate_output(resp))
 
 if __name__ == '__main__': unittest.main()
