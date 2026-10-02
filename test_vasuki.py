@@ -74,7 +74,8 @@ AUTHOR_LINKEDIN = "https://www.linkedin.com/in/manideep-reddy-eevuri-661659268/"
 
 def print_banner():
     """Displays official author and engine branding banner."""
-    version_title = "VASUKI Phase 7 • Edge Reasoning Python AI" if "phase7" in MODEL_PATH.lower() else "VASUKI Phase 6J • 0.5B Edge Python Specialist Engine"
+    model_name = os.path.basename(MODEL_PATH)
+    version_title = f"VASUKI • High-Accuracy Edge Python AI [{model_name}]"
     print("\033[96m" + "=" * 72 + "\033[0m")
     print(f"  \033[1;97m{version_title}\033[0m")
     print(f"  \033[1;92mDeveloped by : {AUTHOR_NAME}\033[0m")
