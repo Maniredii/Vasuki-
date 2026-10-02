@@ -143,7 +143,12 @@ def check_domain_boundary(prompt_text):
 
 def query_model(prompt_text, max_tokens=350, temp=0.2, allow_fallback=True):
     """Run inference against VASUKI GGUF with automatic accuracy fallback."""
-    # Check domain boundary first
+    # Check fast verified knowledge base first
+    known_concept = resolve_knowledge(prompt_text)
+    if known_concept:
+        return known_concept, 0.01
+
+    # Check domain boundary
     redirect = check_domain_boundary(prompt_text)
     if redirect:
         return redirect, 0.05
