@@ -154,3 +154,29 @@ CONCISE_THEORY_PACK = [
             "assert queue.popleft() == 1\n"
             "```"
         ),
+        "category": "data_structures_theory"
+    },
+    {
+        "instruction": "give me a python roadmap from basics to advance",
+        "response": (
+            "Here is the complete Python Mastery Roadmap from first principles to advanced engineering:\n\n"
+            "### Phase 1: Python Fundamentals (Beginner)\n"
+            "- **Syntax & Core Types:** Variables, dynamic typing, operators, f-strings, type annotations.\n"
+            "- **Control Flow:** `if/elif/else`, `for` loops (`range`, `enumerate`, `zip`), `while`, `break`, `continue`, `else` on loops.\n"
+            "- **Built-in Collections:** Lists, Tuples, Dictionaries (hashing), Sets ($O(1)$ membership), slicing `[start:stop:step]`.\n"
+            "- **Functions & Scope:** `def`, `*args`, `**kwargs`, default values (avoid mutable defaults), LEGB scope rule.\n"
+            "- **Hygiene & File I/O:** `try/except/else/finally`, custom exceptions, context managers (`with open(...)`).\n\n"
+            "### Phase 2: Object-Oriented & Idiomatic Python (Intermediate)\n"
+            "- **OOP:** Classes, instances, `__init__`, inheritance, encapsulation, polymorphism, Abstract Base Classes (`abc.ABC`).\n"
+            "- **Dunder Methods:** `__str__`, `__repr__`, `__len__`, `__getitem__`, `__eq__`, custom context managers (`__enter__/__exit__`).\n"
+            "- **Functional Tools:** List/dict/set comprehensions, `lambda`, `map`, `filter`, `itertools`, `functools.lru_cache`.\n"
+            "- **Iterators & Generators:** `yield`, generator expressions ($O(1)$ memory streaming).\n"
+            "- **Decorators:** Closures, function decorators, `@property`, `@staticmethod`, `@classmethod`.\n\n"
+            "### Phase 3: Data Structures & Algorithmic Reasoning (Advanced Core)\n"
+            "- **Linear & Non-Linear Structures:** Linked Lists, Stacks/Queues (`collections.deque`), Monotonic Stacks, BST, Min/Max Heaps (`heapq`), Graphs (Adjacency lists, DSU), Tries.\n"
+            "- **Algorithm Patterns:** Two Pointers, Sliding Window, Binary Search on answer space, BFS/DFS, Dijkstra, Kahn's Topological Sort, Dynamic Programming (Knapsack, LIS, Interval DP).\n"
+            "- **Complexity:** Formal Big-O time and space analysis.\n\n"
+            "### Phase 4: Systems, Concurrency & Performance (Specialist)\n"
+            "- **CPython Internals:** Reference counting, Generational Garbage Collection (`gc`), small int caching, memory optimization with `__slots__`.\n"
+            "- **Concurrency:** GIL mechanics, Multithreading (`threading` for I/O), Multiprocessing (`multiprocessing` for CPU), Async I/O (`asyncio`, event loop, coroutines, `async/await`).\n"
+            "- **Native Interop & Profiling:** `ctypes`, PyO3/Rust bindings, profiling with `cProfile` and `timeit`.\n\n"
