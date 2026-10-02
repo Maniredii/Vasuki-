@@ -128,3 +128,29 @@ CONCISE_THEORY_PACK = [
         "category": "machine_learning_concepts"
     },
     {
+        "instruction": "explain gradient descent in one line",
+        "response": "Gradient descent is an iterative optimization algorithm that minimizes a differentiable loss function by taking steps proportional to the negative of the gradient.",
+        "category": "machine_learning_concepts"
+    },
+    {
+        "instruction": "explain the difference between stack and queue in python",
+        "response": (
+            "### Conceptual Difference\n"
+            "- **Stack (LIFO - Last In, First Out):** The most recently added element is removed first. Think of a stack of plates. Implemented with `list.append()` and `list.pop()`.\n"
+            "- **Queue (FIFO - First In, First Out):** The oldest added element is processed first. Think of a line at a ticket counter. Implemented with `collections.deque.append()` and `collections.deque.popleft()` for O(1) efficiency.\n\n"
+            "```python\n"
+            "from collections import deque\n"
+            "\n"
+            "# Stack (LIFO)\n"
+            "stack = []\n"
+            "stack.append(1)\n"
+            "stack.append(2)\n"
+            "assert stack.pop() == 2\n"
+            "\n"
+            "# Queue (FIFO)\n"
+            "queue = deque()\n"
+            "queue.append(1)\n"
+            "queue.append(2)\n"
+            "assert queue.popleft() == 1\n"
+            "```"
+        ),
