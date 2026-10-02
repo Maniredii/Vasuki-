@@ -154,3 +154,42 @@ def generate_extended_algorithmic_records() -> List[Dict[str, Any]]:
                 "            \n"
                 "    return len(tails)\n"
                 "\n"
+                "# Verification assertions\n"
+                "assert length_of_lis([10, 9, 2, 5, 3, 7, 101, 18]) == 4\n"
+                "assert length_of_lis([0, 1, 0, 3, 2, 3]) == 4\n"
+                "assert length_of_lis([7, 7, 7, 7, 7]) == 1\n"
+                "assert length_of_lis([]) == 0\n"
+            ),
+            time_complexity="O(N log N) across N elements with log N binary search lookups.",
+            space_complexity="O(N) in worst case for tails array."
+        )
+    })
+
+    # 4. Graphs: Dijkstra's Shortest Path Algorithm
+    recs.append({
+        "id": "algo_cot_004",
+        "category": "algorithmic_reasoning",
+        "subcategory": "graph_theory",
+        "instruction": "Implement Dijkstra's algorithm in Python using a min-heap to find the shortest path from a source node.",
+        "response": build_reasoning_response(
+            strategy=(
+                "Dijkstra's algorithm finds shortest paths in a weighted graph with non-negative weights. "
+                "Initialize distances to infinity, source distance to 0. "
+                "Use Python's `heapq` as a priority queue storing tuples (current_dist, u). "
+                "When popping (d, u), if d > dist[u], skip it (stale heap entry). "
+                "Otherwise, relax adjacent edges (u, v, weight) and push improved distances."
+            ),
+            edge_cases=[
+                "Disconnected nodes: distance remains infinity.",
+                "Source with no outgoing edges: source distance 0, others infinity.",
+                "Multiple parallel edges: min-heap naturally selects minimum weight edge."
+            ],
+            code=(
+                "import heapq\n"
+                "\n"
+                "def dijkstra(num_nodes: int, edges: list[tuple[int, int, int]], source: int) -> dict[int, int]:\n"
+                "    adj = {i: [] for i in range(num_nodes)}\n"
+                "    for u, v, w in edges:\n"
+                "        adj[u].append((v, w))\n"
+                "        \n"
+                "    distances = {i: float('inf') for i in range(num_nodes)}\n"
