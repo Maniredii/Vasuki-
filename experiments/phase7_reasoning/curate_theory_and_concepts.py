@@ -180,3 +180,29 @@ CONCISE_THEORY_PACK = [
             "- **CPython Internals:** Reference counting, Generational Garbage Collection (`gc`), small int caching, memory optimization with `__slots__`.\n"
             "- **Concurrency:** GIL mechanics, Multithreading (`threading` for I/O), Multiprocessing (`multiprocessing` for CPU), Async I/O (`asyncio`, event loop, coroutines, `async/await`).\n"
             "- **Native Interop & Profiling:** `ctypes`, PyO3/Rust bindings, profiling with `cProfile` and `timeit`.\n\n"
+            "### Phase 5: Specialization Tracks\n"
+            "- **AI & Edge LLM Track:** NumPy vectorization, Pandas, Scikit-Learn, PyTorch, QLoRA fine-tuning, GGUF edge quantization.\n"
+            "- **Backend Track:** FastAPI, Pydantic, PostgreSQL, SQLAlchemy ORM, Redis caching, Docker containerization."
+        ),
+        "category": "python_learning_roadmap"
+    },
+    {
+        "instruction": "how should i learn data structures and algorithms in python from beginner to advanced",
+        "response": (
+            "Here is the structured roadmap to master Data Structures and Algorithms (DSA) in Python:\n\n"
+            "### Stage 1: Core Linear Structures & Complexity Basics\n"
+            "- **Complexity:** Learn Big-O notation, time vs space trade-offs, and worst vs average cases.\n"
+            "- **Arrays & Strings:** Slicing, prefix sums, and two-pointer techniques ($O(N)$).\n"
+            "- **Linked Lists:** Singly & doubly linked lists, pointer manipulation, cycle detection (Floyd's algorithm).\n"
+            "- **Stacks & Queues:** Implement LIFO and FIFO with `collections.deque` ($O(1)$ operations).\n\n"
+            "### Stage 2: Non-Linear Structures & Recursion\n"
+            "- **Recursion & Backtracking:** Base cases, call stack, subsets, permutations, N-Queens.\n"
+            "- **Binary Trees & BST:** Pre-order, in-order, post-order, and level-order (BFS) traversals.\n"
+            "- **Heaps / Priority Queues:** Min-heap using Python's `heapq`, finding Top-K elements, median of a data stream.\n"
+            "- **Hash Maps & Sets:** Understanding hash collisions, building frequency maps, two-sum patterns.\n\n"
+            "### Stage 3: Advanced Algorithmic Patterns\n"
+            "- **Sliding Window:** Dynamic vs fixed-size windows for subarray problems.\n"
+            "- **Binary Search:** Searching rotated arrays, finding inflection points, binary search on value range.\n"
+            "- **Monotonic Stacks:** Next greater element, daily temperatures, largest rectangle in histogram.\n\n"
+            "### Stage 4: Graphs & Dynamic Programming\n"
+            "- **Graphs:** Adjacency lists, BFS/DFS, Dijkstra's shortest path, Kahn's algorithm for topological sorting, Disjoint Set Union (DSU).\n"
