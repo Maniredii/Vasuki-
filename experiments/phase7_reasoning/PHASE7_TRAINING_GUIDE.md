@@ -59,3 +59,8 @@ The output will now display structured Chain-of-Thought (CoT) reasoning:
 - Edge Cases Considered
 - Verified Python Implementation
 - Time and Space Complexity Proof
+
+
+### Mode Collapse & Repetition Prevention
+- Always use `unsloth/Qwen2.5-Coder-0.5B-Instruct` as base model.
+- Keep learning rate at 5e-5 and max steps <= 500 to prevent degradation.
