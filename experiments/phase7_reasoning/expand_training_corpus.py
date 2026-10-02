@@ -54,3 +54,31 @@ def is_valid_entry(instruction: str, response: str) -> bool:
             if not ok:
                 return False
 
+    return True
+
+
+def main():
+    print("=" * 80, flush=True)
+    print("VASUKI Phase 7.2: Large-Scale Dataset Expansion Pipeline", flush=True)
+    print("=" * 80, flush=True)
+
+    # 1. Load existing Phase 7.1 Balanced Corpus
+    if not CURRENT_BALANCED_FILE.exists():
+        print(f"[!] Error: {CURRENT_BALANCED_FILE} not found.", flush=True)
+        sys.exit(1)
+
+    with open(CURRENT_BALANCED_FILE, "r", encoding="utf-8") as f:
+        existing_records = [json.loads(line) for line in f if line.strip()]
+
+    print(f"[*] Base Corpus: {len(existing_records)} verified records loaded.", flush=True)
+
+    # Load validation instructions to ensure zero contamination
+    val_instructions = set()
+    if VAL_FILE.exists():
+        with open(VAL_FILE, "r", encoding="utf-8") as f:
+            for line in f:
+                if line.strip():
+                    val_instructions.add(json.loads(line)["instruction"].strip().lower())
+        print(f"[*] Loaded {len(val_instructions)} validation instructions for zero contamination guardrail.", flush=True)
+
+    seen_instructions = set(val_instructions)
