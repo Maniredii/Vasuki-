@@ -516,8 +516,21 @@ def interactive_session():
             else:
                 injected_prompt = prompt
 
-            print("\033[90m[V
-            pass
+            print("\033[90m[VASUKI is typing...]\033[0m", end="\r", flush=True)
+            response, elapsed = query_model(injected_prompt)
+            print(" " * 30, end="\r")  # Clear the typing banner
+            print("-" * 55)
+            show_typing(response, speed=0.009, colorize=True)
+            print("-" * 55)
+            print(f"\033[90m(Generated in {elapsed:.2f}s | Turn {turn_idx} | Type /run to test, /copy to copy)\033[0m\n")
+            last_response = response
+            session_history.append({"user": prompt, "assistant": response})
+
+        except (KeyboardInterrupt, EOFError):
+            print("\nExiting VASUKI console.")
+            break
+
+
 def run_ds_benchmark():
     """Runs a dedicated Data Structures benchmark."""
     ds_cases = [
