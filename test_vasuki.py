@@ -147,7 +147,15 @@ def query_model(prompt_text, max_tokens=350, temp=0.2, allow_fallback=True):
     if redirect:
         return redirect, 0.05
         
-    full_prompt = ALPACAPREAMBLE.format(prompt=prompt_text)
+    # Ensure Python specialization is always conditioned
+    lower = prompt_text.lower()
+    py_indicators = ["python", "py", "django", "flask", "numpy", "pandas", "torch", "sklearn", "fastapi"]
+    if not any(k in lower for k in py_indicators) and not lower.startswith("in python"):
+        conditioned_prompt = f"In Python, {prompt_text}"
+    else:
+        conditioned_prompt = prompt_text
+
+    full_prompt = ALPACAPREAMBLE.format(prompt=conditioned_prompt)
     
     cmd = [
         LLAMA_CLI,
@@ -227,6 +235,10 @@ def query_model(prompt_text, max_tokens=350, temp=0.2, allow_fallback=True):
             if not s:
                 if cleaned_lines:
                     cleaned_lines.append(line)
+                continue
+
+            # Strip scraper and forum header artifacts
+            if s.startswith(("Code: [login to view", "Code:[login to view", "[login to view", "Solution:", "Code: \n", "Code:")):
                 continue
 
             # Check if line is indented code
