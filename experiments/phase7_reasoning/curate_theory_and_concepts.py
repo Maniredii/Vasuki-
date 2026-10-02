@@ -284,3 +284,29 @@ def curate_huggingface_records(existing_instructions: set) -> list:
     # 2. Curate algorithmic reasoning from mlabonne/Evol-Instruct-Python-1k
     print("\n[*] 2. Loading algorithmic reasoning from mlabonne/Evol-Instruct-Python-1k...", flush=True)
     try:
+        evol = load_dataset("mlabonne/Evol-Instruct-Python-1k", split="train")
+        evol_count = 0
+        for r in evol:
+            inst = (r.get("instruction") or "").strip()
+            out = (r.get("output") or "").strip()
+            inst_lower = inst.lower()
+
+            if not inst or not out or inst_lower in seen:
+                continue
+
+            if len(inst) < 20 or len(out) < 80 or len(out) > 2200:
+                continue
+
+            codes = extract_python_code(out)
+            if codes:
+                all_valid = True
+                for c in codes:
+                    ok, _ = validate_ast(c)
+                    if not ok:
+                        all_valid = False
+                        break
+                if not all_valid:
+                    continue
+
+            seen.add(inst_lower)
+            curated.append({
