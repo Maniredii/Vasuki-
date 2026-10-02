@@ -46,3 +46,19 @@ def build_reasoning_response(
     if not clean_code.startswith("```python"):
         clean_code = f"```python\n{clean_code}\n```"
     parts.append(clean_code)
+    
+    parts.append("\n### Complexity Analysis")
+    parts.append(f"- **Time Complexity:** {time_complexity.strip()}")
+    parts.append(f"- **Space Complexity:** {space_complexity.strip()}")
+    
+    return "\n".join(parts)
+
+
+def build_debug_response(
+    flaw_analysis: str,
+    step_trace: List[str],
+    fixed_code: str,
+    key_takeaway: str
+) -> str:
+    """
+    Constructs a step-by-step debugging & root-cause reasoning response.
