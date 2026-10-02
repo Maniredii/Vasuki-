@@ -562,6 +562,7 @@ def interactive_session():
                 print("  /save <file>   - Save last code snippet into <file>")
                 print("  /history       - Display conversation history turns")
                 print("  /context       - Display active context window buffer")
+                print("  /topics        - List all instant knowledge concept topics")
                 print("  /reset         - Clear conversation memory")
                 print("  /clear         - Clear terminal screen")
                 print("  Tip: Ask concepts like 'what is tuple', 'what is python', 'difference between list and tuple'")
