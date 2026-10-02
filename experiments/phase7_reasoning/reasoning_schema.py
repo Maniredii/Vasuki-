@@ -110,3 +110,19 @@ def build_optimization_response(
     return "\n".join(parts)
 
 
+def extract_python_code(text: str) -> List[str]:
+    """Extracts all python code blocks from markdown."""
+    pattern = r"```(?:python)?\s*\n(.*?)\n```"
+    matches = re.findall(pattern, text, re.DOTALL)
+    if not matches:
+        # Fallback to loose code block
+        pattern_loose = r"```\s*\n(.*?)\n```"
+        matches = re.findall(pattern_loose, text, re.DOTALL)
+    return matches
+
+
+def validate_ast(code: str) -> Tuple[bool, Optional[str]]:
+    """Verifies that the Python code parses into a 100% valid AST."""
+    try:
+        ast.parse(code)
+        return True, None
