@@ -150,8 +150,8 @@ def query_model(prompt_text, max_tokens=350, temp=0.2, allow_fallback=True):
     # Ensure Python specialization is always conditioned
     lower = prompt_text.lower()
     py_indicators = ['scipy', 'statsmodels', "python", "py", "django", "flask", "numpy", "pandas", "torch", "sklearn", "fastapi"]
-    if not any(k in lower for k in py_indicators) and not lower.startswith("in python"):
-        conditioned_prompt = f"In Python, {prompt_text}"
+    if not any(k in lower for k in py_indicators) and not lower.endswith("in python"):
+        conditioned_prompt = f"{prompt_text} in Python"
     else:
         conditioned_prompt = prompt_text
 
