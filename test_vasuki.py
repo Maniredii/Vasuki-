@@ -443,7 +443,18 @@ def interactive_session():
 
             if prompt.lower() == "/history":
                 if not session_history:
-                    print("\033[90m(No previous
+                    print("\033[90m(No previous turns recorded in this session)\033[0m\n")
+                else:
+                    print(f"\n\033[93m=== Active Session History ({len(session_history)} turns) ===\033[0m")
+                    for i, turn in enumerate(session_history, 1):
+                        first_line = turn['assistant'].splitlines()[0] if turn['assistant'] else ""
+                        print(f"\033[92m[{i}] User     :\033[0m {turn['user']}")
+                        print(f"\033[94m    Assistant:\033[0m {first_line[:75]}...\n")
+                continue
+
+            if prompt.lower() == "/context":
+                if not session_history:
+                    pr
             pass
 def run_ds_benchmark():
     """Runs a dedicated Data Structures benchmark."""
