@@ -50,3 +50,29 @@ CONCISE_THEORY_PACK = [
             "\n"
             "# Initialize tree with depth constraint to prevent overfitting\n"
             "clf = DecisionTreeClassifier(max_depth=4, criterion='gini', random_state=42)\n"
+            "clf.fit(X_train, y_train)\n"
+            "predictions = clf.predict(X_test)\n"
+            "```\n\n"
+            "### Key Trade-offs\n"
+            "- **Advantages:** White-box interpretability, handles numerical and categorical features, requires zero feature scaling.\n"
+            "- **Disadvantages:** High variance and prone to severe overfitting on noisy data without pruning or depth constraints."
+        ),
+        "category": "machine_learning_concepts"
+    },
+    {
+        "instruction": "what is linked list",
+        "response": (
+            "### Definition\n"
+            "A linked list is a linear collection of data elements called nodes, stored non-contiguously in memory, "
+            "where each node points to the next node in sequence via a pointer or reference.\n\n"
+            "### Key Components\n"
+            "- **Node:** A container with `data` and a `next` pointer.\n"
+            "- **Head:** The entry point reference to the first node.\n"
+            "- **Tail:** The final node referencing `None`.\n\n"
+            "### Core Operations & Complexity\n"
+            "- **Insertion at Head:** O(1) time.\n"
+            "- **Deletion at Head:** O(1) time.\n"
+            "- **Search by Value:** O(N) linear time.\n"
+            "- **Access by Index:** O(N) sequential traversal."
+        ),
+        "category": "data_structures_theory"
