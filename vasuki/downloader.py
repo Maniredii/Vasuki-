@@ -1,0 +1,8 @@
+import os
+import sys
+import urllib.request
+
+DEFAULT_MODEL_NAME = "vasuki_phase7.Q4_K_M.gguf"
+HF_REPO_URL = "https://huggingface.co/Maniredii/Vasuki-Phase7/resolve/main/vasuki_phase7.Q4_K_M.gguf"
+
+def get_target_model_path():
