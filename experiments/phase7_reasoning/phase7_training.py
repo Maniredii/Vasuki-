@@ -44,3 +44,26 @@ else:
 
 VALIDATION_DATA_FILE = "phase7_reasoning_val.jsonl"
 OUTPUT_DIR = "./phase7_output"
+MAX_SEQ_LENGTH = 2048
+RANDOM_SEED = 42
+
+WARMUP_STEPS = 30
+LEARNING_RATE = 2e-4
+WEIGHT_DECAY = 0.01
+
+RESPONSE_DELIMITER = "### Response:\n"
+EOS_TOKEN = "<|im_end|>"
+
+# LoRA Configuration
+LORA_CONFIG = {
+    "r": 16,
+    "lora_alpha": 16,
+    "lora_dropout": 0.05,
+    "target_modules": [
+        "q_proj", "k_proj", "v_proj", "o_proj",
+        "gate_proj", "up_proj", "down_proj"
+    ],
+    "bias": "none",
+    "use_rslora": False,
+}
+
