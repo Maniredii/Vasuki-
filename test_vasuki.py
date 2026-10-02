@@ -492,7 +492,19 @@ def interactive_session():
                 continue
 
             if prompt.lower().startswith("/save"):
-                parts = p
+                parts = prompt.split(maxsplit=1)
+                if len(parts) < 2 or not parts[1].strip():
+                    print("\033[91m[!] Usage: /save <filename.py>\033[0m\n")
+                elif not last_response:
+                    print("\033[91m[!] No previous code snippet to save.\033[0m\n")
+                else:
+                    save_path = parts[1].strip()
+                    try:
+                        with open(save_path, "w", encoding="utf-8") as f:
+                            f.write(last_response + "\n")
+                        print(f"\033[92m[✓] Saved snippet to {save_path}\033[0m\n")
+                    except Exception as e:
+   
             pass
 def run_ds_benchmark():
     """Runs a dedicated Data Structures benchmark."""
