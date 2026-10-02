@@ -138,3 +138,31 @@ def main():
 
             if not is_valid_entry(inst, resp):
                 continue
+
+            # Ensure it contains Python-specific content or keywords
+            combined_text = (inst + " " + resp).lower()
+            if not any(k in combined_text for k in ["python", "def ", "class ", "import ", "lambda", "list", "dict", "array", "function", "string", "loop"]):
+                continue
+
+            seen_instructions.add(inst_lower)
+            new_records.append({
+                "id": f"expanded_codealpaca_{ca_count+1:04d}",
+                "instruction": inst,
+                "input": item.get("input", ""),
+                "response": resp,
+                "category": "python_problem_solving",
+                "source": "sahil2801/CodeAlpaca-20k"
+            })
+            ca_count += 1
+            if ca_count >= 600:
+                break
+
+        print(f"[+] Harvested {ca_count} pristine records from CodeAlpaca.", flush=True)
+    except Exception as e:
+        print(f"[!] CodeAlpaca harvesting notice: {e}", flush=True)
+
+    # 4. Stream from flytech/python-codes-25k
+    print("\n[*] 4. Harvesting practical Python automation and scripts from flytech/python-codes-25k...", flush=True)
+    try:
+        flytech_ds = load_dataset("flytech/python-codes-25k", split="train", streaming=True)
+        flytech_count = 0
