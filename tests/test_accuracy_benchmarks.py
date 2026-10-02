@@ -14,5 +14,9 @@ class TestCoreAccuracy(unittest.TestCase):
         resp, _ = test_vasuki.query_model("write even odd program", max_tokens=150)
         self.assertTrue("% 2" in resp or "even" in resp.lower())
         self.assertFalse(test_vasuki.is_degenerate_output(resp))
+    def test_even_odd_function(self):
+        resp, _ = test_vasuki.query_model("write a python function to check even or odd", max_tokens=150)
+        self.assertTrue("def " in resp and "% 2" in resp)
+        self.assertFalse(test_vasuki.is_degenerate_output(resp))
 
 if __name__ == '__main__': unittest.main()
