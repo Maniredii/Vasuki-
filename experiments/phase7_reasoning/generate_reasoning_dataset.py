@@ -358,3 +358,33 @@ def get_core_reasoning_records() -> List[Dict[str, Any]]:
             step_trace=[
                 "Call 1: `append_item('alpha')` -> appends to default list -> returns `['alpha']`.",
                 "Call 2: `append_item('beta')` -> appends to SAME default list -> returns `['alpha', 'beta']` unexpectedly.",
+                "Call 3: Expected fresh list, but received contaminated historical data."
+            ],
+            fixed_code=(
+                "from typing import Optional, Any\n"
+                "\n"
+                "def append_item(item: Any, registry: Optional[list] = None) -> list:\n"
+                "    if registry is None:\n"
+                "        registry = []\n"
+                "    registry.append(item)\n"
+                "    return registry\n"
+                "\n"
+                "# Verification assertions\n"
+                "list1 = append_item('alpha')\n"
+                "list2 = append_item('beta')\n"
+                "assert list1 == ['alpha'], 'First list must be isolated'\n"
+                "assert list2 == ['beta'], 'Second list must be fresh and not share memory with first'\n"
+                "assert list1 is not list2, 'Instances must be separate objects in memory'\n"
+            ),
+            key_takeaway=(
+                "Always use `None` as the sentinel default value for mutable parameters (lists, dicts, sets), "
+                "and initialize the fresh collection inside the function body."
+            )
+        )
+    })
+
+    # 8. Debug: Modifying a Collection While Iterating
+    records.append({
+        "id": "cot_debug_0002",
+        "category": "code_debugging",
+        "subcategory": "iteration_traps",
