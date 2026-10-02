@@ -46,3 +46,11 @@
   * Arbitrary arguments: `*args` and `**kwargs`.
   * Variable scope: The LEGB rule (Local $\rightarrow$ Enclosing $\rightarrow$ Global $\rightarrow$ Built-in).
 * **File I/O & Exception Handling:**
+  * Context managers: `with open("file.txt", "r") as f:`.
+  * Robust error handling: `try / except / else / finally`.
+  * Raising exceptions with `raise ValueError(...)` and chaining with `raise from`.
+
+---
+
+## 🟡 Phase 2: Object-Oriented & Idiomatic Python (Intermediate)
+*Goal: Write modular, maintainable, object-oriented, and memory-efficient Python code.*
