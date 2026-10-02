@@ -115,3 +115,42 @@ def generate_extended_algorithmic_records() -> List[Dict[str, Any]]:
                 "assert find_min_rotated([1]) == 1\n"
             ),
             time_complexity="O(log N) binary search halving intervals.",
+            space_complexity="O(1) auxiliary space."
+        )
+    })
+
+    # 3. Dynamic Programming: Longest Increasing Subsequence (LIS)
+    recs.append({
+        "id": "algo_cot_003",
+        "category": "algorithmic_reasoning",
+        "subcategory": "dynamic_programming",
+        "instruction": "Implement an optimal O(n log n) algorithm in Python to compute the length of the Longest Increasing Subsequence.",
+        "response": build_reasoning_response(
+            strategy=(
+                "Patience sorting approach. Maintain an array `tails` where tails[i] stores the smallest tail "
+                "of all increasing subsequences of length i+1 found so far. "
+                "For each number x in nums, binary search (using `bisect.bisect_left`) for x in `tails`. "
+                "If x is greater than all elements, append it. Otherwise, update the smallest tail >= x."
+            ),
+            edge_cases=[
+                "Empty array: returns 0.",
+                "Strictly decreasing array: tails stays length 1, returns 1.",
+                "Array with duplicates: bisect_left replaces duplicate element, preserving strictly increasing condition."
+            ],
+            code=(
+                "import bisect\n"
+                "\n"
+                "def length_of_lis(nums: list[int]) -> int:\n"
+                "    if not nums:\n"
+                "        return 0\n"
+                "        \n"
+                "    tails = []\n"
+                "    for x in nums:\n"
+                "        idx = bisect.bisect_left(tails, x)\n"
+                "        if idx == len(tails):\n"
+                "            tails.append(x)\n"
+                "        else:\n"
+                "            tails[idx] = x\n"
+                "            \n"
+                "    return len(tails)\n"
+                "\n"
