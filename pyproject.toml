@@ -8,3 +8,8 @@ version = "1.1.0"
 authors = [
   { name="Manideep Reddy Eevuri", email="sivareddyevuri92@gmail.com" },
 ]
+description = "VASUKI: Offline Python Reasoning AI Engine (0.5B Edge Specialist)"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.8"
+keywords = ["python", "ai", "llm", "offline", "edge", "reasoning", "gguf", "llama-cpp"]
