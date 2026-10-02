@@ -44,3 +44,49 @@ def resolve_model_path():
         return home_model_6j
     return local
 
+def resolve_llama_cli():
+    """Finds llama-cli executable in repo or system PATH."""
+    if os.environ.get("LLAMA_CLI_PATH") and os.path.exists(os.environ["LLAMA_CLI_PATH"]):
+        return os.environ["LLAMA_CLI_PATH"]
+    local = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tools", "llama.cpp", "llama-cli.exe")
+    if os.path.exists(local):
+        return local
+    which_cli = shutil.which("llama-cli") or shutil.which("llama-cli.exe")
+    if which_cli:
+        return which_cli
+    return local
+
+MODEL_PATH = resolve_model_path()
+LLAMA_CLI = resolve_llama_cli()
+
+AUTHOR_NAME = "Manideep Reddy Eevuri"
+AUTHOR_GITHUB = "https://github.com/Maniredii"
+AUTHOR_LINKEDIN = "https://www.linkedin.com/in/manideep-reddy-eevuri-661659268/"
+
+def print_banner():
+    """Displays official author and engine branding banner."""
+    version_title = "VASUKI Phase 7 • Edge Reasoning Python AI" if "phase7" in MODEL_PATH.lower() else "VASUKI Phase 6J • 0.5B Edge Python Specialist Engine"
+    print("\033[96m" + "=" * 72 + "\033[0m")
+    print(f"  \033[1;97m{version_title}\033[0m")
+    print(f"  \033[1;92mDeveloped by : {AUTHOR_NAME}\033[0m")
+    print(f"  \033[94mGitHub       :\033[0m {AUTHOR_GITHUB}")
+    print(f"  \033[94mLinkedIn     :\033[0m {AUTHOR_LINKEDIN}")
+    print("\033[96m" + "=" * 72 + "\033[0m")
+
+ALPACAPREAMBLE = "Below is an instruction that describes a task. Write a response that appropriately completes the request.\n\n### Instruction:\n{prompt}\n\n### Response:\n"
+
+def check_domain_boundary(prompt_text):
+    """
+    Detects non-Python requests and returns a polite redirect if not asking for Python interop.
+    Allows queries mentioning other languages if they also ask for Python bridging.
+    """
+    lower = prompt_text.lower()
+    
+    # Check if asking for Python interop
+    if any(k in lower for k in ["python", "ctypes", "pyo3", "cffi", "binding", "convert to python", "in python"]):
+        return None
+        
+    # Check for pure out-of-domain requests
+    non_py_triggers = [
+        "c++", "directx", "spring boot", "swiftui", "objective-c", "rust", 
+        "golang", "c#", ".net", "kotlin", "ruby on rails", "php"
