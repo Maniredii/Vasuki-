@@ -18,3 +18,23 @@ function getPythonBinary() {
   const candidates = ['python', 'python3', 'py'];
   for (const cmd of candidates) {
     try {
+      execSync(`${cmd} --version`, { stdio: 'ignore' });
+      return cmd;
+    } catch (e) {
+      // Continue checking next candidate
+    }
+  }
+  return null;
+}
+
+const pythonBin = getPythonBinary();
+if (!pythonBin) {
+  console.error('\x1b[91m[Error] Python 3 was not found in your system PATH.\x1b[0m');
+  console.error('Please install Python 3 (https://www.python.org/) to run VASUKI.');
+  process.exit(1);
+}
+
+const args = process.argv.slice(2);
+
+// Handle help flag
+if (args.includes('--help') || args.includes('-h')) {
