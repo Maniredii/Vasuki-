@@ -148,3 +148,33 @@ def get_core_reasoning_records() -> List[Dict[str, Any]]:
                 "to prune half the search space on each iteration."
             ),
             edge_cases=[
+                "Target not found: returns -1.",
+                "Array of size 1: check immediate equality.",
+                "Rotation index at 0 (unrotated standard sorted array)."
+            ],
+            code=(
+                "def search_rotated_array(nums: list[int], target: int) -> int:\n"
+                "    if not nums:\n"
+                "        return -1\n"
+                "    \n"
+                "    left, right = 0, len(nums) - 1\n"
+                "    while left <= right:\n"
+                "        mid = (left + right) // 2\n"
+                "        if nums[mid] == target:\n"
+                "            return mid\n"
+                "        \n"
+                "        # Left half is sorted\n"
+                "        if nums[left] <= nums[mid]:\n"
+                "            if nums[left] <= target < nums[mid]:\n"
+                "                right = mid - 1\n"
+                "            else:\n"
+                "                left = mid + 1\n"
+                "        # Right half is sorted\n"
+                "        else:\n"
+                "            if nums[mid] < target <= nums[right]:\n"
+                "                left = mid + 1\n"
+                "            else:\n"
+                "                right = mid - 1\n"
+                "                \n"
+                "    return -1\n"
+                "\n"
