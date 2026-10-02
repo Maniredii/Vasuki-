@@ -27,3 +27,21 @@ def greet(developer: str) -> str:
 
 print(greet("Engineer"))
 ```"""
+
+KNOWLEDGE_REGISTRY["tuple"] = """A **tuple** in Python is an ordered, immutable collection of elements.
+
+### Key Characteristics:
+- **Immutable:** Once created, items cannot be added, removed, or modified.
+- **Ordered:** Maintains exact insertion order accessible via zero-indexed subscripting (`t[0]`).
+- **Heterogeneous:** Can store elements of multiple different types (`(1, "apple", 3.14)`).
+- **Hashable:** Can be used as dictionary keys and stored in sets (if all contained items are hashable).
+- **Memory Efficient:** Uses less memory and provides faster allocation than mutable lists.
+
+```python
+# Tuple creation & unpacking
+coordinates = (10, 20)
+x, y = coordinates
+
+# Accessing elements
+print(f"X: {x}, Y: {y}")  # X: 10, Y: 20
+```"""
