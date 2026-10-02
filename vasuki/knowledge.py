@@ -451,3 +451,14 @@ nums2 = [1, 2]
 nums2.extend([3, 4])
 print(nums2)  # [1, 2, 3, 4]
 ```"""
+
+KNOWLEDGE_REGISTRY["stack"] = """A **stack** is a Last-In, First-Out (LIFO) linear data structure.
+- **Push:** `list.append(x)` — $O(1)$
+- **Pop:** `list.pop()` — $O(1)$
+"""
+
+KNOWLEDGE_REGISTRY["queue"] = """A **queue** is a First-In, First-Out (FIFO) linear data structure.
+Use `collections.deque` for $O(1)$ operations at both ends.
+- **Enqueue:** `deque.append(x)` — $O(1)$
+- **Dequeue:** `deque.popleft()` — $O(1)$
+"""
