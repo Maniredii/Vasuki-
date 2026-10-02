@@ -62,3 +62,11 @@
   * Polymorphism, Duck Typing (*"If it walks like a duck and quacks like a duck, it's a duck"*), and Abstract Base Classes (`abc.ABC`, `@abstractmethod`).
 * **Dunder / Magic Methods:**
   * Representation: `__repr__` (unambiguous, for developers) vs `__str__` (readable, for users).
+  * Containers: `__len__`, `__getitem__`, `__setitem__`, `__contains__`.
+  * Operator Overloading: `__add__`, `__eq__`, `__lt__`, `__hash__`.
+  * Custom Context Managers: `__enter__` and `__exit__`.
+* **Functional & Idiomatic Constructs:**
+  * Comprehensions: List, Dictionary, and Set comprehensions with filtering.
+  * First-class functions, anonymous `lambda` functions, `map()`, `filter()`.
+  * Standard library utilities: `itertools` (`chain`, `islice`, `permutations`, `combinations`) and `functools` (`lru_cache`, `partial`, `reduce`).
+* **Iterators & Generators:**
