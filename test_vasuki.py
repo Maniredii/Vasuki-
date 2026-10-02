@@ -601,7 +601,7 @@ def interactive_session():
             is_followup = any(w in prompt.lower().split() for w in ["it", "this", "that", "these", "here", "above", "optimize", "refactor", "fix", "test", "add", "change", "convert", "rewrite", "explain"])
             if session_history and is_followup:
                 last_turn = session_history[-1]
-                injected_prompt = f"Previous Task: {last_turn['user']}\nPrevious Output:\n```python\n{last_turn['assistant']}\n```\n\nFollow-up Request: {prompt}"
+                injected_prompt = f"Previous Task: {last_turn['user']}\nPrevious Output:\n```python\n{last_turn['assistant']}\n```\n\nFollow-up Request: {prompt}\nEnsure updated code is self-contained."
             else:
                 injected_prompt = prompt
 
