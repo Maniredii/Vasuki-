@@ -75,6 +75,19 @@ def print_banner():
 
 ALPACAPREAMBLE = "### Instruction:\n{prompt}\n\n### Response:\n"
 
+def check_prefix_repetition(text, min_repeats=3):
+    """Detects repetitive prefix chains like 'chief assistant', 'chief developer'."""
+    lines = [l.strip() for l in text.splitlines() if l.strip()]
+    if len(lines) < min_repeats:
+        return False
+    prefixes = [l.split()[0].lower() if l.split() else "" for l in lines]
+    for i in range(len(prefixes) - min_repeats + 1):
+        window = prefixes[i:i + min_repeats]
+        if window[0] and all(p == window[0] for p in window):
+            return True
+    return False
+
+
 def check_domain_boundary(prompt_text):
     """
     Detects non-Python requests and returns a polite redirect if not asking for Python interop.
