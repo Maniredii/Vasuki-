@@ -13,8 +13,8 @@ class VasukiEngine:
     """
     High-level Python wrapper around the offline VASUKI Phase 7 Reasoning Engine.
     """
-    def __init__(self, model_path: str = None):
-        self.model_path = model_path or resolve_model_path()
+    def __init__(self, model_path: str = None, model_name: str = None):
+        self.model_path = model_path or resolve_model_path(model_name)
 
     def generate(self, prompt: str, max_tokens: int = 350, temperature: float = 0.2) -> str:
         resp, _ = query_model(prompt, max_tokens=max_tokens, temp=temperature)
