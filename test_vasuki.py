@@ -597,12 +597,11 @@ def interactive_session():
                         print(f"\033[91m[!] Error saving file: {e}\033[0m\n")
                 continue
 
-            # Build multi-turn context query
-            if session_history:
-                context_chunks = []
-                for turn in session_history[-3:]:  # Sliding window of 3 turns for length budget
-                    context_chunks.append(f"Previous Request: {turn['user']}\nPrevious Code: {turn['assistant']}")
-                injected_prompt = "\n\n".join(context_chunks) + f"\n\nCurrent Task (modify/extend based on context): {prompt}"
+            # Build multi-turn context query strictly for follow-up directives
+            is_followup = any(w in prompt.lower().split() for w in ["it", "this", "that", "these", "optimize", "refactor", "fix", "test", "add", "change", "convert", "rewrite", "explain"])
+            if session_history and is_followup:
+                last_turn = session_history[-1]
+                injected_prompt = f"Previous Task: {last_turn['user']}\nPrevious Output:\n```python\n{last_turn['assistant']}\n```\n\nFollow-up Request: {prompt}"
             else:
                 injected_prompt = prompt
 
