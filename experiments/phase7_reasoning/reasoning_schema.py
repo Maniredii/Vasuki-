@@ -126,3 +126,19 @@ def validate_ast(code: str) -> Tuple[bool, Optional[str]]:
     try:
         ast.parse(code)
         return True, None
+    except SyntaxError as e:
+        return False, f"SyntaxError at line {e.lineno}: {e.msg}"
+    except Exception as e:
+        return False, f"AST Error: {str(e)}"
+
+
+def execute_in_sandbox(code: str, timeout_seconds: float = 2.0) -> Tuple[bool, Optional[str]]:
+    """
+    Safely executes code containing assertions in a restricted sandbox.
+    Returns (True, None) if all assertions pass, (False, error_msg) otherwise.
+    """
+    # Restrict built-ins to safe operations
+    safe_builtins = {
+        k: v for k, v in __builtins__.items()
+        if k not in ("eval", "exec", "open", "input", "__import__", "breakpoint")
+    } if isinstance(__builtins__, dict) else {
