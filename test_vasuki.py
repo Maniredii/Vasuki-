@@ -320,3 +320,49 @@ def execute_sandbox(code_str):
     elif "```" in clean_code:
         clean_code = clean_code.split("```")[-1].split("```")[0].strip()
 
+    # Strip conversational prefixes like "Code:", "Python:", "Solution:"
+    lines = clean_code.splitlines()
+    while lines and lines[0].strip().lower().rstrip(":") in ("code", "python", "solution", "output", "program", "here is the code", "implementation"):
+        lines.pop(0)
+    clean_code = "\n".join(lines).strip()
+
+    # Pre-validate with ast.parse to detect non-code / conceptual theory text
+    try:
+        parsed = ast.parse(clean_code)
+        if not parsed.body:
+            raise SyntaxError("Empty AST body")
+    except SyntaxError:
+        print("\n" + "\033[94m" + "-" * 55 + "\033[0m")
+        print("\033[93m[Sandbox Notice]: The last response is a conceptual explanation / text, not executable Python code.\033[0m")
+        print("\033[90m(Tip: Ask VASUKI to 'Write Python code for...' to run and test execution with /run)\033[0m")
+        print("\033[94m" + "-" * 55 + "\033[0m\n")
+        return
+
+    print("\n" + "\033[94m" + "-" * 55 + "\033[0m")
+    print("\033[93m[Sandbox Execution Running...]\033[0m")
+    buf = io.StringIO()
+    start_t = time.time()
+    try:
+        with contextlib.redirect_stdout(buf), contextlib.redirect_stderr(buf):
+            scope = {}
+            exec(clean_code, scope, scope)
+        elapsed = time.time() - start_t
+        out = buf.getvalue().strip()
+        if out:
+            print("\033[92m[Program Output]:\033[0m")
+            print(out)
+        else:
+            print("\033[92m[OK] Code executed with zero errors (no print output produced).\033[0m")
+        print(f"\033[90m(Execution time: {elapsed*1000:.1f}ms)\033[0m")
+    except Exception as e:
+        print(f"\033[91m[Execution Error]: {type(e).__name__}: {e}\033[0m")
+    print("\033[94m" + "-" * 55 + "\033[0m\n")
+
+def show_typing(text, speed=0.010, colorize=True):
+    """Prints text with syntax colors and typewriter animation."""
+    display_text = colorize_python(text) if colorize else text
+    # Ansi escape sequence aware typing
+    in_escape = False
+    for char in display_text:
+        if char == '\033':
+            in_escape = True
