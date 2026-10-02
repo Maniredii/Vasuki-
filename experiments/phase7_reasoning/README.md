@@ -16,3 +16,21 @@ VASUKI adopts a **compact 4-tier structured reasoning schema** (~120–250 reaso
 1. **Problem Analysis & Algorithmic Strategy**: Constraint analysis ($N \le 10^5$), structural choice (e.g., Two-pointer vs Hash Map).
 2. **Edge Cases & Invariants**: Boundary conditions (empty list, duplicates, negative numbers, single element).
 3. **Verified Python Implementation**: PEP 8 compliant, type-annotated, AST-verified code.
+4. **Complexity Proof**: Formal $O(T)$ time and $O(S)$ space complexity derivation.
+
+---
+
+## 2. Core Reasoning Pillars
+* **Pillar 1: Algorithmic Patterns & Data Structures** (Two Pointers, Sliding Window, DP, Binary Search, Trees, Graphs, Monotonic Stack).
+* **Pillar 2: Step-by-Step Execution Tracing & Debugging** (Tracing variable state across iterations, pinpointing root cause, providing verified fix).
+* **Pillar 3: Performance Profiling & Optimization** (Identifying $O(N^2)$ bottlenecks, optimizing to $O(N)$ or $O(N \log N)$ with mathematical invariants).
+* **Pillar 4: Domain Boundary Redirects** (Maintaining strict Python specialization).
+
+---
+
+## 3. Dataset Pipeline Architecture
+```
+[Raw Algorithmic & Reasoning Pool]
+               │
+               ▼
+   generate_reasoning_dataset.py
