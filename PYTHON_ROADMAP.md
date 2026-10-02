@@ -142,3 +142,11 @@
 ---
 
 ## 🚀 Phase 5: Domain Specialization Tracks
+
+### Track A: AI & Edge Machine Learning (VASUKI Focus)
+1. **Mathematical Foundations & Vectorization:** NumPy broadcasting, memory strides, contiguous arrays (`C` vs `Fortran` order).
+2. **Data Manipulation:** High-performance Pandas / Polars for tabular transformations.
+3. **Classical Machine Learning:** Scikit-Learn (Decision Trees, Random Forests, Gradient Boosted Trees, K-Means clustering, PCA).
+4. **Deep Learning & Fine-Tuning:** PyTorch tensors, autograd, PyTorch Lightning, Hugging Face Transformers.
+5. **Edge LLM Quantization:** QLoRA fine-tuning with **Unsloth**, parameter-efficient adapters, and export to **GGUF (Q4_K_M)** for offline edge deployment.
+
