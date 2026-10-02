@@ -365,3 +365,16 @@ print_details(1, 2, "apple", role="Admin", active=True)
 # Positional: (1, 2, 'apple')
 # Keyword: {'role': 'Admin', 'active': True}
 ```"""
+
+KNOWLEDGE_REGISTRY["recursion"] = """**Recursion** is a problem-solving technique where a function calls itself to break down a problem into smaller identical sub-problems until reaching a base case.
+
+```python
+def factorial(n: int) -> int:
+    # 1. Base case: stops recursion
+    if n <= 1:
+        return 1
+    # 2. Recursive step
+    return n * factorial(n - 1)
+
+print(factorial(5))  # 120
+```"""
