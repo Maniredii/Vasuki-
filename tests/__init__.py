@@ -1,1 +1,1 @@
-# VASUKI Verified Test Suite Package v1.1.0
+# VASUKI Verified Test Suite Package v1.2.0
