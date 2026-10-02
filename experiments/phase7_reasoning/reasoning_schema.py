@@ -142,3 +142,19 @@ def execute_in_sandbox(code: str, timeout_seconds: float = 2.0) -> Tuple[bool, O
         k: v for k, v in __builtins__.items()
         if k not in ("eval", "exec", "open", "input", "__import__", "breakpoint")
     } if isinstance(__builtins__, dict) else {
+        k: getattr(__builtins__, k) for k in dir(__builtins__)
+        if k not in ("eval", "exec", "open", "input", "__import__", "breakpoint")
+    }
+    
+    # Allow standard library modules commonly used in algorithms
+    safe_modules = {}
+    import math, collections, itertools, heapq, functools, bisect, typing
+    safe_modules["math"] = math
+    safe_modules["collections"] = collections
+    safe_modules["itertools"] = itertools
+    safe_modules["heapq"] = heapq
+    safe_modules["functools"] = functools
+    safe_modules["bisect"] = bisect
+    safe_modules["typing"] = typing
+    
+    def restricted_import(name, *args, **kwargs):
