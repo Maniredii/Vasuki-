@@ -3,15 +3,21 @@ import sys
 import time
 import test_vasuki
 
+def resolve_model_path() -> str:
+    return getattr(test_vasuki, "MODEL_PATH", "")
+
+def query_model(prompt: str, max_tokens: int = 350, temp: float = 0.2):
+    return test_vasuki.query_model(prompt, max_tokens=max_tokens, temp=temp)
+
 class VasukiEngine:
     """
     High-level Python wrapper around the offline VASUKI Phase 7 Reasoning Engine.
     """
     def __init__(self, model_path: str = None):
-        self.model_path = model_path or test_vasuki.MODEL_PATH
+        self.model_path = model_path or resolve_model_path()
 
     def generate(self, prompt: str, max_tokens: int = 350, temperature: float = 0.2) -> str:
-        resp, _ = test_vasuki.query_model(prompt, max_tokens=max_tokens, temp=temperature)
+        resp, _ = query_model(prompt, max_tokens=max_tokens, temp=temperature)
         return resp
 
     def chat(self, messages: list, max_tokens: int = 350, temperature: float = 0.2) -> dict:
