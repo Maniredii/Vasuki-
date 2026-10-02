@@ -31,3 +31,36 @@ VAL_FILE = BASE_DIR / "phase7_reasoning_val.jsonl"
 
 
 def compute_sha256(path: Path) -> str:
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        while chunk := f.read(65536):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def main():
+    print("=" * 80)
+    print("VASUKI Phase 7: Pre-Training Quality Gate Audit")
+    print("=" * 80)
+
+    if not TRAIN_FILE.exists() or not VAL_FILE.exists():
+        print("[!] Error: Dataset files missing. Run build_full_reasoning_corpus.py first.")
+        sys.exit(1)
+
+    train_hash = compute_sha256(TRAIN_FILE)
+    val_hash = compute_sha256(VAL_FILE)
+
+    print(f"[*] Training File:   {TRAIN_FILE.name}")
+    print(f"    SHA-256:         {train_hash}")
+    print(f"[*] Validation File: {VAL_FILE.name}")
+    print(f"    SHA-256:         {val_hash}")
+
+    # Load records
+    with open(TRAIN_FILE, "r", encoding="utf-8") as f:
+        train_records = [json.loads(line) for line in f if line.strip()]
+    with open(VAL_FILE, "r", encoding="utf-8") as f:
+        val_records = [json.loads(line) for line in f if line.strip()]
+
+    print(f"\n[*] Record Counts:")
+    print(f"    - Training Records:   {len(train_records)}")
+    print(f"    - Validation Records: {len(val_records)}")
