@@ -412,3 +412,49 @@ def run_benchmark():
     print("=" * 70)
 
 def interactive_session():
+    """Starts interactive REPL in the terminal with developer commands."""
+    print_banner()
+    print(f"\033[90mModel    :\033[0m {os.path.basename(MODEL_PATH)}")
+    print("\033[93mCommands :\033[0m")
+    print("  \033[93m/run\033[0m           Execute last generated code snippet in sandbox")
+    print("  \033[93m/copy\033[0m          Copy last code snippet to clipboard")
+    print("  \033[93m/save <file>\033[0m   Save last code snippet to a Python file")
+    print("  \033[93m/clear\033[0m         Clear the terminal screen")
+    print("  \033[93mexit / q\033[0m       Quit the console")
+    print("\033[96m" + "-" * 72 + "\033[0m\n")
+    
+    last_response = ""
+
+    while True:
+        try:
+            prompt = input("\033[92mVASUKI >>> \033[0m").strip()
+            if not prompt:
+                continue
+            
+            # Slash commands
+            if prompt.lower() in ("exit", "quit", "q"):
+                print("\033[90mExiting VASUKI console. Goodbye!\033[0m")
+                break
+            
+            if prompt.lower() == "/clear":
+                os.system("cls" if os.name == "nt" else "clear")
+                continue
+
+            if prompt.lower() == "/help":
+                print("\n\033[93mAvailable Commands:\033[0m")
+                print("  /run           - Execute last code snippet in a live Python sandbox")
+                print("  /copy          - Copy last code snippet to system clipboard")
+                print("  /save <file>   - Save last code snippet into <file>")
+                print("  /clear         - Clear terminal screen")
+                print("  exit           - Exit console\n")
+                continue
+
+            if prompt.lower() == "/run":
+                if not last_response:
+                    print("\033[91m[!] No previous code snippet to run.\033[0m\n")
+                else:
+                    execute_sandbox(last_response)
+                continue
+
+            if prompt.lower() == "/copy":
+                if not last_response:
