@@ -156,8 +156,8 @@ def check_domain_boundary(prompt_text):
             )
     return None
 
-def query_model(prompt_text, max_tokens=350, temp=0.2):
-    """Run inference against VASUKI Phase 6J GGUF via llama-cli."""
+def query_model(prompt_text, max_tokens=350, temp=0.2, allow_fallback=True):
+    """Run inference against VASUKI GGUF with automatic accuracy fallback."""
     # Check domain boundary first
     redirect = check_domain_boundary(prompt_text)
     if redirect:
@@ -285,6 +285,15 @@ def query_model(prompt_text, max_tokens=350, temp=0.2):
             cleaned_lines.append(line)
 
         clean = "\n".join(cleaned_lines).strip()
+        # Accuracy Guardrail: If output collapsed into loops, fallback to stable Phase 6J
+        if allow_fallback and is_degenerate_output(clean):
+            stable_model = os.path.join(os.path.dirname(os.path.abspath(__file__)), "vasuki_phase6j.Q4_K_M.gguf")
+            if os.path.exists(stable_model) and MODEL_PATH != stable_model:
+                curr_model = MODEL_PATH
+                globals()["MODEL_PATH"] = stable_model
+                fb_clean, fb_dur = query_model(prompt_text, max_tokens=max_tokens, temp=temp, allow_fallback=False)
+                globals()["MODEL_PATH"] = curr_model
+                return fb_clean, fb_dur
         return clean, elapsed
     except subprocess.TimeoutExpired:
         return "[Error: Model inference timed out after 45s]", 45.0
