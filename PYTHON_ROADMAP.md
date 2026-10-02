@@ -126,3 +126,11 @@
     * The single-threaded cooperative multitasking event loop.
     * Coroutines with `async def` and `await`.
     * Running concurrent tasks with `asyncio.gather()` and `asyncio.TaskGroup`.
+    * Asynchronous queues (`asyncio.Queue`) for producer-consumer pipelines.
+* **Low-Level Systems & Native Interoperability:**
+  * Foreign Function Interface (FFI) using Python's built-in `ctypes`.
+  * Interfacing with C/C++ shared libraries (`.so`, `.dll`), type conversions, pointers, and memory buffers.
+  * Python extensions in Rust using **PyO3** and **Maturin**.
+* **Modern Typing & Metaprogramming:**
+  * Static type checking with `mypy`, `typing.Generic`, `TypeVar`, `Protocol` (Structural subtyping).
+  * Metaclasses (`type`), class creation hooks (`__init_subclass__`), and attribute descriptors (`__get__`, `__set__`).
