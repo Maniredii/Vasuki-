@@ -85,3 +85,42 @@ raw_tags = ["python", "ai", "python", "code"]
 unique_tags = set(raw_tags)
 print(unique_tags)  # {'python', 'ai', 'code'}
 ```"""
+
+KNOWLEDGE_REGISTRY["generator"] = """A **generator** in Python is a memory-efficient iterator produced by functions containing the `yield` statement.
+
+### Key Characteristics:
+- **Lazy Evaluation:** Computes and emits items one-by-one on demand instead of loading everything into memory.
+- **$O(1)$ Memory Usage:** Perfect for processing large files or infinite data streams.
+
+```python
+def count_up_to(n: int):
+    val = 1
+    while val <= n:
+        yield val
+        val += 1
+
+for num in count_up_to(3):
+    print(num)  # 1, 2, 3
+```"""
+
+KNOWLEDGE_REGISTRY["decorator"] = """A **decorator** in Python is a callable that takes another function as an argument and extends its behavior without modifying its source code.
+
+```python
+import functools
+import time
+
+def timer(func):
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+        t0 = time.time()
+        res = func(*args, **kwargs)
+        print(f"{func.__name__} executed in {time.time()-t0:.4f}s")
+        return res
+    return wrapper
+
+@timer
+def compute():
+    return sum(i * i for i in range(10000))
+
+compute()
+```"""
