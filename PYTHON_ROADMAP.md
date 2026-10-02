@@ -134,3 +134,11 @@
 * **Modern Typing & Metaprogramming:**
   * Static type checking with `mypy`, `typing.Generic`, `TypeVar`, `Protocol` (Structural subtyping).
   * Metaclasses (`type`), class creation hooks (`__init_subclass__`), and attribute descriptors (`__get__`, `__set__`).
+* **Benchmarking & Profiling:**
+  * Micro-benchmarking with `timeit`.
+  * Deterministic profiling with `cProfile` and flame graphs.
+  * Memory profiling with `tracemalloc` and `memory_profiler`.
+
+---
+
+## 🚀 Phase 5: Domain Specialization Tracks
