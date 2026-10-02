@@ -59,3 +59,16 @@ numbers.append(4)
 numbers[0] = 10
 print(numbers)  # [10, 2, 3, 4]
 ```"""
+
+KNOWLEDGE_REGISTRY["dictionary"] = KNOWLEDGE_REGISTRY["dict"] = """A **dictionary** in Python is an associative mapping of unique, hashable keys to arbitrary values.
+
+### Key Characteristics:
+- **Average $O(1)$ Operations:** Fast lookup, insertion, and deletion powered by an internal hash table.
+- **Insertion-Ordered:** Guarantees key preservation in insertion order (Python 3.7+).
+- **Flexible Keys:** Any hashable type (strings, integers, tuples) can be used as keys.
+
+```python
+user = {"name": "Alice", "role": "Engineer", "active": True}
+user["email"] = "alice@example.com"
+print(user.get("role", "Guest"))  # Engineer
+```"""
