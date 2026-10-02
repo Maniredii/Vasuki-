@@ -559,6 +559,7 @@ def interactive_session():
                 print("  /context       - Display active context window buffer")
                 print("  /reset         - Clear conversation memory")
                 print("  /clear         - Clear terminal screen")
+                print("  Tip: Ask concepts like 'what is tuple', 'what is python', 'difference between list and tuple'")
                 print("  exit           - Exit console\n")
                 continue
 
