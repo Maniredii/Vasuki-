@@ -72,3 +72,16 @@ user = {"name": "Alice", "role": "Engineer", "active": True}
 user["email"] = "alice@example.com"
 print(user.get("role", "Guest"))  # Engineer
 ```"""
+
+KNOWLEDGE_REGISTRY["set"] = """A **set** in Python is an unordered collection of unique, hashable elements.
+
+### Key Characteristics:
+- **Deduplication:** Automatically eliminates duplicate entries upon insertion.
+- **$O(1)$ Membership Test:** Extremely fast `x in my_set` membership checks via hashing.
+- **Mathematical Operations:** Built-in union (`|`), intersection (`&`), and difference (`-`).
+
+```python
+raw_tags = ["python", "ai", "python", "code"]
+unique_tags = set(raw_tags)
+print(unique_tags)  # {'python', 'ai', 'code'}
+```"""
