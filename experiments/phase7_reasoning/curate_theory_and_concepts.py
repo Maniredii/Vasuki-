@@ -336,3 +336,29 @@ def main():
     if not CURRENT_CORPUS_FILE.exists():
         print(f"[!] Error: {CURRENT_CORPUS_FILE} not found.", flush=True)
         sys.exit(1)
+
+    with open(CURRENT_CORPUS_FILE, "r", encoding="utf-8") as f:
+        existing_records = [json.loads(line) for line in f if line.strip()]
+    print(f"[*] Loaded {len(existing_records)} existing Phase 7 verified records.", flush=True)
+    seen_instructions = {r["instruction"].strip().lower() for r in existing_records}
+
+    # 2. Add concise 1-line definition pack
+    new_records = []
+    added_concise = 0
+    for item in CONCISE_THEORY_PACK:
+        inst_lower = item["instruction"].strip().lower()
+        if inst_lower not in seen_instructions:
+            rec = {
+                "id": f"theory_concise_{added_concise+1:04d}",
+                "instruction": item["instruction"],
+                "response": item["response"],
+                "category": item["category"],
+                "source": "vasuki_curated_theory"
+            }
+            new_records.append(rec)
+            seen_instructions.add(inst_lower)
+            added_concise += 1
+    print(f"[+] Injected {added_concise} concise conceptual & ML theory records.", flush=True)
+
+    # 3. Stream & curate Hugging Face records
+    hf_records = curate_huggingface_records(seen_instructions)
