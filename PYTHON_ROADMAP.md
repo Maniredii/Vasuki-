@@ -78,3 +78,11 @@
   * Function decorators, chaining decorators.
   * Decorators accepting arguments and preserving metadata with `@functools.wraps`.
   * Built-in decorators: `@property`, `@classmethod`, `@staticmethod`.
+
+---
+
+## 🟠 Phase 3: Data Structures & Algorithmic Reasoning (Advanced Core)
+*Goal: Build algorithmic intuition, master time/space complexity, and solve complex problem patterns.*
+
+* **Linear Data Structures:**
+  * Singly and Doubly Linked Lists (Node references, reverse in groups, cycle detection with Floyd's Tortoise and Hare).
