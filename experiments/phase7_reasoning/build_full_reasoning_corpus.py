@@ -193,3 +193,42 @@ def generate_extended_algorithmic_records() -> List[Dict[str, Any]]:
                 "        adj[u].append((v, w))\n"
                 "        \n"
                 "    distances = {i: float('inf') for i in range(num_nodes)}\n"
+                "    distances[source] = 0\n"
+                "    pq = [(0, source)]\n"
+                "    \n"
+                "    while pq:\n"
+                "        curr_d, u = heapq.heappop(pq)\n"
+                "        if curr_d > distances[u]:\n"
+                "            continue\n"
+                "            \n"
+                "        for v, weight in adj[u]:\n"
+                "            new_d = curr_d + weight\n"
+                "            if new_d < distances[v]:\n"
+                "                distances[v] = new_d\n"
+                "                heapq.heappush(pq, (new_d, v))\n"
+                "                \n"
+                "    return distances\n"
+                "\n"
+                "# Verification assertions\n"
+                "edges = [(0, 1, 4), (0, 2, 1), (2, 1, 2), (1, 3, 1), (2, 3, 5)]\n"
+                "dists = dijkstra(4, edges, 0)\n"
+                "assert dists[0] == 0\n"
+                "assert dists[1] == 3  # via 0 -> 2 -> 1\n"
+                "assert dists[3] == 4  # via 0 -> 2 -> 1 -> 3\n"
+            ),
+            time_complexity="O((V + E) log V) with min-heap operations.",
+            space_complexity="O(V + E) for adjacency list and priority queue."
+        )
+    })
+
+    # 5. Data Structures: LRU Cache Implementation
+    recs.append({
+        "id": "algo_cot_005",
+        "category": "algorithmic_reasoning",
+        "subcategory": "data_structures",
+        "instruction": "Implement an LRU (Least Recently Used) Cache in Python with O(1) get and put operations.",
+        "response": build_reasoning_response(
+            strategy=(
+                "To achieve O(1) for both retrieval and order updates, combine a hash map with a doubly linked list. "
+                "Python's `collections.OrderedDict` internally maintains this exact structure: a dict mapping keys to nodes, "
+                "with an internal circular doubly linked list. "
