@@ -34,3 +34,22 @@ VASUKI adopts a **compact 4-tier structured reasoning schema** (~120–250 reaso
                │
                ▼
    generate_reasoning_dataset.py
+   (Synthesizes & Curates Structured CoT Records)
+               │
+               ▼
+   validate_reasoning_dataset.py
+   ├── 1. Schema Validation (JSONL, IDs, Categories)
+   ├── 2. Python AST Parsing (100% syntactically valid)
+   ├── 3. Unit Test Execution (Sandbox assertion verification)
+   └── 4. Token Budget Guardrail (80-250 reasoning tokens)
+               │
+               ▼
+[phase7_reasoning_training.jsonl] (Colab Ready)
+               │
+               ▼
+   phase7_training_colab.ipynb / phase7_training.py
+   (Unsloth QLoRA with Response-Only Loss Masking)
+               │
+               ▼
+[vasuki_phase7_reasoning.Q4_K_M.gguf]
+```
