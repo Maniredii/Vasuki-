@@ -38,3 +38,24 @@ This guide walks you through fine-tuning the **VASUKI Phase 7** Reasoning Model 
    - **Steps:** 1,200 steps (~1.8 epochs over 5,486 records, effective batch size 8).
    - **Estimated Time:** ~20–25 minutes on Tesla T4.
    - **Loss Masking:** Response-only (`train_on_responses_only`), ensuring maximum gradient efficiency on reasoning and code.
+
+### Step 4: Download Model Artifacts
+1. Run **Cell 4** to download `vasuki_phase7_output.zip`.
+2. Extract the resulting GGUF model `vasuki_phase7.Q4_K_M.gguf` into your local `D:\VASUKI\` root directory.
+
+---
+
+## 3. Local Verification & Retesting
+
+Once downloaded, update the default model pointer or test directly:
+
+```bash
+# Direct test with the new Phase 7 reasoning engine
+python test_vasuki.py "Write an optimal solution for the Trapping Rain Water problem"
+```
+
+The output will now display structured Chain-of-Thought (CoT) reasoning:
+- Problem Analysis & Algorithmic Strategy
+- Edge Cases Considered
+- Verified Python Implementation
+- Time and Space Complexity Proof
