@@ -206,3 +206,29 @@ CONCISE_THEORY_PACK = [
             "- **Monotonic Stacks:** Next greater element, daily temperatures, largest rectangle in histogram.\n\n"
             "### Stage 4: Graphs & Dynamic Programming\n"
             "- **Graphs:** Adjacency lists, BFS/DFS, Dijkstra's shortest path, Kahn's algorithm for topological sorting, Disjoint Set Union (DSU).\n"
+            "- **Dynamic Programming (DP):** Memoization (Top-down with `@lru_cache`) vs Tabulation (Bottom-up 1D/2D arrays), 0/1 Knapsack, Coin Change, Longest Increasing Subsequence (LIS).\n\n"
+            "### Practice Strategy\n"
+            "- Solve 3-5 problems per pattern on LeetCode/NeetCode.\n"
+            "- Always verify space and time complexity before writing code."
+        ),
+        "category": "dsa_learning_roadmap"
+    }
+]
+
+
+# ============================================================================
+# 2. STREAM & CURATE FROM CODEALPACA & EVOL-INSTRUCT
+# ============================================================================
+
+def curate_huggingface_records(existing_instructions: set) -> list:
+    curated = []
+    seen = set(existing_instructions)
+
+    # 1. Curate pure conceptual theory from sahil2801/CodeAlpaca-20k
+    print("\n[*] 1. Loading and filtering theory from sahil2801/CodeAlpaca-20k...", flush=True)
+    try:
+        ca = load_dataset("sahil2801/CodeAlpaca-20k", split="train")
+        theory_prefixes = (
+            "what is", "explain", "how does", "define", "why is", "compare",
+            "describe", "what are", "difference between", "overview of"
+        )
