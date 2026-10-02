@@ -80,10 +80,44 @@ def check_prefix_repetition(text, min_repeats=3):
     lines = [l.strip() for l in text.splitlines() if l.strip()]
     if len(lines) < min_repeats:
         return False
+
+def is_degenerate_output(text):
+    """Checks whether the response contains repetitive gibberish or mode collapse."""
+    if not text or not text.strip():
+        return False
+    if check_prefix_repetition(text, min_repeats=3):
+        return True
+    lower = text.lower()
+    artifacts = ["życz", "彩神", "硗heads", "硗ookies", "osoph\nosoph", "icide-tree\nisan"]
+    if any(a in lower for a in artifacts):
+        return True
+    words = text.split()
+    if len(words) >= 40:
+        unique_ratio = len(set(words)) / len(words)
+        if unique_ratio < 0.28:
+            return True
+    return False
     prefixes = [l.split()[0].lower() if l.split() else "" for l in lines]
     for i in range(len(prefixes) - min_repeats + 1):
         window = prefixes[i:i + min_repeats]
         if window[0] and all(p == window[0] for p in window):
+            return True
+    return False
+
+def is_degenerate_output(text):
+    """Checks whether the response contains repetitive gibberish or mode collapse."""
+    if not text or not text.strip():
+        return False
+    if check_prefix_repetition(text, min_repeats=3):
+        return True
+    lower = text.lower()
+    artifacts = ["życz", "彩神", "硗heads", "硗ookies", "osoph\nosoph", "icide-tree\nisan"]
+    if any(a in lower for a in artifacts):
+        return True
+    words = text.split()
+    if len(words) >= 40:
+        unique_ratio = len(set(words)) / len(words)
+        if unique_ratio < 0.28:
             return True
     return False
 
@@ -309,6 +343,23 @@ def copy_to_clipboard(text):
         return proc.returncode == 0
     except Exception:
         return False
+
+def is_degenerate_output(text):
+    """Checks whether the response contains repetitive gibberish or mode collapse."""
+    if not text or not text.strip():
+        return False
+    if check_prefix_repetition(text, min_repeats=3):
+        return True
+    lower = text.lower()
+    artifacts = ["życz", "彩神", "硗heads", "硗ookies", "osoph\nosoph", "icide-tree\nisan"]
+    if any(a in lower for a in artifacts):
+        return True
+    words = text.split()
+    if len(words) >= 40:
+        unique_ratio = len(set(words)) / len(words)
+        if unique_ratio < 0.28:
+            return True
+    return False
 
 def execute_sandbox(code_str):
     """Executes generated code in a safe sandbox and displays output."""
