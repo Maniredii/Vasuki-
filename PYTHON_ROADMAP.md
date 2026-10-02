@@ -150,3 +150,17 @@
 4. **Deep Learning & Fine-Tuning:** PyTorch tensors, autograd, PyTorch Lightning, Hugging Face Transformers.
 5. **Edge LLM Quantization:** QLoRA fine-tuning with **Unsloth**, parameter-efficient adapters, and export to **GGUF (Q4_K_M)** for offline edge deployment.
 
+### Track B: Scalable Backend Engineering
+1. **Modern Async Web Frameworks:** **FastAPI**, Starlette, Pydantic v2 data validation.
+2. **Database Architecture:** PostgreSQL, SQLAlchemy ORM (async session), Alembic schema migrations.
+3. **Caching & Asynchronous Task Queues:** Redis caching layers, Celery / ARQ distributed worker queues.
+4. **Containerization & Deployment:** Docker multi-stage builds, Gunicorn / Uvicorn worker process managers, reverse proxies (Nginx / Caddy).
+
+---
+
+## 💡 How VASUKI Accelerates This Roadmap
+
+The **VASUKI (`vasuki-py`)** AI engine is built specifically to pair-program across every level of this curriculum:
+* Ask conceptual questions: `vasuki "Explain how Kahn's algorithm detects cycles in a DAG"`
+* Optimize code: `vasuki "Optimize this O(N^2) subarray sum to O(N) using sliding window"`
+* Test in sandbox: Type `/run` directly in the terminal to execute generated algorithms offline.
