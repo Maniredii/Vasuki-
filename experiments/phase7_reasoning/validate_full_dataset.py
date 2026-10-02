@@ -38,3 +38,11 @@ def compute_sha256(path: Path) -> str:
     return h.hexdigest()
 
 
+def main():
+    print("=" * 80)
+    print("VASUKI Phase 7: Pre-Training Quality Gate Audit")
+    print("=" * 80)
+
+    if not TRAIN_FILE.exists() or not VAL_FILE.exists():
+        print("[!] Error: Dataset files missing. Run build_full_reasoning_corpus.py first.")
+        sys.exit(1)
