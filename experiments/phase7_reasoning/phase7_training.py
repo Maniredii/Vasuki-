@@ -90,3 +90,26 @@ def verify_environment():
         
     gpu_name = torch.cuda.get_device_name(0)
     vram_gb = torch.cuda.get_device_properties(0).total_memory / (1024 ** 3)
+    print(f"GPU Detected:     {gpu_name}")
+    print(f"Total VRAM:       {vram_gb:.2f} GB")
+    return True
+
+
+def load_and_format_datasets():
+    print("\n" + "=" * 80)
+    print("Loading & Formatting Datasets")
+    print("=" * 80)
+
+    # Resolve training data file path
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    train_candidates = [
+        TRAINING_DATA_FILE,
+        os.path.join(script_dir, TRAINING_DATA_FILE),
+        os.path.join("/content", TRAINING_DATA_FILE),
+        os.path.join("experiments", "phase7_reasoning", TRAINING_DATA_FILE)
+    ]
+    resolved_train = None
+    for cand in train_candidates:
+        if os.path.exists(cand):
+            resolved_train = cand
+            break
