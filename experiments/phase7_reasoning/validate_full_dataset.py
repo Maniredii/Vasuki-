@@ -14,3 +14,11 @@ import json
 import hashlib
 from pathlib import Path
 from reasoning_schema import validate_ast, extract_python_code
+
+BASE_DIR = Path("D:/VASUKI/experiments/phase7_reasoning")
+EXPANDED_FILE = BASE_DIR / "phase7_2_expanded_corpus.jsonl"
+BALANCED_FILE = BASE_DIR / "phase7_1_balanced_corpus.jsonl"
+BASE_FILE = BASE_DIR / "phase7_reasoning_corpus.jsonl"
+
+if EXPANDED_FILE.exists():
+    TRAIN_FILE = EXPANDED_FILE
