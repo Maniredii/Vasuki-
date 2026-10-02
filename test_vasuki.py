@@ -410,7 +410,24 @@ def interactive_session():
     print("  \033[93m/copy[0m          Copy last code snippet to clipboard")
     print("  \033[93m/save <file>[0m   Save last code snippet to a Python file")
     print("  \033[93m/history[0m       Show conversation history turns")
-    print("  \033[93m/context[0m       Inspect injected sli
+    print("  \033[93m/context[0m       Inspect injected sliding-window context")
+    print("  \033[93m/reset[0m         Clear conversation history memory")
+    print("  \033[93m/clear[0m         Clear terminal screen")
+    print("  \033[93mexit / q[0m       Quit the console")
+    print("\033[96m" + "-" * 72 + "\033[0m\n")
+    
+    last_response = ""
+    session_history = []  # List of {"user": prompt, "assistant": response}
+
+    while True:
+        try:
+            turn_idx = len(session_history) + 1
+            prompt = input(f"\033[92mVASUKI [T{turn_idx}] >>> \033[0m").strip()
+            if not prompt:
+                continue
+            
+            # Slash commands
+            if pro
             pass
 def run_ds_benchmark():
     """Runs a dedicated Data Structures benchmark."""
