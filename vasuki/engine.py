@@ -32,7 +32,7 @@ class VasukiEngine:
             elif role == "assistant":
                 dialogue.append(f"Assistant: {content}")
         prompt_text = "\n\n".join(dialogue)
-        resp, dur = test_vasuki.query_model(prompt_text, max_tokens=max_tokens, temp=temperature)
+        resp, dur = test_vasuki.query_model(prompt_text, max_tokens=max_tokens, temp=temperature, allow_fallback=True)
         return {
             "id": f"chatcmpl-vasuki-{int(time.time()*1000)}",
             "object": "chat.completion",
