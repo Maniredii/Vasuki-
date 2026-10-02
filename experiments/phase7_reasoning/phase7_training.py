@@ -182,3 +182,26 @@ def run_training():
 
     print("\n[*] Initializing FastLanguageModel from Unsloth...")
     model, tokenizer = FastLanguageModel.from_pretrained(
+        model_name=BASE_MODEL,
+        max_seq_length=MAX_SEQ_LENGTH,
+        dtype=None,
+        load_in_4bit=True
+    )
+
+    print("[*] Adding LoRA adapters...")
+    model = FastLanguageModel.get_peft_model(
+        model,
+        r=LORA_CONFIG["r"],
+        target_modules=LORA_CONFIG["target_modules"],
+        lora_alpha=LORA_CONFIG["lora_alpha"],
+        lora_dropout=LORA_CONFIG["lora_dropout"],
+        bias=LORA_CONFIG["bias"],
+        use_gradient_checkpointing="unsloth",
+        random_state=RANDOM_SEED
+    )
+
+    train_dataset = Dataset.from_list(train_data)
+    val_dataset = Dataset.from_list(val_data)
+
+    training_args = TrainingArguments(
+        per_device_train_batch_size=2,
