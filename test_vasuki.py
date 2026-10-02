@@ -454,7 +454,18 @@ def interactive_session():
 
             if prompt.lower() == "/context":
                 if not session_history:
-                    pr
+                    print("\033[90m(No conversational context accumulated yet)\033[0m\n")
+                else:
+                    print("\n\033[93m=== Injected Context Window (Last 3 Turns) ===\033[0m")
+                    for t in session_history[-3:]:
+                        print(f"User: {t['user']}\nAssistant: {t['assistant']}\n")
+                continue
+
+            if prompt.lower() == "/help":
+                print("\n\033[93mAvailable Commands:\033[0m")
+                print("  /run           - Execute last code snippet in a live Python sandbox")
+                print("  /copy          - Copy last code snippet to system clipboard")
+             
             pass
 def run_ds_benchmark():
     """Runs a dedicated Data Structures benchmark."""
