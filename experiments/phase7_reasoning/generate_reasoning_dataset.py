@@ -328,3 +328,33 @@ def get_core_reasoning_records() -> List[Dict[str, Any]]:
             ),
             time_complexity="O(V + E) where V is vertices and E is directed edges.",
             space_complexity="O(V + E) for adjacency list, in-degree array, and BFS queue."
+        )
+    })
+
+    # =========================================================================
+    # CATEGORY 2: STEP-BY-STEP CODE DEBUGGING & ROOT CAUSE ANALYSIS
+    # =========================================================================
+
+    # 7. Debug: Mutable Default Arguments
+    records.append({
+        "id": "cot_debug_0001",
+        "category": "code_debugging",
+        "subcategory": "python_gotchas",
+        "instruction": (
+            "Debug the following Python function where items unexpectedly persist across calls:\n"
+            "```python\n"
+            "def append_item(item, registry=[]):\n"
+            "    registry.append(item)\n"
+            "    return registry\n"
+            "```"
+        ),
+        "response": build_debug_response(
+            flaw_analysis=(
+                "In Python, default parameter values are evaluated **once at function definition time**, "
+                "not each time the function is called. When a mutable object like a list `[]` is used as a default, "
+                "that single list instance is bound to the function's `__defaults__` tuple. Subsequent calls "
+                "that omit the argument mutate this shared instance."
+            ),
+            step_trace=[
+                "Call 1: `append_item('alpha')` -> appends to default list -> returns `['alpha']`.",
+                "Call 2: `append_item('beta')` -> appends to SAME default list -> returns `['alpha', 'beta']` unexpectedly.",
