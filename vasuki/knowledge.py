@@ -124,3 +124,34 @@ def compute():
 
 compute()
 ```"""
+
+KNOWLEDGE_REGISTRY["difference between list and tuple"] = KNOWLEDGE_REGISTRY["list vs tuple"] = """### Comparison: Python List vs Tuple
+
+| Feature | `list` | `tuple` |
+| :--- | :--- | :--- |
+| **Mutability** | Mutable (can change elements) | Immutable (read-only after creation) |
+| **Syntax** | Square brackets `[1, 2, 3]` | Parentheses `(1, 2, 3)` |
+| **Memory** | Larger (overallocated buffer) | Smaller (compact fixed struct) |
+| **Speed** | Slightly slower iteration | Faster allocation and traversal |
+| **Dictionary Key** | Cannot be used as key (unhashable) | Can be used as key (if items are hashable) |
+
+```python
+# List (Mutable)
+my_list = [1, 2, 3]
+my_list.append(4)
+
+# Tuple (Immutable)
+my_tuple = (1, 2, 3)
+# my_tuple.append(4)  # Raises AttributeError
+```"""
+
+def resolve_knowledge(query: str):
+    """Returns verified concept explanation if query matches knowledge base, else None."""
+    norm = normalize_concept_query(query)
+    if norm in KNOWLEDGE_REGISTRY:
+        return KNOWLEDGE_REGISTRY[norm]
+    # Check partial / keyword matches
+    for key, val in KNOWLEDGE_REGISTRY.items():
+        if key == norm or norm.startswith(key + " ") or norm.endswith(" " + key):
+            return val
+    return None
