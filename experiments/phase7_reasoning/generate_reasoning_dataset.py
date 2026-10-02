@@ -178,3 +178,33 @@ def get_core_reasoning_records() -> List[Dict[str, Any]]:
                 "                \n"
                 "    return -1\n"
                 "\n"
+                "# Verification assertions\n"
+                "assert search_rotated_array([4, 5, 6, 7, 0, 1, 2], 0) == 4\n"
+                "assert search_rotated_array([4, 5, 6, 7, 0, 1, 2], 3) == -1\n"
+                "assert search_rotated_array([1], 1) == 0\n"
+                "assert search_rotated_array([], 5) == -1\n"
+            ),
+            time_complexity="O(log N) due to binary division of search intervals.",
+            space_complexity="O(1) iterative state."
+        )
+    })
+
+    # 4. Dynamic Programming: Coin Change (Minimum Coins)
+    records.append({
+        "id": "cot_algo_0004",
+        "category": "algorithmic_reasoning",
+        "subcategory": "dynamic_programming",
+        "instruction": "Implement the Coin Change problem in Python to find the minimum number of coins needed to make up a given amount.",
+        "response": build_reasoning_response(
+            strategy=(
+                "Define dp[i] as the minimum coins needed for amount i. "
+                "Base case: dp[0] = 0. All other dp values initialized to infinity (amount + 1). "
+                "Transition: dp[i] = min(dp[i], dp[i - coin] + 1) for each coin in coins where i >= coin. "
+                "If dp[amount] remains amount + 1, return -1."
+            ),
+            edge_cases=[
+                "Amount = 0: 0 coins needed.",
+                "Amount cannot be formed with given denominations (e.g. amount=3, coins=[2]): returns -1.",
+                "Coin denomination larger than target amount: safely skipped by condition."
+            ],
+            code=(
