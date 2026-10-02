@@ -338,3 +338,16 @@ else:
 finally:
     print("Execution complete (runs unconditionally).")
 ```"""
+
+KNOWLEDGE_REGISTRY["file handling"] = KNOWLEDGE_REGISTRY["file io"] = """**File handling** in Python uses context managers (`with open(...)`) to ensure files are automatically and safely closed after I/O operations.
+
+```python
+# Writing to a file
+with open("data.txt", "w", encoding="utf-8") as f:
+    f.write("Line 1: Hello Python\nLine 2: Offline AI Engine\n")
+
+# Reading from a file line by line
+with open("data.txt", "r", encoding="utf-8") as f:
+    for line in f:
+        print(line.strip())
+```"""
