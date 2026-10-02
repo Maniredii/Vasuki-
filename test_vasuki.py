@@ -136,3 +136,49 @@ def query_model(prompt_text, max_tokens=350, temp=0.2):
     try:
         proc = subprocess.run(
             cmd,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            timeout=30
+        )
+        elapsed = time.time() - t0
+        output = proc.stdout
+        
+        # Clean response header
+        if "### Response:\n" in output:
+            resp = output.split("### Response:\n")[-1]
+        elif "### Response:" in output:
+            resp = output.split("### Response:")[-1]
+        else:
+            resp = output
+
+        if "[ Prompt:" in resp:
+            resp = resp.split("[ Prompt:")[0]
+
+        # Truncate at known stop tokens
+        for st in ["<|im_end|>", "<|endoftext|>", "### Instruction", "### Response", "###", "彩神", "ica", "icas", "esian", "azor", "życz", "rix", "abrasive", "poverty"]:
+            if f"\n{st}" in resp:
+                resp = resp.split(f"\n{st}")[0]
+            elif resp.endswith(st):
+                resp = resp[:-len(st)]
+            elif st in resp:
+                resp = resp.split(st)[0]
+
+        # If response contains structured reasoning sections, preserve complete markdown
+        reasoning_headers = [
+            "### Problem Analysis", "### Edge Cases", "### Complexity",
+            "### Root Cause", "### Performance", "### Algorithmic",
+            "### Key Takeaway", "### Python Implementation"
+        ]
+        if any(h in resp for h in reasoning_headers):
+            return resp.strip(), elapsed
+
+        # 1. If markdown fences are used without structured reasoning, extract code block
+        if "```" in resp:
+            parts = resp.split("```")
+            if len(parts) >= 3:
+                return f"```{parts[1]}```".strip(), elapsed
+
+        lines = resp.splitlines()
+        cleaned_lines = []
