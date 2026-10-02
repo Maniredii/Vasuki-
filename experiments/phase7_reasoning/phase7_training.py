@@ -113,3 +113,26 @@ def load_and_format_datasets():
         if os.path.exists(cand):
             resolved_train = cand
             break
+
+    if not resolved_train:
+        raise FileNotFoundError(f"Training dataset '{TRAINING_DATA_FILE}' not found in working directory or Colab environment.")
+
+    print(f"[*] Reading training data from: {resolved_train}")
+    with open(resolved_train, "r", encoding="utf-8") as f:
+        train_records = [json.loads(line) for line in f if line.strip()]
+
+    # Resolve validation data file path
+    val_candidates = [
+        VALIDATION_DATA_FILE,
+        os.path.join(script_dir, VALIDATION_DATA_FILE),
+        os.path.join("/content", VALIDATION_DATA_FILE),
+        os.path.join("experiments", "phase7_reasoning", VALIDATION_DATA_FILE)
+    ]
+    resolved_val = None
+    for cand in val_candidates:
+        if os.path.exists(cand):
+            resolved_val = cand
+            break
+
+    if resolved_val:
+        print(f"[*] Reading validation data from: {resolved_val}")
