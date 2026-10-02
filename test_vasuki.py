@@ -465,7 +465,19 @@ def interactive_session():
                 print("\n\033[93mAvailable Commands:\033[0m")
                 print("  /run           - Execute last code snippet in a live Python sandbox")
                 print("  /copy          - Copy last code snippet to system clipboard")
-             
+                print("  /save <file>   - Save last code snippet into <file>")
+                print("  /history       - Display conversation history turns")
+                print("  /context       - Display active context window buffer")
+                print("  /reset         - Clear conversation memory")
+                print("  /clear         - Clear terminal screen")
+                print("  exit           - Exit console\n")
+                continue
+
+            if prompt.lower() == "/run":
+                if not last_response:
+                    print("\033[91m[!] No previous code snippet to run.\033[0m\n")
+                else:
+          
             pass
 def run_ds_benchmark():
     """Runs a dedicated Data Structures benchmark."""
