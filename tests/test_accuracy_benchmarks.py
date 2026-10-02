@@ -34,5 +34,9 @@ class TestCoreAccuracy(unittest.TestCase):
         resp, _ = test_vasuki.query_model("write a Python class Stack with push and pop", max_tokens=150)
         self.assertTrue("class " in resp and "push" in resp and "pop" in resp)
         self.assertFalse(test_vasuki.is_degenerate_output(resp))
+    def test_prime_number_check(self):
+        resp, _ = test_vasuki.query_model("write a function to check if a number is prime", max_tokens=150)
+        self.assertTrue("def " in resp and ("% i" in resp or "is_prime" in resp))
+        self.assertFalse(test_vasuki.is_degenerate_output(resp))
 
 if __name__ == '__main__': unittest.main()
