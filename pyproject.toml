@@ -33,3 +33,12 @@ dependencies = []
 [project.urls]
 Homepage = "https://github.com/Maniredii/Vasuki-"
 Documentation = "https://github.com/Maniredii/Vasuki-#readme"
+Bug-Tracker = "https://github.com/Maniredii/Vasuki-/issues"
+Author-LinkedIn = "https://www.linkedin.com/in/manideep-reddy-eevuri-661659268/"
+
+[project.scripts]
+vasuki = "vasuki.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["vasuki*"]
