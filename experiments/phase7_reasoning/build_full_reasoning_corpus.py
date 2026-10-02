@@ -466,3 +466,42 @@ def main():
                 all_ast_ok = True
                 for c in codes:
                     ok, _ = validate_ast(c)
+                    if not ok:
+                        all_ast_ok = False
+                        break
+                if not all_ast_ok:
+                    continue  # Discard syntax-invalid legacy records
+
+            combined_records.append(r)
+            existing_instructions.add(inst)
+            added_baseline += 1
+        print(f"[+] Merged {added_baseline} pristine baseline records (Total Corpus: {len(combined_records)}).")
+
+    # 4. Save combined corpus
+    with open(OUTPUT_TRAIN_FILE, "w", encoding="utf-8") as f:
+        for r in combined_records:
+            f.write(json.dumps(r, ensure_ascii=False) + "\n")
+    print(f"[+] Saved complete training corpus to: {OUTPUT_TRAIN_FILE}")
+
+    # 5. Create Held-out Validation Dataset
+    val_records = [
+        {
+            "id": "val_cot_001",
+            "category": "algorithmic_reasoning",
+            "subcategory": "binary_search",
+            "instruction": "Find the peak element in an array where nums[i] != nums[i+1] in O(log n) time in Python.",
+            "response": build_reasoning_response(
+                strategy=(
+                    "In an array where neighbors are distinct, there is always at least one peak. "
+                    "Compare nums[mid] with nums[mid + 1]. If nums[mid] < nums[mid + 1], a peak must exist "
+                    "in the ascending slope to the right (left = mid + 1). "
+                    "Otherwise, a peak exists at mid or to the left (right = mid)."
+                ),
+                edge_cases=[
+                    "Array of size 1: nums[0] is trivially a peak.",
+                    "Strictly increasing array: last element is peak.",
+                    "Strictly decreasing array: first element is peak."
+                ],
+                code=(
+                    "def find_peak_element(nums: list[int]) -> int:\n"
+                    "    left, right = 0, len(nums) - 1\n"
