@@ -62,3 +62,19 @@ def build_debug_response(
 ) -> str:
     """
     Constructs a step-by-step debugging & root-cause reasoning response.
+    """
+    parts = [
+        "### Root Cause Analysis",
+        flaw_analysis.strip(),
+        "\n### Execution Trace (Failure Scenario)",
+    ]
+    for step in step_trace:
+        parts.append(f"1. {step.strip()}" if not step.strip().startswith("1.") else step.strip())
+        
+    parts.append("\n### Corrected Implementation")
+    clean_code = fixed_code.strip()
+    if not clean_code.startswith("```python"):
+        clean_code = f"```python\n{clean_code}\n```"
+    parts.append(clean_code)
+    
+    parts.append("\n### Key Takeaway & Prevention")
