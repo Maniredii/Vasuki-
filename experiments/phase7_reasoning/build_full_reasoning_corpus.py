@@ -310,3 +310,42 @@ def generate_extended_algorithmic_records() -> List[Dict[str, Any]]:
                 "    return result\n"
                 "\n"
                 "# Verification assertions\n"
+                "subsets = generate_subsets([1, 2, 3])\n"
+                "assert len(subsets) == 8  # 2^3 = 8\n"
+                "assert [] in subsets\n"
+                "assert [1] in subsets\n"
+                "assert [1, 2, 3] in subsets\n"
+                "assert generate_subsets([]) == [[]]\n"
+            ),
+            time_complexity="O(N * 2^N) to generate and copy 2^N subsets of average size N/2.",
+            space_complexity="O(N) recursion call stack depth."
+        )
+    })
+
+    # =========================================================================
+    # DEBUGGING & CODE ANALYSIS
+    # =========================================================================
+
+    # 7. Debug: Late-Binding Closures in Loops
+    recs.append({
+        "id": "debug_cot_003",
+        "category": "code_debugging",
+        "subcategory": "closure_scoping",
+        "instruction": (
+            "Debug the following Python code where lambdas in a list all return the same unexpected value:\n"
+            "```python\n"
+            "funcs = [lambda: i for i in range(5)]\n"
+            "print([f() for f in funcs])  # Outputs [4, 4, 4, 4, 4] instead of [0, 1, 2, 3, 4]\n"
+            "```"
+        ),
+        "response": build_debug_response(
+            flaw_analysis=(
+                "Python closures bind variables **by reference, not by value**. "
+                "The variable `i` is looked up in the surrounding scope at execution time when `f()` is called, "
+                "not when the lambda is created. By the time the functions are invoked, the loop has completed "
+                "and `i` remains fixed at `4`."
+            ),
+            step_trace=[
+                "Loop runs: `funcs` receives 5 lambda closures all referencing the variable `i`.",
+                "Loop terminates: `i` holds value 4.",
+                "Evaluation: `funcs[0]()` looks up `i` in enclosing scope, finding 4.",
