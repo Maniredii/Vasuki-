@@ -504,3 +504,54 @@ def run_ds_benchmark():
         ("Binary Search Tree (BST)", "Write a Python class BST with insert and search methods"),
         ("Trie (Prefix Tree)", "Write a Python class Trie with insert and search methods"),
         ("Linked List Reversal", "Write a Python function reverse_linked_list(head) that reverses a singly linked list and returns the new head"),
+        ("Graph BFS Traversal", "Write a Python function bfs(graph, start) to perform breadth-first search traversal on an adjacency list graph"),
+        ("Graph DFS Traversal", "Write a Python function dfs(graph, start) to perform depth-first search traversal on a graph"),
+    ]
+    
+    print("\n" + "=" * 70)
+    print("VASUKI Phase 6J Data Structures Benchmark")
+    print(f"Model: {MODEL_PATH} ({os.path.getsize(MODEL_PATH)/(1024**2):.1f} MB)")
+    print("=" * 70)
+    
+    for i, (name, prompt) in enumerate(ds_cases, 1):
+        print(f"\n[{i}/{len(ds_cases)}] {name}")
+        print(f"Prompt: {prompt}")
+        print("-" * 50)
+        resp, dur = query_model(prompt)
+        show_typing(resp, speed=0.006)
+        print("-" * 50)
+        print(f"Inference Time: {dur:.2f}s\n")
+    print("=" * 70)
+    print("Data Structures Benchmark complete!")
+    print("=" * 70)
+
+def main():
+    if not os.path.exists(MODEL_PATH):
+        print(f"Error: Model file not found at {MODEL_PATH}")
+        sys.exit(1)
+    if not os.path.exists(LLAMA_CLI):
+        print(f"Error: llama-cli.exe not found at {LLAMA_CLI}")
+        sys.exit(1)
+        
+    parser = argparse.ArgumentParser(description="Test VASUKI Phase 6J Model in Terminal")
+    parser.add_argument("prompt", nargs="?", default=None, help="Optional single prompt to test")
+    parser.add_argument("--benchmark", action="store_true", help="Run automated multi-prompt benchmark")
+    parser.add_argument("--ds", action="store_true", help="Run dedicated Data Structures benchmark")
+    
+    args = parser.parse_args()
+    
+    if args.ds:
+        run_ds_benchmark()
+    elif args.benchmark:
+        run_benchmark()
+    elif args.prompt:
+        print_banner()
+        print(f"\033[93mPrompt:\033[0m {args.prompt}\n")
+        resp, dur = query_model(args.prompt)
+        show_typing(resp, speed=0.012)
+        print(f"\n\033[90m(Inference time: {dur:.2f}s)\033[0m\n")
+    else:
+        interactive_session()
+
+if __name__ == "__main__":
+    main()
