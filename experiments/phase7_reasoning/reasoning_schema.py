@@ -174,3 +174,26 @@ def execute_in_sandbox(code: str, timeout_seconds: float = 2.0) -> Tuple[bool, O
         "bisect": bisect,
         "typing": typing,
         "List": typing.List,
+        "Dict": typing.Dict,
+        "Tuple": typing.Tuple,
+        "Set": typing.Set,
+        "Optional": typing.Optional,
+        "Union": typing.Union,
+        "Any": typing.Any
+    }
+    
+    try:
+        exec(code, sandbox_globals)
+        return True, None
+    except AssertionError as e:
+        return False, f"Assertion Failed: {str(e)}"
+    except Exception as e:
+        return False, f"Runtime Error ({type(e).__name__}): {str(e)}"
+
+
+def estimate_token_count(text: str) -> int:
+    """Estimates BPE token count for Qwen/Llama tokenizer (~1.3 tokens per whitespace word)."""
+    words = len(text.split())
+    # Code and punctuation have higher token-to-word ratio
+    punctuation_count = len(re.findall(r"[{}\[\](),.:;+\-*/=<>]", text))
+    return int(words * 1.15 + punctuation_count * 0.35)
