@@ -322,3 +322,19 @@ print(even_squares)  # [4, 16, 36]
 word_lengths = {w: len(w) for w in ["python", "ai", "code"]}
 print(word_lengths)  # {'python': 6, 'ai': 2, 'code': 4}
 ```"""
+
+KNOWLEDGE_REGISTRY["exception handling"] = KNOWLEDGE_REGISTRY["exceptions"] = KNOWLEDGE_REGISTRY["try except"] = """**Exception handling** in Python catches runtime errors gracefully using `try`, `except`, `else`, and `finally` blocks.
+
+```python
+try:
+    value = int("42")
+    result = 100 / value
+except ValueError:
+    print("Invalid number format.")
+except ZeroDivisionError:
+    print("Cannot divide by zero.")
+else:
+    print(f"Calculation succeeded: {result}")
+finally:
+    print("Execution complete (runs unconditionally).")
+```"""
