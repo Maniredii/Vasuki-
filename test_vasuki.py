@@ -458,3 +458,49 @@ def interactive_session():
 
             if prompt.lower() == "/copy":
                 if not last_response:
+                    print("\033[91m[!] No previous code snippet to copy.\033[0m\n")
+                else:
+                    ok = copy_to_clipboard(last_response)
+                    if ok:
+                        print("\033[92m[✓] Copied last code snippet to clipboard!\033[0m\n")
+                    else:
+                        print("\033[91m[!] Failed to copy to clipboard.\033[0m\n")
+                continue
+
+            if prompt.lower().startswith("/save"):
+                parts = prompt.split(maxsplit=1)
+                if len(parts) < 2 or not parts[1].strip():
+                    print("\033[91m[!] Usage: /save <filename.py>\033[0m\n")
+                elif not last_response:
+                    print("\033[91m[!] No previous code snippet to save.\033[0m\n")
+                else:
+                    save_path = parts[1].strip()
+                    try:
+                        with open(save_path, "w", encoding="utf-8") as f:
+                            f.write(last_response + "\n")
+                        print(f"\033[92m[✓] Saved snippet to {save_path}\033[0m\n")
+                    except Exception as e:
+                        print(f"\033[91m[!] Error saving file: {e}\033[0m\n")
+                continue
+
+            print("\033[90m[VASUKI is typing...]\033[0m", end="\r", flush=True)
+            response, elapsed = query_model(prompt)
+            print(" " * 30, end="\r")  # Clear the typing banner
+            print("-" * 55)
+            show_typing(response, speed=0.009, colorize=True)
+            print("-" * 55)
+            print(f"\033[90m(Generated in {elapsed:.2f}s | Type /run to test, /copy to copy)\033[0m\n")
+            last_response = response
+
+        except (KeyboardInterrupt, EOFError):
+            print("\nExiting VASUKI console.")
+            break
+
+def run_ds_benchmark():
+    """Runs a dedicated Data Structures benchmark."""
+    ds_cases = [
+        ("Stack (LIFO)", "Write a Python class Stack with push, pop, peek, and is_empty methods"),
+        ("Queue (FIFO)", "Write a Python class Queue with enqueue, dequeue, and is_empty methods"),
+        ("Binary Search Tree (BST)", "Write a Python class BST with insert and search methods"),
+        ("Trie (Prefix Tree)", "Write a Python class Trie with insert and search methods"),
+        ("Linked List Reversal", "Write a Python function reverse_linked_list(head) that reverses a singly linked list and returns the new head"),
