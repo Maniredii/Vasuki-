@@ -158,3 +158,19 @@ def execute_in_sandbox(code: str, timeout_seconds: float = 2.0) -> Tuple[bool, O
     safe_modules["typing"] = typing
     
     def restricted_import(name, *args, **kwargs):
+        if name in safe_modules:
+            return safe_modules[name]
+        raise ImportError(f"Import of '{name}' is restricted in validation sandbox.")
+        
+    safe_builtins["__import__"] = restricted_import
+    
+    sandbox_globals = {
+        "__builtins__": safe_builtins,
+        "math": math,
+        "collections": collections,
+        "itertools": itertools,
+        "heapq": heapq,
+        "functools": functools,
+        "bisect": bisect,
+        "typing": typing,
+        "List": typing.List,
