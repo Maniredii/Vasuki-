@@ -16,7 +16,7 @@ class VasukiEngine:
     def __init__(self, model_path: str = None, model_name: str = None):
         self.model_path = model_path or resolve_model_path(model_name)
 
-    def generate(self, prompt: str, max_tokens: int = 350, temperature: float = 0.2) -> str:
+    def generate(self, prompt: str, max_tokens: int = 350, temperature: float = 0.2, timeout: int = 30) -> str:
         resp, _ = query_model(prompt, max_tokens=max_tokens, temp=temperature, allow_fallback=True)
         return resp
 
