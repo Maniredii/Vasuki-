@@ -78,3 +78,19 @@ def build_debug_response(
     parts.append(clean_code)
     
     parts.append("\n### Key Takeaway & Prevention")
+    parts.append(key_takeaway.strip())
+    
+    return "\n".join(parts)
+
+
+def build_optimization_response(
+    baseline_analysis: str,
+    optimization_strategy: str,
+    optimized_code: str,
+    speedup_comparison: str
+) -> str:
+    """
+    Constructs an algorithmic optimization & trade-off reasoning response.
+    """
+    parts = [
+        "### Performance Bottleneck Analysis",
