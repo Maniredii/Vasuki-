@@ -21,3 +21,26 @@ from pathlib import Path
 # ============================================================================
 # CONFIGURATION & HYPERPARAMETERS
 # ============================================================================
+
+EXPERIMENT_ID = "vasuki_phase7_reasoning"
+BASE_MODEL = "unsloth/Qwen2.5-Coder-0.5B"
+# Dataset Selection: Priority to Phase 7.2 Expanded Corpus (5,486 records)
+EXPANDED_FILE = "phase7_2_expanded_corpus.jsonl"
+BALANCED_FILE = "phase7_1_balanced_corpus.jsonl"
+BASE_FILE = "phase7_reasoning_corpus.jsonl"
+
+if os.path.exists(EXPANDED_FILE):
+    TRAINING_DATA_FILE = EXPANDED_FILE
+    MAX_STEPS = 1200      # ~1.8 epochs over 5,486 records with effective batch size 8
+    EVAL_STEPS = 100
+elif os.path.exists(BALANCED_FILE):
+    TRAINING_DATA_FILE = BALANCED_FILE
+    MAX_STEPS = 800       # ~2 epochs over 3,086 records
+    EVAL_STEPS = 80
+else:
+    TRAINING_DATA_FILE = BASE_FILE
+    MAX_STEPS = 650
+    EVAL_STEPS = 65
+
+VALIDATION_DATA_FILE = "phase7_reasoning_val.jsonl"
+OUTPUT_DIR = "./phase7_output"
