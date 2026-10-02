@@ -94,3 +94,19 @@ def build_optimization_response(
     """
     parts = [
         "### Performance Bottleneck Analysis",
+        baseline_analysis.strip(),
+        "\n### Algorithmic Optimization Strategy",
+        optimization_strategy.strip(),
+        "\n### Optimized Python Implementation",
+    ]
+    clean_code = optimized_code.strip()
+    if not clean_code.startswith("```python"):
+        clean_code = f"```python\n{clean_code}\n```"
+    parts.append(clean_code)
+    
+    parts.append("\n### Performance Comparison")
+    parts.append(speedup_comparison.strip())
+    
+    return "\n".join(parts)
+
+
