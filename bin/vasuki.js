@@ -49,14 +49,20 @@ if (args.includes('--help') || args.includes('-h')) {
 \x1b[93mUsage:\x1b[0m
   vasuki                     Start interactive live console (with typing animation)
   vasuki "<prompt>"          Ask a specific Python question / task
-  vasuki --web               Launch local Web UI & Mobile server (http://localhost:8000)
+  vasuki --fix <file.py>     Analyze and fix bugs/bottlenecks in <file.py>
+  vasuki --test <file.py>    Generate pytest unit tests for <file.py>
+  vasuki --audit <file.py>   Perform complexity and security audit on <file.py>
+  vasuki --doc <file.py>     Add docstrings and type hints to <file.py>
+  vasuki --fix <f> --in-place Update file directly with .bak backup
+  cat file.py | vasuki       Process piped input directly from standard input
+  vasuki --web               Launch local Web UI & OpenAI REST API (http://localhost:8000)
   vasuki --benchmark         Run automated 8-prompt core accuracy benchmark
   vasuki --ds                Run dedicated Data Structures benchmark (BST, Trie, Queue...)
   vasuki --help              Show this help message
   vasuki --version           Display version and author information
 
 \x1b[93mInteractive Console Commands:\x1b[0m
-  /run                       Execute last generated code snippet in sandbox
+  /run                       Execute last generated code snippet in live sandbox
   /copy                      Copy last code snippet to system clipboard
   /save <file.py>            Save snippet to a Python file
   /clear                     Clear console screen

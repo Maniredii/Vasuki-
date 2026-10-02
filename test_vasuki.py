@@ -151,12 +151,8 @@ def query_model(prompt_text, max_tokens=350, temp=0.2):
             resp = resp.split("[ Prompt:")[0]
 
         # Truncate at known structural stop tokens
-        for st in ["<|im_end|>", "<|endoftext|>", "### Instruction", "### Response", "###", "彩神"]:
-            if f"\n{st}" in resp:
-                resp = resp.split(f"\n{st}")[0]
-            elif resp.endswith(st):
-                resp = resp[:-len(st)]
-            elif st in resp:
+        for st in ["<|im_end|>", "<|endoftext|>", "\n### Instruction", "\n### Response", "彩神"]:
+            if st in resp:
                 resp = resp.split(st)[0]
 
         # If response contains structured reasoning sections, preserve complete markdown
@@ -527,25 +523,116 @@ def main():
         print(f"Error: llama-cli.exe not found at {LLAMA_CLI}")
         sys.exit(1)
         
-    parser = argparse.ArgumentParser(description="Test VASUKI Phase 6J Model in Terminal")
-    parser.add_argument("prompt", nargs="?", default=None, help="Optional single prompt to test")
+    parser = argparse.ArgumentParser(description="VASUKI Phase 7: Offline Python AI Specialist Engine")
+    parser.add_argument("prompt", nargs="?", default=None, help="Prompt or task instruction")
+    parser.add_argument("--fix", type=str, metavar="FILE", help="Fix bugs and optimize the specified Python file")
+    parser.add_argument("--test", type=str, metavar="FILE", help="Generate pytest unit tests for the specified Python file")
+    parser.add_argument("--audit", type=str, metavar="FILE", help="Perform complexity, quality, and security audit on the specified file")
+    parser.add_argument("--doc", type=str, metavar="FILE", help="Add type hints and docstrings to the specified Python file")
+    parser.add_argument("--in-place", action="store_true", help="Write changes directly back to the target file (creates .bak backup)")
+    parser.add_argument("--raw", action="store_true", help="Print only raw output (no banners, formatting, or timing; useful for pipes)")
+    parser.add_argument("--pipe", action="store_true", help="Read input from standard input (pipe)")
     parser.add_argument("--benchmark", action="store_true", help="Run automated multi-prompt benchmark")
     parser.add_argument("--ds", action="store_true", help="Run dedicated Data Structures benchmark")
     
     args = parser.parse_args()
     
+    is_pipe_out = not sys.stdout.isatty() or args.raw
+
+    # 1. Benchmarks
     if args.ds:
         run_ds_benchmark()
+        return
     elif args.benchmark:
         run_benchmark()
-    elif args.prompt:
-        print_banner()
-        print(f"\033[93mPrompt:\033[0m {args.prompt}\n")
+        return
+
+    # 2. File-based operations (--fix, --test, --audit, --doc)
+    target_file = args.fix or args.test or args.audit or args.doc
+    if target_file:
+        if not os.path.exists(target_file):
+            print(f"\033[91m[Error] File not found: {target_file}\033[0m", file=sys.stderr)
+            sys.exit(1)
+        try:
+            with open(target_file, "r", encoding="utf-8", errors="replace") as f:
+                file_code = f.read()
+        except Exception as e:
+            print(f"\033[91m[Error] Failed to read {target_file}: {e}\033[0m", file=sys.stderr)
+            sys.exit(1)
+            
+        if args.fix:
+            query = f"Fix all bugs, handle edge cases, and optimize this Python code:\n\n{file_code}"
+        elif args.test:
+            query = f"Write unit test cases using pytest for this Python code:\n\n{file_code}"
+        elif args.audit:
+            query = f"Analyze time complexity, space complexity, and security for this Python code:\n\n{file_code}"
+        elif args.doc:
+            query = f"Add Python docstrings and type annotations to this code:\n\n{file_code}"
+            
+        if not is_pipe_out:
+            print_banner()
+            action_name = "Fixing" if args.fix else ("Generating tests for" if args.test else ("Auditing" if args.audit else "Documenting"))
+            print(f"\033[93m[{action_name}]:\033[0m {target_file}\n")
+            
+        resp, dur = query_model(query, max_tokens=500)
+        
+        # If --in-place requested for --fix or --doc
+        if args.in_place and (args.fix or args.doc):
+            backup_file = f"{target_file}.bak"
+            with open(backup_file, "w", encoding="utf-8") as bf:
+                bf.write(file_code)
+            with open(target_file, "w", encoding="utf-8") as tf:
+                tf.write(resp + "\n")
+            if not is_pipe_out:
+                print(f"\033[92m[✓] Successfully updated {target_file} (Backup saved to {backup_file})\033[0m")
+                print(f"\033[90m(Completed in {dur:.2f}s)\033[0m\n")
+            return
+            
+        if is_pipe_out:
+            sys.stdout.write(resp + "\n")
+            sys.stdout.flush()
+        else:
+            show_typing(resp, speed=0.008)
+            print(f"\n\033[90m(Inference time: {dur:.2f}s)\033[0m\n")
+        return
+
+    # 3. Piped stdin handling (--pipe, "-", or piped stdin when prompt is given)
+    piped_content = ""
+    if args.pipe or args.prompt == "-":
+        try:
+            piped_content = sys.stdin.read().strip()
+        except Exception:
+            piped_content = ""
+
+    if piped_content:
+        prompt_instruction = args.prompt if args.prompt and args.prompt != "-" else "Analyze, optimize, or complete the following Python code:"
+        query = f"{prompt_instruction}\n\n```python\n{piped_content}\n```"
+        resp, dur = query_model(query)
+        if is_pipe_out:
+            sys.stdout.write(resp + "\n")
+            sys.stdout.flush()
+        else:
+            print_banner()
+            print(f"\033[93mPiped Input Processed:\033[0m\n")
+            show_typing(resp, speed=0.008)
+            print(f"\n\033[90m(Inference time: {dur:.2f}s)\033[0m\n")
+        return
+
+    # 4. Standard command-line prompt
+    if args.prompt:
         resp, dur = query_model(args.prompt)
-        show_typing(resp, speed=0.012)
-        print(f"\n\033[90m(Inference time: {dur:.2f}s)\033[0m\n")
-    else:
-        interactive_session()
+        if is_pipe_out:
+            sys.stdout.write(resp + "\n")
+            sys.stdout.flush()
+        else:
+            print_banner()
+            print(f"\033[93mPrompt:\033[0m {args.prompt}\n")
+            show_typing(resp, speed=0.012)
+            print(f"\n\033[90m(Inference time: {dur:.2f}s)\033[0m\n")
+        return
+
+    # 5. Fallback to interactive REPL
+    interactive_session()
 
 if __name__ == "__main__":
     main()

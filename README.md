@@ -77,8 +77,33 @@ vasuki-py "Write a Python function to check whether a string is a palindrome"
 
 ---
 
-### 3. Local Web & Mobile UI
-Start the local server and interact with VASUKI in a web interface:
+### 3. File Operations & Unix Pipe Support
+VASUKI integrates natively into your terminal workflows, editor scripts, and Unix pipelines:
+
+```bash
+# Analyze and fix bugs / bottlenecks in a Python file
+vasuki --fix buggy_script.py
+
+# Fix bugs in-place (automatically creates buggy_script.py.bak backup)
+vasuki --fix buggy_script.py --in-place
+
+# Automatically generate a complete pytest test suite
+vasuki --test math_utils.py > test_math_utils.py
+
+# Perform complexity, code quality, and security audit
+vasuki --audit server.py
+
+# Add complete docstrings and PEP-484 type annotations
+vasuki --doc utils.py
+
+# Process piped input directly from standard input (Unix pipelines)
+cat script.py | vasuki "optimize this algorithm" > optimized_script.py
+```
+
+---
+
+### 4. Local Web UI & Mobile Server
+Start the local server and interact with VASUKI in a web interface or REST API:
 
 ```bash
 vasuki-py --web
