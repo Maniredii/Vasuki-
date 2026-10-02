@@ -82,3 +82,31 @@ def main():
         print(f"[*] Loaded {len(val_instructions)} validation instructions for zero contamination guardrail.", flush=True)
 
     seen_instructions = set(val_instructions)
+    for r in existing_records:
+        seen_instructions.add(r["instruction"].strip().lower())
+
+    new_records = []
+
+    # 2. Harvest from local iamtarun_python_18k.jsonl
+    print("\n[*] 2. Harvesting clean AST-verified records from local iamtarun_python_18k...", flush=True)
+    iamtarun_count = 0
+    if LOCAL_IAMTARUN_FILE.exists():
+        with open(LOCAL_IAMTARUN_FILE, "r", encoding="utf-8") as f:
+            for line in f:
+                if not line.strip():
+                    continue
+                r = json.loads(line)
+                inst = (r.get("instruction") or "").strip()
+                resp = (r.get("response") or "").strip()
+                inst_lower = inst.lower()
+
+                if inst_lower in seen_instructions:
+                    continue
+
+                if not is_valid_entry(inst, resp):
+                    continue
+
+                seen_instructions.add(inst_lower)
+                new_records.append({
+                    "id": f"expanded_iamtarun_{iamtarun_count+1:04d}",
+                    "instruction": inst,
