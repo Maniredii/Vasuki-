@@ -23,6 +23,7 @@ if hasattr(sys.stderr, "reconfigure"):
     sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
 import shutil
+from vasuki.knowledge import resolve_knowledge
 
 def resolve_model_path(requested_model=None):
     """Finds the GGUF model path across environment, local repo, and user home."""
