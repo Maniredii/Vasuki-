@@ -418,3 +418,33 @@ def get_core_reasoning_records() -> List[Dict[str, Any]]:
                 "    numbers[:] = [x for x in numbers if x % 2 != 0]\n"
                 "\n"
                 "# Verification assertions\n"
+                "data = [1, 2, 4, 6, 7, 8]\n"
+                "assert filter_evens(data) == [1, 7]\n"
+                "filter_evens_in_place(data)\n"
+                "assert data == [1, 7]\n"
+            ),
+            key_takeaway=(
+                "Never modify list length during a `for x in my_list` loop. Use list comprehensions, "
+                "or iterate over a shallow copy `for x in my_list[:]` if slice assignment is desired."
+            )
+        )
+    })
+
+    # =========================================================================
+    # CATEGORY 3: ALGORITHMIC OPTIMIZATION & PERFORMANCE REASONING
+    # =========================================================================
+
+    # 9. Optimization: Two Sum O(N^2) to O(N) Hash Map
+    records.append({
+        "id": "cot_opt_0001",
+        "category": "algorithmic_optimization",
+        "subcategory": "hash_indexing",
+        "instruction": "Optimize a naive O(n^2) Two Sum implementation to O(n) in Python, explaining the mathematical trade-off.",
+        "response": build_optimization_response(
+            baseline_analysis=(
+                "A nested brute-force loop checks every pair (i, j). For an array of size N, this computes "
+                "N*(N-1)/2 pair combinations, resulting in quadratic O(N^2) time complexity. "
+                "For N=10^5, this requires ~5x10^9 operations, which times out."
+            ),
+            optimization_strategy=(
+                "We can trade O(N) space for O(1) time lookup by recognizing that for each element `x`, "
