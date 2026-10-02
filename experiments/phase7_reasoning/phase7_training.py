@@ -136,3 +136,26 @@ def load_and_format_datasets():
 
     if resolved_val:
         print(f"[*] Reading validation data from: {resolved_val}")
+        with open(resolved_val, "r", encoding="utf-8") as f:
+            val_records = [json.loads(line) for line in f if line.strip()]
+    else:
+        # Graceful fallback: automatically carve out 50 samples or 2% for validation
+        print(f"[*] Notice: '{VALIDATION_DATA_FILE}' not found. Auto-partitioning 50 records from training dataset for validation.")
+        val_count = min(50, max(2, int(len(train_records) * 0.02)))
+        val_records = train_records[-val_count:]
+        train_records = train_records[:-val_count]
+
+    def format_records(raw_records):
+        formatted = []
+        for r in raw_records:
+            prompt = f"### Instruction:\n{r['instruction']}\n\n"
+            if r.get('input'):
+                prompt += f"### Input:\n{r['input']}\n\n"
+            prompt += RESPONSE_DELIMITER
+            clean_resp = r['response'].strip()
+            full_text = prompt + clean_resp + "\n<|im_end|>\n"
+            formatted.append({
+                "prompt": prompt,
+                "response": clean_resp + "\n<|im_end|>\n",
+                "text": full_text
+            })
