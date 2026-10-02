@@ -159,3 +159,26 @@ def load_and_format_datasets():
                 "response": clean_resp + "\n<|im_end|>\n",
                 "text": full_text
             })
+        return formatted
+
+    train_data = format_records(train_records)
+    val_data = format_records(val_records)
+    print(f"[*] Training Records Formatted:   {len(train_data)}")
+    print(f"[*] Validation Records Formatted: {len(val_data)}")
+    return train_data, val_data
+
+
+def run_training():
+    if not verify_environment():
+        sys.exit(1)
+
+    train_data, val_data = load_and_format_datasets()
+
+    from unsloth import FastLanguageModel
+    from datasets import Dataset
+    from trl import SFTTrainer
+    from transformers import TrainingArguments
+    from unsloth import is_bfloat16_supported
+
+    print("\n[*] Initializing FastLanguageModel from Unsloth...")
+    model, tokenizer = FastLanguageModel.from_pretrained(
