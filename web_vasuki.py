@@ -1,3 +1,4 @@
+from vasuki.knowledge import resolve_knowledge
 """
 VASUKI Phase 7: Local Web, Mobile & OpenAI-Compatible REST Server
 Zero external dependencies - runs on standard Python 3.
