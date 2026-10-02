@@ -28,14 +28,14 @@ def resolve_model_path():
     """Finds the GGUF model path across environment, local repo, and user home."""
     if os.environ.get("VASUKI_MODEL_PATH") and os.path.exists(os.environ["VASUKI_MODEL_PATH"]):
         return os.environ["VASUKI_MODEL_PATH"]
-    # Priority 1: Phase 7 Edge Reasoning Engine
-    p7 = os.path.join(os.path.dirname(os.path.abspath(__file__)), "vasuki_phase7.Q4_K_M.gguf")
-    if os.path.exists(p7):
-        return p7
-    # Priority 2: Phase 6J
+    # Priority 1: Phase 6J (Verified production-stable engine)
     local = os.path.join(os.path.dirname(os.path.abspath(__file__)), "vasuki_phase6j.Q4_K_M.gguf")
     if os.path.exists(local):
         return local
+    # Priority 2: Phase 7 Edge Reasoning Engine
+    p7 = os.path.join(os.path.dirname(os.path.abspath(__file__)), "vasuki_phase7.Q4_K_M.gguf")
+    if os.path.exists(p7):
+        return p7
     home_model = os.path.join(os.path.expanduser("~"), ".vasuki", "models", "vasuki_phase7.Q4_K_M.gguf")
     if os.path.exists(home_model):
         return home_model
