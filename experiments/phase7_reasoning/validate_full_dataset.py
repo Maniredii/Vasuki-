@@ -62,3 +62,11 @@ def main():
         val_records = [json.loads(line) for line in f if line.strip()]
 
     print(f"\n[*] Record Counts:")
+    print(f"    - Training Records:   {len(train_records)}")
+    print(f"    - Validation Records: {len(val_records)}")
+
+    # Check contamination
+    train_insts = {r["instruction"].strip().lower() for r in train_records}
+    val_insts = {r["instruction"].strip().lower() for r in val_records}
+    overlap = train_insts.intersection(val_insts)
+    if overlap:
