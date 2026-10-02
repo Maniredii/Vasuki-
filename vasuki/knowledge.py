@@ -462,3 +462,13 @@ Use `collections.deque` for $O(1)$ operations at both ends.
 - **Enqueue:** `deque.append(x)` — $O(1)$
 - **Dequeue:** `deque.popleft()` — $O(1)$
 """
+
+KNOWLEDGE_REGISTRY["big o"] = KNOWLEDGE_REGISTRY["time complexity"] = """**Big O Notation** mathematically describes the limiting behavior of an algorithm as the input size $N$ approaches infinity.
+
+### Common Complexity Classes:
+- **$O(1)$ Constant:** Hash map lookup, list index access.
+- **$O(\log N)$ Logarithmic:** Binary search.
+- **$O(N)$ Linear:** Single loop traversal.
+- **$O(N \log N)$ Linearithmic:** Merge sort, Timsort (`sorted()`).
+- **$O(N^2)$ Quadratic:** Nested loops (bubble sort).
+"""
