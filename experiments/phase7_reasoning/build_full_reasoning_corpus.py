@@ -388,3 +388,42 @@ def generate_extended_algorithmic_records() -> List[Dict[str, Any]]:
                 "from typing import Iterable\n"
                 "\n"
                 "def sum_even_squares(numbers: Iterable[int]) -> int:\n"
+                "    # Lazy generator pipeline with zero intermediate list allocations\n"
+                "    return sum(x * x for x in numbers if x % 2 == 0)\n"
+                "\n"
+                "# Verification assertions\n"
+                "assert sum_even_squares([1, 2, 3, 4, 5, 6]) == 2*2 + 4*4 + 6*6  # 4 + 16 + 36 = 56\n"
+                "assert sum_even_squares([]) == 0\n"
+                "assert sum_even_squares([1, 3, 5]) == 0\n"
+            ),
+            speedup_comparison=(
+                "- **Time Complexity:** O(N) single-pass streaming.\n"
+                "- **Space Complexity:** O(1) constant memory (vs O(N) list storage).\n"
+                "- **Practical Impact:** Enables processing unbounded gigabyte streams with sub-megabyte RAM."
+            )
+        )
+    })
+
+    return recs
+
+
+def main():
+    print("=" * 80)
+    print("VASUKI Phase 7: Building Complete Reasoning Corpus")
+    print("=" * 80)
+
+    # 1. Gather all core reasoning records
+    from generate_reasoning_dataset import get_core_reasoning_records
+    base_recs = get_core_reasoning_records()
+    extended_recs = generate_extended_algorithmic_records()
+    all_reasoning_recs = base_recs + extended_recs
+
+    print(f"[*] Compiled {len(all_reasoning_recs)} structured reasoning records.")
+
+    # 2. Validate all reasoning records
+    validated_recs = []
+    for r in all_reasoning_recs:
+        codes = extract_python_code(r["response"])
+        valid = True
+        for c in codes:
+            ok, err = validate_ast(c)
