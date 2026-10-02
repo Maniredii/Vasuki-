@@ -23,7 +23,7 @@ from pathlib import Path
 # ============================================================================
 
 EXPERIMENT_ID = "vasuki_phase7_reasoning"
-BASE_MODEL = "unsloth/Qwen2.5-Coder-0.5B"
+BASE_MODEL = "unsloth/Qwen2.5-Coder-0.5B-Instruct"
 # Dataset Selection: Priority to Phase 7.2 Expanded Corpus (5,486 records)
 EXPANDED_FILE = "phase7_2_expanded_corpus.jsonl"
 BALANCED_FILE = "phase7_1_balanced_corpus.jsonl"
