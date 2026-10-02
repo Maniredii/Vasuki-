@@ -22,7 +22,7 @@ KNOWLEDGE_REGISTRY["function"] = KNOWLEDGE_REGISTRY["functions"] = """A **functi
 
 ```python
 def calculate_total(price: float, tax_rate: float = 0.08) -> float:
-    """Calculates final price including sales tax."""
+    # Calculates final price including sales tax.
     return price * (1 + tax_rate)
 
 print(calculate_total(100.0))  # 108.0
