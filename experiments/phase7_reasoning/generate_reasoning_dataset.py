@@ -118,3 +118,33 @@ def get_core_reasoning_records() -> List[Dict[str, Any]]:
                 "    for end, char in enumerate(s):\n"
                 "        if char in last_seen and last_seen[char] >= start:\n"
                 "            start = last_seen[char] + 1\n"
+                "        last_seen[char] = end\n"
+                "        max_len = max(max_len, end - start + 1)\n"
+                "        \n"
+                "    return max_len\n"
+                "\n"
+                "# Verification assertions\n"
+                "assert length_of_longest_substring('abcabcbb') == 3\n"
+                "assert length_of_longest_substring('bbbbb') == 1\n"
+                "assert length_of_longest_substring('pwwkew') == 3\n"
+                "assert length_of_longest_substring('') == 0\n"
+            ),
+            time_complexity="O(N) where N is the length of string s.",
+            space_complexity="O(min(N, M)) where M is the size of character alphabet."
+        )
+    })
+
+    # 3. Binary Search: Search in Rotated Sorted Array
+    records.append({
+        "id": "cot_algo_0003",
+        "category": "algorithmic_reasoning",
+        "subcategory": "binary_search",
+        "instruction": "Write a Python function to search for a target value in a rotated sorted array in O(log n) time.",
+        "response": build_reasoning_response(
+            strategy=(
+                "In a rotated sorted array, splitting at midpoint `mid` always leaves at least one half "
+                "strictly sorted. We determine if nums[left] <= nums[mid] (left half sorted) or not "
+                "(right half sorted). Once identified, we check if target falls within the sorted boundary "
+                "to prune half the search space on each iteration."
+            ),
+            edge_cases=[
