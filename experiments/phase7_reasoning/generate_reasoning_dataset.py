@@ -268,3 +268,33 @@ def get_core_reasoning_records() -> List[Dict[str, Any]]:
                 "    return ans\n"
                 "\n"
                 "# Verification assertions\n"
+                "assert daily_temperatures([73, 74, 75, 71, 69, 72, 76, 73]) == [1, 1, 4, 2, 1, 1, 0, 0]\n"
+                "assert daily_temperatures([30, 40, 50, 60]) == [1, 1, 1, 0]\n"
+                "assert daily_temperatures([30, 60, 90]) == [1, 1, 0]\n"
+            ),
+            time_complexity="O(N) because each index is pushed and popped at most once.",
+            space_complexity="O(N) for monotonic stack in worst case."
+        )
+    })
+
+    # 6. Graphs: Topological Sort & Cycle Detection in DAG (Kahn's Algorithm)
+    records.append({
+        "id": "cot_algo_0006",
+        "category": "algorithmic_reasoning",
+        "subcategory": "graph_theory",
+        "instruction": "Implement Kahn's algorithm for topological sorting and cycle detection in Python.",
+        "response": build_reasoning_response(
+            strategy=(
+                "Kahn's algorithm utilizes in-degrees of vertices in a directed graph. "
+                "1. Build adjacency list and compute in-degrees for all nodes. "
+                "2. Enqueue all nodes with in-degree 0 into a collections.deque. "
+                "3. Repeatedly dequeue a node, add to topological order, and decrement in-degrees of neighbors. "
+                "4. If a neighbor reaches in-degree 0, enqueue it. "
+                "5. If total processed nodes < total vertices, a directed cycle exists."
+            ),
+            edge_cases=[
+                "Graph with cycles: returns empty list / raises cycle indicator.",
+                "Disconnected DAG components: handled seamlessly as all degree-0 roots are enqueued.",
+                "Empty graph: returns empty list."
+            ],
+            code=(
