@@ -448,3 +448,33 @@ def get_core_reasoning_records() -> List[Dict[str, Any]]:
             ),
             optimization_strategy=(
                 "We can trade O(N) space for O(1) time lookup by recognizing that for each element `x`, "
+                "we require its exact complement `target - x`. A Python dictionary hashes keys in O(1) amortized "
+                "time. In a single pass, we check if complement is in `seen`; if not, we record `seen[x] = i`."
+            ),
+            optimized_code=(
+                "def two_sum_optimized(nums: list[int], target: int) -> list[int]:\n"
+                "    seen = {}\n"
+                "    for i, num in enumerate(nums):\n"
+                "        complement = target - num\n"
+                "        if complement in seen:\n"
+                "            return [seen[complement], i]\n"
+                "        seen[num] = i\n"
+                "    return []\n"
+                "\n"
+                "# Verification assertions\n"
+                "assert two_sum_optimized([2, 7, 11, 15], 9) == [0, 1]\n"
+                "assert two_sum_optimized([3, 2, 4], 6) == [1, 2]\n"
+                "assert two_sum_optimized([3, 3], 6) == [0, 1]\n"
+                "assert two_sum_optimized([1, 2, 3], 10) == []\n"
+            ),
+            speedup_comparison=(
+                "- **Time Complexity:** Reduced from O(N^2) to O(N) single-pass.\n"
+                "- **Space Complexity:** O(N) auxiliary hash table.\n"
+                "- **Practical Impact:** On N=10,000, execution drops from ~1.5s to < 1.8ms (over 800x faster)."
+            )
+        )
+    })
+
+    # 10. Optimization: String Concatenation in Loops
+    records.append({
+        "id": "cot_opt_0002",
