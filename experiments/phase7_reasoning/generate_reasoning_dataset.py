@@ -388,3 +388,33 @@ def get_core_reasoning_records() -> List[Dict[str, Any]]:
         "id": "cot_debug_0002",
         "category": "code_debugging",
         "subcategory": "iteration_traps",
+        "instruction": (
+            "Explain why the following Python code fails to remove all even numbers, and provide the correct fix:\n"
+            "```python\n"
+            "nums = [1, 2, 4, 6, 7, 8]\n"
+            "for x in nums:\n"
+            "    if x % 2 == 0:\n"
+            "        nums.remove(x)\n"
+            "```"
+        ),
+        "response": build_debug_response(
+            flaw_analysis=(
+                "When you remove an element from a list during iteration, the list shifts leftward in place. "
+                "The internal iterator index increments continuously (0, 1, 2, ...), causing it to skip the element "
+                "immediately following the removed item because that neighbor shifted into the current index slot."
+            ),
+            step_trace=[
+                "Iteration 0: x=1 (odd). Kept. Index moves to 1.",
+                "Iteration 1: x=2 (even). `nums.remove(2)` called. `4` shifts to index 1. Index advances to 2.",
+                "Iteration 2: Inspects index 2, which is now `6`. Element `4` was never evaluated and remained in the list!"
+            ],
+            fixed_code=(
+                "def filter_evens(numbers: list[int]) -> list[int]:\n"
+                "    # Approach 1: Idiomatic list comprehension (creates clean filtered list in O(N))\n"
+                "    return [x for x in numbers if x % 2 != 0]\n"
+                "\n"
+                "def filter_evens_in_place(numbers: list[int]) -> None:\n"
+                "    # Approach 2: If in-place modification is strictly required, use slice assignment\n"
+                "    numbers[:] = [x for x in numbers if x % 2 != 0]\n"
+                "\n"
+                "# Verification assertions\n"
