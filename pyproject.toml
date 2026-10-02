@@ -13,3 +13,8 @@ readme = "README.md"
 license = { text = "Apache-2.0" }
 requires-python = ">=3.8"
 keywords = ["python", "ai", "llm", "offline", "edge", "reasoning", "gguf", "llama-cpp"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
