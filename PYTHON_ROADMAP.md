@@ -118,3 +118,11 @@
   * Small integer caching ($-5$ to $256$), string interning.
   * The `is` (identity / memory address) vs `==` (equality) operator.
   * Memory optimization using `__slots__` to suppress instance `__dict__` overhead.
+* **Concurrency Models:**
+  * **The Global Interpreter Lock (GIL):** Thread safety implications and multi-core CPU constraints.
+  * **Multithreading (`threading`, `concurrent.futures.ThreadPoolExecutor`):** Ideal for I/O-bound tasks (network requests, disk access).
+  * **Multiprocessing (`multiprocessing`, `ProcessPoolExecutor`):** Bypassing the GIL for CPU-bound computations across physical cores.
+  * **Asynchronous I/O (`asyncio`):**
+    * The single-threaded cooperative multitasking event loop.
+    * Coroutines with `async def` and `await`.
+    * Running concurrent tasks with `asyncio.gather()` and `asyncio.TaskGroup`.
