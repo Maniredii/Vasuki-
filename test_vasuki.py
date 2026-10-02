@@ -366,3 +366,49 @@ def show_typing(text, speed=0.010, colorize=True):
     for char in display_text:
         if char == '\033':
             in_escape = True
+        if in_escape:
+            sys.stdout.write(char)
+            if char == 'm':
+                in_escape = False
+            continue
+        
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        if char == '\n':
+            time.sleep(speed * 2.0)
+        else:
+            time.sleep(speed)
+    sys.stdout.write('\n')
+    sys.stdout.flush()
+
+def run_benchmark():
+    """Runs a quick 8-prompt test across key categories."""
+    test_cases = [
+        ("Binary Search", "Write a Python function for binary search on a sorted list."),
+        ("Prime Checker", "Write a Python function is_prime(n) to check if n is prime."),
+        ("Fibonacci Generator", "Write a Python generator that yields the first n Fibonacci numbers."),
+        ("Palindrome Check", "Write a Python function to check whether a string is a palindrome."),
+        ("Deduplicate List", "Write a Python function to remove duplicates from a list while preserving order."),
+        ("Rectangle Class", "Write a Python class Rectangle with width, height, and area method."),
+        ("C Interoperability", "How do I call a C shared library from Python using ctypes?"),
+        ("Out-of-Domain Boundary", "Write a complete C++ game engine with DirectX 12."),
+    ]
+    
+    print("\n" + "=" * 70)
+    print("VASUKI Phase 6J Quick Terminal Benchmark")
+    print(f"Model: {MODEL_PATH} ({os.path.getsize(MODEL_PATH)/(1024**2):.1f} MB)")
+    print("=" * 70)
+    
+    for i, (name, prompt) in enumerate(test_cases, 1):
+        print(f"\n[{i}/{len(test_cases)}] {name}")
+        print(f"Prompt: {prompt}")
+        print("-" * 50)
+        resp, dur = query_model(prompt)
+        show_typing(resp, speed=0.005)
+        print("-" * 50)
+        print(f"Inference Time: {dur:.2f}s\n")
+    print("=" * 70)
+    print("Benchmark complete!")
+    print("=" * 70)
+
+def interactive_session():
