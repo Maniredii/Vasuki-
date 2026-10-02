@@ -258,3 +258,29 @@ def curate_huggingface_records(existing_instructions: set) -> list:
             if codes:
                 all_valid = True
                 for c in codes:
+                    ok, _ = validate_ast(c)
+                    if not ok:
+                        all_valid = False
+                        break
+                if not all_valid:
+                    continue
+
+            seen.add(inst_lower)
+            curated.append({
+                "id": f"hf_ca_theory_{ca_count+1:04d}",
+                "instruction": inst,
+                "response": out,
+                "category": "computer_science_theory",
+                "source": "sahil2801/CodeAlpaca-20k"
+            })
+            ca_count += 1
+            if ca_count >= 450:
+                break
+
+        print(f"[+] Successfully extracted {ca_count} conceptual theory records from CodeAlpaca.", flush=True)
+    except Exception as e:
+        print(f"[!] CodeAlpaca curation notice: {e}", flush=True)
+
+    # 2. Curate algorithmic reasoning from mlabonne/Evol-Instruct-Python-1k
+    print("\n[*] 2. Loading algorithmic reasoning from mlabonne/Evol-Instruct-Python-1k...", flush=True)
+    try:
