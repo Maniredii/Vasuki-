@@ -17,7 +17,7 @@ class VasukiEngine:
         self.model_path = model_path or resolve_model_path(model_name)
 
     def generate(self, prompt: str, max_tokens: int = 350, temperature: float = 0.2) -> str:
-        resp, _ = query_model(prompt, max_tokens=max_tokens, temp=temperature)
+        resp, _ = query_model(prompt, max_tokens=max_tokens, temp=temperature, allow_fallback=True)
         return resp
 
     def chat(self, messages: list, max_tokens: int = 350, temperature: float = 0.2) -> dict:
