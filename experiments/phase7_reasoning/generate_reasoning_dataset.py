@@ -538,3 +538,33 @@ def main():
         if not codes:
             failed_records.append((rec_id, "No Python code block found"))
             continue
+
+        ast_ok = True
+        ast_err = None
+        for c in codes:
+            ok, err = validate_ast(c)
+            if not ok:
+                ast_ok = False
+                ast_err = err
+                break
+
+        if not ast_ok:
+            failed_records.append((rec_id, f"AST Error: {ast_err}"))
+            continue
+
+        # 2. Execution Sandbox Validation (if assertions exist)
+        sandbox_ok = True
+        sandbox_err = None
+        for c in codes:
+            if "assert " in c:
+                ok, err = execute_in_sandbox(c)
+                if not ok:
+                    sandbox_ok = False
+                    sandbox_err = err
+                    break
+
+        if not sandbox_ok:
+            failed_records.append((rec_id, f"Sandbox Failure: {sandbox_err}"))
+            continue
+
+        # 3. Token budget calculation
