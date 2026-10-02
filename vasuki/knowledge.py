@@ -252,3 +252,28 @@ def consume_media(media_item):
 consume_media(AudioBook())
 consume_media(PaperBook())
 ```"""
+
+KNOWLEDGE_REGISTRY["encapsulation"] = """**Encapsulation** binds data and methods together within a class and restricts direct modification of internal state.
+
+### Python Access Conventions:
+- **Public:** `self.name` (accessible everywhere)
+- **Protected:** `self._balance` (internal convention)
+- **Private:** `self.__secret` (name-mangled to `_ClassName__secret`)
+
+```python
+class BankAccount:
+    def __init__(self, owner: str, balance: float):
+        self.owner = owner
+        self.__balance = balance  # Private
+
+    def deposit(self, amount: float):
+        if amount > 0:
+            self.__balance += amount
+
+    def get_balance(self) -> float:
+        return self.__balance
+
+acc = BankAccount("Alice", 500.0)
+acc.deposit(150.0)
+print(acc.get_balance())  # 650.0
+```"""
