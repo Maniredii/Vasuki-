@@ -94,3 +94,11 @@
   * Hash Maps & Hash Sets: Collision resolution, load factor, rolling hash algorithms.
   * Graphs: Adjacency lists, Directed Acyclic Graphs (DAG), Disjoint Set Union (DSU / Union-Find with path compression).
   * Prefix Trees (Trie): Autocomplete, prefix search, insert and search operations.
+* **Core Algorithmic Paradigms:**
+  * **Two Pointers:** Opposite directional (Trapping rain water, 2Sum sorted) and equi-directional (Dutch National Flag).
+  * **Sliding Window:** Fixed size vs. Dynamic contractive windows (Minimum window substring, longest non-repeating substring).
+  * **Binary Search:** Left/Right bound search, Binary search on answer space (Koko eating bananas, capacity to ship packages).
+  * **Graph Algorithms:** Breadth-First Search (BFS), Depth-First Search (DFS), Dijkstra's shortest path, Kahn's topological sort for cycle detection.
+  * **Dynamic Programming (DP):**
+    * Memoization (Top-down) vs Tabulation (Bottom-up).
+    * Classic patterns: 0/1 Knapsack, Coin Change, Longest Increasing Subsequence (LIS in $O(N \log N)$), Interval DP.
