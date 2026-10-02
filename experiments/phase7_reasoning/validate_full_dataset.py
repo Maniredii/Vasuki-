@@ -22,3 +22,11 @@ BASE_FILE = BASE_DIR / "phase7_reasoning_corpus.jsonl"
 
 if EXPANDED_FILE.exists():
     TRAIN_FILE = EXPANDED_FILE
+elif BALANCED_FILE.exists():
+    TRAIN_FILE = BALANCED_FILE
+else:
+    TRAIN_FILE = BASE_FILE
+
+VAL_FILE = BASE_DIR / "phase7_reasoning_val.jsonl"
+
+
