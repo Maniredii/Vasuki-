@@ -12,6 +12,22 @@ def normalize_concept_query(query: str) -> str:
     q = re.sub(r"^(what is|what are|explain|describe|tell me about|define)\s+(a\s+|an\s+|the\s+)?", "", q)
     q = re.sub(r"\s+(in python|in py|with examples?|please|for beginners).*$", "", q)
     return q.strip(" ?.!:\'\"")
+KNOWLEDGE_REGISTRY["function"] = KNOWLEDGE_REGISTRY["functions"] = """A **function** in Python is a reusable block of code that executes when invoked, optionally accepting parameters and returning a result.
+
+### Key Characteristics:
+- **Definition:** Defined with the `def` keyword.
+- **First-Class Objects:** Functions can be passed as arguments, assigned to variables, and returned from other functions.
+- **Parameters:** Supports positional, keyword, default values, `*args`, and `**kwargs`.
+- **Return Value:** Returns values via `return` (returns `None` by default if omitted).
+
+```python
+def calculate_total(price: float, tax_rate: float = 0.08) -> float:
+    """Calculates final price including sales tax."""
+    return price * (1 + tax_rate)
+
+print(calculate_total(100.0))  # 108.0
+```"""
+
 
 KNOWLEDGE_REGISTRY["python"] = """Python is a high-level, interpreted, general-purpose programming language created by Guido van Rossum.
 
