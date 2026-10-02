@@ -102,3 +102,11 @@
   * **Dynamic Programming (DP):**
     * Memoization (Top-down) vs Tabulation (Bottom-up).
     * Classic patterns: 0/1 Knapsack, Coin Change, Longest Increasing Subsequence (LIS in $O(N \log N)$), Interval DP.
+* **Complexity & Formal Analysis:**
+  * Big-O, Big-$\Omega$, Big-$\Theta$ notations.
+  * Amortized complexity analysis (e.g., Python dynamic list doubling).
+  * Space-Time trade-offs.
+
+---
+
+## 🔴 Phase 4: Systems, Concurrency & Performance Engineering (Advanced Specialist)
