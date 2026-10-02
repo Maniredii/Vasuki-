@@ -24,8 +24,17 @@ if hasattr(sys.stderr, "reconfigure"):
 
 import shutil
 
-def resolve_model_path():
+def resolve_model_path(requested_model=None):
     """Finds the GGUF model path across environment, local repo, and user home."""
+    req = (requested_model or os.environ.get("VASUKI_MODEL") or "").lower()
+    if req in ("phase7", "p7", "reasoning"):
+        p7 = os.path.join(os.path.dirname(os.path.abspath(__file__)), "vasuki_phase7.Q4_K_M.gguf")
+        if os.path.exists(p7):
+            return p7
+    if req in ("phase6j", "p6j", "stable"):
+        p6 = os.path.join(os.path.dirname(os.path.abspath(__file__)), "vasuki_phase6j.Q4_K_M.gguf")
+        if os.path.exists(p6):
+            return p6
     if os.environ.get("VASUKI_MODEL_PATH") and os.path.exists(os.environ["VASUKI_MODEL_PATH"]):
         return os.environ["VASUKI_MODEL_PATH"]
     # Priority 1: Phase 6J (Verified production-stable engine)
