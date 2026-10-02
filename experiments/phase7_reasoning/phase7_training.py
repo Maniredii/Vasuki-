@@ -205,3 +205,26 @@ def run_training():
 
     training_args = TrainingArguments(
         per_device_train_batch_size=2,
+        gradient_accumulation_steps=4,
+        warmup_steps=WARMUP_STEPS,
+        max_steps=MAX_STEPS,
+        learning_rate=LEARNING_RATE,
+        fp16=not is_bfloat16_supported(),
+        bf16=is_bfloat16_supported(),
+        logging_steps=10,
+        eval_strategy="steps",
+        eval_steps=EVAL_STEPS,
+        optim="adamw_8bit",
+        weight_decay=WEIGHT_DECAY,
+        lr_scheduler_type="cosine",
+        seed=RANDOM_SEED,
+        output_dir=OUTPUT_DIR,
+        save_strategy="steps",
+        save_steps=EVAL_STEPS,
+        save_total_limit=2
+    )
+
+    trainer = SFTTrainer(
+        model=model,
+        tokenizer=tokenizer,
+        train_dataset=train_dataset,
