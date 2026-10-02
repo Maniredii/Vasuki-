@@ -109,7 +109,7 @@ def is_degenerate_output(text):
     if check_prefix_repetition(text, min_repeats=3):
         return True
     lower = text.lower()
-    artifacts = ["życz", "彩神", "硗heads", "硗ookies", "osoph\nosoph", "icide-tree\nisan", "trgl", "ëˆ´", "azor"]
+    artifacts = ["życz", "彩神", "硗heads", "硗ookies", "osoph\nosoph", "icide-tree\nisan", "trgl", "ëˆ´", "azor", "quirer"]
     if any(a in lower for a in artifacts):
         return True
     words = text.split()
@@ -381,7 +381,7 @@ def is_degenerate_output(text):
     if check_prefix_repetition(text, min_repeats=3):
         return True
     lower = text.lower()
-    artifacts = ["życz", "彩神", "硗heads", "硗ookies", "osoph\nosoph", "icide-tree\nisan", "trgl", "ëˆ´", "azor"]
+    artifacts = ["życz", "彩神", "硗heads", "硗ookies", "osoph\nosoph", "icide-tree\nisan", "trgl", "ëˆ´", "azor", "quirer"]
     if any(a in lower for a in artifacts):
         return True
     words = text.split()
