@@ -73,7 +73,7 @@ def print_banner():
     print(f"  \033[94mLinkedIn     :\033[0m {AUTHOR_LINKEDIN}")
     print("\033[96m" + "=" * 72 + "\033[0m")
 
-ALPACAPREAMBLE = "Below is an instruction that describes a task. Write a response that appropriately completes the request.\n\n### Instruction:\n{prompt}\n\n### Response:\n"
+ALPACAPREAMBLE = "### Instruction:\n{prompt}\n\n### Response:\n"
 
 def check_domain_boundary(prompt_text):
     """
