@@ -238,3 +238,33 @@ def get_core_reasoning_records() -> List[Dict[str, Any]]:
     # 5. Monotonic Stack: Daily Temperatures
     records.append({
         "id": "cot_algo_0005",
+        "category": "algorithmic_reasoning",
+        "subcategory": "monotonic_stack",
+        "instruction": "Solve the Daily Temperatures problem in Python using a monotonic stack.",
+        "response": build_reasoning_response(
+            strategy=(
+                "We need the distance to the next greater element for each day. "
+                "Maintain a monotonic decreasing stack storing indices of unresolved temperatures. "
+                "When current temperature > temperatures[stack[-1]], pop index prev_idx and record "
+                "answer[prev_idx] = current_idx - prev_idx. Then push current index."
+            ),
+            edge_cases=[
+                "Strictly decreasing temperatures: stack empties only at end, answers remain 0.",
+                "Single day: distance is 0.",
+                "All temperatures identical: answers remain 0."
+            ],
+            code=(
+                "def daily_temperatures(temperatures: list[int]) -> list[int]:\n"
+                "    n = len(temperatures)\n"
+                "    ans = [0] * n\n"
+                "    stack = []  # Stores indices\n"
+                "    \n"
+                "    for curr_idx, temp in enumerate(temperatures):\n"
+                "        while stack and temperatures[stack[-1]] < temp:\n"
+                "            prev_idx = stack.pop()\n"
+                "            ans[prev_idx] = curr_idx - prev_idx\n"
+                "        stack.append(curr_idx)\n"
+                "        \n"
+                "    return ans\n"
+                "\n"
+                "# Verification assertions\n"
