@@ -88,3 +88,33 @@ def get_core_reasoning_records() -> List[Dict[str, Any]]:
                 "assert trap_rain_water([]) == 0\n"
             ),
             time_complexity="O(N) single pass across array of length N.",
+            space_complexity="O(1) auxiliary variables only."
+        )
+    })
+
+    # 2. Sliding Window: Longest Substring Without Repeating Characters
+    records.append({
+        "id": "cot_algo_0002",
+        "category": "algorithmic_reasoning",
+        "subcategory": "sliding_window",
+        "instruction": "Implement a Python function to find the length of the longest substring without repeating characters.",
+        "response": build_reasoning_response(
+            strategy=(
+                "Use a sliding window [start, end] tracked with a hash map recording each character's "
+                "most recent index. When character s[end] was seen at index >= start, we jump `start` "
+                "directly to last_seen[char] + 1, eliminating redundant pointer increments."
+            ),
+            edge_cases=[
+                "Empty string: returns 0.",
+                "All identical characters (e.g. 'bbbbb'): window collapses to 1.",
+                "All distinct characters: window spans the entire string length."
+            ],
+            code=(
+                "def length_of_longest_substring(s: str) -> int:\n"
+                "    last_seen = {}\n"
+                "    start = 0\n"
+                "    max_len = 0\n"
+                "    \n"
+                "    for end, char in enumerate(s):\n"
+                "        if char in last_seen and last_seen[char] >= start:\n"
+                "            start = last_seen[char] + 1\n"
