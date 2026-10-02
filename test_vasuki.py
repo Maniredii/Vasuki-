@@ -122,13 +122,7 @@ def query_model(prompt_text, max_tokens=350, temp=0.2):
         "-r", "### Instruction",
         "-r", "###",
         "-r", "彩神",
-        "-r", "ica",
-        "-r", "icas",
-        "-r", "rix",
-        "-r", "azor",
-        "-r", "esian",
-        "-r", "życz",
-        "-r", "poverty",
+        "-r", "\nżycz",
         "--single-turn"
     ]
     
@@ -156,8 +150,8 @@ def query_model(prompt_text, max_tokens=350, temp=0.2):
         if "[ Prompt:" in resp:
             resp = resp.split("[ Prompt:")[0]
 
-        # Truncate at known stop tokens
-        for st in ["<|im_end|>", "<|endoftext|>", "### Instruction", "### Response", "###", "彩神", "ica", "icas", "esian", "azor", "życz", "rix", "abrasive", "poverty"]:
+        # Truncate at known structural stop tokens
+        for st in ["<|im_end|>", "<|endoftext|>", "### Instruction", "### Response", "###", "彩神"]:
             if f"\n{st}" in resp:
                 resp = resp.split(f"\n{st}")[0]
             elif resp.endswith(st):
@@ -217,7 +211,7 @@ def query_model(prompt_text, max_tokens=350, temp=0.2):
                 last_stripped = s
 
             # 3. Known subword / loop artifacts
-            if s.lower() in ("rix", "azor", "esian", "życz", "abrasive", "poverty"):
+            if any(k in s.lower() for k in ("życz", "azor", "esian", "abrasive", "poverty")) or s.startswith(("?.", "??", "?.ta")):
                 break
 
             # 4. Check for counting loop artifacts like `-1`, `-2`, `-3` or `1.`, `2.`
@@ -387,7 +381,7 @@ def run_benchmark():
         ("Binary Search", "Write a Python function for binary search on a sorted list."),
         ("Prime Checker", "Write a Python function is_prime(n) to check if n is prime."),
         ("Fibonacci Generator", "Write a Python generator that yields the first n Fibonacci numbers."),
-        ("Palindrome Check", "Write a Python function to check whether a string is a palindrome."),
+        ("Palindrome Check", "Write a Python function is_palindrome(s) that checks if a string is a palindrome."),
         ("Deduplicate List", "Write a Python function to remove duplicates from a list while preserving order."),
         ("Rectangle Class", "Write a Python class Rectangle with width, height, and area method."),
         ("C Interoperability", "How do I call a C shared library from Python using ctypes?"),
@@ -395,7 +389,7 @@ def run_benchmark():
     ]
     
     print("\n" + "=" * 70)
-    print("VASUKI Phase 6J Quick Terminal Benchmark")
+    print("VASUKI Phase 7 Reasoning Engine Benchmark")
     print(f"Model: {MODEL_PATH} ({os.path.getsize(MODEL_PATH)/(1024**2):.1f} MB)")
     print("=" * 70)
     

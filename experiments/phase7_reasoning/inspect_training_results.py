@@ -2,13 +2,31 @@ import zipfile
 import json
 import os
 
-zip_path = "vasuki_phase7_output.zip"
-if not os.path.exists(zip_path):
+# Search for latest zip or directory
+candidate_zips = [
+    "vasuki_phase7_output (3).zip",
+    "vasuki_phase7_output.zip"
+]
+resolved_zip = None
+for cz in candidate_zips:
+    if os.path.exists(cz):
+        resolved_zip = cz
+        break
+
+if not resolved_zip:
     print("Zip file not found!")
     exit(1)
 
-z = zipfile.ZipFile(zip_path)
-state_data = json.loads(z.read("checkpoint-650/trainer_state.json").decode("utf-8"))
+z = zipfile.ZipFile(resolved_zip)
+# Find latest checkpoint trainer_state.json
+trainer_files = [f for f in z.namelist() if f.endswith("trainer_state.json")]
+trainer_files.sort()
+target_file = trainer_files[-1] if trainer_files else None
+if not target_file:
+    print("trainer_state.json not found in archive!")
+    exit(1)
+
+state_data = json.loads(z.read(target_file).decode("utf-8"))
 
 print("=" * 70)
 print("VASUKI Phase 7: Training Run Metrics & Evaluation Log")
