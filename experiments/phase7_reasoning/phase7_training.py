@@ -153,10 +153,10 @@ def load_and_format_datasets():
                 prompt += f"### Input:\n{r['input']}\n\n"
             prompt += RESPONSE_DELIMITER
             clean_resp = r['response'].strip()
-            full_text = prompt + clean_resp + "\n<|im_end|>\n"
+            full_text = prompt + clean_resp + "\n<|im_end|>"
             formatted.append({
                 "prompt": prompt,
-                "response": clean_resp + "\n<|im_end|>\n",
+                "response": clean_resp + "\n<|im_end|>",
                 "text": full_text
             })
         return formatted
