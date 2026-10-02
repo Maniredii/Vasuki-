@@ -208,3 +208,33 @@ def get_core_reasoning_records() -> List[Dict[str, Any]]:
                 "Coin denomination larger than target amount: safely skipped by condition."
             ],
             code=(
+                "def coin_change(coins: list[int], amount: int) -> int:\n"
+                "    if amount < 0:\n"
+                "        return -1\n"
+                "    if amount == 0:\n"
+                "        return 0\n"
+                "    \n"
+                "    max_val = amount + 1\n"
+                "    dp = [max_val] * (amount + 1)\n"
+                "    dp[0] = 0\n"
+                "    \n"
+                "    for i in range(1, amount + 1):\n"
+                "        for coin in coins:\n"
+                "            if i >= coin:\n"
+                "                dp[i] = min(dp[i], dp[i - coin] + 1)\n"
+                "                \n"
+                "    return dp[amount] if dp[amount] != max_val else -1\n"
+                "\n"
+                "# Verification assertions\n"
+                "assert coin_change([1, 2, 5], 11) == 3  # 5 + 5 + 1\n"
+                "assert coin_change([2], 3) == -1\n"
+                "assert coin_change([1], 0) == 0\n"
+            ),
+            time_complexity="O(amount * len(coins)) tabular state computation.",
+            space_complexity="O(amount) 1D array space."
+        )
+    })
+
+    # 5. Monotonic Stack: Daily Temperatures
+    records.append({
+        "id": "cot_algo_0005",
