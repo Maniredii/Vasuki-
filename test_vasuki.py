@@ -402,90 +402,16 @@ def run_benchmark():
     print("=" * 70)
 
 def interactive_session():
-    """Starts interactive REPL in the terminal with developer commands."""
+    """Starts interactive REPL in the terminal with developer commands and multi-turn memory."""
     print_banner()
     print(f"\033[90mModel    :\033[0m {os.path.basename(MODEL_PATH)}")
     print("\033[93mCommands :\033[0m")
-    print("  \033[93m/run\033[0m           Execute last generated code snippet in sandbox")
-    print("  \033[93m/copy\033[0m          Copy last code snippet to clipboard")
-    print("  \033[93m/save <file>\033[0m   Save last code snippet to a Python file")
-    print("  \033[93m/clear\033[0m         Clear the terminal screen")
-    print("  \033[93mexit / q\033[0m       Quit the console")
-    print("\033[96m" + "-" * 72 + "\033[0m\n")
-    
-    last_response = ""
-
-    while True:
-        try:
-            prompt = input("\033[92mVASUKI >>> \033[0m").strip()
-            if not prompt:
-                continue
-            
-            # Slash commands
-            if prompt.lower() in ("exit", "quit", "q"):
-                print("\033[90mExiting VASUKI console. Goodbye!\033[0m")
-                break
-            
-            if prompt.lower() == "/clear":
-                os.system("cls" if os.name == "nt" else "clear")
-                continue
-
-            if prompt.lower() == "/help":
-                print("\n\033[93mAvailable Commands:\033[0m")
-                print("  /run           - Execute last code snippet in a live Python sandbox")
-                print("  /copy          - Copy last code snippet to system clipboard")
-                print("  /save <file>   - Save last code snippet into <file>")
-                print("  /clear         - Clear terminal screen")
-                print("  exit           - Exit console\n")
-                continue
-
-            if prompt.lower() == "/run":
-                if not last_response:
-                    print("\033[91m[!] No previous code snippet to run.\033[0m\n")
-                else:
-                    execute_sandbox(last_response)
-                continue
-
-            if prompt.lower() == "/copy":
-                if not last_response:
-                    print("\033[91m[!] No previous code snippet to copy.\033[0m\n")
-                else:
-                    ok = copy_to_clipboard(last_response)
-                    if ok:
-                        print("\033[92m[✓] Copied last code snippet to clipboard!\033[0m\n")
-                    else:
-                        print("\033[91m[!] Failed to copy to clipboard.\033[0m\n")
-                continue
-
-            if prompt.lower().startswith("/save"):
-                parts = prompt.split(maxsplit=1)
-                if len(parts) < 2 or not parts[1].strip():
-                    print("\033[91m[!] Usage: /save <filename.py>\033[0m\n")
-                elif not last_response:
-                    print("\033[91m[!] No previous code snippet to save.\033[0m\n")
-                else:
-                    save_path = parts[1].strip()
-                    try:
-                        with open(save_path, "w", encoding="utf-8") as f:
-                            f.write(last_response + "\n")
-                        print(f"\033[92m[✓] Saved snippet to {save_path}\033[0m\n")
-                    except Exception as e:
-                        print(f"\033[91m[!] Error saving file: {e}\033[0m\n")
-                continue
-
-            print("\033[90m[VASUKI is typing...]\033[0m", end="\r", flush=True)
-            response, elapsed = query_model(prompt)
-            print(" " * 30, end="\r")  # Clear the typing banner
-            print("-" * 55)
-            show_typing(response, speed=0.009, colorize=True)
-            print("-" * 55)
-            print(f"\033[90m(Generated in {elapsed:.2f}s | Type /run to test, /copy to copy)\033[0m\n")
-            last_response = response
-
-        except (KeyboardInterrupt, EOFError):
-            print("\nExiting VASUKI console.")
-            break
-
+    print("  \033[93m/run[0m           Execute last generated code snippet in live sandbox")
+    print("  \033[93m/copy[0m          Copy last code snippet to clipboard")
+    print("  \033[93m/save <file>[0m   Save last code snippet to a Python file")
+    print("  \033[93m/history[0m       Show conversation history turns")
+    print("  \033[93m/context[0m       Inspect injected sli
+            pass
 def run_ds_benchmark():
     """Runs a dedicated Data Structures benchmark."""
     ds_cases = [
