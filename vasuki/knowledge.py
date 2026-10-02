@@ -195,3 +195,22 @@ class Dog(Animal):
 dog = Dog("Buddy")
 print(dog.speak())  # Buddy says Woof!
 ```"""
+
+KNOWLEDGE_REGISTRY["class"] = KNOWLEDGE_REGISTRY["classes"] = KNOWLEDGE_REGISTRY["object"] = KNOWLEDGE_REGISTRY["objects"] = """A **class** in Python is a blueprint for creating objects, defining attributes (state) and methods (behavior). An **object** is a concrete instance of a class.
+
+```python
+class Car:
+    # Class attribute (shared by all instances)
+    wheels = 4
+
+    def __init__(self, make: str, model: str):
+        # Instance attributes
+        self.make = make
+        self.model = model
+
+    def display(self) -> str:
+        return f"{self.make} {self.model} ({self.wheels} wheels)"
+
+my_car = Car("Tesla", "Model 3")
+print(my_car.display())  # Tesla Model 3 (4 wheels)
+```"""
