@@ -54,3 +54,11 @@
 
 ## 🟡 Phase 2: Object-Oriented & Idiomatic Python (Intermediate)
 *Goal: Write modular, maintainable, object-oriented, and memory-efficient Python code.*
+
+* **Object-Oriented Programming (OOP):**
+  * Classes, instances, `self`, constructors (`__init__`), instance variables vs. class variables.
+  * Encapsulation and private name mangling (`_single_leading` vs `__double_leading`).
+  * Inheritance, method overriding, and `super()`.
+  * Polymorphism, Duck Typing (*"If it walks like a duck and quacks like a duck, it's a duck"*), and Abstract Base Classes (`abc.ABC`, `@abstractmethod`).
+* **Dunder / Magic Methods:**
+  * Representation: `__repr__` (unambiguous, for developers) vs `__str__` (readable, for users).
