@@ -228,3 +228,26 @@ def run_training():
         model=model,
         tokenizer=tokenizer,
         train_dataset=train_dataset,
+        eval_dataset=val_dataset,
+        dataset_text_field="text",
+        max_seq_length=MAX_SEQ_LENGTH,
+        dataset_num_proc=2,
+        packing=False,
+        args=training_args
+    )
+
+    from unsloth.chat_templates import train_on_responses_only
+    trainer = train_on_responses_only(
+        trainer,
+        instruction_part="### Instruction:\n",
+        response_part="### Response:\n"
+    )
+
+    print("\n" + "=" * 80)
+    print("Starting Phase 7 QLoRA Training Run")
+    print("=" * 80)
+    trainer_stats = trainer.train()
+
+    print("\n[+] Training Complete!")
+    print(f"    Train Loss: {trainer_stats.training_loss:.4f}")
+
