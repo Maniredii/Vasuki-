@@ -78,8 +78,8 @@ if (args.includes('--version') || args.includes('-v')) {
   console.log(`\x1b[1;92mDeveloped by : Manideep Reddy Eevuri\x1b[0m`);
   console.log(`GitHub       : https://github.com/Maniredii`);
   console.log(`LinkedIn     : https://www.linkedin.com/in/manideep-reddy-eevuri-661659268/`);
-  console.log(`Model        : vasuki_phase7.Q4_K_M.gguf (379.38 MB)`);
-  console.log(`Architecture : 0.5B Edge Fine-Tuned Specialist (Reasoning Enhanced)`);
+  console.log(`Model        : vasuki_phase6j.Q4_K_M.gguf (379.38 MB)`);
+  console.log(`Architecture : 0.5B Edge Fine-Tuned Specialist (Verified High-Accuracy)`);
   process.exit(0);
 }
 
