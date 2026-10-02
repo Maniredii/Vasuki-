@@ -102,6 +102,10 @@ def is_degenerate_output(text):
     """Checks whether the response contains repetitive gibberish or mode collapse."""
     if not text or not text.strip():
         return False
+    # Reject single orphan non-code words (e.g. 'quirer', 'osoph')
+    words = text.split()
+    if len(words) == 1 and not any(kw in text for kw in ("def ", "class ", "return", "print")):
+        return True
     if check_prefix_repetition(text, min_repeats=3):
         return True
     lower = text.lower()
@@ -370,6 +374,10 @@ def is_degenerate_output(text):
     """Checks whether the response contains repetitive gibberish or mode collapse."""
     if not text or not text.strip():
         return False
+    # Reject single orphan non-code words (e.g. 'quirer', 'osoph')
+    words = text.split()
+    if len(words) == 1 and not any(kw in text for kw in ("def ", "class ", "return", "print")):
+        return True
     if check_prefix_repetition(text, min_repeats=3):
         return True
     lower = text.lower()
