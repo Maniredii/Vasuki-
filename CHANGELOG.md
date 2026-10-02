@@ -10,3 +10,6 @@
 
 - Added instant high-accuracy Python conceptual knowledge engine (resolves 'what is python', 'what is tuple').
 - Fixed llama-cli boot banner leak and enforced strict context isolation in REPL.
+
+- Expanded knowledge base to 40+ topics including Functions, OOP, Inheritance, Polymorphism, Encapsulation, Abstraction, Concurrency, and Collections.
+- Strictly discard stdout when ### Response delimiter is absent to prevent ASCII art leakage.
