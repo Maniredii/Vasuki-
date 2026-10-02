@@ -505,3 +505,42 @@ def main():
                 code=(
                     "def find_peak_element(nums: list[int]) -> int:\n"
                     "    left, right = 0, len(nums) - 1\n"
+                    "    while left < right:\n"
+                    "        mid = (left + right) // 2\n"
+                    "        if nums[mid] < nums[mid + 1]:\n"
+                    "            left = mid + 1\n"
+                    "        else:\n"
+                    "            right = mid\n"
+                    "    return left\n"
+                    "\n"
+                    "# Verification assertions\n"
+                    "assert find_peak_element([1, 2, 3, 1]) == 2\n"
+                    "assert find_peak_element([1, 2, 1, 3, 5, 6, 4]) in (1, 5)\n"
+                    "assert find_peak_element([1]) == 0\n"
+                ),
+                time_complexity="O(log N) binary search interval division.",
+                space_complexity="O(1) auxiliary variables."
+            )
+        },
+        {
+            "id": "val_cot_002",
+            "category": "code_debugging",
+            "subcategory": "recursion_limits",
+            "instruction": "Debug a Python recursive function that causes RecursionError on deep trees and provide the iterative stack-based solution.",
+            "response": build_debug_response(
+                flaw_analysis=(
+                    "Python has a default call stack limit (usually 1,000 frames). "
+                    "For a skewed or degenerate tree of depth > 1,000, naive recursion triggers `RecursionError`. "
+                    "Replacing recursion with an explicit heap-allocated Python list as a stack removes the call stack limit."
+                ),
+                step_trace=[
+                    "Tree depth reaches 1,000 frames.",
+                    "Next recursive call exceeds `sys.getrecursionlimit()`.",
+                    "`RecursionError: maximum recursion depth exceeded` raised."
+                ],
+                fixed_code=(
+                    "class TreeNode:\n"
+                    "    def __init__(self, val=0, left=None, right=None):\n"
+                    "        self.val = val\n"
+                    "        self.left = left\n"
+                    "        self.right = right\n"
