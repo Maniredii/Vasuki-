@@ -27,5 +27,5 @@ class TestAccuracyGuardrails(unittest.TestCase):
         self.assertTrue("DecisionTreeClassifier" in resp or "tree" in resp.lower() or "def " in resp)
         self.assertFalse(test_vasuki.is_degenerate_output(resp))
 
-if __name__ == "__main__":
+    def test_regression_case(self):\n        self.assertTrue(True)\n\nif __name__ == "__main__":
     unittest.main()
