@@ -403,3 +403,19 @@ async def main():
 
 asyncio.run(main())
 ```"""
+
+KNOWLEDGE_REGISTRY["is vs =="] = KNOWLEDGE_REGISTRY["difference between is and =="] = """### Comparison: `==` (Equality) vs `is` (Identity)
+
+- **`==`**: Checks for **value equality** (calls `__eq__`). Do both objects store the same data?
+- **`is`**: Checks for **identity equality** (`id(a) == id(b)`). Do both variables point to the exact same memory address?
+
+```python
+a = [1, 2, 3]
+b = [1, 2, 3]
+
+print(a == b)  # True  (same contents)
+print(a is b)  # False (distinct heap objects)
+
+c = a
+print(a is c)  # True  (same memory reference)
+```"""
