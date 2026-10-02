@@ -14,3 +14,11 @@
           │
           ▼
 [Phase 3: Data Structures & Algorithmic Reasoning]
+          │
+          ▼
+[Phase 4: Concurrency, Systems & Performance]
+          │
+          ▼
+[Phase 5: Specialization Tracks (AI / Backend / Edge)]
+```
+
