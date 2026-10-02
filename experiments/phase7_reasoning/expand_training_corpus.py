@@ -166,3 +166,31 @@ def main():
     try:
         flytech_ds = load_dataset("flytech/python-codes-25k", split="train", streaming=True)
         flytech_count = 0
+        for item in flytech_ds:
+            inst = (item.get("instruction") or "").strip()
+            resp = (item.get("output") or "").strip()
+            inst_lower = inst.lower()
+
+            if inst_lower in seen_instructions:
+                continue
+
+            if not is_valid_entry(inst, resp):
+                continue
+
+            seen_instructions.add(inst_lower)
+            new_records.append({
+                "id": f"expanded_flytech_{flytech_count+1:04d}",
+                "instruction": inst,
+                "input": item.get("input", ""),
+                "response": resp,
+                "category": "python_practical_scripts",
+                "source": "flytech/python-codes-25k"
+            })
+            flytech_count += 1
+            if flytech_count >= 600:
+                break
+
+        print(f"[+] Harvested {flytech_count} pristine records from flytech.", flush=True)
+    except Exception as e:
+        print(f"[!] Flytech harvesting notice: {e}", flush=True)
+
