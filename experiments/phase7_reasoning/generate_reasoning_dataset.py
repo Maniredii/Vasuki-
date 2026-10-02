@@ -478,3 +478,33 @@ def get_core_reasoning_records() -> List[Dict[str, Any]]:
     # 10. Optimization: String Concatenation in Loops
     records.append({
         "id": "cot_opt_0002",
+        "category": "algorithmic_optimization",
+        "subcategory": "memory_allocation",
+        "instruction": "Explain why repeated += string concatenation inside loops is inefficient in Python and how to optimize it.",
+        "response": build_optimization_response(
+            baseline_analysis=(
+                "Python strings are immutable. Doing `result += s` inside a loop of N iterations creates "
+                "a brand new string object, copying all previous bytes each time. "
+                "This results in 1 + 2 + 3 + ... + N = O(N^2) total byte copies and heavy memory churn."
+            ),
+            optimization_strategy=(
+                "Collect string tokens in a mutable Python list (O(1) amortized append), then call "
+                "`str.join(list)` once at the end. Python calculates the exact total memory buffer needed "
+                "and copies each segment once, reducing overall complexity to linear O(N)."
+            ),
+            optimized_code=(
+                "def build_delimited_string(tokens: list[str], delimiter: str = ', ') -> str:\n"
+                "    # Linear O(N) single-pass allocation\n"
+                "    buffer = []\n"
+                "    for tok in tokens:\n"
+                "        buffer.append(str(tok))\n"
+                "    return delimiter.join(buffer)\n"
+                "\n"
+                "# Verification assertions\n"
+                "words = ['alpha', 'beta', 'gamma', 'delta']\n"
+                "assert build_delimited_string(words) == 'alpha, beta, gamma, delta'\n"
+                "assert build_delimited_string([]) == ''\n"
+            ),
+            speedup_comparison=(
+                "- **Time Complexity:** Reduced from O(N^2) to O(N).\n"
+                "- **Space Complexity:** O(N) contiguous memory buffer.\n"
