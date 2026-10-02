@@ -45,3 +45,17 @@ x, y = coordinates
 # Accessing elements
 print(f"X: {x}, Y: {y}")  # X: 10, Y: 20
 ```"""
+
+KNOWLEDGE_REGISTRY["list"] = """A **list** in Python is a mutable, ordered, dynamic array of heterogeneous elements.
+
+### Key Characteristics:
+- **Mutable:** Elements can be appended, inserted, modified, or removed in-place.
+- **Dynamic Array:** Automatically resizes with $O(1)$ amortized append performance.
+- **Indexing & Slicing:** Supports negative indices (`nums[-1]`) and sub-array slices (`nums[1:4]`).
+
+```python
+numbers = [1, 2, 3]
+numbers.append(4)
+numbers[0] = 10
+print(numbers)  # [10, 2, 3, 4]
+```"""
